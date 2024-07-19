@@ -7,3 +7,14 @@
 @tailwind components;
 @tailwind utilities;
 }
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../assets/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
