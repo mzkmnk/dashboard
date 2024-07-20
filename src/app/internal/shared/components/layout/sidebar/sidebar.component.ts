@@ -17,12 +17,15 @@ export class SidebarComponent {
     this.items = [
       {
         label: 'Travel Log',
+        icon: 'pi pi-bolt',
         items: [
           {
             label: 'Auth',
+            icon: '',
             items: [
               {
                 label: 'Sign In',
+                icon: 'pi pi-code',
               },
               {
                 label: 'Sign Up',
