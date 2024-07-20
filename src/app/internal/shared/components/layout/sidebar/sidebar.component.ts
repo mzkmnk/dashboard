@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { Ripple } from 'primeng/ripple';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [PanelMenuModule],
+  imports: [PanelMenuModule, Ripple],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })
