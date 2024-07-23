@@ -1,50 +1,29 @@
 import { Component } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { Ripple } from 'primeng/ripple';
+import { Button } from 'primeng/button';
+import { sidebarData, SidebarDataModel } from '../../../../data/sidebar.data';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [PanelMenuModule, Ripple],
+  imports: [PanelMenuModule, Ripple, Button],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  items: MenuItem[] = [];
+  sidebarData = sidebarData;
 
-  ngOnInit(): void {
-    this.items = [
-      {
-        label: 'Travel Log',
-        icon: 'pi pi-bolt',
-        items: [
-          {
-            label: 'Auth',
-            icon: '',
-            items: [
-              {
-                label: 'Sign In',
-                icon: 'pi pi-code',
-              },
-              {
-                label: 'Sign Up',
-              },
-            ],
-          },
-          {
-            label: 'Internal',
-            items: [
-              {
-                label: 'Home',
-              },
-              {
-                label: 'Calendar',
-              },
-            ],
-          },
-        ],
-      },
-    ];
-  }
+  /**
+   * @param {number} idx - クリックされたサイドバーのアイテム
+   * @returns {void}
+   *
+   * @description
+   * サイドバーがクリックされた時の処理を行う関数
+   */
+  onClickSidebarItem = (idx: number): void => {
+    this.sidebarData.map((item: SidebarDataModel, index: number) => {
+      this.sidebarData[index].clicked = index == idx;
+    });
+  };
 }

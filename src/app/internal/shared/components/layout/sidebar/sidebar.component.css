@@ -1,0 +1,12 @@
+.item,
+.item * {
+  cursor: pointer;
+}
+
+.bg-item-hover:hover {
+  background-color: var(--surface-hover);
+}
+
+.bg-item-click {
+  background-color: var(--surface-ground);
+}
