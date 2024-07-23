@@ -1,14 +1,15 @@
 import { Routes } from '@angular/router';
-import { SidebarComponent } from './internal/shared/components/layout/sidebar/sidebar.component';
+import { LayoutComponent } from './internal/shared/components/layout/layout/layout.component';
 
 export const routes: Routes = [
-    {
-        path:'internal',
-        loadChildren: () => import('./internal/internal.routes').then((M) => M.INTERNAL_ROUTES),
-        component:SidebarComponent
-    },
-    {
-        path:'**',
-        redirectTo:'internal',
-    }
+  {
+    path: 'internal',
+    loadChildren: () =>
+      import('./internal/internal.routes').then((M) => M.INTERNAL_ROUTES),
+    component: LayoutComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'internal',
+  },
 ];
