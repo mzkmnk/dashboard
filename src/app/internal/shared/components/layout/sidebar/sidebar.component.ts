@@ -12,7 +12,7 @@ import { sidebarData, SidebarDataModel } from '../../../../data/sidebar.data';
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  sidebarData = sidebarData;
+  sidebarData: SidebarDataModel[] = sidebarData;
 
   /**
    * @param {number} idx - クリックされたサイドバーのアイテム
@@ -22,7 +22,7 @@ export class SidebarComponent {
    * サイドバーがクリックされた時の処理を行う関数
    */
   onClickSidebarItem = (idx: number): void => {
-    this.sidebarData.map((item: SidebarDataModel, index: number) => {
+    this.sidebarData.map((_, index: number) => {
       this.sidebarData[index].clicked = index == idx;
     });
   };
