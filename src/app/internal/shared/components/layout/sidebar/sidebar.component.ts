@@ -11,7 +11,7 @@ import { sidebarSignalStore } from '../../../store/sidebar/sidebar.signal-store'
   imports: [PanelMenuModule, Ripple, Button],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
-  // providers: [sidebarSignalStore],
+  providers: [sidebarSignalStore],
 })
 export class SidebarComponent {
   private readonly sidebarSignalStore = inject(sidebarSignalStore);

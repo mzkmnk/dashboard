@@ -1,4 +1,4 @@
-import { Component, effect, inject, Signal } from '@angular/core';
+import { Component, inject, Signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { sidebarSignalStore } from '../../../shared/store/sidebar/sidebar.signal-store';
 
@@ -8,7 +8,7 @@ import { sidebarSignalStore } from '../../../shared/store/sidebar/sidebar.signal
   imports: [ButtonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  // providers: [sidebarSignalStore],
+  providers: [sidebarSignalStore],
 })
 export class HomeComponent {
   private readonly sidebarSignalStore = inject(sidebarSignalStore);
