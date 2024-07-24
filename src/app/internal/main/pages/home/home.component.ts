@@ -8,7 +8,6 @@ import { sidebarSignalStore } from '../../../shared/store/sidebar/sidebar.signal
   imports: [ButtonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  providers: [sidebarSignalStore],
 })
 export class HomeComponent {
   private readonly sidebarSignalStore = inject(sidebarSignalStore);

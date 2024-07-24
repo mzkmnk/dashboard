@@ -25,7 +25,7 @@ export const initialState: SidebarSignalStoreModel = {
 
 export const sidebarSignalStore = signalStore(
   { providedIn: 'root' },
-  // withDevtools('[sidebar signal store]'),
+  withDevtools('[sidebar signal store]'),
   withState(initialState),
   withRedux({
     actions: {

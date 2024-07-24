@@ -1,4 +1,4 @@
-import { Component, effect, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { Ripple } from 'primeng/ripple';
 import { Button } from 'primeng/button';
@@ -11,7 +11,6 @@ import { sidebarSignalStore } from '../../../store/sidebar/sidebar.signal-store'
   imports: [PanelMenuModule, Ripple, Button],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
-  providers: [sidebarSignalStore],
 })
 export class SidebarComponent {
   private readonly sidebarSignalStore = inject(sidebarSignalStore);
