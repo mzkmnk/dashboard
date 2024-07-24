@@ -15,6 +15,7 @@
 <br>
 [7a9aa34](https://github.com/mzkmnk/dashboard/pull/3/commits/7a9aa34431b2b290fa0e6525a6e73cf4f947c27a)
 <br>
+
 ```
 { providedIn: 'root' },
 // withDevtools('[sidebar signal store]'),
