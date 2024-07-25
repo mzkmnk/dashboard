@@ -1,1 +1,11 @@
-<div>{{ $sidebarItem() }}</div>
+<div>
+  <h1>{{ $sidebarItem() }}</h1>
+</div>
+
+<gridster [options]="gridsterOptions">
+  @for (item of taskData; track i; let i = $index) {
+    <gridster-item class="shadow-2 border-round-2xl" [item]="item.grid">
+      <p>{{ item.title }}</p>
+    </gridster-item>
+  }
+</gridster>
