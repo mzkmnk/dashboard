@@ -31,7 +31,7 @@ jobs:
         run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
 
       - name: Create Page Artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         with:
           name: github-pages
           path: ./dist/myapp/browser
@@ -46,9 +46,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v2
         with:
           artifact_name: github-pages
