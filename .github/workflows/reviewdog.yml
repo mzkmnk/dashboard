@@ -14,7 +14,9 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
+      - name: install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: npm ci
       - uses: reviewdog/action-eslint@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
