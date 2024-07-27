@@ -52,8 +52,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: List files in dist
-        run: ls -R ./dist
+      - name: List files in all
+        run: ls -R
       - name: Configure Pages
         uses: actions/configure-pages@v4
       - name: Deploy to GitHub Pages
