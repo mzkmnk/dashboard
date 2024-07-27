@@ -29,10 +29,10 @@ jobs:
         run: npm run build
 
       - name: create 404.html
-        run: touch .dist/myapp/browser/404.html
+        run: touch ./dist/myapp/browser/404.html
 
       - name: copy index.html to 404.html
-        run: cp .dist/myapp/browser/index.html .dist/myapp/browser/404.html
+        run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
 
       - name: deploy to github pages
         uses: peaceiris/actions-gh-pages@v4
