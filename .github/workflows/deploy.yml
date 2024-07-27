@@ -17,22 +17,23 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-node-
 
-      - name: Install dependencies
+      - name: install dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Build dashboard app
+      - name: build dashboard app
         run: npm run build
 
-      - name: Create 404.html
+      - name: create 404.html
         run: touch ./dist/myapp/browser/404.html
 
-      - name: Copy index.html to 404.html
+      - name: copy index.html to 404.html
         run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
 
       - name: Create Page Artifact
         uses: actions/upload-pages-artifact@v1
         with:
+          name: github-pages
           path: ./dist/myapp/browser
 
   deploy:
@@ -45,6 +46,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: ./dist/myapp/browser
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
