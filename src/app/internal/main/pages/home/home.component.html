@@ -6,18 +6,7 @@
   @for (item of groups; let i = $index; track i) {
     <div class="h-full">
       <h3 class="text-center">{{ item }}</h3>
-      <div class="w-full h-full">
-        <gridster [options]="gridsterOptions">
-          @for (item of $tasks()[item]; track i; let i = $index) {
-            <gridster-item class="shadow-2 border-round-2xl" [item]="item.grid">
-              <p>{{ item.title }}</p>
-            </gridster-item>
-            <gridster-item class="shadow-2 border-round-2xl" [item]="item.grid">
-              <p>{{ item.title }}</p>
-            </gridster-item>
-          }
-        </gridster>
-      </div>
+      <div class="h-full"></div>
     </div>
   }
 </div>

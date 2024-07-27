@@ -35,9 +35,7 @@ export const sidebarSignalStore = signalStore(
     },
     reducer(actions, on) {
       on(actions.onClickSidebar, (signalState, { label }) =>
-        patchState(signalState, {
-          project: { label },
-        }),
+        patchState(signalState, { project: { label } }),
       );
     },
     effects() {
