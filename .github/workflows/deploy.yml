@@ -40,6 +40,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Create Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ./dist/myapp/browser
       - name: Configure Pages
         uses: actions/configure-pages@v4
       - name: Deploy to GitHub Pages
