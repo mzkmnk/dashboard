@@ -31,7 +31,7 @@ jobs:
         run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
 
       - name: Create Page Artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           name: github-pages
           path: ./dist/myapp/browser
