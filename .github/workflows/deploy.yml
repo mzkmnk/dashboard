@@ -31,23 +31,17 @@ jobs:
         run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
 
   deploy:
-
     needs: build
-
     permissions:
       pages: write
       id-token: write
-
     environment:
-      name: gh-pages
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: deploy to github pages
-        uses: actions/deploy-pages@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+      - name: Deploy to GitHub Pages
         id: deployment
-        with:
-          name: gh-pages
-          path: ./dist/myapp/browser
+        uses: actions/deploy-pages@v4
