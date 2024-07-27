@@ -30,6 +30,12 @@ jobs:
       - name: copy index.html to 404.html
         run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
 
+      - name: List files in all
+        run: ls -R
+
+      - name: List files in dist
+        run: ls -R ./dist
+
   deploy:
     needs: build
     permissions:
