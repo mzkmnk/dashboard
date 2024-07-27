@@ -30,6 +30,12 @@ jobs:
       - name: copy index.html to 404.html
         run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
 
+      - name: Create Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ./dist/myapp/browser
+
       - name: List files in all
         run: ls -R
 
@@ -48,11 +54,6 @@ jobs:
     steps:
       - name: List files in dist
         run: ls -R ./dist
-      - name: Create Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-pages
-          path: ./dist/myapp/browser
       - name: Configure Pages
         uses: actions/configure-pages@v4
       - name: Deploy to GitHub Pages
