@@ -3,6 +3,14 @@ on: [pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -35,30 +43,6 @@ jobs:
         with:
           name: github-pages
           path: ./dist/myapp/browser
-
-      - name: List files in all
-        run: ls -R
-
-      - name: List files in dist
-        run: ls -R ./dist
-
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: github-pages
-
-      - name: List files in all
-        run: ls -R
 
       - name: Configure Pages
         uses: actions/configure-pages@v4
