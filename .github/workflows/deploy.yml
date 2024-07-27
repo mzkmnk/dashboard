@@ -10,6 +10,7 @@ jobs:
           node-version: 20
 
       - name: install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm i
 
       - name: build dashboard app
