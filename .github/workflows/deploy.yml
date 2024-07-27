@@ -2,15 +2,6 @@ name: Deploy
 on: [pull_request]
 jobs:
   build:
-
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,6 +30,21 @@ jobs:
       - name: copy index.html to 404.html
         run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
 
+  deploy:
+
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
       - name: deploy to github pages
-        id: dev
+        id: deployment
         uses: actions/deploy-pages@v4
