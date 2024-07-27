@@ -17,7 +17,8 @@ jobs:
         run: npm run build
 
       - name: deploy to github pages
-        uses: peaceiris/actions-gh-pages@3
+        run: |
+          npx angular-cli-ghpages --dir=dist/myapp/browser
+
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
