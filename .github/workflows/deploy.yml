@@ -23,4 +23,6 @@ jobs:
         env:
           github_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx angular-cli-ghpages --dir=dist/myapp/browser --no-silent
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          npx angular-cli-ghpages --dir=dist/myapp/browser --branch=gh-pages --message="Deploy: ${GITHUB_SHA}" --no-silent
