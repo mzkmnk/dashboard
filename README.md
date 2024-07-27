@@ -1,6 +1,7 @@
 # Dashboard
 
 ## 参考にしたドキュメント一覧
+
 - [typedoc](https://typedoc.org/options/)
 - [eslint](https://eslint.org/docs/latest/use/configure/)
 
@@ -22,11 +23,15 @@
 // withDevtools('[sidebar signal store]'),
 withState(initialState),
 ```
+
 こうしてるが
+
 ```
 //{ providedIn: 'root' },
 withDevtools('[sidebar signal store]'),
 withState(initialState),
 ```
+
 こうしても同じだった。
+
 </details>
