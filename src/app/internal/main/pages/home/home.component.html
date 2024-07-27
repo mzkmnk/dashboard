@@ -1,1 +1,12 @@
-<div>hello</div>
+<div>
+  <h1>{{ $sidebarItem() }}</h1>
+</div>
+
+<div class="dashboard h-screen">
+  @for (item of groups; let i = $index; track i) {
+    <div class="h-full">
+      <h3 class="text-center">{{ item }}</h3>
+      <div class="h-full"></div>
+    </div>
+  }
+</div>

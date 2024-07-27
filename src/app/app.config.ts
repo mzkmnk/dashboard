@@ -14,6 +14,6 @@ export const appConfig: ApplicationConfig = {
     BrowserModule,
     provideAnimations(),
     provideStore(),
-    provideEffects()
-],
+    provideEffects(),
+  ],
 };

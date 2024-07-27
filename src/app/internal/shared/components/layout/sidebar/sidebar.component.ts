@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { Ripple } from 'primeng/ripple';
 import { Button } from 'primeng/button';
 import { sidebarData, SidebarDataModel } from '../../../../data/sidebar.data';
+import { sidebarSignalStore } from '../../../store/sidebar/sidebar.signal-store';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,7 +13,14 @@ import { sidebarData, SidebarDataModel } from '../../../../data/sidebar.data';
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
+  private readonly sidebarSignalStore = inject(sidebarSignalStore);
+
   sidebarData: SidebarDataModel[] = sidebarData;
+
+  constructor() {
+    //fixme labelはstringだが存在するlabelの型に変更する。
+    this.sidebarSignalStore.onClickSidebar({ label: 'travel log' });
+  }
 
   /**
    * @param {number} idx - クリックされたサイドバーのアイテム
@@ -24,6 +32,11 @@ export class SidebarComponent {
   onClickSidebarItem = (idx: number): void => {
     this.sidebarData.map((_, index: number) => {
       this.sidebarData[index].clicked = index == idx;
+      if (idx === index) {
+        this.sidebarSignalStore.onClickSidebar({
+          label: this.sidebarData[index].label,
+        });
+      }
     });
   };
 }
