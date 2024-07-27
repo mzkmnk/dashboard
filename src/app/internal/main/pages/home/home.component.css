@@ -5,6 +5,12 @@
   margin: 0 1rem;
 }
 
-/*gridster {*/
-/*  background: white;*/
-/*}*/
+.custom-divider {
+  border: 0.2rem solid var(--orange-200);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+:host ::ng-deep .custom-p-menubar.p-element.custom-p-menubar {
+  background: white;
+}

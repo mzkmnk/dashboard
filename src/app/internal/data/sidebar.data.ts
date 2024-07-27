@@ -5,7 +5,7 @@ export interface SidebarDataModel {
 
 export const sidebarData: SidebarDataModel[] = [
   {
-    label: 'travel log',
+    label: 'travelLog',
     clicked: true,
   },
   {

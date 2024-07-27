@@ -24,7 +24,7 @@ export const initialState: MainSignalStoreModel = {
   },
   data: {
     TODO: [],
-    'IN PROGRESS': [],
+    PROGRESS: [],
     COMPLETED: [],
   },
 };
@@ -47,7 +47,7 @@ export const MainSignalStore = signalStore(
 
         const data: ProjectSignalStoreModel = {
           TODO: [],
-          'IN PROGRESS': [],
+          PROGRESS: [],
           COMPLETED: [],
         };
         response.map((dt) => data[dt.group].push(dt));
