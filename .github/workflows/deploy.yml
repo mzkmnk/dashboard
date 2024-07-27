@@ -39,7 +39,7 @@ jobs:
       id-token: write
 
     environment:
-      name: github-pages
+      name: gh-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
@@ -49,5 +49,5 @@ jobs:
         uses: actions/deploy-pages@v4
         id: deployment
         with:
-          name: github-pages
+          name: gh-pages
           path: ./dist/myapp/browser
