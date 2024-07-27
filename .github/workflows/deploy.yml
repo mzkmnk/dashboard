@@ -1,0 +1,23 @@
+name: Deploy
+on: [pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: install dependencies
+        run: npm i
+
+      - name: build dashboard app
+        run: npm run build
+
+      - name: deploy to github pages
+        run: |
+          npx angular-cli-ghpages --dir=dist/myapp/browser
+        env:
+          CI: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
