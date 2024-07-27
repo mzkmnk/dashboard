@@ -18,6 +18,7 @@ jobs:
 
       - name: deploy to github pages
         run: |
-          npx angular-cli-ghpages --dir=dist/myapp/browser --no-silent
+          npx angular-cli-ghpages --dir=dist/myapp/browser
+
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
