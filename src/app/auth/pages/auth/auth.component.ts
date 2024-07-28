@@ -14,7 +14,6 @@ import {
 } from '@angular/forms';
 import { Button } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
-import { RouterSignalStore } from '../../../shared/store/router.signal-store';
 import { AuthSignalStore } from '../../store/auth.signal-store';
 
 @Component({
@@ -37,9 +36,9 @@ import { AuthSignalStore } from '../../store/auth.signal-store';
   providers: [AuthSignalStore],
 })
 export class AuthComponent {
-  private readonly routerSignalStore = inject(RouterSignalStore);
   private readonly authSignalStore = inject(AuthSignalStore);
   $signInIsLoading: Signal<boolean> = this.authSignalStore.signIn.isLoading;
+  $signUpIsLoading: Signal<boolean> = this.authSignalStore.signUp.isLoading;
 
   form = new FormGroup({
     email: new FormControl<string>('', [Validators.required, Validators.email]),
@@ -51,16 +50,20 @@ export class AuthComponent {
   });
 
   onClickSignUp = (): void => {
-    console.log('signUp');
+    const formData = this.form.getRawValue();
+    if (formData.email && formData.password) {
+      this.authSignalStore.signUpRequest({
+        request: { username: formData.email, password: formData.password },
+      });
+    }
   };
 
   onClickSignIn = (): void => {
     const formData = this.form.getRawValue();
     if (formData.email && formData.password) {
       this.authSignalStore.signInRequest({
-        request: { email: formData.email, password: formData.password },
+        request: { username: formData.email, password: formData.password },
       });
     }
-    // this.routerSignalStore.navigate({ path: 'internal/home' });
   };
 }

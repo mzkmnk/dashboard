@@ -43,6 +43,7 @@
           (onClick)="onClickSignUp()"
           type="submit"
           [disabled]="form.invalid"
+          [loading]="$signUpIsLoading()"
         ></p-button>
       </div>
     </form>
