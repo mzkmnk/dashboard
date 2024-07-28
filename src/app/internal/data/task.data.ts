@@ -1,8 +1,11 @@
+import { SidebarLabelType } from './sidebar.data';
+
 export interface Task {
   title: string;
   description: string;
   status: Status;
   group: Group;
+  sidebarLabel: SidebarLabelType;
   progress: string;
   createdAt: string;
   updatedAt: string;
@@ -31,6 +34,7 @@ export const sampleTasks: Task[] = [
     description: 'カレンダーを作成する',
     status: 'status:todo',
     group: 'TODO',
+    sidebarLabel: 'travelLog',
     progress: '0',
     createdAt: '2024-07-20T09:00:00Z',
     updatedAt: '2024-07-21T14:30:00Z',
@@ -42,6 +46,7 @@ export const sampleTasks: Task[] = [
     description: 'ログイン画面(UI)を作成する。',
     status: 'status:todo',
     group: 'TODO',
+    sidebarLabel: 'travelLog',
     progress: '0',
     createdAt: '2024-07-20T09:00:00Z',
     updatedAt: '2024-07-21T14:30:00Z',
@@ -53,6 +58,7 @@ export const sampleTasks: Task[] = [
     description: '予定詳細を確認できる画面(UI)を作成する',
     status: 'status:progress',
     group: 'PROGRESS',
+    sidebarLabel: 'travelLog',
     progress: '60',
     createdAt: '2024-07-19T09:00:00Z',
     updatedAt: '2024-07-30T14:30:00Z',
@@ -64,6 +70,7 @@ export const sampleTasks: Task[] = [
     description: 'コンプリート！',
     status: 'status:complete',
     group: 'COMPLETED',
+    sidebarLabel: 'dashboard',
     progress: '100',
     createdAt: '2024-07-19T09:00:00Z',
     updatedAt: '2024-07-30T14:30:00Z',

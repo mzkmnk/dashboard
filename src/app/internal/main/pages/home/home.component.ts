@@ -13,6 +13,9 @@ import { MenubarModule } from 'primeng/menubar';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { TagModule } from 'primeng/tag';
 import { ProgressBarModule } from 'primeng/progressbar';
+import { SidebarLabelType } from '../../../data/sidebar.data';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
 @Component({
   selector: 'app-home',
@@ -25,6 +28,8 @@ import { ProgressBarModule } from 'primeng/progressbar';
     TieredMenuModule,
     TagModule,
     ProgressBarModule,
+    AvatarModule,
+    AvatarGroupModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -34,7 +39,8 @@ export class HomeComponent {
   private readonly sidebarSignalStore = inject(sidebarSignalStore);
   private readonly mainSignalStore = inject(MainSignalStore);
 
-  $sidebarItem: Signal<string> = this.sidebarSignalStore.project.label;
+  $sidebarItem: Signal<SidebarLabelType> =
+    this.sidebarSignalStore.project.label;
   $tasks: Signal<ProjectSignalStoreModel> = this.mainSignalStore.data;
 
   groups: Group[] = ['TODO', 'PROGRESS', 'COMPLETED'];
@@ -74,4 +80,22 @@ export class HomeComponent {
       },
     ];
   }
+
+  onClickUpdateProgressBar = (
+    event: any,
+    group: Group,
+    index: number,
+  ): void => {
+    const htmlProgressBar = event.currentTarget;
+    const rect = htmlProgressBar.getBoundingClientRect();
+    const clickX: number = event.clientX - rect.left;
+    const width = rect.width;
+    const newProgress: number = Math.round((clickX / width) * 100);
+    this.mainSignalStore.taskDataUpdate({
+      sidebarLabel: this.$sidebarItem(),
+      group: group,
+      idx: index,
+      progress: newProgress.toString(),
+    });
+  };
 }
