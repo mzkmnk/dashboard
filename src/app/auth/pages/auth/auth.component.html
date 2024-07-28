@@ -26,9 +26,8 @@
         <p-button
           class="w-full"
           [style]="{ width: '100%' }"
-          label="sign Up"
-          severity="info"
-          (onClick)="onClickSignUp()"
+          label="sign In"
+          (onClick)="onClickSignIn()"
           type="submit"
           [disabled]="form.invalid"
         ></p-button>
@@ -38,8 +37,9 @@
         <p-button
           class="w-full"
           [style]="{ width: '100%' }"
-          label="sign In"
-          (onClick)="onClickSignIn()"
+          label="sign Up"
+          severity="info"
+          (onClick)="onClickSignUp()"
           type="submit"
           [disabled]="form.invalid"
         ></p-button>

@@ -3,7 +3,7 @@ import { LayoutComponent } from './internal/shared/components/layout/layout/layo
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'auth',
     loadChildren: () => import('./auth/auth.routes').then((M) => M.AUTH_ROUTES),
   },
   {
@@ -14,6 +14,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'auth',
   },
 ];

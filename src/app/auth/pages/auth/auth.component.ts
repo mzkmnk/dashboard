@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ImageModule } from 'primeng/image';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
@@ -14,6 +14,7 @@ import {
 } from '@angular/forms';
 import { Button } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
+import { RouterSignalStore } from '../../../shared/store/router.signal-store';
 
 @Component({
   selector: 'app-auth',
@@ -34,6 +35,8 @@ import { DividerModule } from 'primeng/divider';
   styleUrl: './auth.component.css',
 })
 export class AuthComponent {
+  private readonly routerSignalStore = inject(RouterSignalStore);
+
   form = new FormGroup({
     email: new FormControl<string>('', [Validators.required, Validators.email]),
     password: new FormControl<string>('', [
@@ -48,6 +51,6 @@ export class AuthComponent {
   };
 
   onClickSignIn = (): void => {
-    console.log(this.form.getRawValue());
+    this.routerSignalStore.navigate({ path: 'internal/home' });
   };
 }
