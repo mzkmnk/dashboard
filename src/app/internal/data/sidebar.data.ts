@@ -1,5 +1,7 @@
+export type SidebarLabelType = 'travelLog' | 'dashboard';
+
 export interface SidebarDataModel {
-  label: string;
+  label: SidebarLabelType;
   clicked: boolean;
 }
 

@@ -4,13 +4,14 @@ import {
   withDevtools,
   withRedux,
 } from '@angular-architects/ngrx-toolkit';
+import { SidebarLabelType } from '../../../data/sidebar.data';
 
 export interface SidebarSignalStoreModel {
   common: {
     isLoading: boolean;
   };
   project: {
-    label: string;
+    label: SidebarLabelType;
   };
 }
 
@@ -19,7 +20,7 @@ export const initialState: SidebarSignalStoreModel = {
     isLoading: false,
   },
   project: {
-    label: '',
+    label: 'travelLog',
   },
 };
 
@@ -29,7 +30,7 @@ export const sidebarSignalStore = signalStore(
   withState(initialState),
   withRedux({
     actions: {
-      onClickSidebar: payload<{ label: string }>(),
+      onClickSidebar: payload<{ label: SidebarLabelType }>(),
       onClickSidebarSuccess: payload(),
       onClickSidebarFailure: payload(),
     },

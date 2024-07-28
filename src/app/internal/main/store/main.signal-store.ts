@@ -6,9 +6,12 @@ import {
   withRedux,
 } from '@angular-architects/ngrx-toolkit';
 import { of, switchMap } from 'rxjs';
+import { SidebarLabelType } from '../../data/sidebar.data';
 
 export type ProjectSignalStoreModel = {
-  [key in Group]: Task[];
+  [key in SidebarLabelType]: {
+    [key in Group]: Task[];
+  };
 };
 
 export interface MainSignalStoreModel {
@@ -23,9 +26,16 @@ export const initialState: MainSignalStoreModel = {
     isLoading: false,
   },
   data: {
-    TODO: [],
-    PROGRESS: [],
-    COMPLETED: [],
+    dashboard: {
+      TODO: [],
+      PROGRESS: [],
+      COMPLETED: [],
+    },
+    travelLog: {
+      TODO: [],
+      PROGRESS: [],
+      COMPLETED: [],
+    },
   },
 };
 
@@ -46,11 +56,18 @@ export const MainSignalStore = signalStore(
         //ここでGroupTypeで分ける。
 
         const data: ProjectSignalStoreModel = {
-          TODO: [],
-          PROGRESS: [],
-          COMPLETED: [],
+          dashboard: {
+            TODO: [],
+            PROGRESS: [],
+            COMPLETED: [],
+          },
+          travelLog: {
+            TODO: [],
+            PROGRESS: [],
+            COMPLETED: [],
+          },
         };
-        response.map((dt) => data[dt.group].push(dt));
+        response.map((dt) => data[dt.sidebarLabel][dt.group].push(dt));
         patchState(signalState, { common: { isLoading: false }, data: data });
       });
     },

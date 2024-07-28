@@ -18,8 +18,7 @@ export class SidebarComponent {
   sidebarData: SidebarDataModel[] = sidebarData;
 
   constructor() {
-    //fixme labelはstringだが存在するlabelの型に変更する。
-    this.sidebarSignalStore.onClickSidebar({ label: 'travel log' });
+    this.sidebarSignalStore.onClickSidebar({ label: 'travelLog' });
   }
 
   /**

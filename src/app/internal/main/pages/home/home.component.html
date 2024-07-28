@@ -11,7 +11,7 @@
         <div class="flex flex-row align-items-center">
           <h3 class="mr-3">{{ item }}</h3>
           <div class="border-1 border-round-2xl px-3 font-semibold opacity-60">
-            {{ this.$tasks()[item].length }}
+            {{ this.$tasks()[$sidebarItem()][item].length }}
           </div>
         </div>
         <i class="pi pi-plus text-xl opacity-80 cursor-pointer"></i>
@@ -24,7 +24,7 @@
         class="h-full border-round-md p-2"
         [style.background-color]="'var(--surface-100)'"
       >
-        @for (task of $tasks()[item]; let i = $index; track i) {
+        @for (task of $tasks()[$sidebarItem()][item]; let i = $index; track i) {
           <div
             class="border-400 border-1 bg-white border-round-xl px-1 h-14rem p-1 mb-2"
           >

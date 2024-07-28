@@ -13,6 +13,7 @@ import { MenubarModule } from 'primeng/menubar';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { TagModule } from 'primeng/tag';
 import { ProgressBarModule } from 'primeng/progressbar';
+import { SidebarLabelType } from '../../../data/sidebar.data';
 
 @Component({
   selector: 'app-home',
@@ -34,7 +35,8 @@ export class HomeComponent {
   private readonly sidebarSignalStore = inject(sidebarSignalStore);
   private readonly mainSignalStore = inject(MainSignalStore);
 
-  $sidebarItem: Signal<string> = this.sidebarSignalStore.project.label;
+  $sidebarItem: Signal<SidebarLabelType> =
+    this.sidebarSignalStore.project.label;
   $tasks: Signal<ProjectSignalStoreModel> = this.mainSignalStore.data;
 
   groups: Group[] = ['TODO', 'PROGRESS', 'COMPLETED'];
