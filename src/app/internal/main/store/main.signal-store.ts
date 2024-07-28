@@ -51,7 +51,7 @@ export const MainSignalStore = signalStore(
       taskDataUpdate: payload<{
         sidebarLabel: SidebarLabelType;
         group: Group;
-        index: number;
+        idx: number;
         progress: string;
       }>(),
       taskDataUpdateSuccess: payload(),
@@ -80,18 +80,21 @@ export const MainSignalStore = signalStore(
       });
       on(
         actions.taskDataUpdate,
-        (signalStore, { sidebarLabel, group, index, progress }): void => {
+        (signalStore, { sidebarLabel, group, idx, progress }): void => {
           patchState(signalStore, (signalState): MainSignalStoreModel => {
-            const task: Task = signalState.data[sidebarLabel][group][index];
-            // todo これって実は参照渡し??
-            task.progress = progress;
+            const tasks: Task[] = signalState.data[sidebarLabel][group];
+            tasks.map((data: Task, index: number): void => {
+              if (index === idx) {
+                data.progress = progress;
+              }
+            });
             return {
               ...signalState,
               data: {
                 ...signalState.data,
                 [sidebarLabel]: {
                   ...signalState.data[sidebarLabel],
-                  [group]: [...signalState.data[sidebarLabel][group]],
+                  [group]: tasks,
                 },
               },
             };

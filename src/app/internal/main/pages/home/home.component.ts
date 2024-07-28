@@ -94,7 +94,7 @@ export class HomeComponent {
     this.mainSignalStore.taskDataUpdate({
       sidebarLabel: this.$sidebarItem(),
       group: group,
-      index: index,
+      idx: index,
       progress: newProgress.toString(),
     });
   };

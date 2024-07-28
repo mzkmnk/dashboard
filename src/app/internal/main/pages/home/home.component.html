@@ -1,17 +1,25 @@
 <div class="flex flex-row align-items-center justify-content-between">
   <h1>{{ $sidebarItem() }}</h1>
-  <p-avatarGroup>
-    <p-avatar
-      image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-      size="large"
-      shape="circle"
-    />
-    <p-avatar image="assets/img/icon1.png" size="large" shape="circle" />
-    <p-avatar image="assets/img/icon2.jpg" size="large" shape="circle" />
-    <p-avatar label="M" shape="circle" size="large"></p-avatar>
-    <p-avatar label="N" shape="circle" size="large"></p-avatar>
-    <p-avatar label="K" shape="circle" size="large"></p-avatar>
-  </p-avatarGroup>
+  <div class="flex flex-row align-items-center mr-3">
+    <p-avatarGroup class="mr-3">
+      <p-avatar
+        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+        size="large"
+        shape="circle"
+      />
+      <p-avatar image="assets/img/icon1.png" size="large" shape="circle" />
+      <p-avatar image="assets/img/icon2.jpg" size="large" shape="circle" />
+      <p-avatar label="M" shape="circle" size="large"></p-avatar>
+      <p-avatar label="N" shape="circle" size="large"></p-avatar>
+      <p-avatar label="K" shape="circle" size="large"></p-avatar>
+    </p-avatarGroup>
+    <p-button
+      label="invite"
+      icon="pi pi-plus"
+      [rounded]="true"
+      severity="info"
+    ></p-button>
+  </div>
 </div>
 
 <div class="dashboard h-screen">
@@ -55,30 +63,32 @@
             ></p-tag>
             <h3>{{ task.title }}</h3>
             <p class="opacity-60">{{ task.description }}</p>
-            <div>
-              <div
-                class="flex flex-row justify-content-between align-items-center"
-              >
-                <p class="font-semibold text-color-secondary">progress</p>
-                <p class="font-semibold text-color-secondary">
-                  {{ task.progress }}/100
-                </p>
+            @if (item !== "TODO") {
+              <div class="mb-2">
+                <div
+                  class="flex flex-row justify-content-between align-items-center"
+                >
+                  <p class="font-semibold text-color-secondary">progress</p>
+                  <p class="font-semibold text-color-secondary">
+                    {{ task.progress }}/100
+                  </p>
+                </div>
+                <p-progressBar
+                  [value]="task.progress"
+                  [color]="
+                    task.progress !== '100'
+                      ? statusStyle[item].mainColor
+                      : 'var(--green-400)'
+                  "
+                  [style]="{
+                    height: '0.5rem',
+                  }"
+                  (click)="onClickUpdateProgressBar($event, item, i)"
+                >
+                  <ng-template pTemplate="content" let-value> </ng-template>
+                </p-progressBar>
               </div>
-              <p-progressBar
-                [value]="task.progress"
-                [color]="
-                  task.progress !== '100'
-                    ? statusStyle[item].mainColor
-                    : 'var(--green-400)'
-                "
-                [style]="{
-                  height: '0.5rem',
-                }"
-                (click)="onClickUpdateProgressBar($event, item, i)"
-              >
-                <ng-template pTemplate="content" let-value> </ng-template>
-              </p-progressBar>
-            </div>
+            }
             <p-avatarGroup>
               <p-avatar
                 [style]="{ width: '2.5rem', height: '2.5rem' }"
