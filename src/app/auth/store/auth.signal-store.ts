@@ -15,13 +15,17 @@ export interface SignInRequest {
   password: string;
 }
 
-export interface SignUpResponse {
+export interface SignInResponse {
   code: string;
 }
 
 export interface SignUpRequest {
   username: string;
   password: string;
+}
+
+export interface SignUpResponse {
+  code: string;
 }
 
 export interface AuthSignalStoreModel {
@@ -72,7 +76,20 @@ export const AuthSignalStore = signalStore(
       const authAPI = inject(AuthAPI);
       const routerSignalStore = inject(RouterSignalStore);
       return {
-        signIn$: create(actions.signInRequest).pipe(),
+        signIn$: create(actions.signInRequest).pipe(
+          switchMap(({ request }) => {
+            return authAPI.signIn(request).pipe(
+              tapResponse({
+                next: (response): void => {
+                  routerSignalStore.navigate({ path: 'internal/home' });
+                },
+                error: (error): void => {
+                  console.log(error);
+                },
+              }),
+            );
+          }),
+        ),
 
         signUp$: create(actions.signUpRequest).pipe(
           switchMap(({ request }) => {
