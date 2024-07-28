@@ -25,16 +25,16 @@ jobs:
         run: npm run build
 
       - name: create 404.html
-        run: touch ./dist/myapp/browser/404.html
+        run: touch dist/dashboard/browser/404.html
 
       - name: copy index.html to 404.html
-        run: cp ./dist/myapp/browser/index.html ./dist/myapp/browser/404.html
+        run: cp dist/dashboard/browser/index.html dist/dashboard/browser/404.html
 
       - name: Create Page Artifact
         uses: actions/upload-pages-artifact@v2
         with:
           name: github-pages
-          path: ./dist/myapp/browser
+          path: dist/dashboard/browser
 
   deploy:
     needs: build
