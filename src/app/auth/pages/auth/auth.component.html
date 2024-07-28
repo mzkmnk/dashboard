@@ -30,6 +30,7 @@
           (onClick)="onClickSignIn()"
           type="submit"
           [disabled]="form.invalid"
+          [loading]="$signInIsLoading()"
         ></p-button>
         <p-divider align="center" class="w-full">
           <b>or</b>

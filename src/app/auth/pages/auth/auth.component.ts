@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Signal } from '@angular/core';
 import { ImageModule } from 'primeng/image';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
@@ -15,6 +15,7 @@ import {
 import { Button } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
 import { RouterSignalStore } from '../../../shared/store/router.signal-store';
+import { AuthSignalStore } from '../../store/auth.signal-store';
 
 @Component({
   selector: 'app-auth',
@@ -33,9 +34,12 @@ import { RouterSignalStore } from '../../../shared/store/router.signal-store';
   ],
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.css',
+  providers: [AuthSignalStore],
 })
 export class AuthComponent {
   private readonly routerSignalStore = inject(RouterSignalStore);
+  private readonly authSignalStore = inject(AuthSignalStore);
+  $signInIsLoading: Signal<boolean> = this.authSignalStore.signIn.isLoading;
 
   form = new FormGroup({
     email: new FormControl<string>('', [Validators.required, Validators.email]),
@@ -51,6 +55,12 @@ export class AuthComponent {
   };
 
   onClickSignIn = (): void => {
-    this.routerSignalStore.navigate({ path: 'internal/home' });
+    const formData = this.form.getRawValue();
+    if (formData.email && formData.password) {
+      this.authSignalStore.signInRequest({
+        request: { email: formData.email, password: formData.password },
+      });
+    }
+    // this.routerSignalStore.navigate({ path: 'internal/home' });
   };
 }
