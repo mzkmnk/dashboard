@@ -3,6 +3,10 @@ import { LayoutComponent } from './internal/shared/components/layout/layout/layo
 
 export const routes: Routes = [
   {
+    path: '',
+    loadChildren: () => import('./auth/auth.routes').then((M) => M.AUTH_ROUTES),
+  },
+  {
     path: 'internal',
     loadChildren: () =>
       import('./internal/internal.routes').then((M) => M.INTERNAL_ROUTES),
@@ -10,6 +14,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'internal',
+    redirectTo: '',
   },
 ];
