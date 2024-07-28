@@ -14,6 +14,8 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
 import { TagModule } from 'primeng/tag';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { SidebarLabelType } from '../../../data/sidebar.data';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +28,8 @@ import { SidebarLabelType } from '../../../data/sidebar.data';
     TieredMenuModule,
     TagModule,
     ProgressBarModule,
+    AvatarModule,
+    AvatarGroupModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
