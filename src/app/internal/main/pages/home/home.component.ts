@@ -80,4 +80,22 @@ export class HomeComponent {
       },
     ];
   }
+
+  onClickUpdateProgressBar = (
+    event: any,
+    group: Group,
+    index: number,
+  ): void => {
+    const htmlProgressBar = event.currentTarget;
+    const rect = htmlProgressBar.getBoundingClientRect();
+    const clickX: number = event.clientX - rect.left;
+    const width = rect.width;
+    const newProgress: number = Math.round((clickX / width) * 100);
+    this.mainSignalStore.taskDataUpdate({
+      sidebarLabel: this.$sidebarItem(),
+      group: group,
+      index: index,
+      progress: newProgress.toString(),
+    });
+  };
 }

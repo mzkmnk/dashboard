@@ -3,22 +3,11 @@
   <p-avatarGroup>
     <p-avatar
       image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-      styleClass="mr-2"
       size="large"
       shape="circle"
     />
-    <p-avatar
-      image="assets/img/icon1.png"
-      styleClass="mr-2"
-      size="large"
-      shape="circle"
-    />
-    <p-avatar
-      image="assets/img/icon2.jpg"
-      styleClass="mr-2"
-      size="large"
-      shape="circle"
-    />
+    <p-avatar image="assets/img/icon1.png" size="large" shape="circle" />
+    <p-avatar image="assets/img/icon2.jpg" size="large" shape="circle" />
     <p-avatar label="M" shape="circle" size="large"></p-avatar>
     <p-avatar label="N" shape="circle" size="large"></p-avatar>
     <p-avatar label="K" shape="circle" size="large"></p-avatar>
@@ -49,7 +38,7 @@
       >
         @for (task of $tasks()[$sidebarItem()][item]; let i = $index; track i) {
           <div
-            class="border-400 border-1 bg-white border-round-xl px-1 h-14rem p-1 mb-2"
+            class="border-400 border-1 bg-white border-round-xl px-1 h-auto p-1 mb-2"
           >
             <p-tag
               styleClass="font-semibold"
@@ -85,10 +74,23 @@
                 [style]="{
                   height: '0.5rem',
                 }"
+                (click)="onClickUpdateProgressBar($event, item, i)"
               >
                 <ng-template pTemplate="content" let-value> </ng-template>
               </p-progressBar>
             </div>
+            <p-avatarGroup>
+              <p-avatar
+                [style]="{ width: '2.5rem', height: '2.5rem' }"
+                image="assets/img/icon1.png"
+                shape="circle"
+              />
+              <p-avatar
+                [style]="{ width: '2.5rem', height: '2.5rem' }"
+                image="assets/img/icon2.jpg"
+                shape="circle"
+              />
+            </p-avatarGroup>
           </div>
         }
       </div>

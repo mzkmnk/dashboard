@@ -47,14 +47,22 @@ export const MainSignalStore = signalStore(
       taskDataLoad: payload(),
       taskDataLoadSuccess: payload<{ response: Task[] }>(),
       taskDataLoadFailure: payload(),
+
+      taskDataUpdate: payload<{
+        sidebarLabel: SidebarLabelType;
+        group: Group;
+        index: number;
+        progress: string;
+      }>(),
+      taskDataUpdateSuccess: payload(),
+      taskDataUpdateFailure: payload(),
     },
     reducer(actions, on) {
-      on(actions.taskDataLoad, (signalState) =>
-        patchState(signalState, { common: { isLoading: true } }),
+      on(actions.taskDataLoad, (signalStore) =>
+        patchState(signalStore, { common: { isLoading: true } }),
       );
-      on(actions.taskDataLoadSuccess, (signalState, { response }) => {
+      on(actions.taskDataLoadSuccess, (signalStore, { response }) => {
         //ここでGroupTypeで分ける。
-
         const data: ProjectSignalStoreModel = {
           dashboard: {
             TODO: [],
@@ -68,8 +76,28 @@ export const MainSignalStore = signalStore(
           },
         };
         response.map((dt) => data[dt.sidebarLabel][dt.group].push(dt));
-        patchState(signalState, { common: { isLoading: false }, data: data });
+        patchState(signalStore, { common: { isLoading: false }, data: data });
       });
+      on(
+        actions.taskDataUpdate,
+        (signalStore, { sidebarLabel, group, index, progress }): void => {
+          patchState(signalStore, (signalState): MainSignalStoreModel => {
+            const task: Task = signalState.data[sidebarLabel][group][index];
+            // todo これって実は参照渡し??
+            task.progress = progress;
+            return {
+              ...signalState,
+              data: {
+                ...signalState.data,
+                [sidebarLabel]: {
+                  ...signalState.data[sidebarLabel],
+                  [group]: [...signalState.data[sidebarLabel][group]],
+                },
+              },
+            };
+          });
+        },
+      );
     },
     effects(actions, create) {
       return {
