@@ -1,108 +1,117 @@
-<div class="flex flex-row align-items-center justify-content-between">
-  <h1>{{ $sidebarItem() }}</h1>
-  <div class="flex flex-row align-items-center mr-3">
-    <p-avatarGroup class="mr-3">
-      <p-avatar image="assets/img/icon1.png" size="large" shape="circle" />
-      <p-avatar image="assets/img/icon2.jpg" size="large" shape="circle" />
-      <p-avatar label="M" shape="circle" size="large"></p-avatar>
-      <p-avatar label="N" shape="circle" size="large"></p-avatar>
-      <p-avatar label="K" shape="circle" size="large"></p-avatar>
-    </p-avatarGroup>
-    <p-button
-      label="invite"
-      icon="pi pi-plus"
-      [rounded]="true"
-      severity="info"
-    ></p-button>
+<div class="h-full">
+  <div class="flex flex-row align-items-center justify-content-between ml-3">
+    <h1>{{ $sidebarItem() }}</h1>
+    <div class="flex flex-row align-items-center mr-3">
+      <p-avatarGroup class="mr-3">
+        <p-avatar image="assets/img/icon1.png" size="large" shape="circle" />
+        <p-avatar image="assets/img/icon2.jpg" size="large" shape="circle" />
+        <p-avatar label="M" shape="circle" size="large"></p-avatar>
+        <p-avatar label="N" shape="circle" size="large"></p-avatar>
+        <p-avatar label="K" shape="circle" size="large"></p-avatar>
+      </p-avatarGroup>
+      <p-button
+        label="invite"
+        icon="pi pi-plus"
+        [rounded]="true"
+        severity="info"
+      ></p-button>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    @for (item of groups; let i = $index; track i) {
+      <div>
+        <div
+          class="mx-2 flex flex-row align-items-center justify-content-between"
+        >
+          <div class="flex flex-row align-items-center">
+            <h3 class="mr-3">{{ item }}</h3>
+            <div
+              class="border-1 border-round-2xl px-3 font-semibold opacity-60"
+            >
+              {{ this.$tasks()[$sidebarItem()][item].length }}
+            </div>
+          </div>
+          <i class="pi pi-plus text-xl opacity-80 cursor-pointer"></i>
+        </div>
+        <div
+          class="custom-divider"
+          [style.border-color]="statusStyle[item].mainColor"
+        ></div>
+        <div
+          class="border-round-md p-2 my-2"
+          [style.background-color]="'var(--surface-100)'"
+        >
+          @for (
+            task of $tasks()[$sidebarItem()][item];
+            let i = $index;
+            track i
+          ) {
+            <div
+              class="border-400 border-1 bg-white border-round-xl px-1 h-auto p-1 mb-2"
+              (click)="onClickTask(task)"
+            >
+              <p-tag
+                styleClass="font-semibold"
+                [style]="{
+                  background:
+                    'linear-gradient(to right,' +
+                    statusStyle[item].leftColor +
+                    ',' +
+                    statusStyle[item].rightColor,
+                  color: 'black',
+                }"
+                [rounded]="true"
+                [value]="task.status"
+              ></p-tag>
+              <h3>{{ task.title }}</h3>
+              <p class="opacity-60">{{ task.description }}</p>
+              @if (item !== "TODO") {
+                <div class="mb-2">
+                  <div
+                    class="flex flex-row justify-content-between align-items-center"
+                  >
+                    <p class="font-semibold text-color-secondary">progress</p>
+                    <p class="font-semibold text-color-secondary">
+                      {{ task.progress }}/100
+                    </p>
+                  </div>
+                  <p-progressBar
+                    [value]="task.progress"
+                    [color]="
+                      task.progress !== '100'
+                        ? statusStyle[item].mainColor
+                        : 'var(--green-400)'
+                    "
+                    [style]="{
+                      height: '0.5rem',
+                    }"
+                    (click)="onClickUpdateProgressBar($event, item, i)"
+                  >
+                    <ng-template pTemplate="content" let-value> </ng-template>
+                  </p-progressBar>
+                </div>
+              }
+              <p-avatarGroup>
+                <p-avatar
+                  [style]="{ width: '2.5rem', height: '2.5rem' }"
+                  image="assets/img/icon1.png"
+                  shape="circle"
+                />
+                <p-avatar
+                  [style]="{ width: '2.5rem', height: '2.5rem' }"
+                  image="assets/img/icon2.jpg"
+                  shape="circle"
+                />
+              </p-avatarGroup>
+            </div>
+          }
+        </div>
+      </div>
+    }
   </div>
 </div>
 
-<div class="dashboard h-screen">
-  @for (item of groups; let i = $index; track i) {
-    <div class="h-full">
-      <div
-        class="mx-2 flex flex-row align-items-center justify-content-between"
-      >
-        <div class="flex flex-row align-items-center">
-          <h3 class="mr-3">{{ item }}</h3>
-          <div class="border-1 border-round-2xl px-3 font-semibold opacity-60">
-            {{ this.$tasks()[$sidebarItem()][item].length }}
-          </div>
-        </div>
-        <i class="pi pi-plus text-xl opacity-80 cursor-pointer"></i>
-      </div>
-      <div
-        class="custom-divider"
-        [style.border-color]="statusStyle[item].mainColor"
-      ></div>
-      <div
-        class="h-full border-round-md p-2"
-        [style.background-color]="'var(--surface-100)'"
-      >
-        @for (task of $tasks()[$sidebarItem()][item]; let i = $index; track i) {
-          <div
-            class="border-400 border-1 bg-white border-round-xl px-1 h-auto p-1 mb-2"
-            (click)="onClickTask(task)"
-          >
-            <p-tag
-              styleClass="font-semibold"
-              [style]="{
-                background:
-                  'linear-gradient(to right,' +
-                  statusStyle[item].leftColor +
-                  ',' +
-                  statusStyle[item].rightColor,
-                color: 'black',
-              }"
-              [rounded]="true"
-              [value]="task.status"
-            ></p-tag>
-            <h3>{{ task.title }}</h3>
-            <p class="opacity-60">{{ task.description }}</p>
-            @if (item !== "TODO") {
-              <div class="mb-2">
-                <div
-                  class="flex flex-row justify-content-between align-items-center"
-                >
-                  <p class="font-semibold text-color-secondary">progress</p>
-                  <p class="font-semibold text-color-secondary">
-                    {{ task.progress }}/100
-                  </p>
-                </div>
-                <p-progressBar
-                  [value]="task.progress"
-                  [color]="
-                    task.progress !== '100'
-                      ? statusStyle[item].mainColor
-                      : 'var(--green-400)'
-                  "
-                  [style]="{
-                    height: '0.5rem',
-                  }"
-                  (click)="onClickUpdateProgressBar($event, item, i)"
-                >
-                  <ng-template pTemplate="content" let-value> </ng-template>
-                </p-progressBar>
-              </div>
-            }
-            <p-avatarGroup>
-              <p-avatar
-                [style]="{ width: '2.5rem', height: '2.5rem' }"
-                image="assets/img/icon1.png"
-                shape="circle"
-              />
-              <p-avatar
-                [style]="{ width: '2.5rem', height: '2.5rem' }"
-                image="assets/img/icon2.jpg"
-                shape="circle"
-              />
-            </p-avatarGroup>
-          </div>
-        }
-      </div>
-    </div>
-  }
-</div>
 <p-sidebar
   [(visible)]="sidebarTask.visible"
   position="right"
