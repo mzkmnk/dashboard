@@ -56,6 +56,10 @@ export const MainSignalStore = signalStore(
       }>(),
       taskDataUpdateSuccess: payload(),
       taskDataUpdateFailure: payload(),
+
+      taskAdd: payload(),
+      taskAddSuccess: payload(),
+      taskAddFailure: payload(),
     },
     reducer(actions, on) {
       on(actions.taskDataLoad, (signalStore) =>
@@ -76,6 +80,7 @@ export const MainSignalStore = signalStore(
           },
         };
         response.map((dt) => data[dt.sidebarLabel][dt.group].push(dt));
+        //todo この辺でtimelineの日付の昇順したいなぁ
         patchState(signalStore, { common: { isLoading: false }, data: data });
       });
       on(

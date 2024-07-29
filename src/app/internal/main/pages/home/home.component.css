@@ -14,3 +14,7 @@
 :host ::ng-deep .custom-p-menubar.p-element.custom-p-menubar {
   background: white;
 }
+
+:host ::ng-deep .custom-p-sidebar .p-timeline-event-opposite {
+  display: none;
+}

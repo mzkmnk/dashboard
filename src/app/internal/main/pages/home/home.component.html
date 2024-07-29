@@ -2,11 +2,6 @@
   <h1>{{ $sidebarItem() }}</h1>
   <div class="flex flex-row align-items-center mr-3">
     <p-avatarGroup class="mr-3">
-      <p-avatar
-        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-        size="large"
-        shape="circle"
-      />
       <p-avatar image="assets/img/icon1.png" size="large" shape="circle" />
       <p-avatar image="assets/img/icon2.jpg" size="large" shape="circle" />
       <p-avatar label="M" shape="circle" size="large"></p-avatar>
@@ -47,6 +42,7 @@
         @for (task of $tasks()[$sidebarItem()][item]; let i = $index; track i) {
           <div
             class="border-400 border-1 bg-white border-round-xl px-1 h-auto p-1 mb-2"
+            (click)="onClickTask(task)"
           >
             <p-tag
               styleClass="font-semibold"
@@ -107,3 +103,52 @@
     </div>
   }
 </div>
+<p-sidebar
+  [(visible)]="sidebarTask.visible"
+  position="right"
+  styleClass="w-30rem"
+>
+  <div class="flex align-items-center justify-content-between w-full">
+    <h1>{{ sidebarTask.task?.title }}</h1>
+    <p-avatarGroup class="mr-3">
+      <p-avatar image="assets/img/icon1.png" size="large" shape="circle" />
+      <p-avatar image="assets/img/icon2.jpg" size="large" shape="circle" />
+      <p-avatar label="M" shape="circle" size="large"></p-avatar>
+    </p-avatarGroup>
+  </div>
+  <h4>{{ sidebarTask.task?.description }}</h4>
+  <p-divider></p-divider>
+  <!--  timeline-->
+  <div class="w-full flex justify-content-center align-items-start flex-column">
+    <div class="w-full flex justify-content-between align-items-center">
+      <h2>Timeline</h2>
+      <i class="pi pi-plus text-xl opacity-80 cursor-pointer"></i>
+    </div>
+    <p-timeline
+      class="w-full custom-p-sidebar"
+      [value]="sidebarTask.task?.timeline"
+    >
+      <ng-template pTemplate="marker" let-value>
+        <span
+          class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1"
+          [style]="{
+            'background-color':
+              value.status === 'done'
+                ? 'var(--green-600)'
+                : 'var(--surface-border)',
+          }"
+        >
+          <i class="pi pi-check-circle"></i>
+        </span>
+      </ng-template>
+      <ng-template pTemplate="content" let-event>
+        <div class="flex flex-row align-items-start justify-content-between">
+          <p class="font-semibold m-1">{{ event.comment }}</p>
+          <small class="m-2">{{
+            event.createdAt | date: "yyyy/MM/dd HH:mm"
+          }}</small>
+        </div>
+      </ng-template>
+    </p-timeline>
+  </div>
+</p-sidebar>

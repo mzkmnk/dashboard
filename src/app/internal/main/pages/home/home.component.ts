@@ -1,7 +1,7 @@
 import { Component, inject, Signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { sidebarSignalStore } from '../../../shared/store/sidebar/sidebar.signal-store';
-import { Group, StatusStyle } from '../../../data/task.data';
+import { Group, StatusStyle, Task } from '../../../data/task.data';
 import {
   MainSignalStore,
   ProjectSignalStoreModel,
@@ -16,6 +16,10 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { SidebarLabelType } from '../../../data/sidebar.data';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { SidebarModule } from 'primeng/sidebar';
+import { TimelineModule } from 'primeng/timeline';
+import { DatePipe } from '@angular/common';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-home',
@@ -30,6 +34,10 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     ProgressBarModule,
     AvatarModule,
     AvatarGroupModule,
+    SidebarModule,
+    TimelineModule,
+    DatePipe,
+    CardModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -42,6 +50,11 @@ export class HomeComponent {
   $sidebarItem: Signal<SidebarLabelType> =
     this.sidebarSignalStore.project.label;
   $tasks: Signal<ProjectSignalStoreModel> = this.mainSignalStore.data;
+
+  sidebarTask: { task: Task | undefined; visible: boolean } = {
+    task: undefined,
+    visible: false,
+  };
 
   groups: Group[] = ['TODO', 'PROGRESS', 'COMPLETED'];
 
@@ -81,11 +94,17 @@ export class HomeComponent {
     ];
   }
 
+  onClickTask = (task: Task): void => {
+    this.sidebarTask.visible = !this.sidebarTask.visible;
+    this.sidebarTask.task = task;
+  };
+
   onClickUpdateProgressBar = (
     event: any,
     group: Group,
     index: number,
   ): void => {
+    event.stopPropagation();
     const htmlProgressBar = event.currentTarget;
     const rect = htmlProgressBar.getBoundingClientRect();
     const clickX: number = event.clientX - rect.left;

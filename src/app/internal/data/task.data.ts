@@ -1,11 +1,21 @@
 import { SidebarLabelType } from './sidebar.data';
 
+export type TimelineStatus = 'done' | 'progress';
+
+export interface Timeline {
+  status: TimelineStatus;
+  comment: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
 export interface Task {
   title: string;
   description: string;
   status: Status;
   group: Group;
   sidebarLabel: SidebarLabelType;
+  timeline: Timeline[];
   progress: string;
   createdAt: string;
   updatedAt: string;
@@ -35,6 +45,7 @@ export const sampleTasks: Task[] = [
     status: 'status:todo',
     group: 'TODO',
     sidebarLabel: 'travelLog',
+    timeline: [],
     progress: '0',
     createdAt: '2024-07-20T09:00:00Z',
     updatedAt: '2024-07-21T14:30:00Z',
@@ -48,6 +59,7 @@ export const sampleTasks: Task[] = [
     group: 'TODO',
     sidebarLabel: 'travelLog',
     progress: '0',
+    timeline: [],
     createdAt: '2024-07-20T09:00:00Z',
     updatedAt: '2024-07-21T14:30:00Z',
     startedAt: '2024-07-20T10:00:00Z',
@@ -60,6 +72,20 @@ export const sampleTasks: Task[] = [
     group: 'PROGRESS',
     sidebarLabel: 'travelLog',
     progress: '60',
+    timeline: [
+      {
+        status: 'done',
+        comment: 'UIの最終確認',
+        createdAt: '2024-07-20T09:00:00Z',
+        updatedAt: '2024-07-20T09:00:00Z',
+      },
+      {
+        status: 'progress',
+        comment: 'UI作成中',
+        createdAt: '2024-07-20T10:00:00Z',
+        updatedAt: '2024-07-20T10:00:00Z',
+      },
+    ],
     createdAt: '2024-07-19T09:00:00Z',
     updatedAt: '2024-07-30T14:30:00Z',
     startedAt: '2024-07-20T10:00:00Z',
@@ -72,6 +98,7 @@ export const sampleTasks: Task[] = [
     group: 'COMPLETED',
     sidebarLabel: 'dashboard',
     progress: '100',
+    timeline: [],
     createdAt: '2024-07-19T09:00:00Z',
     updatedAt: '2024-07-30T14:30:00Z',
     startedAt: '2024-07-20T10:00:00Z',
