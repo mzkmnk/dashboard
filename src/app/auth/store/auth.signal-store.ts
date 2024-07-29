@@ -94,10 +94,10 @@ export const AuthSignalStore = signalStore(
           switchMap(({ request }) => {
             return authAPI.signIn(request).pipe(
               tapResponse({
-                next: (response): void => {
+                next: (): void => {
                   routerSignalStore.navigate({ path: 'internal/home' });
                 },
-                error: (error): void => {
+                error: (): void => {
                   actions.signInRequestFailure();
                 },
               }),
@@ -109,10 +109,10 @@ export const AuthSignalStore = signalStore(
           switchMap(({ request }) => {
             return authAPI.signUp(request).pipe(
               tapResponse({
-                next: (response): void => {
+                next: (): void => {
                   routerSignalStore.navigate({ path: 'internal/home' });
                 },
-                error: (error): void => {
+                error: (): void => {
                   actions.signUpRequestFailure();
                 },
               }),
