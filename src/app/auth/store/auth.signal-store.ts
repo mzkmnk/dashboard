@@ -66,10 +66,24 @@ export const AuthSignalStore = signalStore(
         }),
       );
 
+      on(actions.signInRequestFailure, (signalStore) =>
+        patchState(signalStore, (signalState) => ({
+          ...signalState,
+          signIn: { ...signalState.signIn, isLoading: false },
+        })),
+      );
+
       on(actions.signUpRequest, (signalStore, { request }) =>
         patchState(signalStore, {
           signUp: { ...request, isLoading: true },
         }),
+      );
+
+      on(actions.signUpRequestFailure, (signalStore) =>
+        patchState(signalStore, (signalState) => ({
+          ...signalState,
+          signUp: { ...signalState.signUp, isLoading: false },
+        })),
       );
     },
     effects(actions, create) {
@@ -84,7 +98,7 @@ export const AuthSignalStore = signalStore(
                   routerSignalStore.navigate({ path: 'internal/home' });
                 },
                 error: (error): void => {
-                  console.log(error);
+                  actions.signInRequestFailure();
                 },
               }),
             );
@@ -96,11 +110,10 @@ export const AuthSignalStore = signalStore(
             return authAPI.signUp(request).pipe(
               tapResponse({
                 next: (response): void => {
-                  console.log(response);
                   routerSignalStore.navigate({ path: 'internal/home' });
                 },
                 error: (error): void => {
-                  console.log(error);
+                  actions.signUpRequestFailure();
                 },
               }),
             );
