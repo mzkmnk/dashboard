@@ -66,19 +66,19 @@ export class HomeComponent {
     this.mainSignalStore.taskDataLoad();
     this.statusStyle = {
       TODO: {
-        mainColor: 'var(--indigo-200)',
+        mainColor: 'var(--indigo-400)',
         rightColor: 'var(--indigo-100)',
-        leftColor: 'var(--indigo-300)',
+        leftColor: 'var(--indigo-500)',
       },
       PROGRESS: {
-        mainColor: 'var(--teal-200)',
+        mainColor: 'var(--teal-400)',
         rightColor: 'var(--teal-100)',
-        leftColor: 'var(--teal-300)',
+        leftColor: 'var(--teal-500)',
       },
       COMPLETED: {
-        mainColor: 'var(--green-200)',
+        mainColor: 'var(--green-400)',
         rightColor: 'var(--green-100)',
-        leftColor: 'var(--green-300)',
+        leftColor: 'var(--green-500)',
       },
     };
     this.pItems = [
@@ -93,6 +93,10 @@ export class HomeComponent {
       },
     ];
   }
+
+  onClickAddTask = (group: Group): void => {
+    this.mainSignalStore.taskAdd({ sidebarLabel: this.$sidebarItem(), group });
+  };
 
   onClickTask = (task: Task): void => {
     this.sidebarTask.visible = !this.sidebarTask.visible;

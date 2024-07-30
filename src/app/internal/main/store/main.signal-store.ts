@@ -57,7 +57,7 @@ export const MainSignalStore = signalStore(
       taskDataUpdateSuccess: payload(),
       taskDataUpdateFailure: payload(),
 
-      taskAdd: payload(),
+      taskAdd: payload<{ group: Group; sidebarLabel: SidebarLabelType }>(),
       taskAddSuccess: payload(),
       taskAddFailure: payload(),
     },
@@ -65,6 +65,7 @@ export const MainSignalStore = signalStore(
       on(actions.taskDataLoad, (signalStore) =>
         patchState(signalStore, { common: { isLoading: true } }),
       );
+
       on(actions.taskDataLoadSuccess, (signalStore, { response }) => {
         //ここでGroupTypeで分ける。
         const data: ProjectSignalStoreModel = {
@@ -83,6 +84,7 @@ export const MainSignalStore = signalStore(
         //todo この辺でtimelineの日付の昇順したいなぁ
         patchState(signalStore, { common: { isLoading: false }, data: data });
       });
+
       on(
         actions.taskDataUpdate,
         (signalStore, { sidebarLabel, group, idx, progress }): void => {
@@ -105,6 +107,37 @@ export const MainSignalStore = signalStore(
             };
           });
         },
+      );
+
+      on(actions.taskAdd, (signalStore, { group, sidebarLabel }) =>
+        patchState(signalStore, (signalState): MainSignalStoreModel => {
+          // todo 変更
+          const tasks: Task[] = signalState.data[sidebarLabel][group];
+          tasks.unshift({
+            title: '',
+            description: '',
+            status: 'status:complete',
+            group: group,
+            timeline: [],
+            progress: '0',
+            sidebarLabel: sidebarLabel,
+            createdAt: '',
+            updatedAt: '',
+            startedAt: '',
+            endedAt: '',
+          });
+          console.log(tasks);
+          return {
+            ...signalState,
+            data: {
+              ...signalState.data,
+              [sidebarLabel]: {
+                ...signalState.data[sidebarLabel],
+                [group]: tasks,
+              },
+            },
+          };
+        }),
       );
     },
     effects(actions, create) {
