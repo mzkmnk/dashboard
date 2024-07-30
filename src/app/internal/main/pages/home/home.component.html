@@ -42,7 +42,7 @@
           [style.border-color]="statusStyle[item].mainColor"
         ></div>
         <div
-          class="border-round-md p-2 my-2"
+          class="border-round-xl p-2 my-2"
           [style.background-color]="'var(--surface-ground)'"
         >
           @for (
@@ -51,7 +51,7 @@
             track i
           ) {
             <div
-              class="border-400 border-1 bg-white border-round-xl px-1 h-auto p-1 mb-2"
+              class="border-300 border-1 bg-white border-round-2xl px-1 h-auto p-1 mb-2"
               (click)="onClickTask(task)"
             >
               <p-tag
@@ -112,6 +112,16 @@
         </div>
       </div>
     }
+    <!--    全体のタイムライン   -->
+    <div>
+      <div
+        class="mx-2 flex flex-row align-items-center justify-content-between"
+      >
+        <div class="flex flex-row align-items-center">
+          <h3 class="mr-3">SCHEDULE</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
