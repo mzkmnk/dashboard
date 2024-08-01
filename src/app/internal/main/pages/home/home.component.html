@@ -1,4 +1,4 @@
-<div class="h-full w-full">
+<div class="h-screen w-full">
   <div class="flex flex-row align-items-center justify-content-between ml-3">
     <h1>{{ $sidebarItem() }}</h1>
     <div class="flex flex-row align-items-center mr-3">
@@ -42,7 +42,7 @@
           [style.border-color]="statusStyle[item].mainColor"
         ></div>
         <div
-          class="border-round-xl p-2 my-2"
+          class="border-round-xl p-2"
           [style.background-color]="'var(--surface-ground)'"
         >
           @for (
@@ -51,7 +51,7 @@
             track i
           ) {
             <div
-              class="border-300 border-1 bg-white border-round-2xl px-1 h-auto p-1 mb-2"
+              class="border-300 border-1 bg-white border-round-2xl px-1 p-1 mb-2"
               (click)="onClickTask(task)"
             >
               <p-tag
