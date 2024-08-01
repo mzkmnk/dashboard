@@ -1,0 +1,13 @@
+:host ::ng-deep .custom-splitter .p-splitter {
+}
+
+:host ::ng-deep .custom-separator .p-splitter-gutter-handle {
+  height: 100%;
+}
+:host ::ng-deep .p-splitter-panel:first-child {
+  max-width: 17%;
+}
+
+:host ::ng-deep .p-splitter-panel:last-child {
+  max-width: 83%;
+}

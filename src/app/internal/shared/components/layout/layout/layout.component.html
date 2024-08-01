@@ -1,6 +1,16 @@
-<div class="flex h-screen overflow-hidden">
-  <app-sidebar class="w-2 border-right-1 border-100"></app-sidebar>
-  <main class="border-round-2xl bg-white mx-2 my-3 flex-grow-1 overflow-y-auto">
-    <router-outlet></router-outlet>
-  </main>
+<div class="h-screen">
+  <p-splitter
+    class="h-screen custom-separator custom-splitter"
+    [gutterSize]="1.5"
+    [panelSizes]="[17, 85]"
+  >
+    <ng-template pTemplate>
+      <app-sidebar class="w-full"></app-sidebar>
+    </ng-template>
+    <ng-template pTemplate>
+      <main class="mx-2">
+        <router-outlet></router-outlet>
+      </main>
+    </ng-template>
+  </p-splitter>
 </div>
