@@ -164,7 +164,9 @@ var InternalSignalStore = signalStore(
         });
       },
       error: () => EMPTY
-    }))),
+    }), tap(() => patchState(signalStore2, (signalState) => __spreadProps(__spreadValues({}, signalState), {
+      common: __spreadProps(__spreadValues({}, signalState.common), { isLoading: false })
+    }))))),
     /**
      * サイドバークリック時の変更
      */
@@ -1099,4 +1101,4 @@ export {
   TooltipModule,
   InternalSignalStore
 };
-//# sourceMappingURL=chunk-CCTN2TYQ.js.map
+//# sourceMappingURL=chunk-SXJXNIHA.js.map

@@ -4,7 +4,7 @@ import {
   InternalSignalStore,
   Tooltip,
   TooltipModule
-} from "./chunk-CCTN2TYQ.js";
+} from "./chunk-SXJXNIHA.js";
 import {
   ANIMATION_MODULE_TYPE,
   AUTO_STYLE,
@@ -3126,7 +3126,7 @@ var routes = [
   },
   {
     path: "internal",
-    loadChildren: () => import("./chunk-P7JA4BSY.js").then((M) => M.INTERNAL_ROUTES),
+    loadChildren: () => import("./chunk-AMKEC4OU.js").then((M) => M.INTERNAL_ROUTES),
     component: LayoutComponent
   },
   {

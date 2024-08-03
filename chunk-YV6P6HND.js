@@ -4,7 +4,7 @@ import {
   InternalSignalStore,
   Tooltip,
   TooltipModule
-} from "./chunk-CCTN2TYQ.js";
+} from "./chunk-SXJXNIHA.js";
 import {
   Divider,
   DividerModule,
@@ -6481,36 +6481,180 @@ var CardModule = class _CardModule {
   }], null, null);
 })();
 
+// node_modules/primeng/fesm2022/primeng-progressspinner.mjs
+var ProgressSpinner = class _ProgressSpinner {
+  /**
+   * Class of the element.
+   * @group Props
+   */
+  styleClass;
+  /**
+   * Inline style of the element.
+   * @group Props
+   */
+  style;
+  /**
+   * Width of the circle stroke.
+   * @group Props
+   */
+  strokeWidth = "2";
+  /**
+   * Color for the background of the circle.
+   * @group Props
+   */
+  fill = "none";
+  /**
+   * Duration of the rotate animation.
+   * @group Props
+   */
+  animationDuration = "2s";
+  /**
+   * Used to define a aria label attribute the current element.
+   * @group Props
+   */
+  ariaLabel;
+  static \u0275fac = function ProgressSpinner_Factory(t) {
+    return new (t || _ProgressSpinner)();
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _ProgressSpinner,
+    selectors: [["p-progressSpinner"]],
+    hostAttrs: [1, "p-element"],
+    inputs: {
+      styleClass: "styleClass",
+      style: "style",
+      strokeWidth: "strokeWidth",
+      fill: "fill",
+      animationDuration: "animationDuration",
+      ariaLabel: "ariaLabel"
+    },
+    decls: 3,
+    vars: 11,
+    consts: [["role", "progressbar", 1, "p-progress-spinner", 3, "ngStyle", "ngClass"], ["viewBox", "25 25 50 50", 1, "p-progress-spinner-svg"], ["cx", "50", "cy", "50", "r", "20", "stroke-miterlimit", "10", 1, "p-progress-spinner-circle"]],
+    template: function ProgressSpinner_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0);
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(1, "svg", 1);
+        \u0275\u0275element(2, "circle", 2);
+        \u0275\u0275elementEnd()();
+      }
+      if (rf & 2) {
+        \u0275\u0275property("ngStyle", ctx.style)("ngClass", ctx.styleClass);
+        \u0275\u0275attribute("aria-label", ctx.ariaLabel)("aria-busy", true)("data-pc-name", "progressspinner")("data-pc-section", "root");
+        \u0275\u0275advance();
+        \u0275\u0275styleProp("animation-duration", ctx.animationDuration);
+        \u0275\u0275attribute("data-pc-section", "root");
+        \u0275\u0275advance();
+        \u0275\u0275attribute("fill", ctx.fill)("stroke-width", ctx.strokeWidth);
+      }
+    },
+    dependencies: [NgClass, NgStyle],
+    styles: ['@layer primeng{.p-progress-spinner{position:relative;margin:0 auto;width:100px;height:100px;display:inline-block}.p-progress-spinner:before{content:"";display:block;padding-top:100%}.p-progress-spinner-svg{animation:p-progress-spinner-rotate 2s linear infinite;height:100%;transform-origin:center center;width:100%;position:absolute;inset:0;margin:auto}.p-progress-spinner-circle{stroke-dasharray:89,200;stroke-dashoffset:0;stroke:#d62d20;animation:p-progress-spinner-dash 1.5s ease-in-out infinite,p-progress-spinner-color 6s ease-in-out infinite;stroke-linecap:round}}@keyframes p-progress-spinner-rotate{to{transform:rotate(360deg)}}@keyframes p-progress-spinner-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:89,200;stroke-dashoffset:-35px}to{stroke-dasharray:89,200;stroke-dashoffset:-124px}}@keyframes p-progress-spinner-color{to,0%{stroke:#d62d20}40%{stroke:#0057e7}66%{stroke:#008744}80%,90%{stroke:#ffa700}}\n'],
+    encapsulation: 2,
+    changeDetection: 0
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ProgressSpinner, [{
+    type: Component,
+    args: [{
+      selector: "p-progressSpinner",
+      template: `
+        <div class="p-progress-spinner" [ngStyle]="style" [ngClass]="styleClass" role="progressbar" [attr.aria-label]="ariaLabel" [attr.aria-busy]="true" [attr.data-pc-name]="'progressspinner'" [attr.data-pc-section]="'root'">
+            <svg class="p-progress-spinner-svg" viewBox="25 25 50 50" [style.animation-duration]="animationDuration" [attr.data-pc-section]="'root'">
+                <circle class="p-progress-spinner-circle" cx="50" cy="50" r="20" [attr.fill]="fill" [attr.stroke-width]="strokeWidth" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    `,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      },
+      styles: ['@layer primeng{.p-progress-spinner{position:relative;margin:0 auto;width:100px;height:100px;display:inline-block}.p-progress-spinner:before{content:"";display:block;padding-top:100%}.p-progress-spinner-svg{animation:p-progress-spinner-rotate 2s linear infinite;height:100%;transform-origin:center center;width:100%;position:absolute;inset:0;margin:auto}.p-progress-spinner-circle{stroke-dasharray:89,200;stroke-dashoffset:0;stroke:#d62d20;animation:p-progress-spinner-dash 1.5s ease-in-out infinite,p-progress-spinner-color 6s ease-in-out infinite;stroke-linecap:round}}@keyframes p-progress-spinner-rotate{to{transform:rotate(360deg)}}@keyframes p-progress-spinner-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:89,200;stroke-dashoffset:-35px}to{stroke-dasharray:89,200;stroke-dashoffset:-124px}}@keyframes p-progress-spinner-color{to,0%{stroke:#d62d20}40%{stroke:#0057e7}66%{stroke:#008744}80%,90%{stroke:#ffa700}}\n']
+    }]
+  }], null, {
+    styleClass: [{
+      type: Input
+    }],
+    style: [{
+      type: Input
+    }],
+    strokeWidth: [{
+      type: Input
+    }],
+    fill: [{
+      type: Input
+    }],
+    animationDuration: [{
+      type: Input
+    }],
+    ariaLabel: [{
+      type: Input
+    }]
+  });
+})();
+var ProgressSpinnerModule = class _ProgressSpinnerModule {
+  static \u0275fac = function ProgressSpinnerModule_Factory(t) {
+    return new (t || _ProgressSpinnerModule)();
+  };
+  static \u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({
+    type: _ProgressSpinnerModule
+  });
+  static \u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({
+    imports: [CommonModule]
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ProgressSpinnerModule, [{
+    type: NgModule,
+    args: [{
+      imports: [CommonModule],
+      exports: [ProgressSpinner],
+      declarations: [ProgressSpinner]
+    }]
+  }], null, null);
+})();
+
 // src/app/internal/main/pages/home/home.component.ts
 var _c010 = (a0) => ({ background: a0, color: "black" });
 var _c17 = () => ({ width: "2.5rem", height: "2.5rem" });
 var _c25 = () => ({ height: "0.425rem" });
-function HomeComponent_For_14_For_11_Conditional_6_ng_template_7_Template(rf, ctx) {
+var _c35 = (a0) => ({ background: a0 });
+function HomeComponent_Conditional_12_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 10);
+    \u0275\u0275element(1, "p-progressSpinner");
+    \u0275\u0275elementEnd();
+  }
 }
-function HomeComponent_For_14_For_11_Conditional_6_Template(rf, ctx) {
+function HomeComponent_Conditional_13_For_2_For_11_Conditional_6_ng_template_7_Template(rf, ctx) {
+}
+function HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 26)(1, "div", 29)(2, "p", 30);
+    \u0275\u0275elementStart(0, "div", 27)(1, "div", 33)(2, "p", 34);
     \u0275\u0275text(3, "Progress");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "p", 30);
+    \u0275\u0275elementStart(4, "p", 34);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(6, "p-progressBar", 31);
-    \u0275\u0275listener("click", function HomeComponent_For_14_For_11_Conditional_6_Template_p_progressBar_click_6_listener($event) {
+    \u0275\u0275elementStart(6, "p-progressBar", 35);
+    \u0275\u0275listener("click", function HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template_p_progressBar_click_6_listener($event) {
       \u0275\u0275restoreView(_r6);
-      const \u0275$index_45_r7 = \u0275\u0275nextContext().$index;
+      const \u0275$index_51_r7 = \u0275\u0275nextContext().$index;
       const item_r2 = \u0275\u0275nextContext().$implicit;
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.onClickUpdateProgressBar($event, item_r2, \u0275$index_45_r7));
+      const ctx_r2 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r2.onClickUpdateProgressBar($event, item_r2, \u0275$index_51_r7));
     });
-    \u0275\u0275template(7, HomeComponent_For_14_For_11_Conditional_6_ng_template_7_Template, 0, 0, "ng-template", 32);
+    \u0275\u0275template(7, HomeComponent_Conditional_13_For_2_For_11_Conditional_6_ng_template_7_Template, 0, 0, "ng-template", 36);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
     const task_r5 = \u0275\u0275nextContext().$implicit;
     const item_r2 = \u0275\u0275nextContext().$implicit;
-    const ctx_r2 = \u0275\u0275nextContext();
+    const ctx_r2 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(5);
     \u0275\u0275textInterpolate1(" ", task_r5.progress, "/100 ");
     \u0275\u0275advance();
@@ -6518,70 +6662,97 @@ function HomeComponent_For_14_For_11_Conditional_6_Template(rf, ctx) {
     \u0275\u0275property("value", task_r5.progress)("color", task_r5.progress !== "100" ? ctx_r2.statusStyle[item_r2].mainColor : "var(--green-400)");
   }
 }
-function HomeComponent_For_14_For_11_Template(rf, ctx) {
+function HomeComponent_Conditional_13_For_2_For_11_For_14_Conditional_0_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "p-tag", 38);
+  }
+  if (rf & 2) {
+    const tag_r8 = \u0275\u0275nextContext().$implicit;
+    const ctx_r2 = \u0275\u0275nextContext(4);
+    \u0275\u0275styleMap(\u0275\u0275pureFunction1(3, _c35, ctx_r2.statusStyle[tag_r8].mainColor));
+    \u0275\u0275property("value", tag_r8);
+  }
+}
+function HomeComponent_Conditional_13_For_2_For_11_For_14_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275template(0, HomeComponent_Conditional_13_For_2_For_11_For_14_Conditional_0_Template, 1, 5, "p-tag", 37);
+  }
+  if (rf & 2) {
+    const tag_r8 = ctx.$implicit;
+    const item_r2 = \u0275\u0275nextContext(2).$implicit;
+    \u0275\u0275conditional(tag_r8 !== item_r2 ? 0 : -1);
+  }
+}
+function HomeComponent_Conditional_13_For_2_For_11_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 23);
-    \u0275\u0275listener("click", function HomeComponent_For_14_For_11_Template_div_click_0_listener() {
+    \u0275\u0275elementStart(0, "div", 24);
+    \u0275\u0275listener("click", function HomeComponent_Conditional_13_For_2_For_11_Template_div_click_0_listener() {
       const task_r5 = \u0275\u0275restoreView(_r4).$implicit;
-      const ctx_r2 = \u0275\u0275nextContext(2);
+      const ctx_r2 = \u0275\u0275nextContext(3);
       return \u0275\u0275resetView(ctx_r2.onClickTask(task_r5));
     });
-    \u0275\u0275element(1, "p-tag", 24);
+    \u0275\u0275element(1, "p-tag", 25);
     \u0275\u0275elementStart(2, "h3");
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "p", 25);
+    \u0275\u0275elementStart(4, "p", 26);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd();
-    \u0275\u0275template(6, HomeComponent_For_14_For_11_Conditional_6_Template, 8, 6, "div", 26);
-    \u0275\u0275elementStart(7, "p-avatarGroup");
-    \u0275\u0275element(8, "p-avatar", 27)(9, "p-avatar", 28);
-    \u0275\u0275elementEnd()();
+    \u0275\u0275template(6, HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template, 8, 6, "div", 27);
+    \u0275\u0275element(7, "p-divider");
+    \u0275\u0275elementStart(8, "div", 28)(9, "p-avatarGroup", 29);
+    \u0275\u0275element(10, "p-avatar", 30)(11, "p-avatar", 31);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(12, "div", 32);
+    \u0275\u0275repeaterCreate(13, HomeComponent_Conditional_13_For_2_For_11_For_14_Template, 1, 1, null, null, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
     const task_r5 = ctx.$implicit;
     const item_r2 = \u0275\u0275nextContext().$implicit;
-    const ctx_r2 = \u0275\u0275nextContext();
+    const ctx_r2 = \u0275\u0275nextContext(2);
     \u0275\u0275advance();
-    \u0275\u0275styleMap(\u0275\u0275pureFunction1(11, _c010, "linear-gradient(to right," + ctx_r2.statusStyle[item_r2].leftColor + "," + ctx_r2.statusStyle[item_r2].leftColor));
-    \u0275\u0275property("rounded", true)("value", task_r5.status);
+    \u0275\u0275styleMap(\u0275\u0275pureFunction1(10, _c010, "linear-gradient(to right," + ctx_r2.statusStyle[item_r2].leftColor + "," + ctx_r2.statusStyle[item_r2].leftColor));
+    \u0275\u0275property("value", task_r5.status);
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(task_r5.title);
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(task_r5.description);
     \u0275\u0275advance();
     \u0275\u0275conditional(item_r2 !== "todo" ? 6 : -1);
-    \u0275\u0275advance(2);
-    \u0275\u0275styleMap(\u0275\u0275pureFunction0(13, _c17));
+    \u0275\u0275advance(4);
+    \u0275\u0275styleMap(\u0275\u0275pureFunction0(12, _c17));
     \u0275\u0275advance();
-    \u0275\u0275styleMap(\u0275\u0275pureFunction0(14, _c17));
+    \u0275\u0275styleMap(\u0275\u0275pureFunction0(13, _c17));
+    \u0275\u0275advance(2);
+    \u0275\u0275repeater(ctx_r2.status);
   }
 }
-function HomeComponent_For_14_Template(rf, ctx) {
+function HomeComponent_Conditional_13_For_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div")(1, "div", 11)(2, "div", 12)(3, "h3", 3);
+    \u0275\u0275elementStart(0, "div")(1, "div", 17)(2, "div", 18)(3, "h3", 3);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "div", 18);
+    \u0275\u0275elementStart(5, "div", 19);
     \u0275\u0275text(6);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(7, "i", 19);
-    \u0275\u0275listener("click", function HomeComponent_For_14_Template_i_click_7_listener() {
+    \u0275\u0275elementStart(7, "i", 20);
+    \u0275\u0275listener("click", function HomeComponent_Conditional_13_For_2_Template_i_click_7_listener() {
       const item_r2 = \u0275\u0275restoreView(_r1).$implicit;
-      const ctx_r2 = \u0275\u0275nextContext();
+      const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.onClickAddTask(item_r2));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(8, "div", 20);
-    \u0275\u0275elementStart(9, "div", 21);
-    \u0275\u0275repeaterCreate(10, HomeComponent_For_14_For_11_Template, 10, 15, "div", 22, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275element(8, "div", 21);
+    \u0275\u0275elementStart(9, "div", 22);
+    \u0275\u0275repeaterCreate(10, HomeComponent_Conditional_13_For_2_For_11_Template, 15, 14, "div", 23, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
     const item_r2 = ctx.$implicit;
-    const ctx_r2 = \u0275\u0275nextContext();
+    const ctx_r2 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(4);
     \u0275\u0275textInterpolate(item_r2);
     \u0275\u0275advance(2);
@@ -6589,9 +6760,23 @@ function HomeComponent_For_14_Template(rf, ctx) {
     \u0275\u0275advance(2);
     \u0275\u0275styleProp("border-color", ctx_r2.statusStyle[item_r2].mainColor);
     \u0275\u0275advance();
-    \u0275\u0275styleProp("background-color", "var(--surface-ground)");
+    \u0275\u0275styleProp("background-color", "var(--surface-border)");
     \u0275\u0275advance();
     \u0275\u0275repeater(ctx_r2.$data()[ctx_r2.$sidebar()].tasks[item_r2]);
+  }
+}
+function HomeComponent_Conditional_13_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 11);
+    \u0275\u0275repeaterCreate(1, HomeComponent_Conditional_13_For_2_Template, 12, 6, "div", null, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275elementStart(3, "div")(4, "div", 17)(5, "div", 18)(6, "h3", 3);
+    \u0275\u0275text(7, "SCHEDULE");
+    \u0275\u0275elementEnd()()()()();
+  }
+  if (rf & 2) {
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275repeater(ctx_r2.status);
   }
 }
 var _HomeComponent = class _HomeComponent {
@@ -6599,11 +6784,12 @@ var _HomeComponent = class _HomeComponent {
     this.internalSignalStore = inject(InternalSignalStore);
     this.$sidebar = this.internalSignalStore.common.clickSidebar;
     this.$data = this.internalSignalStore.data;
+    this.$isLoading = this.internalSignalStore.common.isLoading;
     this.sidebarTask = {
       task: void 0,
       visible: false
     };
-    this.groups = ["todo", "progress", "completed"];
+    this.status = ["todo", "progress", "completed"];
     this.pItems = [];
     this.onClickAddTask = (status) => {
     };
@@ -6619,9 +6805,6 @@ var _HomeComponent = class _HomeComponent {
       const width = rect.width;
       const newProgress = Math.round(clickX / width * 100);
     };
-    effect(() => {
-      console.log(this.$data());
-    });
     this.statusStyle = {
       todo: {
         mainColor: "var(--indigo-400)",
@@ -6655,7 +6838,7 @@ var _HomeComponent = class _HomeComponent {
 _HomeComponent.\u0275fac = function HomeComponent_Factory(t) {
   return new (t || _HomeComponent)();
 };
-_HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _HomeComponent, selectors: [["app-home"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 36, vars: 5, consts: [[1, "flex", "flex-column", "main"], [1, "flex", "flex-row", "align-items-center", "justify-content-between", "ml-3"], [1, "flex", "flex-row", "align-items-center", "mr-3"], [1, "mr-3"], ["image", "assets/img/icon1.png", "size", "large", "shape", "circle"], ["image", "assets/img/icon2.jpg", "size", "large", "shape", "circle"], ["label", "M", "shape", "circle", "size", "large"], ["label", "N", "shape", "circle", "size", "large"], ["label", "K", "shape", "circle", "size", "large"], ["label", "invite", "icon", "pi pi-plus", "severity", "contrast", 3, "rounded"], [1, "dashboard", "h-full"], [1, "mx-2", "flex", "flex-row", "align-items-center", "justify-content-between"], [1, "flex", "flex-row", "align-items-center"], ["transitionOptions", "350ms cubic-bezier(0, 0, 0.2, 1)", "position", "right", "styleClass", "w-30rem border-round-3xl", 1, "custom-p-sidebar", 3, "visibleChange", "visible"], [1, "flex", "align-items-center", "justify-content-between", "w-full"], [1, "w-full", "flex", "justify-content-center", "align-items-start", "flex-column"], [1, "w-full", "flex", "justify-content-between", "align-items-center"], [1, "pi", "pi-plus", "text-xl", "opacity-80", "cursor-pointer"], [1, "border-round-2xl", "border-1", "px-3", "font-semibold", "opacity-60"], [1, "pi", "pi-plus", "text-xl", "opacity-80", "cursor-pointer", 3, "click"], [1, "custom-divider"], [1, "border-round-xl", "p-2", "overflow-y-scroll"], [1, "border-300", "bg-white", "border-round-2xl", "px-1", "p-1", "mb-2"], [1, "border-300", "bg-white", "border-round-2xl", "px-1", "p-1", "mb-2", 3, "click"], ["styleClass", "font-semibold text-white", 3, "rounded", "value"], [1, "opacity-60"], [1, "mb-2"], ["image", "assets/img/icon1.png", "shape", "circle"], ["image", "assets/img/icon2.jpg", "shape", "circle"], [1, "flex", "flex-row", "justify-content-between", "align-items-center"], [1, "font-semibold", "text-color-secondary"], [3, "click", "value", "color"], ["pTemplate", "content"]], template: function HomeComponent_Template(rf, ctx) {
+_HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _HomeComponent, selectors: [["app-home"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 30, vars: 6, consts: [[1, "flex", "flex-column", "main"], [1, "flex", "flex-row", "align-items-center", "justify-content-between", "ml-3"], [1, "flex", "flex-row", "align-items-center", "mr-3"], [1, "mr-3"], ["image", "assets/img/icon1.png", "size", "large", "shape", "circle"], ["image", "assets/img/icon2.jpg", "size", "large", "shape", "circle"], ["label", "M", "shape", "circle", "size", "large"], ["label", "N", "shape", "circle", "size", "large"], ["label", "K", "shape", "circle", "size", "large"], ["label", "invite", "icon", "pi pi-plus", "severity", "contrast", 3, "rounded"], [2, "display", "grid", "place-items", "center", "height", "calc(100vh - 2.5rem)"], [1, "dashboard", "h-full"], ["transitionOptions", "350ms cubic-bezier(0, 0, 0.2, 1)", "position", "right", "styleClass", "w-30rem border-round-3xl", 1, "custom-p-sidebar", 3, "visibleChange", "visible"], [1, "flex", "align-items-center", "justify-content-between", "w-full"], [1, "w-full", "flex", "justify-content-center", "align-items-start", "flex-column"], [1, "w-full", "flex", "justify-content-between", "align-items-center"], [1, "pi", "pi-plus", "text-xl", "opacity-80", "cursor-pointer"], [1, "mx-2", "flex", "flex-row", "align-items-center", "justify-content-between"], [1, "flex", "flex-row", "align-items-center"], [1, "border-round-2xl", "border-1", "px-3", "font-semibold", "opacity-60"], [1, "pi", "pi-plus", "text-xl", "opacity-80", "cursor-pointer", 3, "click"], [1, "custom-divider"], [1, "border-round-xl", "overflow-y-scroll"], [1, "border-300", "bg-white", "border-round-2xl", "p-2", "m-2"], [1, "border-300", "bg-white", "border-round-2xl", "p-2", "m-2", 3, "click"], ["styleClass", "font-semibold text-white", 3, "value"], [1, "opacity-60"], [1, "mb-2"], [1, "grid"], [1, "col-4", "m-0"], ["image", "assets/img/icon1.png", "shape", "circle"], ["image", "assets/img/icon2.jpg", "shape", "circle"], [1, "col-8", "flex", "align-items-center", "justify-content-end", "gap-2", "m-0"], [1, "flex", "flex-row", "justify-content-between", "align-items-center"], [1, "font-semibold", "text-color-secondary"], [3, "click", "value", "color"], ["pTemplate", "content"], [3, "value", "style"], [3, "value"]], template: function HomeComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "h1");
     \u0275\u0275text(3);
@@ -6665,30 +6848,27 @@ _HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _
     \u0275\u0275elementEnd();
     \u0275\u0275element(11, "p-button", 9);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(12, "div", 10);
-    \u0275\u0275repeaterCreate(13, HomeComponent_For_14_Template, 12, 6, "div", null, \u0275\u0275repeaterTrackByIndex);
-    \u0275\u0275elementStart(15, "div")(16, "div", 11)(17, "div", 12)(18, "h3", 3);
-    \u0275\u0275text(19, "SCHEDULE");
-    \u0275\u0275elementEnd()()()()()();
-    \u0275\u0275elementStart(20, "p-sidebar", 13);
-    \u0275\u0275twoWayListener("visibleChange", function HomeComponent_Template_p_sidebar_visibleChange_20_listener($event) {
+    \u0275\u0275template(12, HomeComponent_Conditional_12_Template, 2, 0, "div", 10)(13, HomeComponent_Conditional_13_Template, 8, 0, "div", 11);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(14, "p-sidebar", 12);
+    \u0275\u0275twoWayListener("visibleChange", function HomeComponent_Template_p_sidebar_visibleChange_14_listener($event) {
       \u0275\u0275twoWayBindingSet(ctx.sidebarTask.visible, $event) || (ctx.sidebarTask.visible = $event);
       return $event;
     });
-    \u0275\u0275elementStart(21, "div", 14)(22, "h1");
+    \u0275\u0275elementStart(15, "div", 13)(16, "h1");
+    \u0275\u0275text(17);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(18, "p-avatarGroup", 3);
+    \u0275\u0275element(19, "p-avatar", 4)(20, "p-avatar", 5)(21, "p-avatar", 6);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(22, "h4");
     \u0275\u0275text(23);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(24, "p-avatarGroup", 3);
-    \u0275\u0275element(25, "p-avatar", 4)(26, "p-avatar", 5)(27, "p-avatar", 6);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(28, "h4");
-    \u0275\u0275text(29);
+    \u0275\u0275element(24, "p-divider");
+    \u0275\u0275elementStart(25, "div", 14)(26, "div", 15)(27, "h2");
+    \u0275\u0275text(28, "Timeline");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(30, "p-divider");
-    \u0275\u0275elementStart(31, "div", 15)(32, "div", 16)(33, "h2");
-    \u0275\u0275text(34, "Timeline");
-    \u0275\u0275elementEnd();
-    \u0275\u0275element(35, "i", 17);
+    \u0275\u0275element(29, "i", 16);
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -6696,9 +6876,9 @@ _HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _
     \u0275\u0275textInterpolate(ctx.$sidebar());
     \u0275\u0275advance(8);
     \u0275\u0275property("rounded", true);
+    \u0275\u0275advance();
+    \u0275\u0275conditional(ctx.$isLoading() ? 12 : 13);
     \u0275\u0275advance(2);
-    \u0275\u0275repeater(ctx.groups);
-    \u0275\u0275advance(7);
     \u0275\u0275twoWayProperty("visible", ctx.sidebarTask.visible);
     \u0275\u0275advance(3);
     \u0275\u0275textInterpolate(ctx.sidebarTask.task == null ? null : ctx.sidebarTask.task.title);
@@ -6725,13 +6905,15 @@ _HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _
   SidebarModule,
   Sidebar,
   TimelineModule,
-  CardModule
-], styles: ["\n\n.dashboard[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 1rem;\n}\n.custom-divider[_ngcontent-%COMP%] {\n  border: 0.2rem solid var(--orange-200);\n  border-radius: 0.5rem;\n  margin-bottom: 1rem;\n}\n[_nghost-%COMP%]     .custom-p-sidebar .p-sidebar {\n  position: fixed;\n  top: 0;\n  right: 0;\n  height: calc(100vh - 2.5rem);\n  margin: 1.5rem;\n  overflow-y: auto;\n}\n[_nghost-%COMP%]     .custom-p-menubar.p-element.custom-p-menubar {\n  background: white;\n}\n[_nghost-%COMP%]     .custom-p-timeline .p-timeline-event-opposite {\n  display: none;\n}\n/*# sourceMappingURL=home.component.css.map */"] });
+  CardModule,
+  ProgressSpinnerModule,
+  ProgressSpinner
+], styles: ["\n\n.dashboard[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 1rem;\n}\n.custom-divider[_ngcontent-%COMP%] {\n  border: 0.1rem solid var(--orange-200);\n  border-radius: 0.5rem;\n  margin-bottom: 1rem;\n}\n[_nghost-%COMP%]     .custom-p-sidebar .p-sidebar {\n  position: fixed;\n  top: 0;\n  right: 0;\n  height: calc(100vh - 2.5rem);\n  margin: 1.5rem;\n  overflow-y: auto;\n}\n[_nghost-%COMP%]     .custom-p-menubar.p-element.custom-p-menubar {\n  background: white;\n}\n[_nghost-%COMP%]     .custom-p-timeline .p-timeline-event-opposite {\n  display: none;\n}\n/*# sourceMappingURL=home.component.css.map */"] });
 var HomeComponent = _HomeComponent;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(HomeComponent, { className: "HomeComponent", filePath: "src/app/internal/main/pages/home/home.component.ts", lineNumber: 44 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(HomeComponent, { className: "HomeComponent", filePath: "src/app/internal/main/pages/home/home.component.ts", lineNumber: 46 });
 })();
 export {
   HomeComponent
 };
-//# sourceMappingURL=chunk-YXO4JUZ7.js.map
+//# sourceMappingURL=chunk-YV6P6HND.js.map
