@@ -4,7 +4,7 @@ import {
   InternalSignalStore,
   Tooltip,
   TooltipModule
-} from "./chunk-557F67EZ.js";
+} from "./chunk-CCTN2TYQ.js";
 import {
   ANIMATION_MODULE_TYPE,
   AUTO_STYLE,
@@ -144,7 +144,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-RYMR263P.js";
+} from "./chunk-AJQNVX4I.js";
 import {
   __objRest,
   __spreadProps,
@@ -3122,11 +3122,11 @@ var LayoutComponent = _LayoutComponent;
 var routes = [
   {
     path: "auth",
-    loadChildren: () => import("./chunk-2BEOGNKZ.js").then((M) => M.AUTH_ROUTES)
+    loadChildren: () => import("./chunk-EM4WJNN5.js").then((M) => M.AUTH_ROUTES)
   },
   {
     path: "internal",
-    loadChildren: () => import("./chunk-O7SQEEJ3.js").then((M) => M.INTERNAL_ROUTES),
+    loadChildren: () => import("./chunk-P7JA4BSY.js").then((M) => M.INTERNAL_ROUTES),
     component: LayoutComponent
   },
   {

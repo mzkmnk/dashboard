@@ -21,6 +21,7 @@ import {
   ViewContainerRef,
   booleanAttribute,
   computed,
+  concatMap,
   environment,
   inject,
   isPlatformBrowser,
@@ -57,7 +58,7 @@ import {
   ɵɵlistener,
   ɵɵnamespaceSVG,
   ɵɵresolveDocument
-} from "./chunk-RYMR263P.js";
+} from "./chunk-AJQNVX4I.js";
 import {
   __spreadProps,
   __spreadValues
@@ -71,7 +72,7 @@ var _InternalAPI = class _InternalAPI {
       return this.http.post(`${environment.API.base}/internal/getSidebars`, {});
     };
     this.postGetTasks = (request) => {
-      console.log("ok");
+      console.log("postgetTaskAPI");
       return this.http.post(`${environment.API.base}/internal/getTasks`, request);
     };
   }
@@ -102,9 +103,7 @@ var InternalSignalStore = signalStore(
       const sidebars = [];
       console.log("data", data());
       for (const key of Object.keys(data())) {
-        console.log(key);
         const tasks = data()[key].tasks;
-        console.log("tasks", tasks);
         sidebars.push({
           name: key,
           cnt: tasks.todo.length + tasks.progress.length + tasks.completed.length
@@ -123,31 +122,48 @@ var InternalSignalStore = signalStore(
      */
     sidebarDataLoad: rxMethod(pipe(tap(() => patchState(signalStore2, {
       common: { isLoading: true, clickSidebar: "" }
-    })), switchMap(() => {
-      return internalAPI.postGetSidebars().pipe(tapResponse({
-        next: (response) => {
-          response.sidebarLabels.map((sidebar) => {
-            patchState(signalStore2, (signalState) => {
-              const clickSidebar = signalState.common.clickSidebar !== "" ? signalState.common.clickSidebar : sidebar.name;
-              return __spreadProps(__spreadValues({}, signalState), {
-                common: __spreadProps(__spreadValues({}, signalState.common), {
-                  clickSidebar
-                }),
-                data: __spreadProps(__spreadValues({}, signalState.data), {
-                  [sidebar.name]: {
-                    tasks: {
-                      todo: [],
-                      progress: [],
-                      completed: []
-                    }
+    })), switchMap(() => internalAPI.postGetSidebars()), tapResponse({
+      next: (response) => {
+        response.sidebarLabels.map((sidebar) => {
+          patchState(signalStore2, (signalState) => {
+            const clickSidebar = signalState.common.clickSidebar !== "" ? signalState.common.clickSidebar : sidebar.name;
+            return __spreadProps(__spreadValues({}, signalState), {
+              common: __spreadProps(__spreadValues({}, signalState.common), {
+                clickSidebar
+              }),
+              data: __spreadProps(__spreadValues({}, signalState.data), {
+                [sidebar.name]: {
+                  tasks: {
+                    todo: [],
+                    progress: [],
+                    completed: []
                   }
-                })
-              });
+                }
+              })
             });
           });
-        },
-        error: () => EMPTY
-      }));
+        });
+      },
+      error: () => EMPTY
+    }), concatMap(() => signalStore2.selectSidebars()), concatMap((sidebar) => internalAPI.postGetTasks({ sidebarLabel: sidebar.name })), tapResponse({
+      next: (response) => {
+        response.tasks.map((task) => {
+          patchState(signalStore2, (signalState) => {
+            const tasks = signalState.data[task.sidebar]["tasks"][task.status];
+            tasks.push(task);
+            return __spreadProps(__spreadValues({}, signalState), {
+              data: __spreadProps(__spreadValues({}, signalState.data), {
+                [task.sidebar]: __spreadProps(__spreadValues({}, signalState.data[task.sidebar]), {
+                  tasks: __spreadProps(__spreadValues({}, signalState.data[task.sidebar].tasks), {
+                    [task.status]: tasks
+                  })
+                })
+              })
+            });
+          });
+        });
+      },
+      error: () => EMPTY
     }))),
     /**
      * サイドバークリック時の変更
@@ -1083,4 +1099,4 @@ export {
   TooltipModule,
   InternalSignalStore
 };
-//# sourceMappingURL=chunk-557F67EZ.js.map
+//# sourceMappingURL=chunk-CCTN2TYQ.js.map
