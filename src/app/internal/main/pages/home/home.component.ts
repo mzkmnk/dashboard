@@ -1,4 +1,4 @@
-import { Component, effect, inject, Signal } from '@angular/core';
+import { Component, inject, Signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { Status, StatusStyle } from '../../../data/task.data';
 import { BadgeModule } from 'primeng/badge';
@@ -19,6 +19,7 @@ import {
   ProjectSignalStoreModel,
 } from '../../../../shared/store/internal.signal-store';
 import { Task } from '../../../../api/internal/internal.api';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @Component({
   selector: 'app-home',
@@ -37,6 +38,7 @@ import { Task } from '../../../../api/internal/internal.api';
     TimelineModule,
     DatePipe,
     CardModule,
+    ProgressSpinnerModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -44,24 +46,22 @@ import { Task } from '../../../../api/internal/internal.api';
 export class HomeComponent {
   private readonly internalSignalStore = inject(InternalSignalStore);
 
-  $sidebar = this.internalSignalStore.common.clickSidebar;
+  $sidebar: Signal<string> = this.internalSignalStore.common.clickSidebar;
   $data: Signal<ProjectSignalStoreModel> = this.internalSignalStore.data;
+  $isLoading: Signal<boolean> = this.internalSignalStore.common.isLoading;
 
   sidebarTask: { task: Task | undefined; visible: boolean } = {
     task: undefined,
     visible: false,
   };
 
-  groups: Status[] = ['todo', 'progress', 'completed'];
+  status: Status[] = ['todo', 'progress', 'completed'];
 
   pItems: MenuItem[] = [];
 
   statusStyle: StatusStyle;
 
   constructor() {
-    effect(() => {
-      console.log(this.$data());
-    });
     this.statusStyle = {
       todo: {
         mainColor: 'var(--indigo-400)',

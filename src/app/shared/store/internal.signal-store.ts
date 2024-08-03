@@ -145,6 +145,12 @@ export const InternalSignalStore = signalStore(
           },
           error: () => EMPTY,
         }),
+        tap(() =>
+          patchState(signalStore, (signalState) => ({
+            ...signalState,
+            common: { ...signalState.common, isLoading: false },
+          })),
+        ),
       ),
     ),
     /**
