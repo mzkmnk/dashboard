@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build -- --configuration=dev
+        run: npm run build
 
       - name: create 404.html
         run: touch dist/dashboard/browser/404.html
