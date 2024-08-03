@@ -1,11 +1,6 @@
 import { Component, inject, Signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { sidebarSignalStore } from '../../../shared/store/sidebar/sidebar.signal-store';
-import { Group, StatusStyle, Task } from '../../../data/task.data';
-import {
-  MainSignalStore,
-  ProjectSignalStoreModel,
-} from '../../store/main.signal-store';
+import { Status, StatusStyle, Task } from '../../../data/task.data';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
 import { MenuItem } from 'primeng/api';
@@ -20,6 +15,10 @@ import { SidebarModule } from 'primeng/sidebar';
 import { TimelineModule } from 'primeng/timeline';
 import { DatePipe } from '@angular/common';
 import { CardModule } from 'primeng/card';
+import {
+  InternalSignalStore,
+  ProjectSignalStoreModel,
+} from '../../../../shared/store/internal.signal-store';
 
 @Component({
   selector: 'app-home',
@@ -41,41 +40,37 @@ import { CardModule } from 'primeng/card';
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  providers: [MainSignalStore],
 })
 export class HomeComponent {
-  private readonly sidebarSignalStore = inject(sidebarSignalStore);
-  private readonly mainSignalStore = inject(MainSignalStore);
+  private readonly internalSignalStore = inject(InternalSignalStore);
 
-  $sidebarItem: Signal<SidebarLabelType> =
-    this.sidebarSignalStore.project.label;
-  $tasks: Signal<ProjectSignalStoreModel> = this.mainSignalStore.data;
+  $sidebar = this.internalSignalStore.common.clickSidebar;
+  $data: Signal<ProjectSignalStoreModel> = this.internalSignalStore.data;
 
   sidebarTask: { task: Task | undefined; visible: boolean } = {
     task: undefined,
     visible: false,
   };
 
-  groups: Group[] = ['TODO', 'PROGRESS', 'COMPLETED'];
+  groups: Status[] = ['todo', 'progress', 'completed'];
 
   pItems: MenuItem[] = [];
 
   statusStyle: StatusStyle;
 
   constructor() {
-    this.mainSignalStore.taskDataLoad();
     this.statusStyle = {
-      TODO: {
+      todo: {
         mainColor: 'var(--indigo-400)',
         rightColor: 'var(--indigo-100)',
         leftColor: 'var(--indigo-500)',
       },
-      PROGRESS: {
+      progress: {
         mainColor: 'var(--teal-400)',
         rightColor: 'var(--teal-100)',
         leftColor: 'var(--teal-500)',
       },
-      COMPLETED: {
+      completed: {
         mainColor: 'var(--green-400)',
         rightColor: 'var(--green-100)',
         leftColor: 'var(--green-500)',
@@ -94,8 +89,11 @@ export class HomeComponent {
     ];
   }
 
-  onClickAddTask = (group: Group): void => {
-    this.mainSignalStore.taskAdd({ sidebarLabel: this.$sidebarItem(), group });
+  onClickAddTask = (status: Status): void => {
+    // this.internalSignalStore.taskAdd({
+    //   sidebarLabel: this.$sidebarItem(),
+    //   status,
+    // });
   };
 
   onClickTask = (task: Task): void => {
@@ -105,7 +103,7 @@ export class HomeComponent {
 
   onClickUpdateProgressBar = (
     event: any,
-    group: Group,
+    status: Status,
     index: number,
   ): void => {
     event.stopPropagation();
@@ -114,11 +112,11 @@ export class HomeComponent {
     const clickX: number = event.clientX - rect.left;
     const width = rect.width;
     const newProgress: number = Math.round((clickX / width) * 100);
-    this.mainSignalStore.taskDataUpdate({
-      sidebarLabel: this.$sidebarItem(),
-      group: group,
-      idx: index,
-      progress: newProgress.toString(),
-    });
+    // this.internalSignalStore.taskDataUpdate({
+    //   sidebarLabel: this.$sidebarItem(),
+    //   status,
+    //   idx: index,
+    //   progress: newProgress.toString(),
+    // });
   };
 }
