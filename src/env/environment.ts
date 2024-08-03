@@ -1,5 +1,5 @@
 export const environment = {
   API: {
-    base: 'https://dashboard-elysia.zeabur.app',
+    base: 'http://localhost:3000',
   },
 };

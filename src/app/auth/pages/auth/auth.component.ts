@@ -53,7 +53,8 @@ export class AuthComponent {
     const formData = this.form.getRawValue();
     if (formData.email && formData.password) {
       this.authSignalStore.signUpRequest({
-        request: { username: formData.email, password: formData.password },
+        username: formData.email,
+        password: formData.password,
       });
     }
   };
@@ -62,7 +63,8 @@ export class AuthComponent {
     const formData = this.form.getRawValue();
     if (formData.email && formData.password) {
       this.authSignalStore.signInRequest({
-        request: { username: formData.email, password: formData.password },
+        username: formData.email,
+        password: formData.password,
       });
     }
   };

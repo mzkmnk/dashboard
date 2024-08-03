@@ -1,14 +1,11 @@
-import { patchState, signalStore, withState } from '@ngrx/signals';
-import {
-  payload,
-  withDevtools,
-  withRedux,
-} from '@angular-architects/ngrx-toolkit';
+import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
+import { withDevtools } from '@angular-architects/ngrx-toolkit';
 import { inject } from '@angular/core';
 import { AuthAPI } from '../../api/auth/auth.api';
-import { switchMap } from 'rxjs';
+import { pipe, switchMap, tap } from 'rxjs';
 import { tapResponse } from '@ngrx/operators';
 import { RouterSignalStore } from '../../shared/store/router.signal-store';
+import { rxMethod } from '@ngrx/signals/rxjs-interop';
 
 export interface SignInRequest {
   username: string;
@@ -49,77 +46,66 @@ export const initialState: AuthSignalStoreModel = {
 export const AuthSignalStore = signalStore(
   withDevtools('[auth signal store]'),
   withState(initialState),
-  withRedux({
-    actions: {
-      signInRequest: payload<{ request: SignInRequest }>(),
-      signInRequestSuccess: payload(),
-      signInRequestFailure: payload(),
-
-      signUpRequest: payload<{ request: SignInRequest }>(),
-      signUpRequestSuccess: payload(),
-      signUpRequestFailure: payload(),
-    },
-    reducer(actions, on) {
-      on(actions.signInRequest, (signalStore, { request }) =>
-        patchState(signalStore, {
-          signIn: { ...request, isLoading: true },
-        }),
-      );
-
-      on(actions.signInRequestFailure, (signalStore) =>
-        patchState(signalStore, (signalState) => ({
-          ...signalState,
-          signIn: { ...signalState.signIn, isLoading: false },
-        })),
-      );
-
-      on(actions.signUpRequest, (signalStore, { request }) =>
-        patchState(signalStore, {
-          signUp: { ...request, isLoading: true },
-        }),
-      );
-
-      on(actions.signUpRequestFailure, (signalStore) =>
-        patchState(signalStore, (signalState) => ({
-          ...signalState,
-          signUp: { ...signalState.signUp, isLoading: false },
-        })),
-      );
-    },
-    effects(actions, create) {
-      const authAPI = inject(AuthAPI);
-      const routerSignalStore = inject(RouterSignalStore);
-      return {
-        signIn$: create(actions.signInRequest).pipe(
-          switchMap(({ request }) => {
+  withMethods(
+    (
+      signalStore,
+      authAPI = inject(AuthAPI),
+      routerSignalStore = inject(RouterSignalStore),
+    ) => ({
+      /**
+       * signInRequest
+       */
+      signInRequest: rxMethod<SignInRequest>(
+        pipe(
+          tap((request) =>
+            patchState(signalStore, {
+              signIn: { ...request, isLoading: true },
+            }),
+          ),
+          switchMap((request) => {
             return authAPI.signIn(request).pipe(
               tapResponse({
                 next: (): void => {
                   routerSignalStore.navigate({ path: 'internal/home' });
                 },
-                error: (): void => {
-                  actions.signInRequestFailure();
-                },
+                error: () =>
+                  patchState(signalStore, (signalState) => ({
+                    ...signalState,
+                    signIn: { ...signalState.signIn, isLoading: false },
+                  })),
               }),
             );
           }),
         ),
+      ),
 
-        signUp$: create(actions.signUpRequest).pipe(
-          switchMap(({ request }) => {
+      /**
+       * signUpRequest
+       */
+      signUpRequest: rxMethod<SignUpRequest>(
+        pipe(
+          tap((request) =>
+            patchState(signalStore, {
+              signUp: { ...request, isLoading: true },
+            }),
+          ),
+          switchMap((request) => {
             return authAPI.signUp(request).pipe(
               tapResponse({
-                next: (): void => {
+                next: (response): void => {
                   routerSignalStore.navigate({ path: 'internal/home' });
                 },
                 error: (): void => {
-                  actions.signUpRequestFailure();
+                  patchState(signalStore, (signalState) => ({
+                    ...signalState,
+                    signUp: { ...signalState.signUp, isLoading: false },
+                  }));
                 },
               }),
             );
           }),
         ),
-      };
-    },
-  }),
+      ),
+    }),
+  ),
 );
