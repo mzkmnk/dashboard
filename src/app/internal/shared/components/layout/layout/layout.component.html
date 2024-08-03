@@ -1,16 +1,8 @@
 <div class="h-screen">
-  <p-splitter
-    class="h-screen custom-separator custom-splitter"
-    [gutterSize]="1.5"
-    [panelSizes]="[17, 85]"
-  >
-    <ng-template pTemplate>
-      <app-sidebar class="w-full"></app-sidebar>
-    </ng-template>
-    <ng-template pTemplate>
-      <main class="m-2 w-full overflow-y-auto">
-        <router-outlet></router-outlet>
-      </main>
-    </ng-template>
-  </p-splitter>
+  <div class="fixed t-0 left-0" [style.width]="'15%'">
+    <app-sidebar></app-sidebar>
+  </div>
+  <main class="overflow-y-auto" [style.margin-left]="'15%'">
+    <router-outlet></router-outlet>
+  </main>
 </div>
