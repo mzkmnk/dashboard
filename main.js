@@ -3135,7 +3135,7 @@ var LayoutComponent = _LayoutComponent;
 var routes = [
   {
     path: "auth",
-    loadChildren: () => import("./chunk-BAYR5MLX.js").then((M) => M.AUTH_ROUTES)
+    loadChildren: () => import("./chunk-HSAYXVUF.js").then((M) => M.AUTH_ROUTES)
   },
   {
     path: "internal",

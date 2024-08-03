@@ -9566,7 +9566,7 @@ var FloatLabelModule = class _FloatLabelModule {
 // src/env/environment.ts
 var environment = {
   API: {
-    base: "http://localhost:3000"
+    base: "https://dashboard-elysia.zeabur.app"
   }
 };
 
@@ -9797,4 +9797,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-UYML357J.js.map
+//# sourceMappingURL=chunk-DFZ6T6J5.js.map
