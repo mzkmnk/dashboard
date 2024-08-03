@@ -5,17 +5,12 @@ import {
   withMethods,
   withState,
 } from '@ngrx/signals';
-import {
-  payload,
-  withDevtools,
-  withRedux,
-} from '@angular-architects/ngrx-toolkit';
-import { EMPTY, of, pipe, switchMap, tap } from 'rxjs';
-import { SidebarLabelType } from '../../internal/data/sidebar.data';
-import { sampleTasks, Status, Task } from '../../internal/data/task.data';
+import { withDevtools } from '@angular-architects/ngrx-toolkit';
+import { concatMap, EMPTY, pipe, switchMap, tap } from 'rxjs';
+import { Status } from '../../internal/data/task.data';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { computed, inject } from '@angular/core';
-import { InternalAPI } from '../../api/internal/internal.api';
+import { InternalAPI, Task } from '../../api/internal/internal.api';
 import { tapResponse } from '@ngrx/operators';
 
 type ProjectSignal = {
@@ -62,9 +57,7 @@ export const InternalSignalStore = signalStore(
       console.log('data', data());
 
       for (const key of Object.keys(data())) {
-        console.log(key);
         const tasks = data()[key].tasks;
-        console.log('tasks', tasks);
         sidebars.push({
           name: key,
           cnt:
@@ -89,39 +82,68 @@ export const InternalSignalStore = signalStore(
             common: { isLoading: true, clickSidebar: '' },
           }),
         ),
-        switchMap(() => {
-          return internalAPI.postGetSidebars().pipe(
-            tapResponse({
-              next: (response) => {
-                response.sidebarLabels.map((sidebar) => {
-                  patchState(signalStore, (signalState) => {
-                    const clickSidebar =
-                      signalState.common.clickSidebar !== ''
-                        ? signalState.common.clickSidebar
-                        : sidebar.name;
-                    return {
-                      ...signalState,
-                      common: {
-                        ...signalState.common,
-                        clickSidebar,
+        switchMap(() => internalAPI.postGetSidebars()),
+        tapResponse({
+          next: (response) => {
+            response.sidebarLabels.map((sidebar) => {
+              patchState(signalStore, (signalState) => {
+                const clickSidebar =
+                  signalState.common.clickSidebar !== ''
+                    ? signalState.common.clickSidebar
+                    : sidebar.name;
+                return {
+                  ...signalState,
+                  common: {
+                    ...signalState.common,
+                    clickSidebar,
+                  },
+                  data: {
+                    ...signalState.data,
+                    [sidebar.name]: {
+                      tasks: {
+                        todo: [],
+                        progress: [],
+                        completed: [],
                       },
-                      data: {
-                        ...signalState.data,
-                        [sidebar.name]: {
-                          tasks: {
-                            todo: [],
-                            progress: [],
-                            completed: [],
-                          },
-                        },
+                    },
+                  },
+                };
+              });
+            });
+          },
+          error: () => EMPTY,
+        }),
+        concatMap(() => signalStore.selectSidebars()),
+        concatMap((sidebar) =>
+          internalAPI.postGetTasks({ sidebarLabel: sidebar.name }),
+        ),
+        tapResponse({
+          next: (response) => {
+            response.tasks.map((task) => {
+              //todo リファクタ必須 ちょっと何書いてるかわからん
+              patchState(signalStore, (signalState) => {
+                const tasks =
+                  signalState.data[task.sidebar]['tasks'][
+                    task.status as Status
+                  ];
+                tasks.push(task);
+                return {
+                  ...signalState,
+                  data: {
+                    ...signalState.data,
+                    [task.sidebar]: {
+                      ...signalState.data[task.sidebar],
+                      tasks: {
+                        ...signalState.data[task.sidebar].tasks,
+                        [task.status]: tasks,
                       },
-                    };
-                  });
-                });
-              },
-              error: () => EMPTY,
-            }),
-          );
+                    },
+                  },
+                };
+              });
+            });
+          },
+          error: () => EMPTY,
         }),
       ),
     ),

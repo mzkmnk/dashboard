@@ -19,8 +19,8 @@ export interface Task {
   updatedAt: Date;
   startedAt: Date;
   endedAt: Date;
-  sidebarLabelId: number;
-  taskStatusId: number;
+  sidebar: string;
+  status: string;
 }
 
 export interface PostGetSidebarsResponse {
@@ -60,7 +60,7 @@ export class InternalAPI {
   postGetTasks = (
     request: PostGetTasksRequest,
   ): Observable<PostGetTasksResponse> => {
-    console.log('ok');
+    console.log('postgetTaskAPI');
     return this.http.post<PostGetTasksResponse>(
       `${environment.API.base}/internal/getTasks`,
       request,

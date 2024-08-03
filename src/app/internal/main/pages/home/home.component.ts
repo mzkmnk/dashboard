@@ -1,6 +1,6 @@
-import { Component, inject, Signal } from '@angular/core';
+import { Component, effect, inject, Signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { Status, StatusStyle, Task } from '../../../data/task.data';
+import { Status, StatusStyle } from '../../../data/task.data';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
 import { MenuItem } from 'primeng/api';
@@ -8,7 +8,6 @@ import { MenubarModule } from 'primeng/menubar';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { TagModule } from 'primeng/tag';
 import { ProgressBarModule } from 'primeng/progressbar';
-import { SidebarLabelType } from '../../../data/sidebar.data';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { SidebarModule } from 'primeng/sidebar';
@@ -19,6 +18,7 @@ import {
   InternalSignalStore,
   ProjectSignalStoreModel,
 } from '../../../../shared/store/internal.signal-store';
+import { Task } from '../../../../api/internal/internal.api';
 
 @Component({
   selector: 'app-home',
@@ -59,6 +59,9 @@ export class HomeComponent {
   statusStyle: StatusStyle;
 
   constructor() {
+    effect(() => {
+      console.log(this.$data());
+    });
     this.statusStyle = {
       todo: {
         mainColor: 'var(--indigo-400)',
