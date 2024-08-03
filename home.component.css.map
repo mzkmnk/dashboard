@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/internal/main/pages/home/home.component.css"],
+  "sourcesContent": [".dashboard {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 1rem;\n}\n\n.custom-divider {\n  border: 0.2rem solid var(--orange-200);\n  border-radius: 0.5rem;\n  margin-bottom: 1rem;\n}\n\n:host ::ng-deep .custom-p-sidebar .p-sidebar {\n  position: fixed;\n  top: 0;\n  right: 0;\n  height: calc(100vh - 2.5rem);\n  margin: 1.5rem;\n  overflow-y: auto;\n}\n\n:host ::ng-deep .custom-p-menubar.p-element.custom-p-menubar {\n  background: white;\n}\n\n:host ::ng-deep .custom-p-timeline .p-timeline-event-opposite {\n  display: none;\n}\n"],
+  "mappings": ";AAAA,CAAC;AACC,WAAS;AACT,yBAAuB,OAAO,CAAC,EAAE;AACjC,OAAK;AACP;AAEA,CAAC;AACC,UAAQ,OAAO,MAAM,IAAI;AACzB,iBAAe;AACf,iBAAe;AACjB;AAEA,MAAM,UAAU,CAAC,iBAAiB,CAAC;AACjC,YAAU;AACV,OAAK;AACL,SAAO;AACP,UAAQ,KAAK,MAAM,EAAE;AACrB,UAAQ;AACR,cAAY;AACd;AAEA,MAAM,UAAU,CAAC,gBAAgB,CAAC,SAAS,CAA1B;AACf,cAAY;AACd;AAEA,MAAM,UAAU,CAAC,kBAAkB,CAAC;AAClC,WAAS;AACX;",
+  "names": []
+}
