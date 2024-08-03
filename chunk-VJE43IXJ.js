@@ -2,7 +2,7 @@ import {
   Divider,
   DividerModule,
   TimesIcon
-} from "./chunk-Z7KWBMEI.js";
+} from "./chunk-5RVG2CBD.js";
 import {
   AutoFocus,
   AutoFocusModule,
@@ -17,7 +17,6 @@ import {
   DOCUMENT,
   Directive,
   DomHandler,
-  EMPTY,
   ElementRef,
   EventEmitter,
   Host,
@@ -56,9 +55,8 @@ import {
   ViewEncapsulation$1,
   animate,
   booleanAttribute,
-  catchError,
   computed,
-  finalize,
+  environment,
   forkJoin,
   forwardRef,
   from,
@@ -80,6 +78,7 @@ import {
   style,
   switchMap,
   tap,
+  tapResponse,
   transition,
   trigger,
   untracked,
@@ -138,7 +137,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-WWKZ2HV7.js";
+} from "./chunk-RYMR263P.js";
 import {
   __spreadProps,
   __spreadValues
@@ -9563,13 +9562,6 @@ var FloatLabelModule = class _FloatLabelModule {
   }], null, null);
 })();
 
-// src/env/environment.ts
-var environment = {
-  API: {
-    base: "https://dashboard-elysia.zeabur.app"
-  }
-};
-
 // src/app/api/auth/auth.api.ts
 var _AuthAPI = class _AuthAPI {
   constructor() {
@@ -9587,23 +9579,6 @@ _AuthAPI.\u0275fac = function AuthAPI_Factory(t) {
 };
 _AuthAPI.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({ token: _AuthAPI, factory: _AuthAPI.\u0275fac, providedIn: "root" });
 var AuthAPI = _AuthAPI;
-
-// node_modules/@ngrx/operators/fesm2022/ngrx-operators.mjs
-function tapResponse(observerOrNext, error, complete) {
-  const observer = typeof observerOrNext === "function" ? {
-    next: observerOrNext,
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    error,
-    complete
-  } : observerOrNext;
-  return (source) => source.pipe(tap({
-    next: observer.next,
-    complete: observer.complete
-  }), catchError((error2) => {
-    observer.error(error2);
-    return EMPTY;
-  }), observer.finalize ? finalize(observer.finalize) : (source$) => source$);
-}
 
 // src/app/shared/store/router.signal-store.ts
 var initialState = {
@@ -9797,4 +9772,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-DFZ6T6J5.js.map
+//# sourceMappingURL=chunk-VJE43IXJ.js.map

@@ -5,8 +5,10 @@ import {
   ConnectedOverlayScrollHandler,
   Directive,
   DomHandler,
+  EMPTY,
   ElementRef,
   HostListener,
+  HttpClient,
   Inject,
   Input,
   NgModule,
@@ -18,14 +20,22 @@ import {
   UniqueComponentId,
   ViewContainerRef,
   booleanAttribute,
+  computed,
+  environment,
+  inject,
   isPlatformBrowser,
   numberAttribute,
   patchState,
-  payload,
+  pipe,
+  rxMethod,
   setClassMetadata,
   signalStore,
+  switchMap,
+  tap,
+  tapResponse,
+  withComputed,
   withDevtools,
-  withRedux,
+  withMethods,
   withState,
   zindexutils,
   ɵɵInheritDefinitionFeature,
@@ -36,6 +46,7 @@ import {
   ɵɵclassMap,
   ɵɵdefineComponent,
   ɵɵdefineDirective,
+  ɵɵdefineInjectable,
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
@@ -46,33 +57,106 @@ import {
   ɵɵlistener,
   ɵɵnamespaceSVG,
   ɵɵresolveDocument
-} from "./chunk-WWKZ2HV7.js";
+} from "./chunk-RYMR263P.js";
 import {
+  __spreadProps,
   __spreadValues
 } from "./chunk-WDMUDEB6.js";
 
-// src/app/internal/shared/store/sidebar/sidebar.signal-store.ts
-var initialState = {
-  common: {
-    isLoading: false
-  },
-  project: {
-    label: "travelLog"
+// src/app/api/internal/internal.api.ts
+var _InternalAPI = class _InternalAPI {
+  constructor() {
+    this.http = inject(HttpClient);
+    this.postGetSidebars = () => {
+      return this.http.post(`${environment.API.base}/internal/getSidebars`, {});
+    };
+    this.postGetTasks = (request) => {
+      console.log("ok");
+      return this.http.post(`${environment.API.base}/internal/getTasks`, request);
+    };
   }
 };
-var sidebarSignalStore = signalStore({ providedIn: "root" }, withDevtools("[sidebar signal store]"), withState(initialState), withRedux({
-  actions: {
-    onClickSidebar: payload(),
-    onClickSidebarSuccess: payload(),
-    onClickSidebarFailure: payload()
+_InternalAPI.\u0275fac = function InternalAPI_Factory(t) {
+  return new (t || _InternalAPI)();
+};
+_InternalAPI.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({ token: _InternalAPI, factory: _InternalAPI.\u0275fac, providedIn: "root" });
+var InternalAPI = _InternalAPI;
+
+// src/app/shared/store/internal.signal-store.ts
+var initialState = {
+  common: {
+    clickSidebar: "",
+    isLoading: false
   },
-  reducer(actions, on) {
-    on(actions.onClickSidebar, (signalState, { label }) => patchState(signalState, { project: { label } }));
-  },
-  effects() {
-    return {};
-  }
-}));
+  data: {}
+};
+var InternalSignalStore = signalStore(
+  { providedIn: "root" },
+  withDevtools("[main signal store]"),
+  withState(initialState),
+  /**
+   * computed
+   */
+  withComputed(({ data }) => ({
+    selectSidebars: computed(() => {
+      const sidebars = [];
+      console.log("data", data());
+      for (const key of Object.keys(data())) {
+        console.log(key);
+        const tasks = data()[key].tasks;
+        console.log("tasks", tasks);
+        sidebars.push({
+          name: key,
+          cnt: tasks.todo.length + tasks.progress.length + tasks.completed.length
+        });
+      }
+      return sidebars;
+    })
+  })),
+  /**
+   * method
+   */
+  withMethods((signalStore2, internalAPI = inject(InternalAPI)) => ({
+    /**
+     * @description
+     * サイドバーの取得を行う。
+     */
+    sidebarDataLoad: rxMethod(pipe(tap(() => patchState(signalStore2, {
+      common: { isLoading: true, clickSidebar: "" }
+    })), switchMap(() => {
+      return internalAPI.postGetSidebars().pipe(tapResponse({
+        next: (response) => {
+          response.sidebarLabels.map((sidebar) => {
+            patchState(signalStore2, (signalState) => {
+              const clickSidebar = signalState.common.clickSidebar !== "" ? signalState.common.clickSidebar : sidebar.name;
+              return __spreadProps(__spreadValues({}, signalState), {
+                common: __spreadProps(__spreadValues({}, signalState.common), {
+                  clickSidebar
+                }),
+                data: __spreadProps(__spreadValues({}, signalState.data), {
+                  [sidebar.name]: {
+                    tasks: {
+                      todo: [],
+                      progress: [],
+                      completed: []
+                    }
+                  }
+                })
+              });
+            });
+          });
+        },
+        error: () => EMPTY
+      }));
+    }))),
+    /**
+     * サイドバークリック時の変更
+     */
+    clickSidebar: rxMethod(pipe(tap(({ sidebar }) => patchState(signalStore2, {
+      common: { isLoading: false, clickSidebar: sidebar }
+    }))))
+  }))
+);
 
 // node_modules/primeng/fesm2022/primeng-icons-angledown.mjs
 var AngleDownIcon = class _AngleDownIcon extends BaseIcon {
@@ -997,6 +1081,6 @@ export {
   AngleRightIcon,
   Tooltip,
   TooltipModule,
-  sidebarSignalStore
+  InternalSignalStore
 };
-//# sourceMappingURL=chunk-X6GI2NKW.js.map
+//# sourceMappingURL=chunk-557F67EZ.js.map

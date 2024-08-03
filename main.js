@@ -1,10 +1,10 @@
 import {
   AngleDownIcon,
   AngleRightIcon,
+  InternalSignalStore,
   Tooltip,
-  TooltipModule,
-  sidebarSignalStore
-} from "./chunk-X6GI2NKW.js";
+  TooltipModule
+} from "./chunk-557F67EZ.js";
 import {
   ANIMATION_MODULE_TYPE,
   AUTO_STYLE,
@@ -144,7 +144,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-WWKZ2HV7.js";
+} from "./chunk-RYMR263P.js";
 import {
   __objRest,
   __spreadProps,
@@ -2311,18 +2311,6 @@ var PanelMenuModule = class _PanelMenuModule {
   }], null, null);
 })();
 
-// src/app/internal/data/sidebar.data.ts
-var sidebarData = [
-  {
-    label: "travelLog",
-    clicked: true
-  },
-  {
-    label: "dashboard",
-    clicked: false
-  }
-];
-
 // src/app/internal/shared/components/layout/sidebar/sidebar.component.ts
 function SidebarComponent_For_10_Template(rf, ctx) {
   if (rf & 1) {
@@ -2339,33 +2327,32 @@ function SidebarComponent_For_10_Template(rf, ctx) {
     \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(6, "div", 13)(7, "small");
-    \u0275\u0275text(8, "3");
+    \u0275\u0275text(8);
     \u0275\u0275elementEnd()()()();
   }
   if (rf & 2) {
     const item_r4 = ctx.$implicit;
-    \u0275\u0275classProp("bg-item-click", item_r4.clicked)("bg-item-hover", !item_r4.clicked);
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275classProp("bg-item-click", item_r4.name === ctx_r2.$clickSidebar())("bg-item-hover", item_r4.name !== ctx_r2.$clickSidebar());
     \u0275\u0275advance(5);
-    \u0275\u0275textInterpolate(item_r4.label);
+    \u0275\u0275textInterpolate(item_r4.name);
     \u0275\u0275advance();
     \u0275\u0275styleProp("background-color", "var(--purple-500)")("aspect-ratio", 1);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(item_r4.cnt);
   }
 }
 var _SidebarComponent = class _SidebarComponent {
   constructor() {
-    this.sidebarSignalStore = inject(sidebarSignalStore);
-    this.sidebarData = sidebarData;
+    this.internalSignalStore = inject(InternalSignalStore);
+    this.$sidebars = this.internalSignalStore.selectSidebars;
+    this.$clickSidebar = this.internalSignalStore.common.clickSidebar;
     this.onClickSidebarItem = (idx) => {
-      this.sidebarData.map((_, index) => {
-        this.sidebarData[index].clicked = index == idx;
-        if (idx === index) {
-          this.sidebarSignalStore.onClickSidebar({
-            label: this.sidebarData[index].label
-          });
-        }
+      this.internalSignalStore.clickSidebar({
+        sidebar: this.$sidebars()[idx].name
       });
     };
-    this.sidebarSignalStore.onClickSidebar({ label: "travelLog" });
+    this.internalSignalStore.sidebarDataLoad({});
   }
 };
 _SidebarComponent.\u0275fac = function SidebarComponent_Factory(t) {
@@ -2379,17 +2366,17 @@ _SidebarComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type
     \u0275\u0275text(7, "DashBoard");
     \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(8, "div", 2);
-    \u0275\u0275repeaterCreate(9, SidebarComponent_For_10_Template, 9, 9, "div", 7, \u0275\u0275repeaterTrackByIdentity);
+    \u0275\u0275repeaterCreate(9, SidebarComponent_For_10_Template, 9, 10, "div", 7, \u0275\u0275repeaterTrackByIdentity);
     \u0275\u0275elementEnd()()()();
   }
   if (rf & 2) {
     \u0275\u0275advance(9);
-    \u0275\u0275repeater(ctx.sidebarData);
+    \u0275\u0275repeater(ctx.$sidebars());
   }
 }, dependencies: [PanelMenuModule], styles: ["\n\n.item[_ngcontent-%COMP%], \n.item[_ngcontent-%COMP%]   *[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.bg-item-hover[_ngcontent-%COMP%]:hover {\n  background-color: var(--surface-50);\n}\n.bg-item-click[_ngcontent-%COMP%] {\n  background-color: var(--surface-ground);\n}\n/*# sourceMappingURL=sidebar.component.css.map */"] });
 var SidebarComponent = _SidebarComponent;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(SidebarComponent, { className: "SidebarComponent", filePath: "src/app/internal/shared/components/layout/sidebar/sidebar.component.ts", lineNumber: 15 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(SidebarComponent, { className: "SidebarComponent", filePath: "src/app/internal/shared/components/layout/sidebar/sidebar.component.ts", lineNumber: 14 });
 })();
 
 // node_modules/primeng/fesm2022/primeng-splitter.mjs
@@ -3135,11 +3122,11 @@ var LayoutComponent = _LayoutComponent;
 var routes = [
   {
     path: "auth",
-    loadChildren: () => import("./chunk-HSAYXVUF.js").then((M) => M.AUTH_ROUTES)
+    loadChildren: () => import("./chunk-2BEOGNKZ.js").then((M) => M.AUTH_ROUTES)
   },
   {
     path: "internal",
-    loadChildren: () => import("./chunk-TG5SLKA2.js").then((M) => M.INTERNAL_ROUTES),
+    loadChildren: () => import("./chunk-O7SQEEJ3.js").then((M) => M.INTERNAL_ROUTES),
     component: LayoutComponent
   },
   {

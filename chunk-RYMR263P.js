@@ -9363,7 +9363,7 @@ function processHostBindingOpCodes(tView, lView) {
     setSelectedIndex(-1);
   }
 }
-function createLView(parentLView, tView, context2, flags, host, tHostNode, environment, renderer, injector, embeddedViewInjector, hydrationInfo) {
+function createLView(parentLView, tView, context2, flags, host, tHostNode, environment2, renderer, injector, embeddedViewInjector, hydrationInfo) {
   const lView = tView.blueprint.slice();
   lView[HOST] = host;
   lView[FLAGS] = flags | 4 | 128 | 8 | 64;
@@ -9374,7 +9374,7 @@ function createLView(parentLView, tView, context2, flags, host, tHostNode, envir
   ngDevMode && tView.declTNode && parentLView && assertTNodeForLView(tView.declTNode, parentLView);
   lView[PARENT] = lView[DECLARATION_VIEW] = parentLView;
   lView[CONTEXT] = context2;
-  lView[ENVIRONMENT] = environment || parentLView && parentLView[ENVIRONMENT];
+  lView[ENVIRONMENT] = environment2 || parentLView && parentLView[ENVIRONMENT];
   ngDevMode && assertDefined(lView[ENVIRONMENT], "LViewEnvironment is required");
   lView[RENDERER] = renderer || parentLView && parentLView[RENDERER];
   ngDevMode && assertDefined(lView[RENDERER], "Renderer is required");
@@ -10416,8 +10416,8 @@ function viewShouldHaveReactiveConsumer(tView) {
 }
 var MAXIMUM_REFRESH_RERUNS$1 = 100;
 function detectChangesInternal(lView, notifyErrorHandler = true, mode = 0) {
-  const environment = lView[ENVIRONMENT];
-  const rendererFactory = environment.rendererFactory;
+  const environment2 = lView[ENVIRONMENT];
+  const rendererFactory = environment2.rendererFactory;
   const checkNoChangesMode = !!ngDevMode && isInCheckNoChangesMode();
   if (!checkNoChangesMode) {
     rendererFactory.begin?.();
@@ -10432,7 +10432,7 @@ function detectChangesInternal(lView, notifyErrorHandler = true, mode = 0) {
   } finally {
     if (!checkNoChangesMode) {
       rendererFactory.end?.();
-      environment.inlineEffectRunner?.flush();
+      environment2.inlineEffectRunner?.flush();
     }
   }
 }
@@ -12168,7 +12168,7 @@ var ComponentFactory = class extends ComponentFactory$1 {
       const sanitizer = rootViewInjector.get(Sanitizer, null);
       const afterRenderEventManager = rootViewInjector.get(AfterRenderEventManager, null);
       const changeDetectionScheduler = rootViewInjector.get(ChangeDetectionScheduler, null);
-      const environment = {
+      const environment2 = {
         rendererFactory,
         sanitizer,
         // We don't use inline effects (yet).
@@ -12195,7 +12195,7 @@ var ComponentFactory = class extends ComponentFactory$1 {
         );
       }
       const rootTView = createTView(0, null, null, 1, 0, null, null, null, null, null, null);
-      const rootLView = createLView(null, rootTView, null, rootFlags, null, null, environment, hostRenderer, rootViewInjector, null, hydrationInfo);
+      const rootLView = createLView(null, rootTView, null, rootFlags, null, null, environment2, hostRenderer, rootViewInjector, null, hydrationInfo);
       enterView(rootLView);
       let component;
       let tElementNode;
@@ -12213,7 +12213,7 @@ var ComponentFactory = class extends ComponentFactory$1 {
           rootDirectives = [rootComponentDef];
         }
         const hostTNode = createRootComponentTNode(rootLView, hostRNode);
-        const componentView = createRootComponentView(hostTNode, hostRNode, rootComponentDef, rootDirectives, rootLView, environment, hostRenderer);
+        const componentView = createRootComponentView(hostTNode, hostRNode, rootComponentDef, rootDirectives, rootLView, environment2, hostRenderer);
         tElementNode = getTNode(rootTView, HEADER_OFFSET);
         if (hostRNode) {
           setRootNodeAttributes(hostRenderer, rootComponentDef, hostRNode, rootSelectorOrNode);
@@ -12291,21 +12291,21 @@ function createRootComponentTNode(lView, rNode) {
   lView[index] = rNode;
   return getOrCreateTNode(tView, index, 2, "#host", null);
 }
-function createRootComponentView(tNode, hostRNode, rootComponentDef, rootDirectives, rootView, environment, hostRenderer) {
+function createRootComponentView(tNode, hostRNode, rootComponentDef, rootDirectives, rootView, environment2, hostRenderer) {
   const tView = rootView[TVIEW];
   applyRootComponentStyling(rootDirectives, tNode, hostRNode, hostRenderer);
   let hydrationInfo = null;
   if (hostRNode !== null) {
     hydrationInfo = retrieveHydrationInfo(hostRNode, rootView[INJECTOR]);
   }
-  const viewRenderer = environment.rendererFactory.createRenderer(hostRNode, rootComponentDef);
+  const viewRenderer = environment2.rendererFactory.createRenderer(hostRNode, rootComponentDef);
   let lViewFlags = 16;
   if (rootComponentDef.signals) {
     lViewFlags = 4096;
   } else if (rootComponentDef.onPush) {
     lViewFlags = 64;
   }
-  const componentView = createLView(rootView, getOrCreateComponentTView(rootComponentDef), null, lViewFlags, rootView[tNode.index], tNode, environment, viewRenderer, null, null, hydrationInfo);
+  const componentView = createLView(rootView, getOrCreateComponentTView(rootComponentDef), null, lViewFlags, rootView[tNode.index], tNode, environment2, viewRenderer, null, null, hydrationInfo);
   if (tView.firstCreatePass) {
     markAsComponentHost(tView, tNode, rootDirectives.length - 1);
   }
@@ -40136,6 +40136,15 @@ function assertUniqueStoreMembers(store2, newMemberKeys) {
     console.warn("@ngrx/signals: SignalStore members cannot be overridden.", "Trying to override:", overriddenKeys.join(", "));
   }
 }
+function withComputed(signalsFactory) {
+  return (store2) => {
+    const computedSignals = signalsFactory(__spreadValues(__spreadValues({}, store2.stateSignals), store2.computedSignals));
+    assertUniqueStoreMembers(store2, Object.keys(computedSignals));
+    return __spreadProps(__spreadValues({}, store2), {
+      computedSignals: __spreadValues(__spreadValues({}, store2.computedSignals), computedSignals)
+    });
+  };
+}
 function withMethods(methodsFactory) {
   return (store2) => {
     const methods = methodsFactory(__spreadValues(__spreadValues(__spreadValues({
@@ -40408,6 +40417,30 @@ var SignalReduxStore = _SignalReduxStore;
   }], null, null);
 })();
 
+// node_modules/@ngrx/operators/fesm2022/ngrx-operators.mjs
+function tapResponse(observerOrNext, error, complete) {
+  const observer = typeof observerOrNext === "function" ? {
+    next: observerOrNext,
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    error,
+    complete
+  } : observerOrNext;
+  return (source) => source.pipe(tap({
+    next: observer.next,
+    complete: observer.complete
+  }), catchError((error2) => {
+    observer.error(error2);
+    return EMPTY;
+  }), observer.finalize ? finalize(observer.finalize) : (source$) => source$);
+}
+
+// src/env/environment.ts
+var environment = {
+  API: {
+    base: "https://dashboard-elysia.zeabur.app"
+  }
+};
+
 export {
   pipe,
   Observable,
@@ -40431,7 +40464,6 @@ export {
   dematerialize,
   distinctUntilChanged,
   exhaustMap,
-  finalize,
   groupBy,
   materialize,
   pluck,
@@ -40499,8 +40531,6 @@ export {
   ɵɵclassProp,
   ɵɵstyleMap,
   ɵɵclassMap,
-  ɵɵconditional,
-  ɵɵrepeaterTrackByIndex,
   ɵɵrepeaterTrackByIdentity,
   ɵɵrepeaterCreate,
   ɵɵrepeater,
@@ -40612,12 +40642,15 @@ export {
   ButtonModule,
   patchState,
   signalStore,
+  withComputed,
   withMethods,
   withState,
   rxMethod,
   withDevtools,
   payload,
-  withRedux
+  withRedux,
+  environment,
+  tapResponse
 };
 /*! Bundled license information:
 
@@ -40722,4 +40755,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-WWKZ2HV7.js.map
+//# sourceMappingURL=chunk-RYMR263P.js.map
