@@ -40635,11 +40635,11 @@ export {
   TranslationKeys,
   DomHandler,
   ConnectedOverlayScrollHandler,
+  AutoFocus,
+  AutoFocusModule,
   BaseIcon,
   Ripple,
   RippleModule,
-  AutoFocus,
-  AutoFocusModule,
   Button,
   ButtonModule,
   patchState,
@@ -40757,4 +40757,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-2YUMHHGY.js.map
+//# sourceMappingURL=chunk-Y7FJZAHW.js.map

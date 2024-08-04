@@ -4,7 +4,7 @@ import {
   InternalSignalStore,
   Tooltip,
   TooltipModule
-} from "./chunk-BVIMG4SU.js";
+} from "./chunk-BSUJOEHG.js";
 import {
   ANIMATION_MODULE_TYPE,
   AUTO_STYLE,
@@ -144,2996 +144,28 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-2YUMHHGY.js";
+} from "./chunk-Y7FJZAHW.js";
 import {
   __objRest,
   __spreadProps,
   __spreadValues
 } from "./chunk-WDMUDEB6.js";
 
-// node_modules/primeng/fesm2022/primeng-icons-chevrondown.mjs
-var ChevronDownIcon = class _ChevronDownIcon extends BaseIcon {
-  static \u0275fac = /* @__PURE__ */ (() => {
-    let \u0275ChevronDownIcon_BaseFactory;
-    return function ChevronDownIcon_Factory(t) {
-      return (\u0275ChevronDownIcon_BaseFactory || (\u0275ChevronDownIcon_BaseFactory = \u0275\u0275getInheritedFactory(_ChevronDownIcon)))(t || _ChevronDownIcon);
-    };
-  })();
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _ChevronDownIcon,
-    selectors: [["ChevronDownIcon"]],
-    standalone: true,
-    features: [\u0275\u0275InheritDefinitionFeature, \u0275\u0275StandaloneFeature],
-    decls: 2,
-    vars: 5,
-    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z", "fill", "currentColor"]],
-    template: function ChevronDownIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(0, "svg", 0);
-        \u0275\u0275element(1, "path", 1);
-        \u0275\u0275elementEnd();
-      }
-      if (rf & 2) {
-        \u0275\u0275classMap(ctx.getClassNames());
-        \u0275\u0275attribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
-      }
-    },
-    encapsulation: 2
-  });
+// src/app/app.component.ts
+var _AppComponent = class _AppComponent {
 };
+_AppComponent.\u0275fac = function AppComponent_Factory(t) {
+  return new (t || _AppComponent)();
+};
+_AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 1, vars: 0, template: function AppComponent_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "router-outlet");
+  }
+}, dependencies: [RouterOutlet], encapsulation: 2 });
+var AppComponent = _AppComponent;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ChevronDownIcon, [{
-    type: Component,
-    args: [{
-      selector: "ChevronDownIcon",
-      standalone: true,
-      imports: [BaseIcon],
-      template: `
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
-            <path
-                d="M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z"
-                fill="currentColor"
-            />
-        </svg>
-    `
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AppComponent, { className: "AppComponent", filePath: "src/app/app.component.ts", lineNumber: 10 });
 })();
-
-// node_modules/primeng/fesm2022/primeng-icons-chevronright.mjs
-var ChevronRightIcon = class _ChevronRightIcon extends BaseIcon {
-  static \u0275fac = /* @__PURE__ */ (() => {
-    let \u0275ChevronRightIcon_BaseFactory;
-    return function ChevronRightIcon_Factory(t) {
-      return (\u0275ChevronRightIcon_BaseFactory || (\u0275ChevronRightIcon_BaseFactory = \u0275\u0275getInheritedFactory(_ChevronRightIcon)))(t || _ChevronRightIcon);
-    };
-  })();
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _ChevronRightIcon,
-    selectors: [["ChevronRightIcon"]],
-    standalone: true,
-    features: [\u0275\u0275InheritDefinitionFeature, \u0275\u0275StandaloneFeature],
-    decls: 2,
-    vars: 5,
-    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z", "fill", "currentColor"]],
-    template: function ChevronRightIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(0, "svg", 0);
-        \u0275\u0275element(1, "path", 1);
-        \u0275\u0275elementEnd();
-      }
-      if (rf & 2) {
-        \u0275\u0275classMap(ctx.getClassNames());
-        \u0275\u0275attribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
-      }
-    },
-    encapsulation: 2
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ChevronRightIcon, [{
-    type: Component,
-    args: [{
-      selector: "ChevronRightIcon",
-      standalone: true,
-      imports: [BaseIcon],
-      template: `
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
-            <path
-                d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z"
-                fill="currentColor"
-            />
-        </svg>
-    `
-    }]
-  }], null, null);
-})();
-
-// node_modules/primeng/fesm2022/primeng-panelmenu.mjs
-var _c0 = ["list"];
-var _c1 = (a0) => ({
-  "p-submenu-list": true,
-  "p-panelmenu-root-list": a0
-});
-var _c2 = (a0) => ({
-  "p-disabled": a0
-});
-var _c3 = () => ({
-  exact: false
-});
-var _c4 = (a0) => ({
-  $implicit: a0
-});
-function PanelMenuSub_ng_template_2_li_0_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "li", 7);
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_AngleDownIcon_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "AngleDownIcon", 21);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(6).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("styleClass", "p-submenu-icon")("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_AngleRightIcon_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "AngleRightIcon", 21);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(6).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("styleClass", "p-submenu-icon")("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_AngleDownIcon_1_Template, 1, 2, "AngleDownIcon", 20)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_AngleRightIcon_2_Template, 1, 2, "AngleRightIcon", 20);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(5).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r3.isItemActive(processedItem_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r3.isItemActive(processedItem_r3));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_2_ng_template_0_Template(rf, ctx) {
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275template(0, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_2_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_Template, 3, 2, "ng-container", 10)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_2_Template, 1, 0, null, 19);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const ctx_r3 = \u0275\u0275nextContext(5);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r3.panelMenu.submenuIconTemplate);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngTemplateOutlet", ctx_r3.panelMenu.submenuIconTemplate);
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 22);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", processedItem_r3.icon)("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_3_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 23);
-    \u0275\u0275text(1);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r3.getItemProp(processedItem_r3, "label"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_template_4_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 24);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("innerHTML", ctx_r3.getItemProp(processedItem_r3, "label"), \u0275\u0275sanitizeHtml);
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_6_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 25);
-    \u0275\u0275text(1);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
-    \u0275\u0275property("ngClass", processedItem_r3.badgeStyleClass);
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate(processedItem_r3.badge);
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "a", 15);
-    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_Template, 3, 2, "ng-container", 10)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_2_Template, 1, 2, "span", 16)(3, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_3_Template, 2, 1, "span", 17)(4, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_template_4_Template, 1, 1, "ng-template", null, 1, \u0275\u0275templateRefExtractor)(6, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_6_Template, 2, 2, "span", 18);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const htmlLabel_r5 = \u0275\u0275reference(5);
-    const processedItem_r3 = \u0275\u0275nextContext(3).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(10, _c2, ctx_r3.getItemProp(processedItem_r3, "disabled")))("target", ctx_r3.getItemProp(processedItem_r3, "target"));
-    \u0275\u0275attribute("href", ctx_r3.getItemProp(processedItem_r3, "url"), \u0275\u0275sanitizeUrl)("data-pc-section", "action")("tabindex", !!ctx_r3.parentExpanded ? "0" : "-1");
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r3.isItemGroup(processedItem_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", processedItem_r3.icon);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", (processedItem_r3.item == null ? null : processedItem_r3.item.escape) !== false)("ngIfElse", htmlLabel_r5);
-    \u0275\u0275advance(3);
-    \u0275\u0275property("ngIf", processedItem_r3.badge);
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_AngleDownIcon_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "AngleDownIcon", 21);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(6).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("styleClass", "p-submenu-icon")("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_AngleRightIcon_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "AngleRightIcon", 21);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(6).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("styleClass", "p-submenu-icon")("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_AngleDownIcon_1_Template, 1, 2, "AngleDownIcon", 20)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_AngleRightIcon_2_Template, 1, 2, "AngleRightIcon", 20);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(5).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r3.isItemActive(processedItem_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r3.isItemActive(processedItem_r3));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_2_ng_template_0_Template(rf, ctx) {
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275template(0, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_2_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_Template, 3, 2, "ng-container", 10)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_2_Template, 1, 0, null, 19);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const ctx_r3 = \u0275\u0275nextContext(5);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r3.panelMenu.submenuIconTemplate);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngTemplateOutlet", ctx_r3.panelMenu.submenuIconTemplate);
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 22);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", processedItem_r3.icon)("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_3_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 23);
-    \u0275\u0275text(1);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r3.getItemProp(processedItem_r3, "label"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_template_4_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 24);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("innerHTML", ctx_r3.getItemProp(processedItem_r3, "label"), \u0275\u0275sanitizeHtml);
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_6_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 25);
-    \u0275\u0275text(1);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", ctx_r3.getItemProp(processedItem_r3, "badgeStyleClass"));
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r3.getItemProp(processedItem_r3, "badge"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "a", 26);
-    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_Template, 3, 2, "ng-container", 10)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_2_Template, 1, 2, "span", 16)(3, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_3_Template, 2, 1, "span", 17)(4, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_template_4_Template, 1, 1, "ng-template", null, 2, \u0275\u0275templateRefExtractor)(6, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_6_Template, 2, 2, "span", 18);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const htmlRouteLabel_r6 = \u0275\u0275reference(5);
-    const processedItem_r3 = \u0275\u0275nextContext(3).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("routerLink", ctx_r3.getItemProp(processedItem_r3, "routerLink"))("queryParams", ctx_r3.getItemProp(processedItem_r3, "queryParams"))("routerLinkActive", "p-menuitem-link-active")("routerLinkActiveOptions", ctx_r3.getItemProp(processedItem_r3, "routerLinkActiveOptions") || \u0275\u0275pureFunction0(20, _c3))("ngClass", \u0275\u0275pureFunction1(21, _c2, ctx_r3.getItemProp(processedItem_r3, "disabled")))("target", ctx_r3.getItemProp(processedItem_r3, "target"))("fragment", ctx_r3.getItemProp(processedItem_r3, "fragment"))("queryParamsHandling", ctx_r3.getItemProp(processedItem_r3, "queryParamsHandling"))("preserveFragment", ctx_r3.getItemProp(processedItem_r3, "preserveFragment"))("skipLocationChange", ctx_r3.getItemProp(processedItem_r3, "skipLocationChange"))("replaceUrl", ctx_r3.getItemProp(processedItem_r3, "replaceUrl"))("state", ctx_r3.getItemProp(processedItem_r3, "state"));
-    \u0275\u0275attribute("title", ctx_r3.getItemProp(processedItem_r3, "title"))("data-pc-section", "action")("tabindex", !!ctx_r3.parentExpanded ? "0" : "-1");
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r3.isItemGroup(processedItem_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", processedItem_r3.icon);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r3.getItemProp(processedItem_r3, "escape") !== false)("ngIfElse", htmlRouteLabel_r6);
-    \u0275\u0275advance(3);
-    \u0275\u0275property("ngIf", processedItem_r3.badge);
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_Template, 7, 12, "a", 13)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_Template, 7, 23, "a", 14);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(2).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r3.getItemProp(processedItem_r3, "routerLink"));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r3.getItemProp(processedItem_r3, "routerLink"));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_3_1_ng_template_0_Template(rf, ctx) {
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_3_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275template(0, PanelMenuSub_ng_template_2_li_1_ng_container_3_1_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_ng_container_3_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_3_1_Template, 1, 0, null, 27);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(2).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275property("ngTemplateOutlet", ctx_r3.itemTemplate)("ngTemplateOutletContext", \u0275\u0275pureFunction1(2, _c4, processedItem_r3.item));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_p_panelMenuSub_5_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "p-panelMenuSub", 28);
-    \u0275\u0275listener("itemToggle", function PanelMenuSub_ng_template_2_li_1_p_panelMenuSub_5_Template_p_panelMenuSub_itemToggle_0_listener($event) {
-      \u0275\u0275restoreView(_r7);
-      const ctx_r3 = \u0275\u0275nextContext(3);
-      return \u0275\u0275resetView(ctx_r3.onItemToggle($event));
-    });
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const processedItem_r3 = \u0275\u0275nextContext(2).$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("id", ctx_r3.getItemId(processedItem_r3) + "_list")("panelId", ctx_r3.panelId)("items", processedItem_r3 == null ? null : processedItem_r3.items)("itemTemplate", ctx_r3.itemTemplate)("transitionOptions", ctx_r3.transitionOptions)("focusedItemId", ctx_r3.focusedItemId)("activeItemPath", ctx_r3.activeItemPath)("level", ctx_r3.level + 1)("parentExpanded", !!ctx_r3.parentExpanded && ctx_r3.isItemExpanded(processedItem_r3));
-  }
-}
-function PanelMenuSub_ng_template_2_li_1_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r2 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "li", 8)(1, "div", 9);
-    \u0275\u0275listener("click", function PanelMenuSub_ng_template_2_li_1_Template_div_click_1_listener($event) {
-      \u0275\u0275restoreView(_r2);
-      const processedItem_r3 = \u0275\u0275nextContext().$implicit;
-      const ctx_r3 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r3.onItemClick($event, processedItem_r3));
-    });
-    \u0275\u0275template(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_Template, 3, 2, "ng-container", 10)(3, PanelMenuSub_ng_template_2_li_1_ng_container_3_Template, 2, 4, "ng-container", 10);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "div", 11);
-    \u0275\u0275template(5, PanelMenuSub_ng_template_2_li_1_p_panelMenuSub_5_Template, 1, 9, "p-panelMenuSub", 12);
-    \u0275\u0275elementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r7 = \u0275\u0275nextContext();
-    const processedItem_r3 = ctx_r7.$implicit;
-    const index_r9 = ctx_r7.index;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275classMap(ctx_r3.getItemProp(processedItem_r3, "styleClass"));
-    \u0275\u0275classProp("p-hidden", processedItem_r3.visible === false)("p-focus", ctx_r3.isItemFocused(processedItem_r3) && !ctx_r3.isItemDisabled(processedItem_r3));
-    \u0275\u0275property("ngClass", ctx_r3.getItemClass(processedItem_r3))("ngStyle", ctx_r3.getItemProp(processedItem_r3, "style"))("pTooltip", ctx_r3.getItemProp(processedItem_r3, "tooltip"))("tooltipOptions", ctx_r3.getItemProp(processedItem_r3, "tooltipOptions"));
-    \u0275\u0275attribute("id", ctx_r3.getItemId(processedItem_r3))("aria-label", ctx_r3.getItemProp(processedItem_r3, "label"))("aria-expanded", ctx_r3.isItemGroup(processedItem_r3) ? ctx_r3.isItemActive(processedItem_r3) : void 0)("aria-level", ctx_r3.level + 1)("aria-setsize", ctx_r3.getAriaSetSize())("aria-posinset", ctx_r3.getAriaPosInset(index_r9))("data-p-disabled", ctx_r3.isItemDisabled(processedItem_r3));
-    \u0275\u0275advance(2);
-    \u0275\u0275property("ngIf", !ctx_r3.itemTemplate);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r3.itemTemplate);
-    \u0275\u0275advance();
-    \u0275\u0275property("@submenu", ctx_r3.getAnimation(processedItem_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r3.isItemVisible(processedItem_r3) && ctx_r3.isItemGroup(processedItem_r3) && ctx_r3.isItemExpanded(processedItem_r3));
-  }
-}
-function PanelMenuSub_ng_template_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275template(0, PanelMenuSub_ng_template_2_li_0_Template, 1, 0, "li", 5)(1, PanelMenuSub_ng_template_2_li_1_Template, 6, 21, "li", 6);
-  }
-  if (rf & 2) {
-    const processedItem_r3 = ctx.$implicit;
-    const ctx_r3 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngIf", processedItem_r3.separator);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !processedItem_r3.separator && ctx_r3.isItemVisible(processedItem_r3));
-  }
-}
-var _c5 = ["submenu"];
-var _c6 = ["container"];
-var _c7 = (a0, a1) => ({
-  "p-component p-panelmenu-header": true,
-  "p-highlight": a0,
-  "p-disabled": a1
-});
-var _c8 = (a0) => ({
-  "p-panelmenu-expanded": a0
-});
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_ChevronDownIcon_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "ChevronDownIcon", 20);
-  }
-  if (rf & 2) {
-    \u0275\u0275property("styleClass", "p-submenu-icon");
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_ChevronRightIcon_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "ChevronRightIcon", 20);
-  }
-  if (rf & 2) {
-    \u0275\u0275property("styleClass", "p-submenu-icon");
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_ChevronDownIcon_1_Template, 1, 1, "ChevronDownIcon", 19)(2, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_ChevronRightIcon_2_Template, 1, 1, "ChevronRightIcon", 19);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(5).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.isItemActive(item_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r4.isItemActive(item_r3));
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_2_ng_template_0_Template(rf, ctx) {
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275template(0, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_2_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_Template, 3, 2, "ng-container", 9)(2, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_2_Template, 1, 0, null, 18);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const ctx_r4 = \u0275\u0275nextContext(5);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r4.submenuIconTemplate);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngTemplateOutlet", ctx_r4.submenuIconTemplate);
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 21);
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", item_r3.icon)("ngStyle", ctx_r4.getItemProp(item_r3, "iconStyle"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_3_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 22);
-    \u0275\u0275text(1);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r4.getItemProp(item_r3, "label"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_template_4_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 23);
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("innerHTML", ctx_r4.getItemProp(item_r3, "label"), \u0275\u0275sanitizeHtml);
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_6_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 24);
-    \u0275\u0275text(1);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", ctx_r4.getItemProp(item_r3, "badgeStyleClass"));
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r4.getItemProp(item_r3, "badge"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "a", 14);
-    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_Template, 3, 2, "ng-container", 9)(2, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_2_Template, 1, 2, "span", 15)(3, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_3_Template, 2, 1, "span", 16)(4, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_template_4_Template, 1, 1, "ng-template", null, 1, \u0275\u0275templateRefExtractor)(6, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_6_Template, 2, 2, "span", 17);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const htmlLabel_r6 = \u0275\u0275reference(5);
-    const item_r3 = \u0275\u0275nextContext(3).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("target", ctx_r4.getItemProp(item_r3, "target"));
-    \u0275\u0275attribute("href", ctx_r4.getItemProp(item_r3, "url"), \u0275\u0275sanitizeUrl)("tabindex", -1)("title", ctx_r4.getItemProp(item_r3, "title"))("data-pc-section", "headeraction");
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.isItemGroup(item_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", item_r3.icon);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "escape") !== false)("ngIfElse", htmlLabel_r6);
-    \u0275\u0275advance(3);
-    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "badge"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_3_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_Template, 7, 10, "a", 13);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(2).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r4.getItemProp(item_r3, "routerLink"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_ng_container_4_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainer(0);
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_ChevronDownIcon_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "ChevronDownIcon", 20);
-  }
-  if (rf & 2) {
-    \u0275\u0275property("styleClass", "p-submenu-icon");
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_ChevronRightIcon_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "ChevronRightIcon", 20);
-  }
-  if (rf & 2) {
-    \u0275\u0275property("styleClass", "p-submenu-icon");
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_ChevronDownIcon_1_Template, 1, 1, "ChevronDownIcon", 19)(2, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_ChevronRightIcon_2_Template, 1, 1, "ChevronRightIcon", 19);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(4).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.isItemActive(item_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r4.isItemActive(item_r3));
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_2_ng_template_0_Template(rf, ctx) {
-}
-function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275template(0, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_2_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_Template, 3, 2, "ng-container", 9)(2, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_2_Template, 1, 0, null, 18);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const ctx_r4 = \u0275\u0275nextContext(4);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", !ctx_r4.submenuIconTemplate);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngTemplateOutlet", ctx_r4.submenuIconTemplate);
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_span_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 21);
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(3).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", item_r3.icon)("ngStyle", ctx_r4.getItemProp(item_r3, "iconStyle"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_span_3_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 22);
-    \u0275\u0275text(1);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(3).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r4.getItemProp(item_r3, "label"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_ng_template_4_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "span", 23);
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(3).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("innerHTML", ctx_r4.getItemProp(item_r3, "label"), \u0275\u0275sanitizeHtml);
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_span_6_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "span", 24);
-    \u0275\u0275text(1);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const item_r3 = \u0275\u0275nextContext(3).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", ctx_r4.getItemProp(item_r3, "badgeStyleClass"));
-    \u0275\u0275advance();
-    \u0275\u0275textInterpolate(ctx_r4.getItemProp(item_r3, "badge"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_a_5_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "a", 25);
-    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_Template, 3, 2, "ng-container", 9)(2, PanelMenu_ng_container_2_div_1_a_5_span_2_Template, 1, 2, "span", 15)(3, PanelMenu_ng_container_2_div_1_a_5_span_3_Template, 2, 1, "span", 16)(4, PanelMenu_ng_container_2_div_1_a_5_ng_template_4_Template, 1, 1, "ng-template", null, 2, \u0275\u0275templateRefExtractor)(6, PanelMenu_ng_container_2_div_1_a_5_span_6_Template, 2, 2, "span", 17);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const htmlRouteLabel_r7 = \u0275\u0275reference(5);
-    const item_r3 = \u0275\u0275nextContext(2).$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("routerLink", ctx_r4.getItemProp(item_r3, "routerLink"))("queryParams", ctx_r4.getItemProp(item_r3, "queryParams"))("routerLinkActive", "p-menuitem-link-active")("routerLinkActiveOptions", ctx_r4.getItemProp(item_r3, "routerLinkActiveOptions") || \u0275\u0275pureFunction0(18, _c3))("target", ctx_r4.getItemProp(item_r3, "target"))("fragment", ctx_r4.getItemProp(item_r3, "fragment"))("queryParamsHandling", ctx_r4.getItemProp(item_r3, "queryParamsHandling"))("preserveFragment", ctx_r4.getItemProp(item_r3, "preserveFragment"))("skipLocationChange", ctx_r4.getItemProp(item_r3, "skipLocationChange"))("replaceUrl", ctx_r4.getItemProp(item_r3, "replaceUrl"))("state", ctx_r4.getItemProp(item_r3, "state"));
-    \u0275\u0275attribute("tabindex", -1)("data-pc-section", "headeraction");
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.isItemGroup(item_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", item_r3.icon);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "escape") !== false)("ngIfElse", htmlRouteLabel_r7);
-    \u0275\u0275advance(3);
-    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "badge"));
-  }
-}
-function PanelMenu_ng_container_2_div_1_div_6_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r8 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 26);
-    \u0275\u0275listener("@rootItem.done", function PanelMenu_ng_container_2_div_1_div_6_Template_div_animation_rootItem_done_0_listener() {
-      \u0275\u0275restoreView(_r8);
-      const ctx_r4 = \u0275\u0275nextContext(3);
-      return \u0275\u0275resetView(ctx_r4.onToggleDone());
-    });
-    \u0275\u0275elementStart(1, "div", 27)(2, "p-panelMenuList", 28);
-    \u0275\u0275listener("headerFocus", function PanelMenu_ng_container_2_div_1_div_6_Template_p_panelMenuList_headerFocus_2_listener($event) {
-      \u0275\u0275restoreView(_r8);
-      const ctx_r4 = \u0275\u0275nextContext(3);
-      return \u0275\u0275resetView(ctx_r4.updateFocusedHeader($event));
-    });
-    \u0275\u0275elementEnd()()();
-  }
-  if (rf & 2) {
-    const ctx_r1 = \u0275\u0275nextContext(2);
-    const item_r3 = ctx_r1.$implicit;
-    const i_r4 = ctx_r1.index;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(14, _c8, ctx_r4.isItemActive(item_r3)))("@rootItem", ctx_r4.getAnimation(item_r3));
-    \u0275\u0275attribute("id", ctx_r4.getContentId(item_r3, i_r4))("aria-labelledby", ctx_r4.getHeaderId(item_r3, i_r4))("data-pc-section", "toggleablecontent");
-    \u0275\u0275advance();
-    \u0275\u0275attribute("data-pc-section", "menucontent");
-    \u0275\u0275advance();
-    \u0275\u0275property("panelId", ctx_r4.getPanelId(i_r4, item_r3))("items", ctx_r4.getItemProp(item_r3, "items"))("itemTemplate", ctx_r4.itemTemplate)("transitionOptions", ctx_r4.transitionOptions)("root", true)("activeItem", ctx_r4.activeItem())("tabindex", ctx_r4.tabindex)("parentExpanded", ctx_r4.isItemActive(item_r3));
-  }
-}
-function PanelMenu_ng_container_2_div_1_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 6)(1, "div", 7);
-    \u0275\u0275listener("click", function PanelMenu_ng_container_2_div_1_Template_div_click_1_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      const item_r3 = ctx_r1.$implicit;
-      const i_r4 = ctx_r1.index;
-      const ctx_r4 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r4.onHeaderClick($event, item_r3, i_r4));
-    })("keydown", function PanelMenu_ng_container_2_div_1_Template_div_keydown_1_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      const item_r3 = ctx_r1.$implicit;
-      const i_r4 = ctx_r1.index;
-      const ctx_r4 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r4.onHeaderKeyDown($event, item_r3, i_r4));
-    });
-    \u0275\u0275elementStart(2, "div", 8);
-    \u0275\u0275template(3, PanelMenu_ng_container_2_div_1_ng_container_3_Template, 2, 1, "ng-container", 9)(4, PanelMenu_ng_container_2_div_1_ng_container_4_Template, 1, 0, "ng-container", 10)(5, PanelMenu_ng_container_2_div_1_a_5_Template, 7, 19, "a", 11);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275template(6, PanelMenu_ng_container_2_div_1_div_6_Template, 3, 16, "div", 12);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = \u0275\u0275nextContext();
-    const item_r3 = ctx_r1.$implicit;
-    const i_r4 = ctx_r1.index;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("ngClass", ctx_r4.getItemProp(item_r3, "headerClass"))("ngStyle", ctx_r4.getItemProp(item_r3, "style"));
-    \u0275\u0275attribute("data-pc-section", "panel");
-    \u0275\u0275advance();
-    \u0275\u0275classMap(ctx_r4.getItemProp(item_r3, "styleClass"));
-    \u0275\u0275property("ngClass", \u0275\u0275pureFunction2(23, _c7, ctx_r4.isItemActive(item_r3), ctx_r4.isItemDisabled(item_r3)))("ngStyle", ctx_r4.getItemProp(item_r3, "style"))("pTooltip", ctx_r4.getItemProp(item_r3, "tooltip"))("tabindex", 0)("tooltipOptions", ctx_r4.getItemProp(item_r3, "tooltipOptions"));
-    \u0275\u0275attribute("id", ctx_r4.getHeaderId(item_r3, i_r4))("aria-expanded", ctx_r4.isItemActive(item_r3))("aria-label", ctx_r4.getItemProp(item_r3, "label"))("aria-controls", ctx_r4.getContentId(item_r3, i_r4))("aria-disabled", ctx_r4.isItemDisabled(item_r3))("data-p-highlight", ctx_r4.isItemActive(item_r3))("data-p-disabled", ctx_r4.isItemDisabled(item_r3))("data-pc-section", "header");
-    \u0275\u0275advance(2);
-    \u0275\u0275property("ngIf", !ctx_r4.itemTemplate);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngTemplateOutlet", ctx_r4.itemTemplate)("ngTemplateOutletContext", \u0275\u0275pureFunction1(26, _c4, item_r3));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "routerLink"));
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.isItemGroup(item_r3));
-  }
-}
-function PanelMenu_ng_container_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_Template, 7, 28, "div", 5);
-    \u0275\u0275elementContainerEnd();
-  }
-  if (rf & 2) {
-    const item_r3 = ctx.$implicit;
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r4.isItemVisible(item_r3));
-  }
-}
-var _c9 = "@layer primeng{.p-panelmenu .p-panelmenu-header-action{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;position:relative;text-decoration:none}.p-panelmenu .p-panelmenu-header-action:focus{z-index:1}.p-panelmenu .p-submenu-list{margin:0;padding:0;list-style:none}.p-panelmenu .p-menuitem-link{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;outline:none}.p-panelmenu .p-menuitem-text{line-height:1}.p-panelmenu-expanded.p-toggleable-content:not(.ng-animating),.p-panelmenu .p-submenu-expanded:not(.ng-animating){overflow:visible}.p-panelmenu .p-toggleable-content,.p-panelmenu .p-submenu-list{overflow:hidden}}\n";
-var PanelMenuSub = class _PanelMenuSub {
-  panelMenu;
-  el;
-  panelId;
-  focusedItemId;
-  items;
-  itemTemplate;
-  level = 0;
-  activeItemPath;
-  root;
-  tabindex;
-  transitionOptions;
-  parentExpanded;
-  itemToggle = new EventEmitter();
-  menuFocus = new EventEmitter();
-  menuBlur = new EventEmitter();
-  menuKeyDown = new EventEmitter();
-  listViewChild;
-  constructor(panelMenu, el) {
-    this.panelMenu = panelMenu;
-    this.el = el;
-  }
-  getItemId(processedItem) {
-    return processedItem.item?.id ?? `${this.panelId}_${processedItem.key}`;
-  }
-  getItemKey(processedItem) {
-    return this.getItemId(processedItem);
-  }
-  getItemClass(processedItem) {
-    return {
-      "p-menuitem": true,
-      "p-disabled": this.isItemDisabled(processedItem)
-    };
-  }
-  getItemProp(processedItem, name, params) {
-    return processedItem && processedItem.item ? ObjectUtils.getItemValue(processedItem.item[name], params) : void 0;
-  }
-  getItemLabel(processedItem) {
-    return this.getItemProp(processedItem, "label");
-  }
-  isItemExpanded(processedItem) {
-    return processedItem.expanded;
-  }
-  isItemActive(processedItem) {
-    return this.isItemExpanded(processedItem) || this.activeItemPath.some((path) => path && path.key === processedItem.key);
-  }
-  isItemVisible(processedItem) {
-    return this.getItemProp(processedItem, "visible") !== false;
-  }
-  isItemDisabled(processedItem) {
-    return this.getItemProp(processedItem, "disabled");
-  }
-  isItemFocused(processedItem) {
-    return this.focusedItemId === this.getItemId(processedItem);
-  }
-  isItemGroup(processedItem) {
-    return ObjectUtils.isNotEmpty(processedItem.items);
-  }
-  getAnimation(processedItem) {
-    return this.isItemActive(processedItem) ? {
-      value: "visible",
-      params: {
-        transitionParams: this.transitionOptions,
-        height: "*"
-      }
-    } : {
-      value: "hidden",
-      params: {
-        transitionParams: this.transitionOptions,
-        height: "0"
-      }
-    };
-  }
-  getAriaSetSize() {
-    return this.items.filter((processedItem) => this.isItemVisible(processedItem) && !this.getItemProp(processedItem, "separator")).length;
-  }
-  getAriaPosInset(index) {
-    return index - this.items.slice(0, index).filter((processedItem) => this.isItemVisible(processedItem) && this.getItemProp(processedItem, "separator")).length + 1;
-  }
-  onItemClick(event, processedItem) {
-    if (!this.isItemDisabled(processedItem)) {
-      this.getItemProp(processedItem, "command", {
-        originalEvent: event,
-        item: processedItem.item
-      });
-      this.itemToggle.emit({
-        processedItem,
-        expanded: !this.isItemActive(processedItem)
-      });
-    }
-  }
-  onItemToggle(event) {
-    this.itemToggle.emit(event);
-  }
-  static \u0275fac = function PanelMenuSub_Factory(t) {
-    return new (t || _PanelMenuSub)(\u0275\u0275directiveInject(forwardRef(() => PanelMenu)), \u0275\u0275directiveInject(ElementRef));
-  };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _PanelMenuSub,
-    selectors: [["p-panelMenuSub"]],
-    viewQuery: function PanelMenuSub_Query(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275viewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.listViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      panelId: "panelId",
-      focusedItemId: "focusedItemId",
-      items: "items",
-      itemTemplate: "itemTemplate",
-      level: [2, "level", "level", numberAttribute],
-      activeItemPath: "activeItemPath",
-      root: [2, "root", "root", booleanAttribute],
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      transitionOptions: "transitionOptions",
-      parentExpanded: [2, "parentExpanded", "parentExpanded", booleanAttribute]
-    },
-    outputs: {
-      itemToggle: "itemToggle",
-      menuFocus: "menuFocus",
-      menuBlur: "menuBlur",
-      menuKeyDown: "menuKeyDown"
-    },
-    features: [\u0275\u0275InputTransformsFeature],
-    decls: 3,
-    vars: 8,
-    consts: [["list", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], ["role", "tree", 3, "focusin", "focusout", "keydown", "ngClass", "tabindex"], ["ngFor", "", 3, "ngForOf"], ["class", "p-menuitem-separator", "role", "separator", 4, "ngIf"], ["role", "treeitem", 3, "ngClass", "class", "p-hidden", "p-focus", "ngStyle", "pTooltip", "tooltipOptions", 4, "ngIf"], ["role", "separator", 1, "p-menuitem-separator"], ["role", "treeitem", 3, "ngClass", "ngStyle", "pTooltip", "tooltipOptions"], [1, "p-menuitem-content", 3, "click"], [4, "ngIf"], [1, "p-toggleable-content"], [3, "id", "panelId", "items", "itemTemplate", "transitionOptions", "focusedItemId", "activeItemPath", "level", "parentExpanded", "itemToggle", 4, "ngIf"], ["class", "p-menuitem-link", 3, "ngClass", "target", 4, "ngIf"], ["class", "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "ngClass", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], [1, "p-menuitem-link", 3, "ngClass", "target"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass", "ngStyle", 4, "ngIf"], [3, "styleClass", "ngStyle"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], [1, "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "ngClass", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "itemToggle", "id", "panelId", "items", "itemTemplate", "transitionOptions", "focusedItemId", "activeItemPath", "level", "parentExpanded"]],
-    template: function PanelMenuSub_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = \u0275\u0275getCurrentView();
-        \u0275\u0275elementStart(0, "ul", 3, 0);
-        \u0275\u0275listener("focusin", function PanelMenuSub_Template_ul_focusin_0_listener($event) {
-          \u0275\u0275restoreView(_r1);
-          return \u0275\u0275resetView(ctx.menuFocus.emit($event));
-        })("focusout", function PanelMenuSub_Template_ul_focusout_0_listener($event) {
-          \u0275\u0275restoreView(_r1);
-          return \u0275\u0275resetView(ctx.menuBlur.emit($event));
-        })("keydown", function PanelMenuSub_Template_ul_keydown_0_listener($event) {
-          \u0275\u0275restoreView(_r1);
-          return \u0275\u0275resetView(ctx.menuKeyDown.emit($event));
-        });
-        \u0275\u0275template(2, PanelMenuSub_ng_template_2_Template, 2, 2, "ng-template", 4);
-        \u0275\u0275elementEnd();
-      }
-      if (rf & 2) {
-        \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(6, _c1, ctx.root))("tabindex", -1);
-        \u0275\u0275attribute("aria-activedescendant", ctx.focusedItemId)("data-pc-section", "menu")("aria-hidden", !ctx.parentExpanded);
-        \u0275\u0275advance(2);
-        \u0275\u0275property("ngForOf", ctx.items);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Tooltip, AngleDownIcon, AngleRightIcon, _PanelMenuSub],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("submenu", [state("hidden", style({
-        height: "0"
-      })), state("visible", style({
-        height: "*"
-      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])]
-    }
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PanelMenuSub, [{
-    type: Component,
-    args: [{
-      selector: "p-panelMenuSub",
-      template: `
-        <ul
-            #list
-            [ngClass]="{ 'p-submenu-list': true, 'p-panelmenu-root-list': root }"
-            role="tree"
-            [tabindex]="-1"
-            [attr.aria-activedescendant]="focusedItemId"
-            [attr.data-pc-section]="'menu'"
-            [attr.aria-hidden]="!parentExpanded"
-            (focusin)="menuFocus.emit($event)"
-            (focusout)="menuBlur.emit($event)"
-            (keydown)="menuKeyDown.emit($event)"
-        >
-            <ng-template ngFor let-processedItem let-index="index" [ngForOf]="items">
-                <li *ngIf="processedItem.separator" class="p-menuitem-separator" role="separator"></li>
-                <li
-                    *ngIf="!processedItem.separator && isItemVisible(processedItem)"
-                    [ngClass]="getItemClass(processedItem)"
-                    role="treeitem"
-                    [attr.id]="getItemId(processedItem)"
-                    [attr.aria-label]="getItemProp(processedItem, 'label')"
-                    [attr.aria-expanded]="isItemGroup(processedItem) ? isItemActive(processedItem) : undefined"
-                    [attr.aria-level]="level + 1"
-                    [attr.aria-setsize]="getAriaSetSize()"
-                    [attr.aria-posinset]="getAriaPosInset(index)"
-                    [class]="getItemProp(processedItem, 'styleClass')"
-                    [class.p-hidden]="processedItem.visible === false"
-                    [class.p-focus]="isItemFocused(processedItem) && !isItemDisabled(processedItem)"
-                    [ngStyle]="getItemProp(processedItem, 'style')"
-                    [pTooltip]="getItemProp(processedItem, 'tooltip')"
-                    [attr.data-p-disabled]="isItemDisabled(processedItem)"
-                    [tooltipOptions]="getItemProp(processedItem, 'tooltipOptions')"
-                >
-                    <div class="p-menuitem-content" (click)="onItemClick($event, processedItem)">
-                        <ng-container *ngIf="!itemTemplate">
-                            <a
-                                *ngIf="!getItemProp(processedItem, 'routerLink')"
-                                [attr.href]="getItemProp(processedItem, 'url')"
-                                class="p-menuitem-link"
-                                [ngClass]="{ 'p-disabled': getItemProp(processedItem, 'disabled') }"
-                                [target]="getItemProp(processedItem, 'target')"
-                                [attr.data-pc-section]="'action'"
-                                [attr.tabindex]="!!parentExpanded ? '0' : '-1'"
-                            >
-                                <ng-container *ngIf="isItemGroup(processedItem)">
-                                    <ng-container *ngIf="!panelMenu.submenuIconTemplate">
-                                        <AngleDownIcon [styleClass]="'p-submenu-icon'" *ngIf="isItemActive(processedItem)" [ngStyle]="getItemProp(processedItem, 'iconStyle')" />
-                                        <AngleRightIcon [styleClass]="'p-submenu-icon'" *ngIf="!isItemActive(processedItem)" [ngStyle]="getItemProp(processedItem, 'iconStyle')" />
-                                    </ng-container>
-                                    <ng-template *ngTemplateOutlet="panelMenu.submenuIconTemplate"></ng-template>
-                                </ng-container>
-                                <span class="p-menuitem-icon" [ngClass]="processedItem.icon" *ngIf="processedItem.icon" [ngStyle]="getItemProp(processedItem, 'iconStyle')"></span>
-                                <span class="p-menuitem-text" *ngIf="processedItem.item?.escape !== false; else htmlLabel">{{ getItemProp(processedItem, 'label') }}</span>
-                                <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(processedItem, 'label')"></span></ng-template>
-                                <span class="p-menuitem-badge" *ngIf="processedItem.badge" [ngClass]="processedItem.badgeStyleClass">{{ processedItem.badge }}</span>
-                            </a>
-                            <a
-                                *ngIf="getItemProp(processedItem, 'routerLink')"
-                                [routerLink]="getItemProp(processedItem, 'routerLink')"
-                                [queryParams]="getItemProp(processedItem, 'queryParams')"
-                                [routerLinkActive]="'p-menuitem-link-active'"
-                                [routerLinkActiveOptions]="getItemProp(processedItem, 'routerLinkActiveOptions') || { exact: false }"
-                                class="p-menuitem-link"
-                                [ngClass]="{ 'p-disabled': getItemProp(processedItem, 'disabled') }"
-                                [target]="getItemProp(processedItem, 'target')"
-                                [attr.title]="getItemProp(processedItem, 'title')"
-                                [fragment]="getItemProp(processedItem, 'fragment')"
-                                [queryParamsHandling]="getItemProp(processedItem, 'queryParamsHandling')"
-                                [preserveFragment]="getItemProp(processedItem, 'preserveFragment')"
-                                [skipLocationChange]="getItemProp(processedItem, 'skipLocationChange')"
-                                [replaceUrl]="getItemProp(processedItem, 'replaceUrl')"
-                                [state]="getItemProp(processedItem, 'state')"
-                                [attr.data-pc-section]="'action'"
-                                [attr.tabindex]="!!parentExpanded ? '0' : '-1'"
-                            >
-                                <ng-container *ngIf="isItemGroup(processedItem)">
-                                    <ng-container *ngIf="!panelMenu.submenuIconTemplate">
-                                        <AngleDownIcon *ngIf="isItemActive(processedItem)" [styleClass]="'p-submenu-icon'" [ngStyle]="getItemProp(processedItem, 'iconStyle')" />
-                                        <AngleRightIcon *ngIf="!isItemActive(processedItem)" [styleClass]="'p-submenu-icon'" [ngStyle]="getItemProp(processedItem, 'iconStyle')" />
-                                    </ng-container>
-                                    <ng-template *ngTemplateOutlet="panelMenu.submenuIconTemplate"></ng-template>
-                                </ng-container>
-                                <span class="p-menuitem-icon" [ngClass]="processedItem.icon" *ngIf="processedItem.icon" [ngStyle]="getItemProp(processedItem, 'iconStyle')"></span>
-                                <span class="p-menuitem-text" *ngIf="getItemProp(processedItem, 'escape') !== false; else htmlRouteLabel">{{ getItemProp(processedItem, 'label') }}</span>
-                                <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(processedItem, 'label')"></span></ng-template>
-                                <span class="p-menuitem-badge" *ngIf="processedItem.badge" [ngClass]="getItemProp(processedItem, 'badgeStyleClass')">{{ getItemProp(processedItem, 'badge') }}</span>
-                            </a>
-                        </ng-container>
-                        <ng-container *ngIf="itemTemplate">
-                            <ng-template *ngTemplateOutlet="itemTemplate; context: { $implicit: processedItem.item }"></ng-template>
-                        </ng-container>
-                    </div>
-                    <div class="p-toggleable-content" [@submenu]="getAnimation(processedItem)">
-                        <p-panelMenuSub
-                            *ngIf="isItemVisible(processedItem) && isItemGroup(processedItem) && isItemExpanded(processedItem)"
-                            [id]="getItemId(processedItem) + '_list'"
-                            [panelId]="panelId"
-                            [items]="processedItem?.items"
-                            [itemTemplate]="itemTemplate"
-                            [transitionOptions]="transitionOptions"
-                            [focusedItemId]="focusedItemId"
-                            [activeItemPath]="activeItemPath"
-                            [level]="level + 1"
-                            [parentExpanded]="!!parentExpanded && isItemExpanded(processedItem)"
-                            (itemToggle)="onItemToggle($event)"
-                        ></p-panelMenuSub>
-                    </div>
-                </li>
-            </ng-template>
-        </ul>
-    `,
-      animations: [trigger("submenu", [state("hidden", style({
-        height: "0"
-      })), state("visible", style({
-        height: "*"
-      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])],
-      encapsulation: ViewEncapsulation$1.None,
-      host: {
-        class: "p-element"
-      }
-    }]
-  }], () => [{
-    type: PanelMenu,
-    decorators: [{
-      type: Inject,
-      args: [forwardRef(() => PanelMenu)]
-    }]
-  }, {
-    type: ElementRef
-  }], {
-    panelId: [{
-      type: Input
-    }],
-    focusedItemId: [{
-      type: Input
-    }],
-    items: [{
-      type: Input
-    }],
-    itemTemplate: [{
-      type: Input
-    }],
-    level: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    activeItemPath: [{
-      type: Input
-    }],
-    root: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    tabindex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    transitionOptions: [{
-      type: Input
-    }],
-    parentExpanded: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    itemToggle: [{
-      type: Output
-    }],
-    menuFocus: [{
-      type: Output
-    }],
-    menuBlur: [{
-      type: Output
-    }],
-    menuKeyDown: [{
-      type: Output
-    }],
-    listViewChild: [{
-      type: ViewChild,
-      args: ["list"]
-    }]
-  });
-})();
-var PanelMenuList = class _PanelMenuList {
-  el;
-  panelId;
-  id;
-  items;
-  itemTemplate;
-  parentExpanded;
-  expanded;
-  transitionOptions;
-  root;
-  tabindex;
-  activeItem;
-  itemToggle = new EventEmitter();
-  headerFocus = new EventEmitter();
-  subMenuViewChild;
-  searchTimeout;
-  searchValue;
-  focused;
-  focusedItem = signal(null);
-  activeItemPath = signal([]);
-  processedItems = signal([]);
-  visibleItems = computed(() => {
-    const processedItems = this.processedItems();
-    return this.flatItems(processedItems);
-  });
-  get focusedItemId() {
-    const focusedItem = this.focusedItem();
-    return focusedItem && focusedItem.item?.id ? focusedItem.item.id : ObjectUtils.isNotEmpty(this.focusedItem()) ? `${this.panelId}_${this.focusedItem().key}` : void 0;
-  }
-  constructor(el) {
-    this.el = el;
-  }
-  ngOnChanges(changes) {
-    this.processedItems.set(this.createProcessedItems(changes?.items?.currentValue || this.items || []));
-  }
-  getItemProp(processedItem, name) {
-    return processedItem && processedItem.item ? ObjectUtils.getItemValue(processedItem.item[name]) : void 0;
-  }
-  getItemLabel(processedItem) {
-    return this.getItemProp(processedItem, "label");
-  }
-  isItemVisible(processedItem) {
-    return this.getItemProp(processedItem, "visible") !== false;
-  }
-  isItemDisabled(processedItem) {
-    return this.getItemProp(processedItem, "disabled");
-  }
-  isItemActive(processedItem) {
-    return this.activeItemPath().some((path) => path.key === processedItem.parentKey);
-  }
-  isItemGroup(processedItem) {
-    return ObjectUtils.isNotEmpty(processedItem.items);
-  }
-  isElementInPanel(event, element) {
-    const panel = event.currentTarget.closest('[data-pc-section="panel"]');
-    return panel && panel.contains(element);
-  }
-  isItemMatched(processedItem) {
-    return this.isValidItem(processedItem) && this.getItemLabel(processedItem).toLocaleLowerCase().startsWith(this.searchValue.toLocaleLowerCase());
-  }
-  isVisibleItem(processedItem) {
-    return !!processedItem && (processedItem.level === 0 || this.isItemActive(processedItem)) && this.isItemVisible(processedItem);
-  }
-  isValidItem(processedItem) {
-    return !!processedItem && !this.isItemDisabled(processedItem) && !processedItem.separator;
-  }
-  findFirstItem() {
-    return this.visibleItems().find((processedItem) => this.isValidItem(processedItem));
-  }
-  findLastItem() {
-    return ObjectUtils.findLast(this.visibleItems(), (processedItem) => this.isValidItem(processedItem));
-  }
-  findItemByEventTarget(target) {
-    let parentNode = target;
-    while (parentNode && parentNode.tagName?.toLowerCase() !== "li") {
-      parentNode = parentNode?.parentNode;
-    }
-    return parentNode?.id && this.visibleItems().find((processedItem) => this.isValidItem(processedItem) && `${this.panelId}_${processedItem.key}` === parentNode.id);
-  }
-  createProcessedItems(items, level = 0, parent = {}, parentKey = "") {
-    const processedItems = [];
-    items && items.forEach((item, index) => {
-      const key = (parentKey !== "" ? parentKey + "_" : "") + index;
-      const newItem = {
-        icon: item.icon,
-        expanded: item.expanded,
-        separator: item.separator,
-        item,
-        index,
-        level,
-        key,
-        parent,
-        parentKey
-      };
-      newItem["items"] = this.createProcessedItems(item.items, level + 1, newItem, key);
-      processedItems.push(newItem);
-    });
-    return processedItems;
-  }
-  findProcessedItemByItemKey(key, processedItems, level = 0) {
-    processedItems = processedItems || this.processedItems();
-    if (processedItems && processedItems.length) {
-      for (let i = 0; i < processedItems.length; i++) {
-        const processedItem = processedItems[i];
-        if (this.getItemProp(processedItem, "key") === key) return processedItem;
-        const matchedItem = this.findProcessedItemByItemKey(key, processedItem.items, level + 1);
-        if (matchedItem) return matchedItem;
-      }
-    }
-  }
-  flatItems(processedItems, processedFlattenItems = []) {
-    processedItems && processedItems.forEach((processedItem) => {
-      if (this.isVisibleItem(processedItem)) {
-        processedFlattenItems.push(processedItem);
-        this.flatItems(processedItem.items, processedFlattenItems);
-      }
-    });
-    return processedFlattenItems;
-  }
-  changeFocusedItem(event) {
-    const {
-      originalEvent,
-      processedItem,
-      focusOnNext,
-      selfCheck,
-      allowHeaderFocus = true
-    } = event;
-    if (ObjectUtils.isNotEmpty(this.focusedItem()) && this.focusedItem().key !== processedItem.key) {
-      this.focusedItem.set(processedItem);
-      this.scrollInView();
-    } else if (allowHeaderFocus) {
-      this.headerFocus.emit({
-        originalEvent,
-        focusOnNext,
-        selfCheck
-      });
-    }
-  }
-  scrollInView() {
-    const element = DomHandler.findSingle(this.subMenuViewChild.listViewChild.nativeElement, `li[id="${`${this.focusedItemId}`}"]`);
-    if (element) {
-      element.scrollIntoView && element.scrollIntoView({
-        block: "nearest",
-        inline: "nearest"
-      });
-    }
-  }
-  onFocus(event) {
-    if (!this.focused) {
-      this.focused = true;
-      const focusedItem = this.focusedItem() || (this.isElementInPanel(event, event.relatedTarget) ? this.findItemByEventTarget(event.target) || this.findFirstItem() : this.findLastItem());
-      if (event.relatedTarget !== null) this.focusedItem.set(focusedItem);
-    }
-  }
-  onBlur(event) {
-    const target = event.relatedTarget;
-    if (this.focused && !this.el.nativeElement.contains(target)) {
-      this.focused = false;
-      this.focusedItem.set(null);
-      this.searchValue = "";
-    }
-  }
-  onItemToggle(event) {
-    const {
-      processedItem,
-      expanded
-    } = event;
-    processedItem.expanded = !processedItem.expanded;
-    const activeItemPath = this.activeItemPath().filter((p) => p.parentKey !== processedItem.parentKey);
-    expanded && activeItemPath.push(processedItem);
-    this.activeItemPath.set(activeItemPath);
-    this.processedItems.update((value) => value.map((i) => i === processedItem ? processedItem : i));
-    this.focusedItem.set(processedItem);
-  }
-  onKeyDown(event) {
-    const metaKey = event.metaKey || event.ctrlKey;
-    switch (event.code) {
-      case "ArrowDown":
-        this.onArrowDownKey(event);
-        break;
-      case "ArrowUp":
-        this.onArrowUpKey(event);
-        break;
-      case "ArrowLeft":
-        this.onArrowLeftKey(event);
-        break;
-      case "ArrowRight":
-        this.onArrowRightKey(event);
-        break;
-      case "Home":
-        this.onHomeKey(event);
-        break;
-      case "End":
-        this.onEndKey(event);
-        break;
-      case "Space":
-        this.onSpaceKey(event);
-        break;
-      case "Enter":
-        this.onEnterKey(event);
-        break;
-      case "Escape":
-      case "Tab":
-      case "PageDown":
-      case "PageUp":
-      case "Backspace":
-      case "ShiftLeft":
-      case "ShiftRight":
-        break;
-      default:
-        if (!metaKey && ObjectUtils.isPrintableCharacter(event.key)) {
-          this.searchItems(event, event.key);
-        }
-        break;
-    }
-  }
-  onArrowDownKey(event) {
-    const processedItem = ObjectUtils.isNotEmpty(this.focusedItem()) ? this.findNextItem(this.focusedItem()) : this.findFirstItem();
-    this.changeFocusedItem({
-      originalEvent: event,
-      processedItem,
-      focusOnNext: true
-    });
-    event.preventDefault();
-  }
-  onArrowUpKey(event) {
-    const processedItem = ObjectUtils.isNotEmpty(this.focusedItem()) ? this.findPrevItem(this.focusedItem()) : this.findLastItem();
-    this.changeFocusedItem({
-      originalEvent: event,
-      processedItem,
-      selfCheck: true
-    });
-    event.preventDefault();
-  }
-  onArrowLeftKey(event) {
-    if (ObjectUtils.isNotEmpty(this.focusedItem())) {
-      const matched = this.activeItemPath().some((p) => p.key === this.focusedItem().key);
-      if (matched) {
-        const activeItemPath = this.activeItemPath().filter((p) => p.key !== this.focusedItem().key);
-        this.activeItemPath.set(activeItemPath);
-      } else {
-        const focusedItem = ObjectUtils.isNotEmpty(this.focusedItem().parent) ? this.focusedItem().parent : this.focusedItem();
-        this.focusedItem.set(focusedItem);
-      }
-      event.preventDefault();
-    }
-  }
-  onArrowRightKey(event) {
-    if (ObjectUtils.isNotEmpty(this.focusedItem())) {
-      const grouped = this.isItemGroup(this.focusedItem());
-      if (grouped) {
-        const matched = this.activeItemPath().some((p) => p.key === this.focusedItem().key);
-        if (matched) {
-          this.onArrowDownKey(event);
-        } else {
-          const activeItemPath = this.activeItemPath().filter((p) => p.parentKey !== this.focusedItem().parentKey);
-          activeItemPath.push(this.focusedItem());
-          this.activeItemPath.set(activeItemPath);
-        }
-      }
-      event.preventDefault();
-    }
-  }
-  onHomeKey(event) {
-    this.changeFocusedItem({
-      originalEvent: event,
-      processedItem: this.findFirstItem(),
-      allowHeaderFocus: false
-    });
-    event.preventDefault();
-  }
-  onEndKey(event) {
-    this.changeFocusedItem({
-      originalEvent: event,
-      processedItem: this.findLastItem(),
-      focusOnNext: true,
-      allowHeaderFocus: false
-    });
-    event.preventDefault();
-  }
-  onEnterKey(event) {
-    if (ObjectUtils.isNotEmpty(this.focusedItem())) {
-      const element = DomHandler.findSingle(this.subMenuViewChild.listViewChild.nativeElement, `li[id="${`${this.focusedItemId}`}"]`);
-      const anchorElement = element && (DomHandler.findSingle(element, '[data-pc-section="action"]') || DomHandler.findSingle(element, "a,button"));
-      anchorElement ? anchorElement.click() : element && element.click();
-    }
-    event.preventDefault();
-  }
-  onSpaceKey(event) {
-    this.onEnterKey(event);
-  }
-  findNextItem(processedItem) {
-    const index = this.visibleItems().findIndex((item) => item.key === processedItem.key);
-    const matchedItem = index < this.visibleItems().length - 1 ? this.visibleItems().slice(index + 1).find((pItem) => this.isValidItem(pItem)) : void 0;
-    return matchedItem || processedItem;
-  }
-  findPrevItem(processedItem) {
-    const index = this.visibleItems().findIndex((item) => item.key === processedItem.key);
-    const matchedItem = index > 0 ? ObjectUtils.findLast(this.visibleItems().slice(0, index), (pItem) => this.isValidItem(pItem)) : void 0;
-    return matchedItem || processedItem;
-  }
-  searchItems(event, char) {
-    this.searchValue = (this.searchValue || "") + char;
-    let matchedItem = null;
-    let matched = false;
-    if (ObjectUtils.isNotEmpty(this.focusedItem())) {
-      const focusedItemIndex = this.visibleItems().findIndex((processedItem) => processedItem.key === this.focusedItem().key);
-      matchedItem = this.visibleItems().slice(focusedItemIndex).find((processedItem) => this.isItemMatched(processedItem));
-      matchedItem = ObjectUtils.isEmpty(matchedItem) ? this.visibleItems().slice(0, focusedItemIndex).find((processedItem) => this.isItemMatched(processedItem)) : matchedItem;
-    } else {
-      matchedItem = this.visibleItems().find((processedItem) => this.isItemMatched(processedItem));
-    }
-    if (ObjectUtils.isNotEmpty(matchedItem)) {
-      matched = true;
-    }
-    if (ObjectUtils.isEmpty(matchedItem) && ObjectUtils.isEmpty(this.focusedItem())) {
-      matchedItem = this.findFirstItem();
-    }
-    if (ObjectUtils.isNotEmpty(matchedItem)) {
-      this.changeFocusedItem({
-        originalEvent: event,
-        processedItem: matchedItem,
-        allowHeaderFocus: false
-      });
-    }
-    if (this.searchTimeout) {
-      clearTimeout(this.searchTimeout);
-    }
-    this.searchTimeout = setTimeout(() => {
-      this.searchValue = "";
-      this.searchTimeout = null;
-    }, 500);
-    return matched;
-  }
-  static \u0275fac = function PanelMenuList_Factory(t) {
-    return new (t || _PanelMenuList)(\u0275\u0275directiveInject(ElementRef));
-  };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _PanelMenuList,
-    selectors: [["p-panelMenuList"]],
-    viewQuery: function PanelMenuList_Query(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275viewQuery(_c5, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.subMenuViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      panelId: "panelId",
-      id: "id",
-      items: "items",
-      itemTemplate: "itemTemplate",
-      parentExpanded: [2, "parentExpanded", "parentExpanded", booleanAttribute],
-      expanded: [2, "expanded", "expanded", booleanAttribute],
-      transitionOptions: "transitionOptions",
-      root: [2, "root", "root", booleanAttribute],
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      activeItem: "activeItem"
-    },
-    outputs: {
-      itemToggle: "itemToggle",
-      headerFocus: "headerFocus"
-    },
-    features: [\u0275\u0275InputTransformsFeature, \u0275\u0275NgOnChangesFeature],
-    decls: 2,
-    vars: 10,
-    consts: [["submenu", ""], [3, "itemToggle", "keydown", "menuFocus", "menuBlur", "root", "id", "panelId", "tabindex", "itemTemplate", "focusedItemId", "activeItemPath", "transitionOptions", "items", "parentExpanded"]],
-    template: function PanelMenuList_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = \u0275\u0275getCurrentView();
-        \u0275\u0275elementStart(0, "p-panelMenuSub", 1, 0);
-        \u0275\u0275listener("itemToggle", function PanelMenuList_Template_p_panelMenuSub_itemToggle_0_listener($event) {
-          \u0275\u0275restoreView(_r1);
-          return \u0275\u0275resetView(ctx.onItemToggle($event));
-        })("keydown", function PanelMenuList_Template_p_panelMenuSub_keydown_0_listener($event) {
-          \u0275\u0275restoreView(_r1);
-          return \u0275\u0275resetView(ctx.onKeyDown($event));
-        })("menuFocus", function PanelMenuList_Template_p_panelMenuSub_menuFocus_0_listener($event) {
-          \u0275\u0275restoreView(_r1);
-          return \u0275\u0275resetView(ctx.onFocus($event));
-        })("menuBlur", function PanelMenuList_Template_p_panelMenuSub_menuBlur_0_listener($event) {
-          \u0275\u0275restoreView(_r1);
-          return \u0275\u0275resetView(ctx.onBlur($event));
-        });
-        \u0275\u0275elementEnd();
-      }
-      if (rf & 2) {
-        \u0275\u0275property("root", true)("id", ctx.panelId + "_list")("panelId", ctx.panelId)("tabindex", ctx.tabindex)("itemTemplate", ctx.itemTemplate)("focusedItemId", ctx.focused ? ctx.focusedItemId : void 0)("activeItemPath", ctx.activeItemPath())("transitionOptions", ctx.transitionOptions)("items", ctx.processedItems())("parentExpanded", ctx.parentExpanded);
-      }
-    },
-    dependencies: [PanelMenuSub],
-    styles: ["@layer primeng{.p-panelmenu .p-panelmenu-header-action{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;position:relative;text-decoration:none}.p-panelmenu .p-panelmenu-header-action:focus{z-index:1}.p-panelmenu .p-submenu-list{margin:0;padding:0;list-style:none}.p-panelmenu .p-menuitem-link{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;outline:none}.p-panelmenu .p-menuitem-text{line-height:1}.p-panelmenu-expanded.p-toggleable-content:not(.ng-animating),.p-panelmenu .p-submenu-expanded:not(.ng-animating){overflow:visible}.p-panelmenu .p-toggleable-content,.p-panelmenu .p-submenu-list{overflow:hidden}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PanelMenuList, [{
-    type: Component,
-    args: [{
-      selector: "p-panelMenuList",
-      template: `
-        <p-panelMenuSub
-            #submenu
-            [root]="true"
-            [id]="panelId + '_list'"
-            [panelId]="panelId"
-            [tabindex]="tabindex"
-            [itemTemplate]="itemTemplate"
-            [focusedItemId]="focused ? focusedItemId : undefined"
-            [activeItemPath]="activeItemPath()"
-            [transitionOptions]="transitionOptions"
-            [items]="processedItems()"
-            [parentExpanded]="parentExpanded"
-            (itemToggle)="onItemToggle($event)"
-            (keydown)="onKeyDown($event)"
-            (menuFocus)="onFocus($event)"
-            (menuBlur)="onBlur($event)"
-        ></p-panelMenuSub>
-    `,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None,
-      host: {
-        class: "p-element"
-      },
-      styles: ["@layer primeng{.p-panelmenu .p-panelmenu-header-action{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;position:relative;text-decoration:none}.p-panelmenu .p-panelmenu-header-action:focus{z-index:1}.p-panelmenu .p-submenu-list{margin:0;padding:0;list-style:none}.p-panelmenu .p-menuitem-link{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;outline:none}.p-panelmenu .p-menuitem-text{line-height:1}.p-panelmenu-expanded.p-toggleable-content:not(.ng-animating),.p-panelmenu .p-submenu-expanded:not(.ng-animating){overflow:visible}.p-panelmenu .p-toggleable-content,.p-panelmenu .p-submenu-list{overflow:hidden}}\n"]
-    }]
-  }], () => [{
-    type: ElementRef
-  }], {
-    panelId: [{
-      type: Input
-    }],
-    id: [{
-      type: Input
-    }],
-    items: [{
-      type: Input
-    }],
-    itemTemplate: [{
-      type: Input
-    }],
-    parentExpanded: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    expanded: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    transitionOptions: [{
-      type: Input
-    }],
-    root: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    tabindex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    activeItem: [{
-      type: Input
-    }],
-    itemToggle: [{
-      type: Output
-    }],
-    headerFocus: [{
-      type: Output
-    }],
-    subMenuViewChild: [{
-      type: ViewChild,
-      args: ["submenu"]
-    }]
-  });
-})();
-var PanelMenu = class _PanelMenu {
-  cd;
-  /**
-   * An array of menuitems.
-   * @group Props
-   */
-  model;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Whether multiple tabs can be activated at the same time or not.
-   * @group Props
-   */
-  multiple = false;
-  /**
-   * Transition options of the animation.
-   * @group Props
-   */
-  transitionOptions = "400ms cubic-bezier(0.86, 0, 0.07, 1)";
-  /**
-   * Current id state as a string.
-   * @group Props
-   */
-  id;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = 0;
-  templates;
-  containerViewChild;
-  submenuIconTemplate;
-  itemTemplate;
-  animating;
-  activeItem = signal(null);
-  ngOnInit() {
-    this.id = this.id || UniqueComponentId();
-  }
-  ngAfterContentInit() {
-    this.templates?.forEach((item) => {
-      switch (item.getType()) {
-        case "submenuicon":
-          this.submenuIconTemplate = item.template;
-          break;
-        case "item":
-          this.itemTemplate = item.template;
-          break;
-        default:
-          this.itemTemplate = item.template;
-          break;
-      }
-    });
-  }
-  constructor(cd) {
-    this.cd = cd;
-  }
-  /**
-   * Collapses open panels.
-   * @group Method
-   */
-  collapseAll() {
-    for (let item of this.model) {
-      if (item.expanded) {
-        item.expanded = false;
-      }
-    }
-    this.cd.detectChanges();
-  }
-  onToggleDone() {
-    this.animating = false;
-    this.cd.markForCheck();
-  }
-  changeActiveItem(event, item, index, selfActive = false) {
-    if (!this.isItemDisabled(item)) {
-      const activeItem = selfActive ? item : this.activeItem && ObjectUtils.equals(item, this.activeItem) ? null : item;
-      this.activeItem.set(activeItem);
-    }
-  }
-  getAnimation(item) {
-    return item.expanded ? {
-      value: "visible",
-      params: {
-        transitionParams: this.animating ? this.transitionOptions : "0ms",
-        height: "*"
-      }
-    } : {
-      value: "hidden",
-      params: {
-        transitionParams: this.transitionOptions,
-        height: "0"
-      }
-    };
-  }
-  getItemProp(item, name) {
-    return item ? ObjectUtils.getItemValue(item[name]) : void 0;
-  }
-  getItemLabel(item) {
-    return this.getItemProp(item, "label");
-  }
-  isItemActive(item) {
-    return item.expanded;
-  }
-  isItemVisible(item) {
-    return this.getItemProp(item, "visible") !== false;
-  }
-  isItemDisabled(item) {
-    return this.getItemProp(item, "disabled");
-  }
-  isItemGroup(item) {
-    return ObjectUtils.isNotEmpty(item.items);
-  }
-  getPanelId(index, item) {
-    return item && item.id ? item.id : `${this.id}_${index}`;
-  }
-  getHeaderId(item, index) {
-    return item.id ? item.id + "_header" : `${this.getPanelId(index)}_header`;
-  }
-  getContentId(item, index) {
-    return item.id ? item.id + "_content" : `${this.getPanelId(index)}_content`;
-  }
-  updateFocusedHeader(event) {
-    const {
-      originalEvent,
-      focusOnNext,
-      selfCheck
-    } = event;
-    const panelElement = originalEvent.currentTarget.closest('[data-pc-section="panel"]');
-    const header = selfCheck ? DomHandler.findSingle(panelElement, '[data-pc-section="header"]') : focusOnNext ? this.findNextHeader(panelElement) : this.findPrevHeader(panelElement);
-    header ? this.changeFocusedHeader(originalEvent, header) : focusOnNext ? this.onHeaderHomeKey(originalEvent) : this.onHeaderEndKey(originalEvent);
-  }
-  changeFocusedHeader(event, element) {
-    element && DomHandler.focus(element);
-  }
-  findNextHeader(panelElement, selfCheck = false) {
-    const nextPanelElement = selfCheck ? panelElement : panelElement.nextElementSibling;
-    const headerElement = DomHandler.findSingle(nextPanelElement, '[data-pc-section="header"]');
-    return headerElement ? DomHandler.getAttribute(headerElement, "data-p-disabled") ? this.findNextHeader(headerElement.parentElement) : headerElement : null;
-  }
-  findPrevHeader(panelElement, selfCheck = false) {
-    const prevPanelElement = selfCheck ? panelElement : panelElement.previousElementSibling;
-    const headerElement = DomHandler.findSingle(prevPanelElement, '[data-pc-section="header"]');
-    return headerElement ? DomHandler.getAttribute(headerElement, "data-p-disabled") ? this.findPrevHeader(headerElement.parentElement) : headerElement : null;
-  }
-  findFirstHeader() {
-    return this.findNextHeader(this.containerViewChild.nativeElement.firstElementChild, true);
-  }
-  findLastHeader() {
-    return this.findPrevHeader(this.containerViewChild.nativeElement.lastElementChild, true);
-  }
-  onHeaderClick(event, item, index) {
-    if (this.isItemDisabled(item)) {
-      event.preventDefault();
-      return;
-    }
-    if (item.command) {
-      item.command({
-        originalEvent: event,
-        item
-      });
-    }
-    if (!this.multiple) {
-      for (let modelItem of this.model) {
-        if (item !== modelItem && modelItem.expanded) {
-          modelItem.expanded = false;
-        }
-      }
-    }
-    item.expanded = !item.expanded;
-    this.changeActiveItem(event, item, index);
-    this.animating = true;
-    DomHandler.focus(event.currentTarget);
-  }
-  onHeaderKeyDown(event, item, index) {
-    switch (event.code) {
-      case "ArrowDown":
-        this.onHeaderArrowDownKey(event);
-        break;
-      case "ArrowUp":
-        this.onHeaderArrowUpKey(event);
-        break;
-      case "Home":
-        this.onHeaderHomeKey(event);
-        break;
-      case "End":
-        this.onHeaderEndKey(event);
-        break;
-      case "Enter":
-      case "Space":
-        this.onHeaderEnterKey(event, item, index);
-        break;
-      default:
-        break;
-    }
-  }
-  onHeaderArrowDownKey(event) {
-    const rootList = DomHandler.getAttribute(event.currentTarget, "data-p-highlight") === true ? DomHandler.findSingle(event.currentTarget.nextElementSibling, '[data-pc-section="menu"]') : null;
-    rootList ? DomHandler.focus(rootList) : this.updateFocusedHeader({
-      originalEvent: event,
-      focusOnNext: true
-    });
-    event.preventDefault();
-  }
-  onHeaderArrowUpKey(event) {
-    const prevHeader = this.findPrevHeader(event.currentTarget.parentElement) || this.findLastHeader();
-    const rootList = DomHandler.getAttribute(prevHeader, "data-p-highlight") === true ? DomHandler.findSingle(prevHeader.nextElementSibling, '[data-pc-section="menu"]') : null;
-    rootList ? DomHandler.focus(rootList) : this.updateFocusedHeader({
-      originalEvent: event,
-      focusOnNext: false
-    });
-    event.preventDefault();
-  }
-  onHeaderHomeKey(event) {
-    this.changeFocusedHeader(event, this.findFirstHeader());
-    event.preventDefault();
-  }
-  onHeaderEndKey(event) {
-    this.changeFocusedHeader(event, this.findLastHeader());
-    event.preventDefault();
-  }
-  onHeaderEnterKey(event, item, index) {
-    const headerAction = DomHandler.findSingle(event.currentTarget, '[data-pc-section="headeraction"]');
-    headerAction ? headerAction.click() : this.onHeaderClick(event, item, index);
-    event.preventDefault();
-  }
-  static \u0275fac = function PanelMenu_Factory(t) {
-    return new (t || _PanelMenu)(\u0275\u0275directiveInject(ChangeDetectorRef));
-  };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _PanelMenu,
-    selectors: [["p-panelMenu"]],
-    contentQueries: function PanelMenu_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        \u0275\u0275contentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function PanelMenu_Query(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275viewQuery(_c6, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.containerViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      model: "model",
-      style: "style",
-      styleClass: "styleClass",
-      multiple: [2, "multiple", "multiple", booleanAttribute],
-      transitionOptions: "transitionOptions",
-      id: "id",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute]
-    },
-    features: [\u0275\u0275InputTransformsFeature],
-    decls: 3,
-    vars: 5,
-    consts: [["container", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], [3, "ngStyle", "ngClass"], [4, "ngFor", "ngForOf"], ["class", "p-panelmenu-panel", 3, "ngClass", "ngStyle", 4, "ngIf"], [1, "p-panelmenu-panel", 3, "ngClass", "ngStyle"], ["role", "button", 3, "click", "keydown", "ngClass", "ngStyle", "pTooltip", "tabindex", "tooltipOptions"], [1, "p-panelmenu-header-content"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-panelmenu-header-action", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], ["class", "p-toggleable-content", "role", "region", 3, "ngClass", 4, "ngIf"], ["class", "p-panelmenu-header-action", 3, "target", 4, "ngIf"], [1, "p-panelmenu-header-action", 3, "target"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], [1, "p-panelmenu-header-action", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], ["role", "region", 1, "p-toggleable-content", 3, "ngClass"], [1, "p-panelmenu-content"], [3, "headerFocus", "panelId", "items", "itemTemplate", "transitionOptions", "root", "activeItem", "tabindex", "parentExpanded"]],
-    template: function PanelMenu_Template(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 3, 0);
-        \u0275\u0275template(2, PanelMenu_ng_container_2_Template, 2, 1, "ng-container", 4);
-        \u0275\u0275elementEnd();
-      }
-      if (rf & 2) {
-        \u0275\u0275classMap(ctx.styleClass);
-        \u0275\u0275property("ngStyle", ctx.style)("ngClass", "p-panelmenu p-component");
-        \u0275\u0275advance(2);
-        \u0275\u0275property("ngForOf", ctx.model);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Tooltip, ChevronDownIcon, ChevronRightIcon, PanelMenuList],
-    styles: [_c9],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("rootItem", [state("hidden", style({
-        height: "0"
-      })), state("visible", style({
-        height: "*"
-      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])]
-    },
-    changeDetection: 0
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PanelMenu, [{
-    type: Component,
-    args: [{
-      selector: "p-panelMenu",
-      template: `
-        <div [class]="styleClass" [ngStyle]="style" [ngClass]="'p-panelmenu p-component'" #container>
-            <ng-container *ngFor="let item of model; let f = first; let l = last; let i = index">
-                <div *ngIf="isItemVisible(item)" class="p-panelmenu-panel" [ngClass]="getItemProp(item, 'headerClass')" [ngStyle]="getItemProp(item, 'style')" [attr.data-pc-section]="'panel'">
-                    <div
-                        [ngClass]="{ 'p-component p-panelmenu-header': true, 'p-highlight': isItemActive(item), 'p-disabled': isItemDisabled(item) }"
-                        [class]="getItemProp(item, 'styleClass')"
-                        [ngStyle]="getItemProp(item, 'style')"
-                        [pTooltip]="getItemProp(item, 'tooltip')"
-                        [attr.id]="getHeaderId(item, i)"
-                        [tabindex]="0"
-                        role="button"
-                        [tooltipOptions]="getItemProp(item, 'tooltipOptions')"
-                        [attr.aria-expanded]="isItemActive(item)"
-                        [attr.aria-label]="getItemProp(item, 'label')"
-                        [attr.aria-controls]="getContentId(item, i)"
-                        [attr.aria-disabled]="isItemDisabled(item)"
-                        [attr.data-p-highlight]="isItemActive(item)"
-                        [attr.data-p-disabled]="isItemDisabled(item)"
-                        [attr.data-pc-section]="'header'"
-                        (click)="onHeaderClick($event, item, i)"
-                        (keydown)="onHeaderKeyDown($event, item, i)"
-                    >
-                        <div class="p-panelmenu-header-content">
-                            <ng-container *ngIf="!itemTemplate">
-                                <a
-                                    *ngIf="!getItemProp(item, 'routerLink')"
-                                    [attr.href]="getItemProp(item, 'url')"
-                                    [attr.tabindex]="-1"
-                                    [target]="getItemProp(item, 'target')"
-                                    [attr.title]="getItemProp(item, 'title')"
-                                    class="p-panelmenu-header-action"
-                                    [attr.data-pc-section]="'headeraction'"
-                                >
-                                    <ng-container *ngIf="isItemGroup(item)">
-                                        <ng-container *ngIf="!submenuIconTemplate">
-                                            <ChevronDownIcon [styleClass]="'p-submenu-icon'" *ngIf="isItemActive(item)" />
-                                            <ChevronRightIcon [styleClass]="'p-submenu-icon'" *ngIf="!isItemActive(item)" />
-                                        </ng-container>
-                                        <ng-template *ngTemplateOutlet="submenuIconTemplate"></ng-template>
-                                    </ng-container>
-                                    <span class="p-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" [ngStyle]="getItemProp(item, 'iconStyle')"></span>
-                                    <span class="p-menuitem-text" *ngIf="getItemProp(item, 'escape') !== false; else htmlLabel">{{ getItemProp(item, 'label') }}</span>
-                                    <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(item, 'label')"></span></ng-template>
-                                    <span class="p-menuitem-badge" *ngIf="getItemProp(item, 'badge')" [ngClass]="getItemProp(item, 'badgeStyleClass')">{{ getItemProp(item, 'badge') }}</span>
-                                </a>
-                            </ng-container>
-                            <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>
-                            <a
-                                *ngIf="getItemProp(item, 'routerLink')"
-                                [routerLink]="getItemProp(item, 'routerLink')"
-                                [queryParams]="getItemProp(item, 'queryParams')"
-                                [routerLinkActive]="'p-menuitem-link-active'"
-                                [routerLinkActiveOptions]="getItemProp(item, 'routerLinkActiveOptions') || { exact: false }"
-                                [target]="getItemProp(item, 'target')"
-                                class="p-panelmenu-header-action"
-                                [attr.tabindex]="-1"
-                                [fragment]="getItemProp(item, 'fragment')"
-                                [queryParamsHandling]="getItemProp(item, 'queryParamsHandling')"
-                                [preserveFragment]="getItemProp(item, 'preserveFragment')"
-                                [skipLocationChange]="getItemProp(item, 'skipLocationChange')"
-                                [replaceUrl]="getItemProp(item, 'replaceUrl')"
-                                [state]="getItemProp(item, 'state')"
-                                [attr.data-pc-section]="'headeraction'"
-                            >
-                                <ng-container *ngIf="isItemGroup(item)">
-                                    <ng-container *ngIf="!submenuIconTemplate">
-                                        <ChevronDownIcon [styleClass]="'p-submenu-icon'" *ngIf="isItemActive(item)" />
-                                        <ChevronRightIcon [styleClass]="'p-submenu-icon'" *ngIf="!isItemActive(item)" />
-                                    </ng-container>
-                                    <ng-template *ngTemplateOutlet="submenuIconTemplate"></ng-template>
-                                </ng-container>
-                                <span class="p-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" [ngStyle]="getItemProp(item, 'iconStyle')"></span>
-                                <span class="p-menuitem-text" *ngIf="getItemProp(item, 'escape') !== false; else htmlRouteLabel">{{ getItemProp(item, 'label') }}</span>
-                                <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(item, 'label')"></span></ng-template>
-                                <span class="p-menuitem-badge" *ngIf="getItemProp(item, 'badge')" [ngClass]="getItemProp(item, 'badgeStyleClass')">{{ getItemProp(item, 'badge') }}</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        *ngIf="isItemGroup(item)"
-                        class="p-toggleable-content"
-                        [ngClass]="{ 'p-panelmenu-expanded': isItemActive(item) }"
-                        [@rootItem]="getAnimation(item)"
-                        (@rootItem.done)="onToggleDone()"
-                        role="region"
-                        [attr.id]="getContentId(item, i)"
-                        [attr.aria-labelledby]="getHeaderId(item, i)"
-                        [attr.data-pc-section]="'toggleablecontent'"
-                    >
-                        <div class="p-panelmenu-content" [attr.data-pc-section]="'menucontent'">
-                            <p-panelMenuList
-                                [panelId]="getPanelId(i, item)"
-                                [items]="getItemProp(item, 'items')"
-                                [itemTemplate]="itemTemplate"
-                                [transitionOptions]="transitionOptions"
-                                [root]="true"
-                                [activeItem]="activeItem()"
-                                [tabindex]="tabindex"
-                                [parentExpanded]="isItemActive(item)"
-                                (headerFocus)="updateFocusedHeader($event)"
-                            ></p-panelMenuList>
-                        </div>
-                    </div>
-                </div>
-            </ng-container>
-        </div>
-    `,
-      animations: [trigger("rootItem", [state("hidden", style({
-        height: "0"
-      })), state("visible", style({
-        height: "*"
-      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])],
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None,
-      host: {
-        class: "p-element"
-      },
-      styles: ["@layer primeng{.p-panelmenu .p-panelmenu-header-action{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;position:relative;text-decoration:none}.p-panelmenu .p-panelmenu-header-action:focus{z-index:1}.p-panelmenu .p-submenu-list{margin:0;padding:0;list-style:none}.p-panelmenu .p-menuitem-link{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;outline:none}.p-panelmenu .p-menuitem-text{line-height:1}.p-panelmenu-expanded.p-toggleable-content:not(.ng-animating),.p-panelmenu .p-submenu-expanded:not(.ng-animating){overflow:visible}.p-panelmenu .p-toggleable-content,.p-panelmenu .p-submenu-list{overflow:hidden}}\n"]
-    }]
-  }], () => [{
-    type: ChangeDetectorRef
-  }], {
-    model: [{
-      type: Input
-    }],
-    style: [{
-      type: Input
-    }],
-    styleClass: [{
-      type: Input
-    }],
-    multiple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    transitionOptions: [{
-      type: Input
-    }],
-    id: [{
-      type: Input
-    }],
-    tabindex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    templates: [{
-      type: ContentChildren,
-      args: [PrimeTemplate]
-    }],
-    containerViewChild: [{
-      type: ViewChild,
-      args: ["container"]
-    }]
-  });
-})();
-var PanelMenuModule = class _PanelMenuModule {
-  static \u0275fac = function PanelMenuModule_Factory(t) {
-    return new (t || _PanelMenuModule)();
-  };
-  static \u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({
-    type: _PanelMenuModule
-  });
-  static \u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({
-    imports: [CommonModule, RouterModule, TooltipModule, SharedModule, AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon, RouterModule, TooltipModule, SharedModule]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PanelMenuModule, [{
-    type: NgModule,
-    args: [{
-      imports: [CommonModule, RouterModule, TooltipModule, SharedModule, AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon],
-      exports: [PanelMenu, RouterModule, TooltipModule, SharedModule],
-      declarations: [PanelMenu, PanelMenuSub, PanelMenuList]
-    }]
-  }], null, null);
-})();
-
-// src/app/internal/shared/components/layout/sidebar/sidebar.component.ts
-function SidebarComponent_For_10_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 8);
-    \u0275\u0275listener("click", function SidebarComponent_For_10_Template_div_click_0_listener() {
-      const \u0275$index_18_r2 = \u0275\u0275restoreView(_r1).$index;
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.onClickSidebarItem(\u0275$index_18_r2));
-    });
-    \u0275\u0275elementStart(1, "div", 9)(2, "div", 10);
-    \u0275\u0275element(3, "i", 11);
-    \u0275\u0275elementStart(4, "p", 12);
-    \u0275\u0275text(5);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(6, "div", 13)(7, "small");
-    \u0275\u0275text(8);
-    \u0275\u0275elementEnd()()()();
-  }
-  if (rf & 2) {
-    const item_r4 = ctx.$implicit;
-    const ctx_r2 = \u0275\u0275nextContext();
-    \u0275\u0275classProp("bg-item-click", item_r4.name === ctx_r2.$clickSidebar())("bg-item-hover", item_r4.name !== ctx_r2.$clickSidebar());
-    \u0275\u0275advance(5);
-    \u0275\u0275textInterpolate(item_r4.name);
-    \u0275\u0275advance();
-    \u0275\u0275styleProp("background-color", "var(--purple-500)")("aspect-ratio", 1);
-    \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(item_r4.cnt);
-  }
-}
-var _SidebarComponent = class _SidebarComponent {
-  constructor() {
-    this.internalSignalStore = inject(InternalSignalStore);
-    this.$sidebars = this.internalSignalStore.selectSidebars;
-    this.$clickSidebar = this.internalSignalStore.common.clickSidebar;
-    this.onClickSidebarItem = (idx) => {
-      this.internalSignalStore.clickSidebar({
-        sidebar: this.$sidebars()[idx].name
-      });
-    };
-    this.internalSignalStore.dataLoad({});
-  }
-};
-_SidebarComponent.\u0275fac = function SidebarComponent_Factory(t) {
-  return new (t || _SidebarComponent)();
-};
-_SidebarComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _SidebarComponent, selectors: [["app-sidebar"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 11, vars: 0, consts: [[1, "w-full", "h-screen", "flex"], [1, "w-full", "mx-2", "flex", "flex-column"], [1, "w-full"], [1, "px-3", "mt-1", "flex", "flex-row", "align-items-center", "justify-content-start"], [1, "mr-2", "pi", "pi-objects-column", "text-2xl"], [1, "flex", "align-items-start", "justify-content-start", "flex-column"], [1, "font-semibold", "text-xl"], [1, "w-full", "px-3", "my-2", "border-round-xl", "item", 3, "bg-item-click", "bg-item-hover"], [1, "w-full", "px-3", "my-2", "border-round-xl", "item", 3, "click"], [1, "w-full", "flex", "justify-content-between", "align-items-center"], [1, "w-full", "flex", "justify-content-start", "align-items-center", "flex-row"], [1, "pi", "pi-code", "mr-2", "text-xl"], [1, "font-semibold"], [1, "h-2", "w-2", "border-round", "text-white", "font-semibold", "flex", "justify-content-center", "align-items-center"]], template: function SidebarComponent_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
-    \u0275\u0275element(4, "i", 4);
-    \u0275\u0275elementStart(5, "div", 5)(6, "p", 6);
-    \u0275\u0275text(7, "DashBoard");
-    \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(8, "div", 2);
-    \u0275\u0275repeaterCreate(9, SidebarComponent_For_10_Template, 9, 10, "div", 7, \u0275\u0275repeaterTrackByIdentity);
-    \u0275\u0275elementEnd()()()();
-  }
-  if (rf & 2) {
-    \u0275\u0275advance(9);
-    \u0275\u0275repeater(ctx.$sidebars());
-  }
-}, dependencies: [PanelMenuModule], styles: ["\n\n.item[_ngcontent-%COMP%], \n.item[_ngcontent-%COMP%]   *[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.bg-item-hover[_ngcontent-%COMP%]:hover {\n  background-color: var(--surface-50);\n}\n.bg-item-click[_ngcontent-%COMP%] {\n  background-color: var(--surface-ground);\n}\n/*# sourceMappingURL=sidebar.component.css.map */"] });
-var SidebarComponent = _SidebarComponent;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(SidebarComponent, { className: "SidebarComponent", filePath: "src/app/internal/shared/components/layout/sidebar/sidebar.component.ts", lineNumber: 15 });
-})();
-
-// node_modules/primeng/fesm2022/primeng-splitter.mjs
-var _c02 = ["container"];
-function Splitter_ng_template_2_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementContainer(0);
-  }
-}
-function Splitter_ng_template_2_div_2_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 6);
-    \u0275\u0275listener("mousedown", function Splitter_ng_template_2_div_2_Template_div_mousedown_0_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const i_r2 = \u0275\u0275nextContext().index;
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.onGutterMouseDown($event, i_r2));
-    })("touchstart", function Splitter_ng_template_2_div_2_Template_div_touchstart_0_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const i_r2 = \u0275\u0275nextContext().index;
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.onGutterTouchStart($event, i_r2));
-    })("touchmove", function Splitter_ng_template_2_div_2_Template_div_touchmove_0_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.onGutterTouchMove($event));
-    })("touchend", function Splitter_ng_template_2_div_2_Template_div_touchend_0_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const i_r2 = \u0275\u0275nextContext().index;
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.onGutterTouchEnd($event, i_r2));
-    });
-    \u0275\u0275elementStart(1, "div", 7);
-    \u0275\u0275listener("keyup", function Splitter_ng_template_2_div_2_Template_div_keyup_1_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r2 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r2.onGutterKeyUp($event));
-    })("keydown", function Splitter_ng_template_2_div_2_Template_div_keydown_1_listener($event) {
-      \u0275\u0275restoreView(_r1);
-      const i_r2 = \u0275\u0275nextContext().index;
-      const ctx_r2 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r2.onGutterKeyDown($event, i_r2));
-    });
-    \u0275\u0275elementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r2 = \u0275\u0275nextContext(2);
-    \u0275\u0275attribute("data-p-gutter-resizing", false)("data-pc-section", "gutter");
-    \u0275\u0275advance();
-    \u0275\u0275property("ngStyle", ctx_r2.gutterStyle());
-    \u0275\u0275attribute("aria-orientation", ctx_r2.layout)("aria-valuenow", ctx_r2.prevSize)("data-pc-section", "gutterhandle");
-  }
-}
-function Splitter_ng_template_2_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 3);
-    \u0275\u0275template(1, Splitter_ng_template_2_ng_container_1_Template, 1, 0, "ng-container", 4);
-    \u0275\u0275elementEnd();
-    \u0275\u0275template(2, Splitter_ng_template_2_div_2_Template, 2, 6, "div", 5);
-  }
-  if (rf & 2) {
-    const panel_r4 = ctx.$implicit;
-    const i_r2 = ctx.index;
-    const ctx_r2 = \u0275\u0275nextContext();
-    \u0275\u0275classMap(ctx_r2.panelStyleClass);
-    \u0275\u0275property("ngClass", ctx_r2.panelContainerClass())("ngStyle", ctx_r2.panelStyle);
-    \u0275\u0275attribute("data-pc-name", "splitter")("data-pc-section", "root");
-    \u0275\u0275advance();
-    \u0275\u0275property("ngTemplateOutlet", panel_r4);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", i_r2 !== ctx_r2.panels.length - 1);
-  }
-}
-var Splitter = class _Splitter {
-  document;
-  platformId;
-  renderer;
-  cd;
-  el;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Style class of the panel.
-   * @group Props
-   */
-  panelStyleClass;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Inline style of the panel.
-   * @group Props
-   */
-  panelStyle;
-  /**
-   * Defines where a stateful splitter keeps its state, valid values are 'session' for sessionStorage and 'local' for localStorage.
-   * @group Props
-   */
-  stateStorage = "session";
-  /**
-   * Storage identifier of a stateful Splitter.
-   * @group Props
-   */
-  stateKey = null;
-  /**
-   * Orientation of the panels. Valid values are 'horizontal' and 'vertical'.
-   * @group Props
-   */
-  layout = "horizontal";
-  /**
-   * Size of the divider in pixels.
-   * @group Props
-   */
-  gutterSize = 4;
-  /**
-   * Step factor to increment/decrement the size of the panels while pressing the arrow keys.
-   * @group Props
-   */
-  step = 5;
-  /**
-   * Minimum size of the elements relative to 100%.
-   * @group Props
-   */
-  minSizes = [];
-  /**
-   * Size of the elements relative to 100%.
-   * @group Props
-   */
-  get panelSizes() {
-    return this._panelSizes;
-  }
-  set panelSizes(val) {
-    this._panelSizes = val;
-    if (this.el && this.el.nativeElement && this.panels.length > 0) {
-      let children = [...this.el.nativeElement.children[0].children].filter((child) => DomHandler.hasClass(child, "p-splitter-panel"));
-      let _panelSizes = [];
-      this.panels.map((panel, i) => {
-        let panelInitialSize = this.panelSizes.length - 1 >= i ? this.panelSizes[i] : null;
-        let panelSize = panelInitialSize || 100 / this.panels.length;
-        _panelSizes[i] = panelSize;
-        children[i].style.flexBasis = "calc(" + panelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
-      });
-    }
-  }
-  /**
-   * Callback to invoke when resize ends.
-   * @param {SplitterResizeEndEvent} event - Custom panel resize end event
-   * @group Emits
-   */
-  onResizeEnd = new EventEmitter();
-  /**
-   * Callback to invoke when resize starts.
-   * @param {SplitterResizeStartEvent} event - Custom panel resize start event
-   * @group Emits
-   */
-  onResizeStart = new EventEmitter();
-  templates;
-  containerViewChild;
-  nested = false;
-  panels = [];
-  dragging = false;
-  mouseMoveListener;
-  mouseUpListener;
-  touchMoveListener;
-  touchEndListener;
-  size;
-  gutterElement;
-  startPos;
-  prevPanelElement;
-  nextPanelElement;
-  nextPanelSize;
-  prevPanelSize;
-  _panelSizes = [];
-  prevPanelIndex;
-  timer;
-  prevSize;
-  window;
-  constructor(document2, platformId, renderer, cd, el) {
-    this.document = document2;
-    this.platformId = platformId;
-    this.renderer = renderer;
-    this.cd = cd;
-    this.el = el;
-    this.window = this.document.defaultView;
-  }
-  ngOnInit() {
-    this.nested = this.isNested();
-  }
-  ngAfterContentInit() {
-    this.templates.forEach((item) => {
-      switch (item.getType()) {
-        case "panel":
-          this.panels.push(item.template);
-          break;
-        default:
-          this.panels.push(item.template);
-          break;
-      }
-    });
-  }
-  ngAfterViewInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      if (this.panels && this.panels.length) {
-        let initialized = false;
-        if (this.isStateful()) {
-          initialized = this.restoreState();
-        }
-        if (!initialized) {
-          let children = [...this.el.nativeElement.children[0].children].filter((child) => DomHandler.hasClass(child, "p-splitter-panel"));
-          let _panelSizes = [];
-          this.panels.map((panel, i) => {
-            let panelInitialSize = this.panelSizes.length - 1 >= i ? this.panelSizes[i] : null;
-            let panelSize = panelInitialSize || 100 / this.panels.length;
-            _panelSizes[i] = panelSize;
-            children[i].style.flexBasis = "calc(" + panelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
-          });
-          this._panelSizes = _panelSizes;
-          this.prevSize = parseFloat(_panelSizes[0]).toFixed(4);
-        }
-      }
-    }
-  }
-  resizeStart(event, index, isKeyDown) {
-    this.gutterElement = event.currentTarget || event.target.parentElement;
-    this.size = this.horizontal() ? DomHandler.getWidth(this.containerViewChild.nativeElement) : DomHandler.getHeight(this.containerViewChild.nativeElement);
-    if (!isKeyDown) {
-      this.dragging = true;
-      this.startPos = this.horizontal() ? event instanceof MouseEvent ? event.pageX : event.changedTouches[0].pageX : event instanceof MouseEvent ? event.pageY : event.changedTouches[0].pageY;
-    }
-    this.prevPanelElement = this.gutterElement.previousElementSibling;
-    this.nextPanelElement = this.gutterElement.nextElementSibling;
-    if (isKeyDown) {
-      this.prevPanelSize = this.horizontal() ? DomHandler.getOuterWidth(this.prevPanelElement, true) : DomHandler.getOuterHeight(this.prevPanelElement, true);
-      this.nextPanelSize = this.horizontal() ? DomHandler.getOuterWidth(this.nextPanelElement, true) : DomHandler.getOuterHeight(this.nextPanelElement, true);
-    } else {
-      this.prevPanelSize = 100 * (this.horizontal() ? DomHandler.getOuterWidth(this.prevPanelElement, true) : DomHandler.getOuterHeight(this.prevPanelElement, true)) / this.size;
-      this.nextPanelSize = 100 * (this.horizontal() ? DomHandler.getOuterWidth(this.nextPanelElement, true) : DomHandler.getOuterHeight(this.nextPanelElement, true)) / this.size;
-    }
-    this.prevPanelIndex = index;
-    DomHandler.addClass(this.gutterElement, "p-splitter-gutter-resizing");
-    this.gutterElement.setAttribute("data-p-gutter-resizing", "true");
-    DomHandler.addClass(this.containerViewChild.nativeElement, "p-splitter-resizing");
-    this.containerViewChild.nativeElement.setAttribute("data-p-resizing", "true");
-    this.onResizeStart.emit({
-      originalEvent: event,
-      sizes: this._panelSizes
-    });
-  }
-  onResize(event, step, isKeyDown) {
-    let newPos, newPrevPanelSize, newNextPanelSize;
-    if (isKeyDown) {
-      if (this.horizontal()) {
-        newPrevPanelSize = 100 * (this.prevPanelSize + step) / this.size;
-        newNextPanelSize = 100 * (this.nextPanelSize - step) / this.size;
-      } else {
-        newPrevPanelSize = 100 * (this.prevPanelSize - step) / this.size;
-        newNextPanelSize = 100 * (this.nextPanelSize + step) / this.size;
-      }
-    } else {
-      if (this.horizontal()) newPos = event.pageX * 100 / this.size - this.startPos * 100 / this.size;
-      else newPos = event.pageY * 100 / this.size - this.startPos * 100 / this.size;
-      newPrevPanelSize = this.prevPanelSize + newPos;
-      newNextPanelSize = this.nextPanelSize - newPos;
-    }
-    this.prevSize = parseFloat(newPrevPanelSize).toFixed(4);
-    if (this.validateResize(newPrevPanelSize, newNextPanelSize)) {
-      this.prevPanelElement.style.flexBasis = "calc(" + newPrevPanelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
-      this.nextPanelElement.style.flexBasis = "calc(" + newNextPanelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
-      this._panelSizes[this.prevPanelIndex] = newPrevPanelSize;
-      this._panelSizes[this.prevPanelIndex + 1] = newNextPanelSize;
-    }
-  }
-  resizeEnd(event) {
-    if (this.isStateful()) {
-      this.saveState();
-    }
-    this.onResizeEnd.emit({
-      originalEvent: event,
-      sizes: this._panelSizes
-    });
-    DomHandler.removeClass(this.gutterElement, "p-splitter-gutter-resizing");
-    DomHandler.removeClass(this.containerViewChild.nativeElement, "p-splitter-resizing");
-    this.clear();
-  }
-  onGutterMouseDown(event, index) {
-    this.resizeStart(event, index);
-    this.bindMouseListeners();
-  }
-  onGutterTouchStart(event, index) {
-    if (event.cancelable) {
-      this.resizeStart(event, index);
-      this.bindTouchListeners();
-      event.preventDefault();
-    }
-  }
-  onGutterTouchMove(event) {
-    this.onResize(event);
-    event.preventDefault();
-  }
-  onGutterTouchEnd(event) {
-    this.resizeEnd(event);
-    this.unbindTouchListeners();
-    if (event.cancelable) event.preventDefault();
-  }
-  repeat(event, index, step) {
-    this.resizeStart(event, index, true);
-    this.onResize(event, step, true);
-  }
-  setTimer(event, index, step) {
-    this.clearTimer();
-    this.timer = setTimeout(() => {
-      this.repeat(event, index, step);
-    }, 40);
-  }
-  clearTimer() {
-    if (this.timer) {
-      clearTimeout(this.timer);
-    }
-  }
-  onGutterKeyUp(event) {
-    this.clearTimer();
-    this.resizeEnd(event);
-  }
-  onGutterKeyDown(event, index) {
-    switch (event.code) {
-      case "ArrowLeft": {
-        if (this.layout === "horizontal") {
-          this.setTimer(event, index, this.step * -1);
-        }
-        event.preventDefault();
-        break;
-      }
-      case "ArrowRight": {
-        if (this.layout === "horizontal") {
-          this.setTimer(event, index, this.step);
-        }
-        event.preventDefault();
-        break;
-      }
-      case "ArrowDown": {
-        if (this.layout === "vertical") {
-          this.setTimer(event, index, this.step * -1);
-        }
-        event.preventDefault();
-        break;
-      }
-      case "ArrowUp": {
-        if (this.layout === "vertical") {
-          this.setTimer(event, index, this.step);
-        }
-        event.preventDefault();
-        break;
-      }
-      default:
-        break;
-    }
-  }
-  validateResize(newPrevPanelSize, newNextPanelSize) {
-    const prevPanelIndex = this.prevPanelIndex;
-    if (this.minSizes.length > prevPanelIndex && this.minSizes[prevPanelIndex] && this.minSizes[prevPanelIndex] > newPrevPanelSize) {
-      return false;
-    }
-    const nextPanelIndex = this.prevPanelIndex + 1;
-    if (this.minSizes.length > nextPanelIndex && this.minSizes[nextPanelIndex] && this.minSizes[nextPanelIndex] > newNextPanelSize) {
-      return false;
-    }
-    return true;
-  }
-  bindMouseListeners() {
-    if (!this.mouseMoveListener) {
-      this.mouseMoveListener = this.renderer.listen(this.document, "mousemove", (event) => {
-        this.onResize(event);
-      });
-    }
-    if (!this.mouseUpListener) {
-      this.mouseUpListener = this.renderer.listen(this.document, "mouseup", (event) => {
-        this.resizeEnd(event);
-        this.unbindMouseListeners();
-      });
-    }
-  }
-  bindTouchListeners() {
-    if (!this.touchMoveListener) {
-      this.touchMoveListener = this.renderer.listen(this.document, "touchmove", (event) => {
-        this.onResize(event.changedTouches[0]);
-      });
-    }
-    if (!this.touchEndListener) {
-      this.touchEndListener = this.renderer.listen(this.document, "touchend", (event) => {
-        this.resizeEnd(event);
-        this.unbindTouchListeners();
-      });
-    }
-  }
-  unbindMouseListeners() {
-    if (this.mouseMoveListener) {
-      this.mouseMoveListener();
-      this.mouseMoveListener = null;
-    }
-    if (this.mouseUpListener) {
-      this.mouseUpListener();
-      this.mouseUpListener = null;
-    }
-  }
-  unbindTouchListeners() {
-    if (this.touchMoveListener) {
-      this.touchMoveListener();
-      this.touchMoveListener = null;
-    }
-    if (this.touchEndListener) {
-      this.touchEndListener();
-      this.touchEndListener = null;
-    }
-  }
-  clear() {
-    this.dragging = false;
-    this.size = null;
-    this.startPos = null;
-    this.prevPanelElement = null;
-    this.nextPanelElement = null;
-    this.prevPanelSize = null;
-    this.nextPanelSize = null;
-    this.gutterElement = null;
-    this.prevPanelIndex = null;
-  }
-  isNested() {
-    if (this.el.nativeElement) {
-      let parent = this.el.nativeElement.parentElement;
-      while (parent && !DomHandler.hasClass(parent, "p-splitter")) {
-        parent = parent.parentElement;
-      }
-      return parent !== null;
-    } else {
-      return false;
-    }
-  }
-  isStateful() {
-    return this.stateKey != null;
-  }
-  getStorage() {
-    if (isPlatformBrowser(this.platformId)) {
-      switch (this.stateStorage) {
-        case "local":
-          return this.window.localStorage;
-        case "session":
-          return this.window.sessionStorage;
-        default:
-          throw new Error(this.stateStorage + ' is not a valid value for the state storage, supported values are "local" and "session".');
-      }
-    } else {
-      throw new Error("Storage is not a available by default on the server.");
-    }
-  }
-  saveState() {
-    this.getStorage().setItem(this.stateKey, JSON.stringify(this._panelSizes));
-  }
-  restoreState() {
-    const storage = this.getStorage();
-    const stateString = storage.getItem(this.stateKey);
-    if (stateString) {
-      this._panelSizes = JSON.parse(stateString);
-      let children = [...this.containerViewChild.nativeElement.children].filter((child) => DomHandler.hasClass(child, "p-splitter-panel"));
-      children.forEach((child, i) => {
-        child.style.flexBasis = "calc(" + this._panelSizes[i] + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
-      });
-      return true;
-    }
-    return false;
-  }
-  containerClass() {
-    return {
-      "p-splitter p-component": true,
-      "p-splitter-horizontal": this.layout === "horizontal",
-      "p-splitter-vertical": this.layout === "vertical"
-    };
-  }
-  panelContainerClass() {
-    return {
-      "p-splitter-panel": true,
-      "p-splitter-panel-nested": true
-    };
-  }
-  gutterStyle() {
-    if (this.horizontal()) return {
-      width: this.gutterSize + "px"
-    };
-    else return {
-      height: this.gutterSize + "px"
-    };
-  }
-  horizontal() {
-    return this.layout === "horizontal";
-  }
-  static \u0275fac = function Splitter_Factory(t) {
-    return new (t || _Splitter)(\u0275\u0275directiveInject(DOCUMENT), \u0275\u0275directiveInject(PLATFORM_ID), \u0275\u0275directiveInject(Renderer2), \u0275\u0275directiveInject(ChangeDetectorRef), \u0275\u0275directiveInject(ElementRef));
-  };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
-    type: _Splitter,
-    selectors: [["p-splitter"]],
-    contentQueries: function Splitter_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        \u0275\u0275contentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function Splitter_Query(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275viewQuery(_c02, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.containerViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    hostVars: 2,
-    hostBindings: function Splitter_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        \u0275\u0275classProp("p-splitter-panel-nested", ctx.nested);
-      }
-    },
-    inputs: {
-      styleClass: "styleClass",
-      panelStyleClass: "panelStyleClass",
-      style: "style",
-      panelStyle: "panelStyle",
-      stateStorage: "stateStorage",
-      stateKey: "stateKey",
-      layout: "layout",
-      gutterSize: [2, "gutterSize", "gutterSize", numberAttribute],
-      step: [2, "step", "step", numberAttribute],
-      minSizes: "minSizes",
-      panelSizes: "panelSizes"
-    },
-    outputs: {
-      onResizeEnd: "onResizeEnd",
-      onResizeStart: "onResizeStart"
-    },
-    features: [\u0275\u0275InputTransformsFeature],
-    decls: 3,
-    vars: 8,
-    consts: [["container", ""], [3, "ngClass", "ngStyle"], ["ngFor", "", 3, "ngForOf"], ["tabindex", "-1", 3, "ngClass", "ngStyle"], [4, "ngTemplateOutlet"], ["class", "p-splitter-gutter", "role", "separator", "tabindex", "-1", 3, "mousedown", "touchstart", "touchmove", "touchend", 4, "ngIf"], ["role", "separator", "tabindex", "-1", 1, "p-splitter-gutter", 3, "mousedown", "touchstart", "touchmove", "touchend"], ["tabindex", "0", 1, "p-splitter-gutter-handle", 3, "keyup", "keydown", "ngStyle"]],
-    template: function Splitter_Template(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 1, 0);
-        \u0275\u0275template(2, Splitter_ng_template_2_Template, 3, 8, "ng-template", 2);
-        \u0275\u0275elementEnd();
-      }
-      if (rf & 2) {
-        \u0275\u0275classMap(ctx.styleClass);
-        \u0275\u0275property("ngClass", ctx.containerClass())("ngStyle", ctx.style);
-        \u0275\u0275attribute("data-pc-name", "splitter")("data-p-gutter-resizing", false)("data-pc-section", "root");
-        \u0275\u0275advance(2);
-        \u0275\u0275property("ngForOf", ctx.panels);
-      }
-    },
-    dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle],
-    styles: ["@layer primeng{.p-splitter{display:flex;flex-wrap:nowrap}.p-splitter-vertical{flex-direction:column}.p-splitter-panel{overflow:hidden;flex-grow:1}.p-splitter-panel-nested{display:flex;min-width:0}.p-splitter-panel p-splitter{flex-grow:1}.p-splitter-panel .p-splitter{flex-grow:1;border:0 none}.p-splitter-gutter{flex-grow:0;flex-shrink:0;display:flex;align-items:center;justify-content:center;cursor:col-resize}.p-splitter-horizontal.p-splitter-resizing{cursor:col-resize;-webkit-user-select:none;user-select:none}.p-splitter-horizontal>.p-splitter-gutter>.p-splitter-gutter-handle{height:24px;width:100%}.p-splitter-horizontal>.p-splitter-gutter{cursor:col-resize}.p-splitter-vertical.p-splitter-resizing{cursor:row-resize;-webkit-user-select:none;user-select:none}.p-splitter-vertical>.p-splitter-gutter{cursor:row-resize}.p-splitter-vertical>.p-splitter-gutter>.p-splitter-gutter-handle{width:24px;height:100%}.p-splitter-resizing .p-splitter-panel{pointer-events:none}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Splitter, [{
-    type: Component,
-    args: [{
-      selector: "p-splitter",
-      template: `
-        <div #container [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" [attr.data-pc-name]="'splitter'" [attr.data-p-gutter-resizing]="false" [attr.data-pc-section]="'root'">
-            <ng-template ngFor let-panel [ngForOf]="panels" let-i="index">
-                <div [ngClass]="panelContainerClass()" [class]="panelStyleClass" [ngStyle]="panelStyle" tabindex="-1" [attr.data-pc-name]="'splitter'" [attr.data-pc-section]="'root'">
-                    <ng-container *ngTemplateOutlet="panel"></ng-container>
-                </div>
-                <div
-                    *ngIf="i !== panels.length - 1"
-                    class="p-splitter-gutter"
-                    role="separator"
-                    tabindex="-1"
-                    (mousedown)="onGutterMouseDown($event, i)"
-                    (touchstart)="onGutterTouchStart($event, i)"
-                    (touchmove)="onGutterTouchMove($event)"
-                    (touchend)="onGutterTouchEnd($event, i)"
-                    [attr.data-p-gutter-resizing]="false"
-                    [attr.data-pc-section]="'gutter'"
-                >
-                    <div
-                        class="p-splitter-gutter-handle"
-                        tabindex="0"
-                        [ngStyle]="gutterStyle()"
-                        [attr.aria-orientation]="layout"
-                        [attr.aria-valuenow]="prevSize"
-                        [attr.data-pc-section]="'gutterhandle'"
-                        (keyup)="onGutterKeyUp($event)"
-                        (keydown)="onGutterKeyDown($event, i)"
-                    ></div>
-                </div>
-            </ng-template>
-        </div>
-    `,
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      host: {
-        class: "p-element",
-        "[class.p-splitter-panel-nested]": "nested"
-      },
-      styles: ["@layer primeng{.p-splitter{display:flex;flex-wrap:nowrap}.p-splitter-vertical{flex-direction:column}.p-splitter-panel{overflow:hidden;flex-grow:1}.p-splitter-panel-nested{display:flex;min-width:0}.p-splitter-panel p-splitter{flex-grow:1}.p-splitter-panel .p-splitter{flex-grow:1;border:0 none}.p-splitter-gutter{flex-grow:0;flex-shrink:0;display:flex;align-items:center;justify-content:center;cursor:col-resize}.p-splitter-horizontal.p-splitter-resizing{cursor:col-resize;-webkit-user-select:none;user-select:none}.p-splitter-horizontal>.p-splitter-gutter>.p-splitter-gutter-handle{height:24px;width:100%}.p-splitter-horizontal>.p-splitter-gutter{cursor:col-resize}.p-splitter-vertical.p-splitter-resizing{cursor:row-resize;-webkit-user-select:none;user-select:none}.p-splitter-vertical>.p-splitter-gutter{cursor:row-resize}.p-splitter-vertical>.p-splitter-gutter>.p-splitter-gutter-handle{width:24px;height:100%}.p-splitter-resizing .p-splitter-panel{pointer-events:none}}\n"]
-    }]
-  }], () => [{
-    type: Document,
-    decorators: [{
-      type: Inject,
-      args: [DOCUMENT]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [PLATFORM_ID]
-    }]
-  }, {
-    type: Renderer2
-  }, {
-    type: ChangeDetectorRef
-  }, {
-    type: ElementRef
-  }], {
-    styleClass: [{
-      type: Input
-    }],
-    panelStyleClass: [{
-      type: Input
-    }],
-    style: [{
-      type: Input
-    }],
-    panelStyle: [{
-      type: Input
-    }],
-    stateStorage: [{
-      type: Input
-    }],
-    stateKey: [{
-      type: Input
-    }],
-    layout: [{
-      type: Input
-    }],
-    gutterSize: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    step: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    minSizes: [{
-      type: Input
-    }],
-    panelSizes: [{
-      type: Input
-    }],
-    onResizeEnd: [{
-      type: Output
-    }],
-    onResizeStart: [{
-      type: Output
-    }],
-    templates: [{
-      type: ContentChildren,
-      args: [PrimeTemplate]
-    }],
-    containerViewChild: [{
-      type: ViewChild,
-      args: ["container", {
-        static: false
-      }]
-    }]
-  });
-})();
-var SplitterModule = class _SplitterModule {
-  static \u0275fac = function SplitterModule_Factory(t) {
-    return new (t || _SplitterModule)();
-  };
-  static \u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({
-    type: _SplitterModule
-  });
-  static \u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({
-    imports: [CommonModule, SharedModule]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SplitterModule, [{
-    type: NgModule,
-    args: [{
-      imports: [CommonModule],
-      exports: [Splitter, SharedModule],
-      declarations: [Splitter]
-    }]
-  }], null, null);
-})();
-
-// src/app/internal/shared/components/layout/layout/layout.component.ts
-var _LayoutComponent = class _LayoutComponent {
-};
-_LayoutComponent.\u0275fac = function LayoutComponent_Factory(t) {
-  return new (t || _LayoutComponent)();
-};
-_LayoutComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _LayoutComponent, selectors: [["app-layout"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 5, vars: 4, consts: [[1, "h-screen"], [1, "fixed", "t-0", "left-0"], [1, "overflow-y-auto"]], template: function LayoutComponent_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 0)(1, "div", 1);
-    \u0275\u0275element(2, "app-sidebar");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "main", 2);
-    \u0275\u0275element(4, "router-outlet");
-    \u0275\u0275elementEnd()();
-  }
-  if (rf & 2) {
-    \u0275\u0275advance();
-    \u0275\u0275styleProp("width", "15%");
-    \u0275\u0275advance(2);
-    \u0275\u0275styleProp("margin-left", "15%");
-  }
-}, dependencies: [SidebarComponent, RouterOutlet, SplitterModule] });
-var LayoutComponent = _LayoutComponent;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(LayoutComponent, { className: "LayoutComponent", filePath: "src/app/internal/shared/components/layout/layout/layout.component.ts", lineNumber: 13 });
-})();
-
-// src/app/app.routes.ts
-var routes = [
-  {
-    path: "auth",
-    loadChildren: () => import("./chunk-AI7RR6FZ.js").then((M) => M.AUTH_ROUTES)
-  },
-  {
-    path: "internal",
-    loadChildren: () => import("./chunk-J5LDE5DF.js").then((M) => M.INTERNAL_ROUTES),
-    component: LayoutComponent
-  },
-  {
-    path: "**",
-    redirectTo: "auth"
-  }
-];
 
 // node_modules/@angular/animations/fesm2022/browser.mjs
 var LINE_START = "\n - ";
@@ -8650,6 +5682,2990 @@ function provideEffects(...effects) {
   }]);
 }
 
+// node_modules/primeng/fesm2022/primeng-splitter.mjs
+var _c0 = ["container"];
+function Splitter_ng_template_2_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainer(0);
+  }
+}
+function Splitter_ng_template_2_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 6);
+    \u0275\u0275listener("mousedown", function Splitter_ng_template_2_div_2_Template_div_mousedown_0_listener($event) {
+      \u0275\u0275restoreView(_r1);
+      const i_r2 = \u0275\u0275nextContext().index;
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.onGutterMouseDown($event, i_r2));
+    })("touchstart", function Splitter_ng_template_2_div_2_Template_div_touchstart_0_listener($event) {
+      \u0275\u0275restoreView(_r1);
+      const i_r2 = \u0275\u0275nextContext().index;
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.onGutterTouchStart($event, i_r2));
+    })("touchmove", function Splitter_ng_template_2_div_2_Template_div_touchmove_0_listener($event) {
+      \u0275\u0275restoreView(_r1);
+      const ctx_r2 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r2.onGutterTouchMove($event));
+    })("touchend", function Splitter_ng_template_2_div_2_Template_div_touchend_0_listener($event) {
+      \u0275\u0275restoreView(_r1);
+      const i_r2 = \u0275\u0275nextContext().index;
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.onGutterTouchEnd($event, i_r2));
+    });
+    \u0275\u0275elementStart(1, "div", 7);
+    \u0275\u0275listener("keyup", function Splitter_ng_template_2_div_2_Template_div_keyup_1_listener($event) {
+      \u0275\u0275restoreView(_r1);
+      const ctx_r2 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r2.onGutterKeyUp($event));
+    })("keydown", function Splitter_ng_template_2_div_2_Template_div_keydown_1_listener($event) {
+      \u0275\u0275restoreView(_r1);
+      const i_r2 = \u0275\u0275nextContext().index;
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.onGutterKeyDown($event, i_r2));
+    });
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const ctx_r2 = \u0275\u0275nextContext(2);
+    \u0275\u0275attribute("data-p-gutter-resizing", false)("data-pc-section", "gutter");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngStyle", ctx_r2.gutterStyle());
+    \u0275\u0275attribute("aria-orientation", ctx_r2.layout)("aria-valuenow", ctx_r2.prevSize)("data-pc-section", "gutterhandle");
+  }
+}
+function Splitter_ng_template_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 3);
+    \u0275\u0275template(1, Splitter_ng_template_2_ng_container_1_Template, 1, 0, "ng-container", 4);
+    \u0275\u0275elementEnd();
+    \u0275\u0275template(2, Splitter_ng_template_2_div_2_Template, 2, 6, "div", 5);
+  }
+  if (rf & 2) {
+    const panel_r4 = ctx.$implicit;
+    const i_r2 = ctx.index;
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275classMap(ctx_r2.panelStyleClass);
+    \u0275\u0275property("ngClass", ctx_r2.panelContainerClass())("ngStyle", ctx_r2.panelStyle);
+    \u0275\u0275attribute("data-pc-name", "splitter")("data-pc-section", "root");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngTemplateOutlet", panel_r4);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", i_r2 !== ctx_r2.panels.length - 1);
+  }
+}
+var Splitter = class _Splitter {
+  document;
+  platformId;
+  renderer;
+  cd;
+  el;
+  /**
+   * Style class of the component.
+   * @group Props
+   */
+  styleClass;
+  /**
+   * Style class of the panel.
+   * @group Props
+   */
+  panelStyleClass;
+  /**
+   * Inline style of the component.
+   * @group Props
+   */
+  style;
+  /**
+   * Inline style of the panel.
+   * @group Props
+   */
+  panelStyle;
+  /**
+   * Defines where a stateful splitter keeps its state, valid values are 'session' for sessionStorage and 'local' for localStorage.
+   * @group Props
+   */
+  stateStorage = "session";
+  /**
+   * Storage identifier of a stateful Splitter.
+   * @group Props
+   */
+  stateKey = null;
+  /**
+   * Orientation of the panels. Valid values are 'horizontal' and 'vertical'.
+   * @group Props
+   */
+  layout = "horizontal";
+  /**
+   * Size of the divider in pixels.
+   * @group Props
+   */
+  gutterSize = 4;
+  /**
+   * Step factor to increment/decrement the size of the panels while pressing the arrow keys.
+   * @group Props
+   */
+  step = 5;
+  /**
+   * Minimum size of the elements relative to 100%.
+   * @group Props
+   */
+  minSizes = [];
+  /**
+   * Size of the elements relative to 100%.
+   * @group Props
+   */
+  get panelSizes() {
+    return this._panelSizes;
+  }
+  set panelSizes(val) {
+    this._panelSizes = val;
+    if (this.el && this.el.nativeElement && this.panels.length > 0) {
+      let children = [...this.el.nativeElement.children[0].children].filter((child) => DomHandler.hasClass(child, "p-splitter-panel"));
+      let _panelSizes = [];
+      this.panels.map((panel, i) => {
+        let panelInitialSize = this.panelSizes.length - 1 >= i ? this.panelSizes[i] : null;
+        let panelSize = panelInitialSize || 100 / this.panels.length;
+        _panelSizes[i] = panelSize;
+        children[i].style.flexBasis = "calc(" + panelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
+      });
+    }
+  }
+  /**
+   * Callback to invoke when resize ends.
+   * @param {SplitterResizeEndEvent} event - Custom panel resize end event
+   * @group Emits
+   */
+  onResizeEnd = new EventEmitter();
+  /**
+   * Callback to invoke when resize starts.
+   * @param {SplitterResizeStartEvent} event - Custom panel resize start event
+   * @group Emits
+   */
+  onResizeStart = new EventEmitter();
+  templates;
+  containerViewChild;
+  nested = false;
+  panels = [];
+  dragging = false;
+  mouseMoveListener;
+  mouseUpListener;
+  touchMoveListener;
+  touchEndListener;
+  size;
+  gutterElement;
+  startPos;
+  prevPanelElement;
+  nextPanelElement;
+  nextPanelSize;
+  prevPanelSize;
+  _panelSizes = [];
+  prevPanelIndex;
+  timer;
+  prevSize;
+  window;
+  constructor(document2, platformId, renderer, cd, el) {
+    this.document = document2;
+    this.platformId = platformId;
+    this.renderer = renderer;
+    this.cd = cd;
+    this.el = el;
+    this.window = this.document.defaultView;
+  }
+  ngOnInit() {
+    this.nested = this.isNested();
+  }
+  ngAfterContentInit() {
+    this.templates.forEach((item) => {
+      switch (item.getType()) {
+        case "panel":
+          this.panels.push(item.template);
+          break;
+        default:
+          this.panels.push(item.template);
+          break;
+      }
+    });
+  }
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      if (this.panels && this.panels.length) {
+        let initialized = false;
+        if (this.isStateful()) {
+          initialized = this.restoreState();
+        }
+        if (!initialized) {
+          let children = [...this.el.nativeElement.children[0].children].filter((child) => DomHandler.hasClass(child, "p-splitter-panel"));
+          let _panelSizes = [];
+          this.panels.map((panel, i) => {
+            let panelInitialSize = this.panelSizes.length - 1 >= i ? this.panelSizes[i] : null;
+            let panelSize = panelInitialSize || 100 / this.panels.length;
+            _panelSizes[i] = panelSize;
+            children[i].style.flexBasis = "calc(" + panelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
+          });
+          this._panelSizes = _panelSizes;
+          this.prevSize = parseFloat(_panelSizes[0]).toFixed(4);
+        }
+      }
+    }
+  }
+  resizeStart(event, index, isKeyDown) {
+    this.gutterElement = event.currentTarget || event.target.parentElement;
+    this.size = this.horizontal() ? DomHandler.getWidth(this.containerViewChild.nativeElement) : DomHandler.getHeight(this.containerViewChild.nativeElement);
+    if (!isKeyDown) {
+      this.dragging = true;
+      this.startPos = this.horizontal() ? event instanceof MouseEvent ? event.pageX : event.changedTouches[0].pageX : event instanceof MouseEvent ? event.pageY : event.changedTouches[0].pageY;
+    }
+    this.prevPanelElement = this.gutterElement.previousElementSibling;
+    this.nextPanelElement = this.gutterElement.nextElementSibling;
+    if (isKeyDown) {
+      this.prevPanelSize = this.horizontal() ? DomHandler.getOuterWidth(this.prevPanelElement, true) : DomHandler.getOuterHeight(this.prevPanelElement, true);
+      this.nextPanelSize = this.horizontal() ? DomHandler.getOuterWidth(this.nextPanelElement, true) : DomHandler.getOuterHeight(this.nextPanelElement, true);
+    } else {
+      this.prevPanelSize = 100 * (this.horizontal() ? DomHandler.getOuterWidth(this.prevPanelElement, true) : DomHandler.getOuterHeight(this.prevPanelElement, true)) / this.size;
+      this.nextPanelSize = 100 * (this.horizontal() ? DomHandler.getOuterWidth(this.nextPanelElement, true) : DomHandler.getOuterHeight(this.nextPanelElement, true)) / this.size;
+    }
+    this.prevPanelIndex = index;
+    DomHandler.addClass(this.gutterElement, "p-splitter-gutter-resizing");
+    this.gutterElement.setAttribute("data-p-gutter-resizing", "true");
+    DomHandler.addClass(this.containerViewChild.nativeElement, "p-splitter-resizing");
+    this.containerViewChild.nativeElement.setAttribute("data-p-resizing", "true");
+    this.onResizeStart.emit({
+      originalEvent: event,
+      sizes: this._panelSizes
+    });
+  }
+  onResize(event, step, isKeyDown) {
+    let newPos, newPrevPanelSize, newNextPanelSize;
+    if (isKeyDown) {
+      if (this.horizontal()) {
+        newPrevPanelSize = 100 * (this.prevPanelSize + step) / this.size;
+        newNextPanelSize = 100 * (this.nextPanelSize - step) / this.size;
+      } else {
+        newPrevPanelSize = 100 * (this.prevPanelSize - step) / this.size;
+        newNextPanelSize = 100 * (this.nextPanelSize + step) / this.size;
+      }
+    } else {
+      if (this.horizontal()) newPos = event.pageX * 100 / this.size - this.startPos * 100 / this.size;
+      else newPos = event.pageY * 100 / this.size - this.startPos * 100 / this.size;
+      newPrevPanelSize = this.prevPanelSize + newPos;
+      newNextPanelSize = this.nextPanelSize - newPos;
+    }
+    this.prevSize = parseFloat(newPrevPanelSize).toFixed(4);
+    if (this.validateResize(newPrevPanelSize, newNextPanelSize)) {
+      this.prevPanelElement.style.flexBasis = "calc(" + newPrevPanelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
+      this.nextPanelElement.style.flexBasis = "calc(" + newNextPanelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
+      this._panelSizes[this.prevPanelIndex] = newPrevPanelSize;
+      this._panelSizes[this.prevPanelIndex + 1] = newNextPanelSize;
+    }
+  }
+  resizeEnd(event) {
+    if (this.isStateful()) {
+      this.saveState();
+    }
+    this.onResizeEnd.emit({
+      originalEvent: event,
+      sizes: this._panelSizes
+    });
+    DomHandler.removeClass(this.gutterElement, "p-splitter-gutter-resizing");
+    DomHandler.removeClass(this.containerViewChild.nativeElement, "p-splitter-resizing");
+    this.clear();
+  }
+  onGutterMouseDown(event, index) {
+    this.resizeStart(event, index);
+    this.bindMouseListeners();
+  }
+  onGutterTouchStart(event, index) {
+    if (event.cancelable) {
+      this.resizeStart(event, index);
+      this.bindTouchListeners();
+      event.preventDefault();
+    }
+  }
+  onGutterTouchMove(event) {
+    this.onResize(event);
+    event.preventDefault();
+  }
+  onGutterTouchEnd(event) {
+    this.resizeEnd(event);
+    this.unbindTouchListeners();
+    if (event.cancelable) event.preventDefault();
+  }
+  repeat(event, index, step) {
+    this.resizeStart(event, index, true);
+    this.onResize(event, step, true);
+  }
+  setTimer(event, index, step) {
+    this.clearTimer();
+    this.timer = setTimeout(() => {
+      this.repeat(event, index, step);
+    }, 40);
+  }
+  clearTimer() {
+    if (this.timer) {
+      clearTimeout(this.timer);
+    }
+  }
+  onGutterKeyUp(event) {
+    this.clearTimer();
+    this.resizeEnd(event);
+  }
+  onGutterKeyDown(event, index) {
+    switch (event.code) {
+      case "ArrowLeft": {
+        if (this.layout === "horizontal") {
+          this.setTimer(event, index, this.step * -1);
+        }
+        event.preventDefault();
+        break;
+      }
+      case "ArrowRight": {
+        if (this.layout === "horizontal") {
+          this.setTimer(event, index, this.step);
+        }
+        event.preventDefault();
+        break;
+      }
+      case "ArrowDown": {
+        if (this.layout === "vertical") {
+          this.setTimer(event, index, this.step * -1);
+        }
+        event.preventDefault();
+        break;
+      }
+      case "ArrowUp": {
+        if (this.layout === "vertical") {
+          this.setTimer(event, index, this.step);
+        }
+        event.preventDefault();
+        break;
+      }
+      default:
+        break;
+    }
+  }
+  validateResize(newPrevPanelSize, newNextPanelSize) {
+    const prevPanelIndex = this.prevPanelIndex;
+    if (this.minSizes.length > prevPanelIndex && this.minSizes[prevPanelIndex] && this.minSizes[prevPanelIndex] > newPrevPanelSize) {
+      return false;
+    }
+    const nextPanelIndex = this.prevPanelIndex + 1;
+    if (this.minSizes.length > nextPanelIndex && this.minSizes[nextPanelIndex] && this.minSizes[nextPanelIndex] > newNextPanelSize) {
+      return false;
+    }
+    return true;
+  }
+  bindMouseListeners() {
+    if (!this.mouseMoveListener) {
+      this.mouseMoveListener = this.renderer.listen(this.document, "mousemove", (event) => {
+        this.onResize(event);
+      });
+    }
+    if (!this.mouseUpListener) {
+      this.mouseUpListener = this.renderer.listen(this.document, "mouseup", (event) => {
+        this.resizeEnd(event);
+        this.unbindMouseListeners();
+      });
+    }
+  }
+  bindTouchListeners() {
+    if (!this.touchMoveListener) {
+      this.touchMoveListener = this.renderer.listen(this.document, "touchmove", (event) => {
+        this.onResize(event.changedTouches[0]);
+      });
+    }
+    if (!this.touchEndListener) {
+      this.touchEndListener = this.renderer.listen(this.document, "touchend", (event) => {
+        this.resizeEnd(event);
+        this.unbindTouchListeners();
+      });
+    }
+  }
+  unbindMouseListeners() {
+    if (this.mouseMoveListener) {
+      this.mouseMoveListener();
+      this.mouseMoveListener = null;
+    }
+    if (this.mouseUpListener) {
+      this.mouseUpListener();
+      this.mouseUpListener = null;
+    }
+  }
+  unbindTouchListeners() {
+    if (this.touchMoveListener) {
+      this.touchMoveListener();
+      this.touchMoveListener = null;
+    }
+    if (this.touchEndListener) {
+      this.touchEndListener();
+      this.touchEndListener = null;
+    }
+  }
+  clear() {
+    this.dragging = false;
+    this.size = null;
+    this.startPos = null;
+    this.prevPanelElement = null;
+    this.nextPanelElement = null;
+    this.prevPanelSize = null;
+    this.nextPanelSize = null;
+    this.gutterElement = null;
+    this.prevPanelIndex = null;
+  }
+  isNested() {
+    if (this.el.nativeElement) {
+      let parent = this.el.nativeElement.parentElement;
+      while (parent && !DomHandler.hasClass(parent, "p-splitter")) {
+        parent = parent.parentElement;
+      }
+      return parent !== null;
+    } else {
+      return false;
+    }
+  }
+  isStateful() {
+    return this.stateKey != null;
+  }
+  getStorage() {
+    if (isPlatformBrowser(this.platformId)) {
+      switch (this.stateStorage) {
+        case "local":
+          return this.window.localStorage;
+        case "session":
+          return this.window.sessionStorage;
+        default:
+          throw new Error(this.stateStorage + ' is not a valid value for the state storage, supported values are "local" and "session".');
+      }
+    } else {
+      throw new Error("Storage is not a available by default on the server.");
+    }
+  }
+  saveState() {
+    this.getStorage().setItem(this.stateKey, JSON.stringify(this._panelSizes));
+  }
+  restoreState() {
+    const storage = this.getStorage();
+    const stateString = storage.getItem(this.stateKey);
+    if (stateString) {
+      this._panelSizes = JSON.parse(stateString);
+      let children = [...this.containerViewChild.nativeElement.children].filter((child) => DomHandler.hasClass(child, "p-splitter-panel"));
+      children.forEach((child, i) => {
+        child.style.flexBasis = "calc(" + this._panelSizes[i] + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
+      });
+      return true;
+    }
+    return false;
+  }
+  containerClass() {
+    return {
+      "p-splitter p-component": true,
+      "p-splitter-horizontal": this.layout === "horizontal",
+      "p-splitter-vertical": this.layout === "vertical"
+    };
+  }
+  panelContainerClass() {
+    return {
+      "p-splitter-panel": true,
+      "p-splitter-panel-nested": true
+    };
+  }
+  gutterStyle() {
+    if (this.horizontal()) return {
+      width: this.gutterSize + "px"
+    };
+    else return {
+      height: this.gutterSize + "px"
+    };
+  }
+  horizontal() {
+    return this.layout === "horizontal";
+  }
+  static \u0275fac = function Splitter_Factory(t) {
+    return new (t || _Splitter)(\u0275\u0275directiveInject(DOCUMENT), \u0275\u0275directiveInject(PLATFORM_ID), \u0275\u0275directiveInject(Renderer2), \u0275\u0275directiveInject(ChangeDetectorRef), \u0275\u0275directiveInject(ElementRef));
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _Splitter,
+    selectors: [["p-splitter"]],
+    contentQueries: function Splitter_ContentQueries(rf, ctx, dirIndex) {
+      if (rf & 1) {
+        \u0275\u0275contentQuery(dirIndex, PrimeTemplate, 4);
+      }
+      if (rf & 2) {
+        let _t;
+        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.templates = _t);
+      }
+    },
+    viewQuery: function Splitter_Query(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275viewQuery(_c0, 5);
+      }
+      if (rf & 2) {
+        let _t;
+        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.containerViewChild = _t.first);
+      }
+    },
+    hostAttrs: [1, "p-element"],
+    hostVars: 2,
+    hostBindings: function Splitter_HostBindings(rf, ctx) {
+      if (rf & 2) {
+        \u0275\u0275classProp("p-splitter-panel-nested", ctx.nested);
+      }
+    },
+    inputs: {
+      styleClass: "styleClass",
+      panelStyleClass: "panelStyleClass",
+      style: "style",
+      panelStyle: "panelStyle",
+      stateStorage: "stateStorage",
+      stateKey: "stateKey",
+      layout: "layout",
+      gutterSize: [2, "gutterSize", "gutterSize", numberAttribute],
+      step: [2, "step", "step", numberAttribute],
+      minSizes: "minSizes",
+      panelSizes: "panelSizes"
+    },
+    outputs: {
+      onResizeEnd: "onResizeEnd",
+      onResizeStart: "onResizeStart"
+    },
+    features: [\u0275\u0275InputTransformsFeature],
+    decls: 3,
+    vars: 8,
+    consts: [["container", ""], [3, "ngClass", "ngStyle"], ["ngFor", "", 3, "ngForOf"], ["tabindex", "-1", 3, "ngClass", "ngStyle"], [4, "ngTemplateOutlet"], ["class", "p-splitter-gutter", "role", "separator", "tabindex", "-1", 3, "mousedown", "touchstart", "touchmove", "touchend", 4, "ngIf"], ["role", "separator", "tabindex", "-1", 1, "p-splitter-gutter", 3, "mousedown", "touchstart", "touchmove", "touchend"], ["tabindex", "0", 1, "p-splitter-gutter-handle", 3, "keyup", "keydown", "ngStyle"]],
+    template: function Splitter_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 1, 0);
+        \u0275\u0275template(2, Splitter_ng_template_2_Template, 3, 8, "ng-template", 2);
+        \u0275\u0275elementEnd();
+      }
+      if (rf & 2) {
+        \u0275\u0275classMap(ctx.styleClass);
+        \u0275\u0275property("ngClass", ctx.containerClass())("ngStyle", ctx.style);
+        \u0275\u0275attribute("data-pc-name", "splitter")("data-p-gutter-resizing", false)("data-pc-section", "root");
+        \u0275\u0275advance(2);
+        \u0275\u0275property("ngForOf", ctx.panels);
+      }
+    },
+    dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle],
+    styles: ["@layer primeng{.p-splitter{display:flex;flex-wrap:nowrap}.p-splitter-vertical{flex-direction:column}.p-splitter-panel{overflow:hidden;flex-grow:1}.p-splitter-panel-nested{display:flex;min-width:0}.p-splitter-panel p-splitter{flex-grow:1}.p-splitter-panel .p-splitter{flex-grow:1;border:0 none}.p-splitter-gutter{flex-grow:0;flex-shrink:0;display:flex;align-items:center;justify-content:center;cursor:col-resize}.p-splitter-horizontal.p-splitter-resizing{cursor:col-resize;-webkit-user-select:none;user-select:none}.p-splitter-horizontal>.p-splitter-gutter>.p-splitter-gutter-handle{height:24px;width:100%}.p-splitter-horizontal>.p-splitter-gutter{cursor:col-resize}.p-splitter-vertical.p-splitter-resizing{cursor:row-resize;-webkit-user-select:none;user-select:none}.p-splitter-vertical>.p-splitter-gutter{cursor:row-resize}.p-splitter-vertical>.p-splitter-gutter>.p-splitter-gutter-handle{width:24px;height:100%}.p-splitter-resizing .p-splitter-panel{pointer-events:none}}\n"],
+    encapsulation: 2,
+    changeDetection: 0
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Splitter, [{
+    type: Component,
+    args: [{
+      selector: "p-splitter",
+      template: `
+        <div #container [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" [attr.data-pc-name]="'splitter'" [attr.data-p-gutter-resizing]="false" [attr.data-pc-section]="'root'">
+            <ng-template ngFor let-panel [ngForOf]="panels" let-i="index">
+                <div [ngClass]="panelContainerClass()" [class]="panelStyleClass" [ngStyle]="panelStyle" tabindex="-1" [attr.data-pc-name]="'splitter'" [attr.data-pc-section]="'root'">
+                    <ng-container *ngTemplateOutlet="panel"></ng-container>
+                </div>
+                <div
+                    *ngIf="i !== panels.length - 1"
+                    class="p-splitter-gutter"
+                    role="separator"
+                    tabindex="-1"
+                    (mousedown)="onGutterMouseDown($event, i)"
+                    (touchstart)="onGutterTouchStart($event, i)"
+                    (touchmove)="onGutterTouchMove($event)"
+                    (touchend)="onGutterTouchEnd($event, i)"
+                    [attr.data-p-gutter-resizing]="false"
+                    [attr.data-pc-section]="'gutter'"
+                >
+                    <div
+                        class="p-splitter-gutter-handle"
+                        tabindex="0"
+                        [ngStyle]="gutterStyle()"
+                        [attr.aria-orientation]="layout"
+                        [attr.aria-valuenow]="prevSize"
+                        [attr.data-pc-section]="'gutterhandle'"
+                        (keyup)="onGutterKeyUp($event)"
+                        (keydown)="onGutterKeyDown($event, i)"
+                    ></div>
+                </div>
+            </ng-template>
+        </div>
+    `,
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      host: {
+        class: "p-element",
+        "[class.p-splitter-panel-nested]": "nested"
+      },
+      styles: ["@layer primeng{.p-splitter{display:flex;flex-wrap:nowrap}.p-splitter-vertical{flex-direction:column}.p-splitter-panel{overflow:hidden;flex-grow:1}.p-splitter-panel-nested{display:flex;min-width:0}.p-splitter-panel p-splitter{flex-grow:1}.p-splitter-panel .p-splitter{flex-grow:1;border:0 none}.p-splitter-gutter{flex-grow:0;flex-shrink:0;display:flex;align-items:center;justify-content:center;cursor:col-resize}.p-splitter-horizontal.p-splitter-resizing{cursor:col-resize;-webkit-user-select:none;user-select:none}.p-splitter-horizontal>.p-splitter-gutter>.p-splitter-gutter-handle{height:24px;width:100%}.p-splitter-horizontal>.p-splitter-gutter{cursor:col-resize}.p-splitter-vertical.p-splitter-resizing{cursor:row-resize;-webkit-user-select:none;user-select:none}.p-splitter-vertical>.p-splitter-gutter{cursor:row-resize}.p-splitter-vertical>.p-splitter-gutter>.p-splitter-gutter-handle{width:24px;height:100%}.p-splitter-resizing .p-splitter-panel{pointer-events:none}}\n"]
+    }]
+  }], () => [{
+    type: Document,
+    decorators: [{
+      type: Inject,
+      args: [DOCUMENT]
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Inject,
+      args: [PLATFORM_ID]
+    }]
+  }, {
+    type: Renderer2
+  }, {
+    type: ChangeDetectorRef
+  }, {
+    type: ElementRef
+  }], {
+    styleClass: [{
+      type: Input
+    }],
+    panelStyleClass: [{
+      type: Input
+    }],
+    style: [{
+      type: Input
+    }],
+    panelStyle: [{
+      type: Input
+    }],
+    stateStorage: [{
+      type: Input
+    }],
+    stateKey: [{
+      type: Input
+    }],
+    layout: [{
+      type: Input
+    }],
+    gutterSize: [{
+      type: Input,
+      args: [{
+        transform: numberAttribute
+      }]
+    }],
+    step: [{
+      type: Input,
+      args: [{
+        transform: numberAttribute
+      }]
+    }],
+    minSizes: [{
+      type: Input
+    }],
+    panelSizes: [{
+      type: Input
+    }],
+    onResizeEnd: [{
+      type: Output
+    }],
+    onResizeStart: [{
+      type: Output
+    }],
+    templates: [{
+      type: ContentChildren,
+      args: [PrimeTemplate]
+    }],
+    containerViewChild: [{
+      type: ViewChild,
+      args: ["container", {
+        static: false
+      }]
+    }]
+  });
+})();
+var SplitterModule = class _SplitterModule {
+  static \u0275fac = function SplitterModule_Factory(t) {
+    return new (t || _SplitterModule)();
+  };
+  static \u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({
+    type: _SplitterModule
+  });
+  static \u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({
+    imports: [CommonModule, SharedModule]
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SplitterModule, [{
+    type: NgModule,
+    args: [{
+      imports: [CommonModule],
+      exports: [Splitter, SharedModule],
+      declarations: [Splitter]
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-chevrondown.mjs
+var ChevronDownIcon = class _ChevronDownIcon extends BaseIcon {
+  static \u0275fac = /* @__PURE__ */ (() => {
+    let \u0275ChevronDownIcon_BaseFactory;
+    return function ChevronDownIcon_Factory(t) {
+      return (\u0275ChevronDownIcon_BaseFactory || (\u0275ChevronDownIcon_BaseFactory = \u0275\u0275getInheritedFactory(_ChevronDownIcon)))(t || _ChevronDownIcon);
+    };
+  })();
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _ChevronDownIcon,
+    selectors: [["ChevronDownIcon"]],
+    standalone: true,
+    features: [\u0275\u0275InheritDefinitionFeature, \u0275\u0275StandaloneFeature],
+    decls: 2,
+    vars: 5,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z", "fill", "currentColor"]],
+    template: function ChevronDownIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(0, "svg", 0);
+        \u0275\u0275element(1, "path", 1);
+        \u0275\u0275elementEnd();
+      }
+      if (rf & 2) {
+        \u0275\u0275classMap(ctx.getClassNames());
+        \u0275\u0275attribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ChevronDownIcon, [{
+    type: Component,
+    args: [{
+      selector: "ChevronDownIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <path
+                d="M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z"
+                fill="currentColor"
+            />
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-chevronright.mjs
+var ChevronRightIcon = class _ChevronRightIcon extends BaseIcon {
+  static \u0275fac = /* @__PURE__ */ (() => {
+    let \u0275ChevronRightIcon_BaseFactory;
+    return function ChevronRightIcon_Factory(t) {
+      return (\u0275ChevronRightIcon_BaseFactory || (\u0275ChevronRightIcon_BaseFactory = \u0275\u0275getInheritedFactory(_ChevronRightIcon)))(t || _ChevronRightIcon);
+    };
+  })();
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _ChevronRightIcon,
+    selectors: [["ChevronRightIcon"]],
+    standalone: true,
+    features: [\u0275\u0275InheritDefinitionFeature, \u0275\u0275StandaloneFeature],
+    decls: 2,
+    vars: 5,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z", "fill", "currentColor"]],
+    template: function ChevronRightIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(0, "svg", 0);
+        \u0275\u0275element(1, "path", 1);
+        \u0275\u0275elementEnd();
+      }
+      if (rf & 2) {
+        \u0275\u0275classMap(ctx.getClassNames());
+        \u0275\u0275attribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ChevronRightIcon, [{
+    type: Component,
+    args: [{
+      selector: "ChevronRightIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <path
+                d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z"
+                fill="currentColor"
+            />
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-panelmenu.mjs
+var _c02 = ["list"];
+var _c1 = (a0) => ({
+  "p-submenu-list": true,
+  "p-panelmenu-root-list": a0
+});
+var _c2 = (a0) => ({
+  "p-disabled": a0
+});
+var _c3 = () => ({
+  exact: false
+});
+var _c4 = (a0) => ({
+  $implicit: a0
+});
+function PanelMenuSub_ng_template_2_li_0_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "li", 7);
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_AngleDownIcon_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "AngleDownIcon", 21);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(6).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("styleClass", "p-submenu-icon")("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_AngleRightIcon_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "AngleRightIcon", 21);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(6).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("styleClass", "p-submenu-icon")("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_AngleDownIcon_1_Template, 1, 2, "AngleDownIcon", 20)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_AngleRightIcon_2_Template, 1, 2, "AngleRightIcon", 20);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(5).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r3.isItemActive(processedItem_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r3.isItemActive(processedItem_r3));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_2_ng_template_0_Template(rf, ctx) {
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275template(0, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_2_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_ng_container_1_Template, 3, 2, "ng-container", 10)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_2_Template, 1, 0, null, 19);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const ctx_r3 = \u0275\u0275nextContext(5);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r3.panelMenu.submenuIconTemplate);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngTemplateOutlet", ctx_r3.panelMenu.submenuIconTemplate);
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 22);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", processedItem_r3.icon)("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 23);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(ctx_r3.getItemProp(processedItem_r3, "label"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_template_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 24);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("innerHTML", ctx_r3.getItemProp(processedItem_r3, "label"), \u0275\u0275sanitizeHtml);
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 25);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
+    \u0275\u0275property("ngClass", processedItem_r3.badgeStyleClass);
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(processedItem_r3.badge);
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "a", 15);
+    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_container_1_Template, 3, 2, "ng-container", 10)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_2_Template, 1, 2, "span", 16)(3, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_3_Template, 2, 1, "span", 17)(4, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_ng_template_4_Template, 1, 1, "ng-template", null, 1, \u0275\u0275templateRefExtractor)(6, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_span_6_Template, 2, 2, "span", 18);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const htmlLabel_r5 = \u0275\u0275reference(5);
+    const processedItem_r3 = \u0275\u0275nextContext(3).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(10, _c2, ctx_r3.getItemProp(processedItem_r3, "disabled")))("target", ctx_r3.getItemProp(processedItem_r3, "target"));
+    \u0275\u0275attribute("href", ctx_r3.getItemProp(processedItem_r3, "url"), \u0275\u0275sanitizeUrl)("data-pc-section", "action")("tabindex", !!ctx_r3.parentExpanded ? "0" : "-1");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r3.isItemGroup(processedItem_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", processedItem_r3.icon);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (processedItem_r3.item == null ? null : processedItem_r3.item.escape) !== false)("ngIfElse", htmlLabel_r5);
+    \u0275\u0275advance(3);
+    \u0275\u0275property("ngIf", processedItem_r3.badge);
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_AngleDownIcon_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "AngleDownIcon", 21);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(6).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("styleClass", "p-submenu-icon")("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_AngleRightIcon_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "AngleRightIcon", 21);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(6).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("styleClass", "p-submenu-icon")("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_AngleDownIcon_1_Template, 1, 2, "AngleDownIcon", 20)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_AngleRightIcon_2_Template, 1, 2, "AngleRightIcon", 20);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(5).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r3.isItemActive(processedItem_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r3.isItemActive(processedItem_r3));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_2_ng_template_0_Template(rf, ctx) {
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275template(0, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_2_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_ng_container_1_Template, 3, 2, "ng-container", 10)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_2_Template, 1, 0, null, 19);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const ctx_r3 = \u0275\u0275nextContext(5);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r3.panelMenu.submenuIconTemplate);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngTemplateOutlet", ctx_r3.panelMenu.submenuIconTemplate);
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 22);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", processedItem_r3.icon)("ngStyle", ctx_r3.getItemProp(processedItem_r3, "iconStyle"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 23);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(ctx_r3.getItemProp(processedItem_r3, "label"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_template_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 24);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("innerHTML", ctx_r3.getItemProp(processedItem_r3, "label"), \u0275\u0275sanitizeHtml);
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 25);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", ctx_r3.getItemProp(processedItem_r3, "badgeStyleClass"));
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(ctx_r3.getItemProp(processedItem_r3, "badge"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "a", 26);
+    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_container_1_Template, 3, 2, "ng-container", 10)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_2_Template, 1, 2, "span", 16)(3, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_3_Template, 2, 1, "span", 17)(4, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_ng_template_4_Template, 1, 1, "ng-template", null, 2, \u0275\u0275templateRefExtractor)(6, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_span_6_Template, 2, 2, "span", 18);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const htmlRouteLabel_r6 = \u0275\u0275reference(5);
+    const processedItem_r3 = \u0275\u0275nextContext(3).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("routerLink", ctx_r3.getItemProp(processedItem_r3, "routerLink"))("queryParams", ctx_r3.getItemProp(processedItem_r3, "queryParams"))("routerLinkActive", "p-menuitem-link-active")("routerLinkActiveOptions", ctx_r3.getItemProp(processedItem_r3, "routerLinkActiveOptions") || \u0275\u0275pureFunction0(20, _c3))("ngClass", \u0275\u0275pureFunction1(21, _c2, ctx_r3.getItemProp(processedItem_r3, "disabled")))("target", ctx_r3.getItemProp(processedItem_r3, "target"))("fragment", ctx_r3.getItemProp(processedItem_r3, "fragment"))("queryParamsHandling", ctx_r3.getItemProp(processedItem_r3, "queryParamsHandling"))("preserveFragment", ctx_r3.getItemProp(processedItem_r3, "preserveFragment"))("skipLocationChange", ctx_r3.getItemProp(processedItem_r3, "skipLocationChange"))("replaceUrl", ctx_r3.getItemProp(processedItem_r3, "replaceUrl"))("state", ctx_r3.getItemProp(processedItem_r3, "state"));
+    \u0275\u0275attribute("title", ctx_r3.getItemProp(processedItem_r3, "title"))("data-pc-section", "action")("tabindex", !!ctx_r3.parentExpanded ? "0" : "-1");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r3.isItemGroup(processedItem_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", processedItem_r3.icon);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r3.getItemProp(processedItem_r3, "escape") !== false)("ngIfElse", htmlRouteLabel_r6);
+    \u0275\u0275advance(3);
+    \u0275\u0275property("ngIf", processedItem_r3.badge);
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_1_Template, 7, 12, "a", 13)(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_a_2_Template, 7, 23, "a", 14);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(2).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r3.getItemProp(processedItem_r3, "routerLink"));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r3.getItemProp(processedItem_r3, "routerLink"));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_3_1_ng_template_0_Template(rf, ctx) {
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_3_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275template(0, PanelMenuSub_ng_template_2_li_1_ng_container_3_1_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_ng_container_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenuSub_ng_template_2_li_1_ng_container_3_1_Template, 1, 0, null, 27);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(2).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngTemplateOutlet", ctx_r3.itemTemplate)("ngTemplateOutletContext", \u0275\u0275pureFunction1(2, _c4, processedItem_r3.item));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_p_panelMenuSub_5_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r7 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "p-panelMenuSub", 28);
+    \u0275\u0275listener("itemToggle", function PanelMenuSub_ng_template_2_li_1_p_panelMenuSub_5_Template_p_panelMenuSub_itemToggle_0_listener($event) {
+      \u0275\u0275restoreView(_r7);
+      const ctx_r3 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r3.onItemToggle($event));
+    });
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const processedItem_r3 = \u0275\u0275nextContext(2).$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("id", ctx_r3.getItemId(processedItem_r3) + "_list")("panelId", ctx_r3.panelId)("items", processedItem_r3 == null ? null : processedItem_r3.items)("itemTemplate", ctx_r3.itemTemplate)("transitionOptions", ctx_r3.transitionOptions)("focusedItemId", ctx_r3.focusedItemId)("activeItemPath", ctx_r3.activeItemPath)("level", ctx_r3.level + 1)("parentExpanded", !!ctx_r3.parentExpanded && ctx_r3.isItemExpanded(processedItem_r3));
+  }
+}
+function PanelMenuSub_ng_template_2_li_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r2 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "li", 8)(1, "div", 9);
+    \u0275\u0275listener("click", function PanelMenuSub_ng_template_2_li_1_Template_div_click_1_listener($event) {
+      \u0275\u0275restoreView(_r2);
+      const processedItem_r3 = \u0275\u0275nextContext().$implicit;
+      const ctx_r3 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r3.onItemClick($event, processedItem_r3));
+    });
+    \u0275\u0275template(2, PanelMenuSub_ng_template_2_li_1_ng_container_2_Template, 3, 2, "ng-container", 10)(3, PanelMenuSub_ng_template_2_li_1_ng_container_3_Template, 2, 4, "ng-container", 10);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(4, "div", 11);
+    \u0275\u0275template(5, PanelMenuSub_ng_template_2_li_1_p_panelMenuSub_5_Template, 1, 9, "p-panelMenuSub", 12);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const ctx_r7 = \u0275\u0275nextContext();
+    const processedItem_r3 = ctx_r7.$implicit;
+    const index_r9 = ctx_r7.index;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275classMap(ctx_r3.getItemProp(processedItem_r3, "styleClass"));
+    \u0275\u0275classProp("p-hidden", processedItem_r3.visible === false)("p-focus", ctx_r3.isItemFocused(processedItem_r3) && !ctx_r3.isItemDisabled(processedItem_r3));
+    \u0275\u0275property("ngClass", ctx_r3.getItemClass(processedItem_r3))("ngStyle", ctx_r3.getItemProp(processedItem_r3, "style"))("pTooltip", ctx_r3.getItemProp(processedItem_r3, "tooltip"))("tooltipOptions", ctx_r3.getItemProp(processedItem_r3, "tooltipOptions"));
+    \u0275\u0275attribute("id", ctx_r3.getItemId(processedItem_r3))("aria-label", ctx_r3.getItemProp(processedItem_r3, "label"))("aria-expanded", ctx_r3.isItemGroup(processedItem_r3) ? ctx_r3.isItemActive(processedItem_r3) : void 0)("aria-level", ctx_r3.level + 1)("aria-setsize", ctx_r3.getAriaSetSize())("aria-posinset", ctx_r3.getAriaPosInset(index_r9))("data-p-disabled", ctx_r3.isItemDisabled(processedItem_r3));
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngIf", !ctx_r3.itemTemplate);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r3.itemTemplate);
+    \u0275\u0275advance();
+    \u0275\u0275property("@submenu", ctx_r3.getAnimation(processedItem_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r3.isItemVisible(processedItem_r3) && ctx_r3.isItemGroup(processedItem_r3) && ctx_r3.isItemExpanded(processedItem_r3));
+  }
+}
+function PanelMenuSub_ng_template_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275template(0, PanelMenuSub_ng_template_2_li_0_Template, 1, 0, "li", 5)(1, PanelMenuSub_ng_template_2_li_1_Template, 6, 21, "li", 6);
+  }
+  if (rf & 2) {
+    const processedItem_r3 = ctx.$implicit;
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngIf", processedItem_r3.separator);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !processedItem_r3.separator && ctx_r3.isItemVisible(processedItem_r3));
+  }
+}
+var _c5 = ["submenu"];
+var _c6 = ["container"];
+var _c7 = (a0, a1) => ({
+  "p-component p-panelmenu-header": true,
+  "p-highlight": a0,
+  "p-disabled": a1
+});
+var _c8 = (a0) => ({
+  "p-panelmenu-expanded": a0
+});
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_ChevronDownIcon_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "ChevronDownIcon", 20);
+  }
+  if (rf & 2) {
+    \u0275\u0275property("styleClass", "p-submenu-icon");
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_ChevronRightIcon_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "ChevronRightIcon", 20);
+  }
+  if (rf & 2) {
+    \u0275\u0275property("styleClass", "p-submenu-icon");
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_ChevronDownIcon_1_Template, 1, 1, "ChevronDownIcon", 19)(2, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_ChevronRightIcon_2_Template, 1, 1, "ChevronRightIcon", 19);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(5).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.isItemActive(item_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r4.isItemActive(item_r3));
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_2_ng_template_0_Template(rf, ctx) {
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275template(0, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_2_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_ng_container_1_Template, 3, 2, "ng-container", 9)(2, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_2_Template, 1, 0, null, 18);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const ctx_r4 = \u0275\u0275nextContext(5);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r4.submenuIconTemplate);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngTemplateOutlet", ctx_r4.submenuIconTemplate);
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 21);
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", item_r3.icon)("ngStyle", ctx_r4.getItemProp(item_r3, "iconStyle"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 22);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(ctx_r4.getItemProp(item_r3, "label"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_template_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 23);
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("innerHTML", ctx_r4.getItemProp(item_r3, "label"), \u0275\u0275sanitizeHtml);
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 24);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", ctx_r4.getItemProp(item_r3, "badgeStyleClass"));
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(ctx_r4.getItemProp(item_r3, "badge"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_a_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "a", 14);
+    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_container_1_Template, 3, 2, "ng-container", 9)(2, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_2_Template, 1, 2, "span", 15)(3, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_3_Template, 2, 1, "span", 16)(4, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_ng_template_4_Template, 1, 1, "ng-template", null, 1, \u0275\u0275templateRefExtractor)(6, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_span_6_Template, 2, 2, "span", 17);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const htmlLabel_r6 = \u0275\u0275reference(5);
+    const item_r3 = \u0275\u0275nextContext(3).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("target", ctx_r4.getItemProp(item_r3, "target"));
+    \u0275\u0275attribute("href", ctx_r4.getItemProp(item_r3, "url"), \u0275\u0275sanitizeUrl)("tabindex", -1)("title", ctx_r4.getItemProp(item_r3, "title"))("data-pc-section", "headeraction");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.isItemGroup(item_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", item_r3.icon);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "escape") !== false)("ngIfElse", htmlLabel_r6);
+    \u0275\u0275advance(3);
+    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "badge"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_ng_container_3_a_1_Template, 7, 10, "a", 13);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(2).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r4.getItemProp(item_r3, "routerLink"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_ng_container_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainer(0);
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_ChevronDownIcon_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "ChevronDownIcon", 20);
+  }
+  if (rf & 2) {
+    \u0275\u0275property("styleClass", "p-submenu-icon");
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_ChevronRightIcon_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "ChevronRightIcon", 20);
+  }
+  if (rf & 2) {
+    \u0275\u0275property("styleClass", "p-submenu-icon");
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_ChevronDownIcon_1_Template, 1, 1, "ChevronDownIcon", 19)(2, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_ChevronRightIcon_2_Template, 1, 1, "ChevronRightIcon", 19);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(4).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.isItemActive(item_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r4.isItemActive(item_r3));
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_2_ng_template_0_Template(rf, ctx) {
+}
+function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275template(0, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_2_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_ng_container_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_ng_container_1_Template, 3, 2, "ng-container", 9)(2, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_2_Template, 1, 0, null, 18);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const ctx_r4 = \u0275\u0275nextContext(4);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r4.submenuIconTemplate);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngTemplateOutlet", ctx_r4.submenuIconTemplate);
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_span_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 21);
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(3).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", item_r3.icon)("ngStyle", ctx_r4.getItemProp(item_r3, "iconStyle"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_span_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 22);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(3).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(ctx_r4.getItemProp(item_r3, "label"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_ng_template_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "span", 23);
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(3).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("innerHTML", ctx_r4.getItemProp(item_r3, "label"), \u0275\u0275sanitizeHtml);
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_span_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "span", 24);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const item_r3 = \u0275\u0275nextContext(3).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", ctx_r4.getItemProp(item_r3, "badgeStyleClass"));
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(ctx_r4.getItemProp(item_r3, "badge"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_a_5_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "a", 25);
+    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_a_5_ng_container_1_Template, 3, 2, "ng-container", 9)(2, PanelMenu_ng_container_2_div_1_a_5_span_2_Template, 1, 2, "span", 15)(3, PanelMenu_ng_container_2_div_1_a_5_span_3_Template, 2, 1, "span", 16)(4, PanelMenu_ng_container_2_div_1_a_5_ng_template_4_Template, 1, 1, "ng-template", null, 2, \u0275\u0275templateRefExtractor)(6, PanelMenu_ng_container_2_div_1_a_5_span_6_Template, 2, 2, "span", 17);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const htmlRouteLabel_r7 = \u0275\u0275reference(5);
+    const item_r3 = \u0275\u0275nextContext(2).$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("routerLink", ctx_r4.getItemProp(item_r3, "routerLink"))("queryParams", ctx_r4.getItemProp(item_r3, "queryParams"))("routerLinkActive", "p-menuitem-link-active")("routerLinkActiveOptions", ctx_r4.getItemProp(item_r3, "routerLinkActiveOptions") || \u0275\u0275pureFunction0(18, _c3))("target", ctx_r4.getItemProp(item_r3, "target"))("fragment", ctx_r4.getItemProp(item_r3, "fragment"))("queryParamsHandling", ctx_r4.getItemProp(item_r3, "queryParamsHandling"))("preserveFragment", ctx_r4.getItemProp(item_r3, "preserveFragment"))("skipLocationChange", ctx_r4.getItemProp(item_r3, "skipLocationChange"))("replaceUrl", ctx_r4.getItemProp(item_r3, "replaceUrl"))("state", ctx_r4.getItemProp(item_r3, "state"));
+    \u0275\u0275attribute("tabindex", -1)("data-pc-section", "headeraction");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.isItemGroup(item_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", item_r3.icon);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "escape") !== false)("ngIfElse", htmlRouteLabel_r7);
+    \u0275\u0275advance(3);
+    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "badge"));
+  }
+}
+function PanelMenu_ng_container_2_div_1_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r8 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 26);
+    \u0275\u0275listener("@rootItem.done", function PanelMenu_ng_container_2_div_1_div_6_Template_div_animation_rootItem_done_0_listener() {
+      \u0275\u0275restoreView(_r8);
+      const ctx_r4 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r4.onToggleDone());
+    });
+    \u0275\u0275elementStart(1, "div", 27)(2, "p-panelMenuList", 28);
+    \u0275\u0275listener("headerFocus", function PanelMenu_ng_container_2_div_1_div_6_Template_p_panelMenuList_headerFocus_2_listener($event) {
+      \u0275\u0275restoreView(_r8);
+      const ctx_r4 = \u0275\u0275nextContext(3);
+      return \u0275\u0275resetView(ctx_r4.updateFocusedHeader($event));
+    });
+    \u0275\u0275elementEnd()()();
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    const item_r3 = ctx_r1.$implicit;
+    const i_r4 = ctx_r1.index;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(14, _c8, ctx_r4.isItemActive(item_r3)))("@rootItem", ctx_r4.getAnimation(item_r3));
+    \u0275\u0275attribute("id", ctx_r4.getContentId(item_r3, i_r4))("aria-labelledby", ctx_r4.getHeaderId(item_r3, i_r4))("data-pc-section", "toggleablecontent");
+    \u0275\u0275advance();
+    \u0275\u0275attribute("data-pc-section", "menucontent");
+    \u0275\u0275advance();
+    \u0275\u0275property("panelId", ctx_r4.getPanelId(i_r4, item_r3))("items", ctx_r4.getItemProp(item_r3, "items"))("itemTemplate", ctx_r4.itemTemplate)("transitionOptions", ctx_r4.transitionOptions)("root", true)("activeItem", ctx_r4.activeItem())("tabindex", ctx_r4.tabindex)("parentExpanded", ctx_r4.isItemActive(item_r3));
+  }
+}
+function PanelMenu_ng_container_2_div_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 6)(1, "div", 7);
+    \u0275\u0275listener("click", function PanelMenu_ng_container_2_div_1_Template_div_click_1_listener($event) {
+      \u0275\u0275restoreView(_r1);
+      const ctx_r1 = \u0275\u0275nextContext();
+      const item_r3 = ctx_r1.$implicit;
+      const i_r4 = ctx_r1.index;
+      const ctx_r4 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r4.onHeaderClick($event, item_r3, i_r4));
+    })("keydown", function PanelMenu_ng_container_2_div_1_Template_div_keydown_1_listener($event) {
+      \u0275\u0275restoreView(_r1);
+      const ctx_r1 = \u0275\u0275nextContext();
+      const item_r3 = ctx_r1.$implicit;
+      const i_r4 = ctx_r1.index;
+      const ctx_r4 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r4.onHeaderKeyDown($event, item_r3, i_r4));
+    });
+    \u0275\u0275elementStart(2, "div", 8);
+    \u0275\u0275template(3, PanelMenu_ng_container_2_div_1_ng_container_3_Template, 2, 1, "ng-container", 9)(4, PanelMenu_ng_container_2_div_1_ng_container_4_Template, 1, 0, "ng-container", 10)(5, PanelMenu_ng_container_2_div_1_a_5_Template, 7, 19, "a", 11);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275template(6, PanelMenu_ng_container_2_div_1_div_6_Template, 3, 16, "div", 12);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext();
+    const item_r3 = ctx_r1.$implicit;
+    const i_r4 = ctx_r1.index;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275property("ngClass", ctx_r4.getItemProp(item_r3, "headerClass"))("ngStyle", ctx_r4.getItemProp(item_r3, "style"));
+    \u0275\u0275attribute("data-pc-section", "panel");
+    \u0275\u0275advance();
+    \u0275\u0275classMap(ctx_r4.getItemProp(item_r3, "styleClass"));
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction2(23, _c7, ctx_r4.isItemActive(item_r3), ctx_r4.isItemDisabled(item_r3)))("ngStyle", ctx_r4.getItemProp(item_r3, "style"))("pTooltip", ctx_r4.getItemProp(item_r3, "tooltip"))("tabindex", 0)("tooltipOptions", ctx_r4.getItemProp(item_r3, "tooltipOptions"));
+    \u0275\u0275attribute("id", ctx_r4.getHeaderId(item_r3, i_r4))("aria-expanded", ctx_r4.isItemActive(item_r3))("aria-label", ctx_r4.getItemProp(item_r3, "label"))("aria-controls", ctx_r4.getContentId(item_r3, i_r4))("aria-disabled", ctx_r4.isItemDisabled(item_r3))("data-p-highlight", ctx_r4.isItemActive(item_r3))("data-p-disabled", ctx_r4.isItemDisabled(item_r3))("data-pc-section", "header");
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngIf", !ctx_r4.itemTemplate);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngTemplateOutlet", ctx_r4.itemTemplate)("ngTemplateOutletContext", \u0275\u0275pureFunction1(26, _c4, item_r3));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.getItemProp(item_r3, "routerLink"));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.isItemGroup(item_r3));
+  }
+}
+function PanelMenu_ng_container_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275template(1, PanelMenu_ng_container_2_div_1_Template, 7, 28, "div", 5);
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const item_r3 = ctx.$implicit;
+    const ctx_r4 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r4.isItemVisible(item_r3));
+  }
+}
+var _c9 = "@layer primeng{.p-panelmenu .p-panelmenu-header-action{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;position:relative;text-decoration:none}.p-panelmenu .p-panelmenu-header-action:focus{z-index:1}.p-panelmenu .p-submenu-list{margin:0;padding:0;list-style:none}.p-panelmenu .p-menuitem-link{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;outline:none}.p-panelmenu .p-menuitem-text{line-height:1}.p-panelmenu-expanded.p-toggleable-content:not(.ng-animating),.p-panelmenu .p-submenu-expanded:not(.ng-animating){overflow:visible}.p-panelmenu .p-toggleable-content,.p-panelmenu .p-submenu-list{overflow:hidden}}\n";
+var PanelMenuSub = class _PanelMenuSub {
+  panelMenu;
+  el;
+  panelId;
+  focusedItemId;
+  items;
+  itemTemplate;
+  level = 0;
+  activeItemPath;
+  root;
+  tabindex;
+  transitionOptions;
+  parentExpanded;
+  itemToggle = new EventEmitter();
+  menuFocus = new EventEmitter();
+  menuBlur = new EventEmitter();
+  menuKeyDown = new EventEmitter();
+  listViewChild;
+  constructor(panelMenu, el) {
+    this.panelMenu = panelMenu;
+    this.el = el;
+  }
+  getItemId(processedItem) {
+    return processedItem.item?.id ?? `${this.panelId}_${processedItem.key}`;
+  }
+  getItemKey(processedItem) {
+    return this.getItemId(processedItem);
+  }
+  getItemClass(processedItem) {
+    return {
+      "p-menuitem": true,
+      "p-disabled": this.isItemDisabled(processedItem)
+    };
+  }
+  getItemProp(processedItem, name, params) {
+    return processedItem && processedItem.item ? ObjectUtils.getItemValue(processedItem.item[name], params) : void 0;
+  }
+  getItemLabel(processedItem) {
+    return this.getItemProp(processedItem, "label");
+  }
+  isItemExpanded(processedItem) {
+    return processedItem.expanded;
+  }
+  isItemActive(processedItem) {
+    return this.isItemExpanded(processedItem) || this.activeItemPath.some((path) => path && path.key === processedItem.key);
+  }
+  isItemVisible(processedItem) {
+    return this.getItemProp(processedItem, "visible") !== false;
+  }
+  isItemDisabled(processedItem) {
+    return this.getItemProp(processedItem, "disabled");
+  }
+  isItemFocused(processedItem) {
+    return this.focusedItemId === this.getItemId(processedItem);
+  }
+  isItemGroup(processedItem) {
+    return ObjectUtils.isNotEmpty(processedItem.items);
+  }
+  getAnimation(processedItem) {
+    return this.isItemActive(processedItem) ? {
+      value: "visible",
+      params: {
+        transitionParams: this.transitionOptions,
+        height: "*"
+      }
+    } : {
+      value: "hidden",
+      params: {
+        transitionParams: this.transitionOptions,
+        height: "0"
+      }
+    };
+  }
+  getAriaSetSize() {
+    return this.items.filter((processedItem) => this.isItemVisible(processedItem) && !this.getItemProp(processedItem, "separator")).length;
+  }
+  getAriaPosInset(index) {
+    return index - this.items.slice(0, index).filter((processedItem) => this.isItemVisible(processedItem) && this.getItemProp(processedItem, "separator")).length + 1;
+  }
+  onItemClick(event, processedItem) {
+    if (!this.isItemDisabled(processedItem)) {
+      this.getItemProp(processedItem, "command", {
+        originalEvent: event,
+        item: processedItem.item
+      });
+      this.itemToggle.emit({
+        processedItem,
+        expanded: !this.isItemActive(processedItem)
+      });
+    }
+  }
+  onItemToggle(event) {
+    this.itemToggle.emit(event);
+  }
+  static \u0275fac = function PanelMenuSub_Factory(t) {
+    return new (t || _PanelMenuSub)(\u0275\u0275directiveInject(forwardRef(() => PanelMenu)), \u0275\u0275directiveInject(ElementRef));
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _PanelMenuSub,
+    selectors: [["p-panelMenuSub"]],
+    viewQuery: function PanelMenuSub_Query(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275viewQuery(_c02, 5);
+      }
+      if (rf & 2) {
+        let _t;
+        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.listViewChild = _t.first);
+      }
+    },
+    hostAttrs: [1, "p-element"],
+    inputs: {
+      panelId: "panelId",
+      focusedItemId: "focusedItemId",
+      items: "items",
+      itemTemplate: "itemTemplate",
+      level: [2, "level", "level", numberAttribute],
+      activeItemPath: "activeItemPath",
+      root: [2, "root", "root", booleanAttribute],
+      tabindex: [2, "tabindex", "tabindex", numberAttribute],
+      transitionOptions: "transitionOptions",
+      parentExpanded: [2, "parentExpanded", "parentExpanded", booleanAttribute]
+    },
+    outputs: {
+      itemToggle: "itemToggle",
+      menuFocus: "menuFocus",
+      menuBlur: "menuBlur",
+      menuKeyDown: "menuKeyDown"
+    },
+    features: [\u0275\u0275InputTransformsFeature],
+    decls: 3,
+    vars: 8,
+    consts: [["list", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], ["role", "tree", 3, "focusin", "focusout", "keydown", "ngClass", "tabindex"], ["ngFor", "", 3, "ngForOf"], ["class", "p-menuitem-separator", "role", "separator", 4, "ngIf"], ["role", "treeitem", 3, "ngClass", "class", "p-hidden", "p-focus", "ngStyle", "pTooltip", "tooltipOptions", 4, "ngIf"], ["role", "separator", 1, "p-menuitem-separator"], ["role", "treeitem", 3, "ngClass", "ngStyle", "pTooltip", "tooltipOptions"], [1, "p-menuitem-content", 3, "click"], [4, "ngIf"], [1, "p-toggleable-content"], [3, "id", "panelId", "items", "itemTemplate", "transitionOptions", "focusedItemId", "activeItemPath", "level", "parentExpanded", "itemToggle", 4, "ngIf"], ["class", "p-menuitem-link", 3, "ngClass", "target", 4, "ngIf"], ["class", "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "ngClass", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], [1, "p-menuitem-link", 3, "ngClass", "target"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass", "ngStyle", 4, "ngIf"], [3, "styleClass", "ngStyle"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], [1, "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "ngClass", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "itemToggle", "id", "panelId", "items", "itemTemplate", "transitionOptions", "focusedItemId", "activeItemPath", "level", "parentExpanded"]],
+    template: function PanelMenuSub_Template(rf, ctx) {
+      if (rf & 1) {
+        const _r1 = \u0275\u0275getCurrentView();
+        \u0275\u0275elementStart(0, "ul", 3, 0);
+        \u0275\u0275listener("focusin", function PanelMenuSub_Template_ul_focusin_0_listener($event) {
+          \u0275\u0275restoreView(_r1);
+          return \u0275\u0275resetView(ctx.menuFocus.emit($event));
+        })("focusout", function PanelMenuSub_Template_ul_focusout_0_listener($event) {
+          \u0275\u0275restoreView(_r1);
+          return \u0275\u0275resetView(ctx.menuBlur.emit($event));
+        })("keydown", function PanelMenuSub_Template_ul_keydown_0_listener($event) {
+          \u0275\u0275restoreView(_r1);
+          return \u0275\u0275resetView(ctx.menuKeyDown.emit($event));
+        });
+        \u0275\u0275template(2, PanelMenuSub_ng_template_2_Template, 2, 2, "ng-template", 4);
+        \u0275\u0275elementEnd();
+      }
+      if (rf & 2) {
+        \u0275\u0275property("ngClass", \u0275\u0275pureFunction1(6, _c1, ctx.root))("tabindex", -1);
+        \u0275\u0275attribute("aria-activedescendant", ctx.focusedItemId)("data-pc-section", "menu")("aria-hidden", !ctx.parentExpanded);
+        \u0275\u0275advance(2);
+        \u0275\u0275property("ngForOf", ctx.items);
+      }
+    },
+    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Tooltip, AngleDownIcon, AngleRightIcon, _PanelMenuSub],
+    encapsulation: 2,
+    data: {
+      animation: [trigger("submenu", [state("hidden", style({
+        height: "0"
+      })), state("visible", style({
+        height: "*"
+      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])]
+    }
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PanelMenuSub, [{
+    type: Component,
+    args: [{
+      selector: "p-panelMenuSub",
+      template: `
+        <ul
+            #list
+            [ngClass]="{ 'p-submenu-list': true, 'p-panelmenu-root-list': root }"
+            role="tree"
+            [tabindex]="-1"
+            [attr.aria-activedescendant]="focusedItemId"
+            [attr.data-pc-section]="'menu'"
+            [attr.aria-hidden]="!parentExpanded"
+            (focusin)="menuFocus.emit($event)"
+            (focusout)="menuBlur.emit($event)"
+            (keydown)="menuKeyDown.emit($event)"
+        >
+            <ng-template ngFor let-processedItem let-index="index" [ngForOf]="items">
+                <li *ngIf="processedItem.separator" class="p-menuitem-separator" role="separator"></li>
+                <li
+                    *ngIf="!processedItem.separator && isItemVisible(processedItem)"
+                    [ngClass]="getItemClass(processedItem)"
+                    role="treeitem"
+                    [attr.id]="getItemId(processedItem)"
+                    [attr.aria-label]="getItemProp(processedItem, 'label')"
+                    [attr.aria-expanded]="isItemGroup(processedItem) ? isItemActive(processedItem) : undefined"
+                    [attr.aria-level]="level + 1"
+                    [attr.aria-setsize]="getAriaSetSize()"
+                    [attr.aria-posinset]="getAriaPosInset(index)"
+                    [class]="getItemProp(processedItem, 'styleClass')"
+                    [class.p-hidden]="processedItem.visible === false"
+                    [class.p-focus]="isItemFocused(processedItem) && !isItemDisabled(processedItem)"
+                    [ngStyle]="getItemProp(processedItem, 'style')"
+                    [pTooltip]="getItemProp(processedItem, 'tooltip')"
+                    [attr.data-p-disabled]="isItemDisabled(processedItem)"
+                    [tooltipOptions]="getItemProp(processedItem, 'tooltipOptions')"
+                >
+                    <div class="p-menuitem-content" (click)="onItemClick($event, processedItem)">
+                        <ng-container *ngIf="!itemTemplate">
+                            <a
+                                *ngIf="!getItemProp(processedItem, 'routerLink')"
+                                [attr.href]="getItemProp(processedItem, 'url')"
+                                class="p-menuitem-link"
+                                [ngClass]="{ 'p-disabled': getItemProp(processedItem, 'disabled') }"
+                                [target]="getItemProp(processedItem, 'target')"
+                                [attr.data-pc-section]="'action'"
+                                [attr.tabindex]="!!parentExpanded ? '0' : '-1'"
+                            >
+                                <ng-container *ngIf="isItemGroup(processedItem)">
+                                    <ng-container *ngIf="!panelMenu.submenuIconTemplate">
+                                        <AngleDownIcon [styleClass]="'p-submenu-icon'" *ngIf="isItemActive(processedItem)" [ngStyle]="getItemProp(processedItem, 'iconStyle')" />
+                                        <AngleRightIcon [styleClass]="'p-submenu-icon'" *ngIf="!isItemActive(processedItem)" [ngStyle]="getItemProp(processedItem, 'iconStyle')" />
+                                    </ng-container>
+                                    <ng-template *ngTemplateOutlet="panelMenu.submenuIconTemplate"></ng-template>
+                                </ng-container>
+                                <span class="p-menuitem-icon" [ngClass]="processedItem.icon" *ngIf="processedItem.icon" [ngStyle]="getItemProp(processedItem, 'iconStyle')"></span>
+                                <span class="p-menuitem-text" *ngIf="processedItem.item?.escape !== false; else htmlLabel">{{ getItemProp(processedItem, 'label') }}</span>
+                                <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(processedItem, 'label')"></span></ng-template>
+                                <span class="p-menuitem-badge" *ngIf="processedItem.badge" [ngClass]="processedItem.badgeStyleClass">{{ processedItem.badge }}</span>
+                            </a>
+                            <a
+                                *ngIf="getItemProp(processedItem, 'routerLink')"
+                                [routerLink]="getItemProp(processedItem, 'routerLink')"
+                                [queryParams]="getItemProp(processedItem, 'queryParams')"
+                                [routerLinkActive]="'p-menuitem-link-active'"
+                                [routerLinkActiveOptions]="getItemProp(processedItem, 'routerLinkActiveOptions') || { exact: false }"
+                                class="p-menuitem-link"
+                                [ngClass]="{ 'p-disabled': getItemProp(processedItem, 'disabled') }"
+                                [target]="getItemProp(processedItem, 'target')"
+                                [attr.title]="getItemProp(processedItem, 'title')"
+                                [fragment]="getItemProp(processedItem, 'fragment')"
+                                [queryParamsHandling]="getItemProp(processedItem, 'queryParamsHandling')"
+                                [preserveFragment]="getItemProp(processedItem, 'preserveFragment')"
+                                [skipLocationChange]="getItemProp(processedItem, 'skipLocationChange')"
+                                [replaceUrl]="getItemProp(processedItem, 'replaceUrl')"
+                                [state]="getItemProp(processedItem, 'state')"
+                                [attr.data-pc-section]="'action'"
+                                [attr.tabindex]="!!parentExpanded ? '0' : '-1'"
+                            >
+                                <ng-container *ngIf="isItemGroup(processedItem)">
+                                    <ng-container *ngIf="!panelMenu.submenuIconTemplate">
+                                        <AngleDownIcon *ngIf="isItemActive(processedItem)" [styleClass]="'p-submenu-icon'" [ngStyle]="getItemProp(processedItem, 'iconStyle')" />
+                                        <AngleRightIcon *ngIf="!isItemActive(processedItem)" [styleClass]="'p-submenu-icon'" [ngStyle]="getItemProp(processedItem, 'iconStyle')" />
+                                    </ng-container>
+                                    <ng-template *ngTemplateOutlet="panelMenu.submenuIconTemplate"></ng-template>
+                                </ng-container>
+                                <span class="p-menuitem-icon" [ngClass]="processedItem.icon" *ngIf="processedItem.icon" [ngStyle]="getItemProp(processedItem, 'iconStyle')"></span>
+                                <span class="p-menuitem-text" *ngIf="getItemProp(processedItem, 'escape') !== false; else htmlRouteLabel">{{ getItemProp(processedItem, 'label') }}</span>
+                                <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(processedItem, 'label')"></span></ng-template>
+                                <span class="p-menuitem-badge" *ngIf="processedItem.badge" [ngClass]="getItemProp(processedItem, 'badgeStyleClass')">{{ getItemProp(processedItem, 'badge') }}</span>
+                            </a>
+                        </ng-container>
+                        <ng-container *ngIf="itemTemplate">
+                            <ng-template *ngTemplateOutlet="itemTemplate; context: { $implicit: processedItem.item }"></ng-template>
+                        </ng-container>
+                    </div>
+                    <div class="p-toggleable-content" [@submenu]="getAnimation(processedItem)">
+                        <p-panelMenuSub
+                            *ngIf="isItemVisible(processedItem) && isItemGroup(processedItem) && isItemExpanded(processedItem)"
+                            [id]="getItemId(processedItem) + '_list'"
+                            [panelId]="panelId"
+                            [items]="processedItem?.items"
+                            [itemTemplate]="itemTemplate"
+                            [transitionOptions]="transitionOptions"
+                            [focusedItemId]="focusedItemId"
+                            [activeItemPath]="activeItemPath"
+                            [level]="level + 1"
+                            [parentExpanded]="!!parentExpanded && isItemExpanded(processedItem)"
+                            (itemToggle)="onItemToggle($event)"
+                        ></p-panelMenuSub>
+                    </div>
+                </li>
+            </ng-template>
+        </ul>
+    `,
+      animations: [trigger("submenu", [state("hidden", style({
+        height: "0"
+      })), state("visible", style({
+        height: "*"
+      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])],
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
+    }]
+  }], () => [{
+    type: PanelMenu,
+    decorators: [{
+      type: Inject,
+      args: [forwardRef(() => PanelMenu)]
+    }]
+  }, {
+    type: ElementRef
+  }], {
+    panelId: [{
+      type: Input
+    }],
+    focusedItemId: [{
+      type: Input
+    }],
+    items: [{
+      type: Input
+    }],
+    itemTemplate: [{
+      type: Input
+    }],
+    level: [{
+      type: Input,
+      args: [{
+        transform: numberAttribute
+      }]
+    }],
+    activeItemPath: [{
+      type: Input
+    }],
+    root: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    tabindex: [{
+      type: Input,
+      args: [{
+        transform: numberAttribute
+      }]
+    }],
+    transitionOptions: [{
+      type: Input
+    }],
+    parentExpanded: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    itemToggle: [{
+      type: Output
+    }],
+    menuFocus: [{
+      type: Output
+    }],
+    menuBlur: [{
+      type: Output
+    }],
+    menuKeyDown: [{
+      type: Output
+    }],
+    listViewChild: [{
+      type: ViewChild,
+      args: ["list"]
+    }]
+  });
+})();
+var PanelMenuList = class _PanelMenuList {
+  el;
+  panelId;
+  id;
+  items;
+  itemTemplate;
+  parentExpanded;
+  expanded;
+  transitionOptions;
+  root;
+  tabindex;
+  activeItem;
+  itemToggle = new EventEmitter();
+  headerFocus = new EventEmitter();
+  subMenuViewChild;
+  searchTimeout;
+  searchValue;
+  focused;
+  focusedItem = signal(null);
+  activeItemPath = signal([]);
+  processedItems = signal([]);
+  visibleItems = computed(() => {
+    const processedItems = this.processedItems();
+    return this.flatItems(processedItems);
+  });
+  get focusedItemId() {
+    const focusedItem = this.focusedItem();
+    return focusedItem && focusedItem.item?.id ? focusedItem.item.id : ObjectUtils.isNotEmpty(this.focusedItem()) ? `${this.panelId}_${this.focusedItem().key}` : void 0;
+  }
+  constructor(el) {
+    this.el = el;
+  }
+  ngOnChanges(changes) {
+    this.processedItems.set(this.createProcessedItems(changes?.items?.currentValue || this.items || []));
+  }
+  getItemProp(processedItem, name) {
+    return processedItem && processedItem.item ? ObjectUtils.getItemValue(processedItem.item[name]) : void 0;
+  }
+  getItemLabel(processedItem) {
+    return this.getItemProp(processedItem, "label");
+  }
+  isItemVisible(processedItem) {
+    return this.getItemProp(processedItem, "visible") !== false;
+  }
+  isItemDisabled(processedItem) {
+    return this.getItemProp(processedItem, "disabled");
+  }
+  isItemActive(processedItem) {
+    return this.activeItemPath().some((path) => path.key === processedItem.parentKey);
+  }
+  isItemGroup(processedItem) {
+    return ObjectUtils.isNotEmpty(processedItem.items);
+  }
+  isElementInPanel(event, element) {
+    const panel = event.currentTarget.closest('[data-pc-section="panel"]');
+    return panel && panel.contains(element);
+  }
+  isItemMatched(processedItem) {
+    return this.isValidItem(processedItem) && this.getItemLabel(processedItem).toLocaleLowerCase().startsWith(this.searchValue.toLocaleLowerCase());
+  }
+  isVisibleItem(processedItem) {
+    return !!processedItem && (processedItem.level === 0 || this.isItemActive(processedItem)) && this.isItemVisible(processedItem);
+  }
+  isValidItem(processedItem) {
+    return !!processedItem && !this.isItemDisabled(processedItem) && !processedItem.separator;
+  }
+  findFirstItem() {
+    return this.visibleItems().find((processedItem) => this.isValidItem(processedItem));
+  }
+  findLastItem() {
+    return ObjectUtils.findLast(this.visibleItems(), (processedItem) => this.isValidItem(processedItem));
+  }
+  findItemByEventTarget(target) {
+    let parentNode = target;
+    while (parentNode && parentNode.tagName?.toLowerCase() !== "li") {
+      parentNode = parentNode?.parentNode;
+    }
+    return parentNode?.id && this.visibleItems().find((processedItem) => this.isValidItem(processedItem) && `${this.panelId}_${processedItem.key}` === parentNode.id);
+  }
+  createProcessedItems(items, level = 0, parent = {}, parentKey = "") {
+    const processedItems = [];
+    items && items.forEach((item, index) => {
+      const key = (parentKey !== "" ? parentKey + "_" : "") + index;
+      const newItem = {
+        icon: item.icon,
+        expanded: item.expanded,
+        separator: item.separator,
+        item,
+        index,
+        level,
+        key,
+        parent,
+        parentKey
+      };
+      newItem["items"] = this.createProcessedItems(item.items, level + 1, newItem, key);
+      processedItems.push(newItem);
+    });
+    return processedItems;
+  }
+  findProcessedItemByItemKey(key, processedItems, level = 0) {
+    processedItems = processedItems || this.processedItems();
+    if (processedItems && processedItems.length) {
+      for (let i = 0; i < processedItems.length; i++) {
+        const processedItem = processedItems[i];
+        if (this.getItemProp(processedItem, "key") === key) return processedItem;
+        const matchedItem = this.findProcessedItemByItemKey(key, processedItem.items, level + 1);
+        if (matchedItem) return matchedItem;
+      }
+    }
+  }
+  flatItems(processedItems, processedFlattenItems = []) {
+    processedItems && processedItems.forEach((processedItem) => {
+      if (this.isVisibleItem(processedItem)) {
+        processedFlattenItems.push(processedItem);
+        this.flatItems(processedItem.items, processedFlattenItems);
+      }
+    });
+    return processedFlattenItems;
+  }
+  changeFocusedItem(event) {
+    const {
+      originalEvent,
+      processedItem,
+      focusOnNext,
+      selfCheck,
+      allowHeaderFocus = true
+    } = event;
+    if (ObjectUtils.isNotEmpty(this.focusedItem()) && this.focusedItem().key !== processedItem.key) {
+      this.focusedItem.set(processedItem);
+      this.scrollInView();
+    } else if (allowHeaderFocus) {
+      this.headerFocus.emit({
+        originalEvent,
+        focusOnNext,
+        selfCheck
+      });
+    }
+  }
+  scrollInView() {
+    const element = DomHandler.findSingle(this.subMenuViewChild.listViewChild.nativeElement, `li[id="${`${this.focusedItemId}`}"]`);
+    if (element) {
+      element.scrollIntoView && element.scrollIntoView({
+        block: "nearest",
+        inline: "nearest"
+      });
+    }
+  }
+  onFocus(event) {
+    if (!this.focused) {
+      this.focused = true;
+      const focusedItem = this.focusedItem() || (this.isElementInPanel(event, event.relatedTarget) ? this.findItemByEventTarget(event.target) || this.findFirstItem() : this.findLastItem());
+      if (event.relatedTarget !== null) this.focusedItem.set(focusedItem);
+    }
+  }
+  onBlur(event) {
+    const target = event.relatedTarget;
+    if (this.focused && !this.el.nativeElement.contains(target)) {
+      this.focused = false;
+      this.focusedItem.set(null);
+      this.searchValue = "";
+    }
+  }
+  onItemToggle(event) {
+    const {
+      processedItem,
+      expanded
+    } = event;
+    processedItem.expanded = !processedItem.expanded;
+    const activeItemPath = this.activeItemPath().filter((p) => p.parentKey !== processedItem.parentKey);
+    expanded && activeItemPath.push(processedItem);
+    this.activeItemPath.set(activeItemPath);
+    this.processedItems.update((value) => value.map((i) => i === processedItem ? processedItem : i));
+    this.focusedItem.set(processedItem);
+  }
+  onKeyDown(event) {
+    const metaKey = event.metaKey || event.ctrlKey;
+    switch (event.code) {
+      case "ArrowDown":
+        this.onArrowDownKey(event);
+        break;
+      case "ArrowUp":
+        this.onArrowUpKey(event);
+        break;
+      case "ArrowLeft":
+        this.onArrowLeftKey(event);
+        break;
+      case "ArrowRight":
+        this.onArrowRightKey(event);
+        break;
+      case "Home":
+        this.onHomeKey(event);
+        break;
+      case "End":
+        this.onEndKey(event);
+        break;
+      case "Space":
+        this.onSpaceKey(event);
+        break;
+      case "Enter":
+        this.onEnterKey(event);
+        break;
+      case "Escape":
+      case "Tab":
+      case "PageDown":
+      case "PageUp":
+      case "Backspace":
+      case "ShiftLeft":
+      case "ShiftRight":
+        break;
+      default:
+        if (!metaKey && ObjectUtils.isPrintableCharacter(event.key)) {
+          this.searchItems(event, event.key);
+        }
+        break;
+    }
+  }
+  onArrowDownKey(event) {
+    const processedItem = ObjectUtils.isNotEmpty(this.focusedItem()) ? this.findNextItem(this.focusedItem()) : this.findFirstItem();
+    this.changeFocusedItem({
+      originalEvent: event,
+      processedItem,
+      focusOnNext: true
+    });
+    event.preventDefault();
+  }
+  onArrowUpKey(event) {
+    const processedItem = ObjectUtils.isNotEmpty(this.focusedItem()) ? this.findPrevItem(this.focusedItem()) : this.findLastItem();
+    this.changeFocusedItem({
+      originalEvent: event,
+      processedItem,
+      selfCheck: true
+    });
+    event.preventDefault();
+  }
+  onArrowLeftKey(event) {
+    if (ObjectUtils.isNotEmpty(this.focusedItem())) {
+      const matched = this.activeItemPath().some((p) => p.key === this.focusedItem().key);
+      if (matched) {
+        const activeItemPath = this.activeItemPath().filter((p) => p.key !== this.focusedItem().key);
+        this.activeItemPath.set(activeItemPath);
+      } else {
+        const focusedItem = ObjectUtils.isNotEmpty(this.focusedItem().parent) ? this.focusedItem().parent : this.focusedItem();
+        this.focusedItem.set(focusedItem);
+      }
+      event.preventDefault();
+    }
+  }
+  onArrowRightKey(event) {
+    if (ObjectUtils.isNotEmpty(this.focusedItem())) {
+      const grouped = this.isItemGroup(this.focusedItem());
+      if (grouped) {
+        const matched = this.activeItemPath().some((p) => p.key === this.focusedItem().key);
+        if (matched) {
+          this.onArrowDownKey(event);
+        } else {
+          const activeItemPath = this.activeItemPath().filter((p) => p.parentKey !== this.focusedItem().parentKey);
+          activeItemPath.push(this.focusedItem());
+          this.activeItemPath.set(activeItemPath);
+        }
+      }
+      event.preventDefault();
+    }
+  }
+  onHomeKey(event) {
+    this.changeFocusedItem({
+      originalEvent: event,
+      processedItem: this.findFirstItem(),
+      allowHeaderFocus: false
+    });
+    event.preventDefault();
+  }
+  onEndKey(event) {
+    this.changeFocusedItem({
+      originalEvent: event,
+      processedItem: this.findLastItem(),
+      focusOnNext: true,
+      allowHeaderFocus: false
+    });
+    event.preventDefault();
+  }
+  onEnterKey(event) {
+    if (ObjectUtils.isNotEmpty(this.focusedItem())) {
+      const element = DomHandler.findSingle(this.subMenuViewChild.listViewChild.nativeElement, `li[id="${`${this.focusedItemId}`}"]`);
+      const anchorElement = element && (DomHandler.findSingle(element, '[data-pc-section="action"]') || DomHandler.findSingle(element, "a,button"));
+      anchorElement ? anchorElement.click() : element && element.click();
+    }
+    event.preventDefault();
+  }
+  onSpaceKey(event) {
+    this.onEnterKey(event);
+  }
+  findNextItem(processedItem) {
+    const index = this.visibleItems().findIndex((item) => item.key === processedItem.key);
+    const matchedItem = index < this.visibleItems().length - 1 ? this.visibleItems().slice(index + 1).find((pItem) => this.isValidItem(pItem)) : void 0;
+    return matchedItem || processedItem;
+  }
+  findPrevItem(processedItem) {
+    const index = this.visibleItems().findIndex((item) => item.key === processedItem.key);
+    const matchedItem = index > 0 ? ObjectUtils.findLast(this.visibleItems().slice(0, index), (pItem) => this.isValidItem(pItem)) : void 0;
+    return matchedItem || processedItem;
+  }
+  searchItems(event, char) {
+    this.searchValue = (this.searchValue || "") + char;
+    let matchedItem = null;
+    let matched = false;
+    if (ObjectUtils.isNotEmpty(this.focusedItem())) {
+      const focusedItemIndex = this.visibleItems().findIndex((processedItem) => processedItem.key === this.focusedItem().key);
+      matchedItem = this.visibleItems().slice(focusedItemIndex).find((processedItem) => this.isItemMatched(processedItem));
+      matchedItem = ObjectUtils.isEmpty(matchedItem) ? this.visibleItems().slice(0, focusedItemIndex).find((processedItem) => this.isItemMatched(processedItem)) : matchedItem;
+    } else {
+      matchedItem = this.visibleItems().find((processedItem) => this.isItemMatched(processedItem));
+    }
+    if (ObjectUtils.isNotEmpty(matchedItem)) {
+      matched = true;
+    }
+    if (ObjectUtils.isEmpty(matchedItem) && ObjectUtils.isEmpty(this.focusedItem())) {
+      matchedItem = this.findFirstItem();
+    }
+    if (ObjectUtils.isNotEmpty(matchedItem)) {
+      this.changeFocusedItem({
+        originalEvent: event,
+        processedItem: matchedItem,
+        allowHeaderFocus: false
+      });
+    }
+    if (this.searchTimeout) {
+      clearTimeout(this.searchTimeout);
+    }
+    this.searchTimeout = setTimeout(() => {
+      this.searchValue = "";
+      this.searchTimeout = null;
+    }, 500);
+    return matched;
+  }
+  static \u0275fac = function PanelMenuList_Factory(t) {
+    return new (t || _PanelMenuList)(\u0275\u0275directiveInject(ElementRef));
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _PanelMenuList,
+    selectors: [["p-panelMenuList"]],
+    viewQuery: function PanelMenuList_Query(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275viewQuery(_c5, 5);
+      }
+      if (rf & 2) {
+        let _t;
+        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.subMenuViewChild = _t.first);
+      }
+    },
+    hostAttrs: [1, "p-element"],
+    inputs: {
+      panelId: "panelId",
+      id: "id",
+      items: "items",
+      itemTemplate: "itemTemplate",
+      parentExpanded: [2, "parentExpanded", "parentExpanded", booleanAttribute],
+      expanded: [2, "expanded", "expanded", booleanAttribute],
+      transitionOptions: "transitionOptions",
+      root: [2, "root", "root", booleanAttribute],
+      tabindex: [2, "tabindex", "tabindex", numberAttribute],
+      activeItem: "activeItem"
+    },
+    outputs: {
+      itemToggle: "itemToggle",
+      headerFocus: "headerFocus"
+    },
+    features: [\u0275\u0275InputTransformsFeature, \u0275\u0275NgOnChangesFeature],
+    decls: 2,
+    vars: 10,
+    consts: [["submenu", ""], [3, "itemToggle", "keydown", "menuFocus", "menuBlur", "root", "id", "panelId", "tabindex", "itemTemplate", "focusedItemId", "activeItemPath", "transitionOptions", "items", "parentExpanded"]],
+    template: function PanelMenuList_Template(rf, ctx) {
+      if (rf & 1) {
+        const _r1 = \u0275\u0275getCurrentView();
+        \u0275\u0275elementStart(0, "p-panelMenuSub", 1, 0);
+        \u0275\u0275listener("itemToggle", function PanelMenuList_Template_p_panelMenuSub_itemToggle_0_listener($event) {
+          \u0275\u0275restoreView(_r1);
+          return \u0275\u0275resetView(ctx.onItemToggle($event));
+        })("keydown", function PanelMenuList_Template_p_panelMenuSub_keydown_0_listener($event) {
+          \u0275\u0275restoreView(_r1);
+          return \u0275\u0275resetView(ctx.onKeyDown($event));
+        })("menuFocus", function PanelMenuList_Template_p_panelMenuSub_menuFocus_0_listener($event) {
+          \u0275\u0275restoreView(_r1);
+          return \u0275\u0275resetView(ctx.onFocus($event));
+        })("menuBlur", function PanelMenuList_Template_p_panelMenuSub_menuBlur_0_listener($event) {
+          \u0275\u0275restoreView(_r1);
+          return \u0275\u0275resetView(ctx.onBlur($event));
+        });
+        \u0275\u0275elementEnd();
+      }
+      if (rf & 2) {
+        \u0275\u0275property("root", true)("id", ctx.panelId + "_list")("panelId", ctx.panelId)("tabindex", ctx.tabindex)("itemTemplate", ctx.itemTemplate)("focusedItemId", ctx.focused ? ctx.focusedItemId : void 0)("activeItemPath", ctx.activeItemPath())("transitionOptions", ctx.transitionOptions)("items", ctx.processedItems())("parentExpanded", ctx.parentExpanded);
+      }
+    },
+    dependencies: [PanelMenuSub],
+    styles: ["@layer primeng{.p-panelmenu .p-panelmenu-header-action{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;position:relative;text-decoration:none}.p-panelmenu .p-panelmenu-header-action:focus{z-index:1}.p-panelmenu .p-submenu-list{margin:0;padding:0;list-style:none}.p-panelmenu .p-menuitem-link{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;outline:none}.p-panelmenu .p-menuitem-text{line-height:1}.p-panelmenu-expanded.p-toggleable-content:not(.ng-animating),.p-panelmenu .p-submenu-expanded:not(.ng-animating){overflow:visible}.p-panelmenu .p-toggleable-content,.p-panelmenu .p-submenu-list{overflow:hidden}}\n"],
+    encapsulation: 2,
+    changeDetection: 0
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PanelMenuList, [{
+    type: Component,
+    args: [{
+      selector: "p-panelMenuList",
+      template: `
+        <p-panelMenuSub
+            #submenu
+            [root]="true"
+            [id]="panelId + '_list'"
+            [panelId]="panelId"
+            [tabindex]="tabindex"
+            [itemTemplate]="itemTemplate"
+            [focusedItemId]="focused ? focusedItemId : undefined"
+            [activeItemPath]="activeItemPath()"
+            [transitionOptions]="transitionOptions"
+            [items]="processedItems()"
+            [parentExpanded]="parentExpanded"
+            (itemToggle)="onItemToggle($event)"
+            (keydown)="onKeyDown($event)"
+            (menuFocus)="onFocus($event)"
+            (menuBlur)="onBlur($event)"
+        ></p-panelMenuSub>
+    `,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      },
+      styles: ["@layer primeng{.p-panelmenu .p-panelmenu-header-action{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;position:relative;text-decoration:none}.p-panelmenu .p-panelmenu-header-action:focus{z-index:1}.p-panelmenu .p-submenu-list{margin:0;padding:0;list-style:none}.p-panelmenu .p-menuitem-link{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;outline:none}.p-panelmenu .p-menuitem-text{line-height:1}.p-panelmenu-expanded.p-toggleable-content:not(.ng-animating),.p-panelmenu .p-submenu-expanded:not(.ng-animating){overflow:visible}.p-panelmenu .p-toggleable-content,.p-panelmenu .p-submenu-list{overflow:hidden}}\n"]
+    }]
+  }], () => [{
+    type: ElementRef
+  }], {
+    panelId: [{
+      type: Input
+    }],
+    id: [{
+      type: Input
+    }],
+    items: [{
+      type: Input
+    }],
+    itemTemplate: [{
+      type: Input
+    }],
+    parentExpanded: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    expanded: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    transitionOptions: [{
+      type: Input
+    }],
+    root: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    tabindex: [{
+      type: Input,
+      args: [{
+        transform: numberAttribute
+      }]
+    }],
+    activeItem: [{
+      type: Input
+    }],
+    itemToggle: [{
+      type: Output
+    }],
+    headerFocus: [{
+      type: Output
+    }],
+    subMenuViewChild: [{
+      type: ViewChild,
+      args: ["submenu"]
+    }]
+  });
+})();
+var PanelMenu = class _PanelMenu {
+  cd;
+  /**
+   * An array of menuitems.
+   * @group Props
+   */
+  model;
+  /**
+   * Inline style of the component.
+   * @group Props
+   */
+  style;
+  /**
+   * Style class of the component.
+   * @group Props
+   */
+  styleClass;
+  /**
+   * Whether multiple tabs can be activated at the same time or not.
+   * @group Props
+   */
+  multiple = false;
+  /**
+   * Transition options of the animation.
+   * @group Props
+   */
+  transitionOptions = "400ms cubic-bezier(0.86, 0, 0.07, 1)";
+  /**
+   * Current id state as a string.
+   * @group Props
+   */
+  id;
+  /**
+   * Index of the element in tabbing order.
+   * @group Props
+   */
+  tabindex = 0;
+  templates;
+  containerViewChild;
+  submenuIconTemplate;
+  itemTemplate;
+  animating;
+  activeItem = signal(null);
+  ngOnInit() {
+    this.id = this.id || UniqueComponentId();
+  }
+  ngAfterContentInit() {
+    this.templates?.forEach((item) => {
+      switch (item.getType()) {
+        case "submenuicon":
+          this.submenuIconTemplate = item.template;
+          break;
+        case "item":
+          this.itemTemplate = item.template;
+          break;
+        default:
+          this.itemTemplate = item.template;
+          break;
+      }
+    });
+  }
+  constructor(cd) {
+    this.cd = cd;
+  }
+  /**
+   * Collapses open panels.
+   * @group Method
+   */
+  collapseAll() {
+    for (let item of this.model) {
+      if (item.expanded) {
+        item.expanded = false;
+      }
+    }
+    this.cd.detectChanges();
+  }
+  onToggleDone() {
+    this.animating = false;
+    this.cd.markForCheck();
+  }
+  changeActiveItem(event, item, index, selfActive = false) {
+    if (!this.isItemDisabled(item)) {
+      const activeItem = selfActive ? item : this.activeItem && ObjectUtils.equals(item, this.activeItem) ? null : item;
+      this.activeItem.set(activeItem);
+    }
+  }
+  getAnimation(item) {
+    return item.expanded ? {
+      value: "visible",
+      params: {
+        transitionParams: this.animating ? this.transitionOptions : "0ms",
+        height: "*"
+      }
+    } : {
+      value: "hidden",
+      params: {
+        transitionParams: this.transitionOptions,
+        height: "0"
+      }
+    };
+  }
+  getItemProp(item, name) {
+    return item ? ObjectUtils.getItemValue(item[name]) : void 0;
+  }
+  getItemLabel(item) {
+    return this.getItemProp(item, "label");
+  }
+  isItemActive(item) {
+    return item.expanded;
+  }
+  isItemVisible(item) {
+    return this.getItemProp(item, "visible") !== false;
+  }
+  isItemDisabled(item) {
+    return this.getItemProp(item, "disabled");
+  }
+  isItemGroup(item) {
+    return ObjectUtils.isNotEmpty(item.items);
+  }
+  getPanelId(index, item) {
+    return item && item.id ? item.id : `${this.id}_${index}`;
+  }
+  getHeaderId(item, index) {
+    return item.id ? item.id + "_header" : `${this.getPanelId(index)}_header`;
+  }
+  getContentId(item, index) {
+    return item.id ? item.id + "_content" : `${this.getPanelId(index)}_content`;
+  }
+  updateFocusedHeader(event) {
+    const {
+      originalEvent,
+      focusOnNext,
+      selfCheck
+    } = event;
+    const panelElement = originalEvent.currentTarget.closest('[data-pc-section="panel"]');
+    const header = selfCheck ? DomHandler.findSingle(panelElement, '[data-pc-section="header"]') : focusOnNext ? this.findNextHeader(panelElement) : this.findPrevHeader(panelElement);
+    header ? this.changeFocusedHeader(originalEvent, header) : focusOnNext ? this.onHeaderHomeKey(originalEvent) : this.onHeaderEndKey(originalEvent);
+  }
+  changeFocusedHeader(event, element) {
+    element && DomHandler.focus(element);
+  }
+  findNextHeader(panelElement, selfCheck = false) {
+    const nextPanelElement = selfCheck ? panelElement : panelElement.nextElementSibling;
+    const headerElement = DomHandler.findSingle(nextPanelElement, '[data-pc-section="header"]');
+    return headerElement ? DomHandler.getAttribute(headerElement, "data-p-disabled") ? this.findNextHeader(headerElement.parentElement) : headerElement : null;
+  }
+  findPrevHeader(panelElement, selfCheck = false) {
+    const prevPanelElement = selfCheck ? panelElement : panelElement.previousElementSibling;
+    const headerElement = DomHandler.findSingle(prevPanelElement, '[data-pc-section="header"]');
+    return headerElement ? DomHandler.getAttribute(headerElement, "data-p-disabled") ? this.findPrevHeader(headerElement.parentElement) : headerElement : null;
+  }
+  findFirstHeader() {
+    return this.findNextHeader(this.containerViewChild.nativeElement.firstElementChild, true);
+  }
+  findLastHeader() {
+    return this.findPrevHeader(this.containerViewChild.nativeElement.lastElementChild, true);
+  }
+  onHeaderClick(event, item, index) {
+    if (this.isItemDisabled(item)) {
+      event.preventDefault();
+      return;
+    }
+    if (item.command) {
+      item.command({
+        originalEvent: event,
+        item
+      });
+    }
+    if (!this.multiple) {
+      for (let modelItem of this.model) {
+        if (item !== modelItem && modelItem.expanded) {
+          modelItem.expanded = false;
+        }
+      }
+    }
+    item.expanded = !item.expanded;
+    this.changeActiveItem(event, item, index);
+    this.animating = true;
+    DomHandler.focus(event.currentTarget);
+  }
+  onHeaderKeyDown(event, item, index) {
+    switch (event.code) {
+      case "ArrowDown":
+        this.onHeaderArrowDownKey(event);
+        break;
+      case "ArrowUp":
+        this.onHeaderArrowUpKey(event);
+        break;
+      case "Home":
+        this.onHeaderHomeKey(event);
+        break;
+      case "End":
+        this.onHeaderEndKey(event);
+        break;
+      case "Enter":
+      case "Space":
+        this.onHeaderEnterKey(event, item, index);
+        break;
+      default:
+        break;
+    }
+  }
+  onHeaderArrowDownKey(event) {
+    const rootList = DomHandler.getAttribute(event.currentTarget, "data-p-highlight") === true ? DomHandler.findSingle(event.currentTarget.nextElementSibling, '[data-pc-section="menu"]') : null;
+    rootList ? DomHandler.focus(rootList) : this.updateFocusedHeader({
+      originalEvent: event,
+      focusOnNext: true
+    });
+    event.preventDefault();
+  }
+  onHeaderArrowUpKey(event) {
+    const prevHeader = this.findPrevHeader(event.currentTarget.parentElement) || this.findLastHeader();
+    const rootList = DomHandler.getAttribute(prevHeader, "data-p-highlight") === true ? DomHandler.findSingle(prevHeader.nextElementSibling, '[data-pc-section="menu"]') : null;
+    rootList ? DomHandler.focus(rootList) : this.updateFocusedHeader({
+      originalEvent: event,
+      focusOnNext: false
+    });
+    event.preventDefault();
+  }
+  onHeaderHomeKey(event) {
+    this.changeFocusedHeader(event, this.findFirstHeader());
+    event.preventDefault();
+  }
+  onHeaderEndKey(event) {
+    this.changeFocusedHeader(event, this.findLastHeader());
+    event.preventDefault();
+  }
+  onHeaderEnterKey(event, item, index) {
+    const headerAction = DomHandler.findSingle(event.currentTarget, '[data-pc-section="headeraction"]');
+    headerAction ? headerAction.click() : this.onHeaderClick(event, item, index);
+    event.preventDefault();
+  }
+  static \u0275fac = function PanelMenu_Factory(t) {
+    return new (t || _PanelMenu)(\u0275\u0275directiveInject(ChangeDetectorRef));
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _PanelMenu,
+    selectors: [["p-panelMenu"]],
+    contentQueries: function PanelMenu_ContentQueries(rf, ctx, dirIndex) {
+      if (rf & 1) {
+        \u0275\u0275contentQuery(dirIndex, PrimeTemplate, 4);
+      }
+      if (rf & 2) {
+        let _t;
+        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.templates = _t);
+      }
+    },
+    viewQuery: function PanelMenu_Query(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275viewQuery(_c6, 5);
+      }
+      if (rf & 2) {
+        let _t;
+        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.containerViewChild = _t.first);
+      }
+    },
+    hostAttrs: [1, "p-element"],
+    inputs: {
+      model: "model",
+      style: "style",
+      styleClass: "styleClass",
+      multiple: [2, "multiple", "multiple", booleanAttribute],
+      transitionOptions: "transitionOptions",
+      id: "id",
+      tabindex: [2, "tabindex", "tabindex", numberAttribute]
+    },
+    features: [\u0275\u0275InputTransformsFeature],
+    decls: 3,
+    vars: 5,
+    consts: [["container", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], [3, "ngStyle", "ngClass"], [4, "ngFor", "ngForOf"], ["class", "p-panelmenu-panel", 3, "ngClass", "ngStyle", 4, "ngIf"], [1, "p-panelmenu-panel", 3, "ngClass", "ngStyle"], ["role", "button", 3, "click", "keydown", "ngClass", "ngStyle", "pTooltip", "tabindex", "tooltipOptions"], [1, "p-panelmenu-header-content"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-panelmenu-header-action", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], ["class", "p-toggleable-content", "role", "region", 3, "ngClass", 4, "ngIf"], ["class", "p-panelmenu-header-action", 3, "target", 4, "ngIf"], [1, "p-panelmenu-header-action", 3, "target"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], [1, "p-panelmenu-header-action", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], ["role", "region", 1, "p-toggleable-content", 3, "ngClass"], [1, "p-panelmenu-content"], [3, "headerFocus", "panelId", "items", "itemTemplate", "transitionOptions", "root", "activeItem", "tabindex", "parentExpanded"]],
+    template: function PanelMenu_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 3, 0);
+        \u0275\u0275template(2, PanelMenu_ng_container_2_Template, 2, 1, "ng-container", 4);
+        \u0275\u0275elementEnd();
+      }
+      if (rf & 2) {
+        \u0275\u0275classMap(ctx.styleClass);
+        \u0275\u0275property("ngStyle", ctx.style)("ngClass", "p-panelmenu p-component");
+        \u0275\u0275advance(2);
+        \u0275\u0275property("ngForOf", ctx.model);
+      }
+    },
+    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Tooltip, ChevronDownIcon, ChevronRightIcon, PanelMenuList],
+    styles: [_c9],
+    encapsulation: 2,
+    data: {
+      animation: [trigger("rootItem", [state("hidden", style({
+        height: "0"
+      })), state("visible", style({
+        height: "*"
+      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])]
+    },
+    changeDetection: 0
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PanelMenu, [{
+    type: Component,
+    args: [{
+      selector: "p-panelMenu",
+      template: `
+        <div [class]="styleClass" [ngStyle]="style" [ngClass]="'p-panelmenu p-component'" #container>
+            <ng-container *ngFor="let item of model; let f = first; let l = last; let i = index">
+                <div *ngIf="isItemVisible(item)" class="p-panelmenu-panel" [ngClass]="getItemProp(item, 'headerClass')" [ngStyle]="getItemProp(item, 'style')" [attr.data-pc-section]="'panel'">
+                    <div
+                        [ngClass]="{ 'p-component p-panelmenu-header': true, 'p-highlight': isItemActive(item), 'p-disabled': isItemDisabled(item) }"
+                        [class]="getItemProp(item, 'styleClass')"
+                        [ngStyle]="getItemProp(item, 'style')"
+                        [pTooltip]="getItemProp(item, 'tooltip')"
+                        [attr.id]="getHeaderId(item, i)"
+                        [tabindex]="0"
+                        role="button"
+                        [tooltipOptions]="getItemProp(item, 'tooltipOptions')"
+                        [attr.aria-expanded]="isItemActive(item)"
+                        [attr.aria-label]="getItemProp(item, 'label')"
+                        [attr.aria-controls]="getContentId(item, i)"
+                        [attr.aria-disabled]="isItemDisabled(item)"
+                        [attr.data-p-highlight]="isItemActive(item)"
+                        [attr.data-p-disabled]="isItemDisabled(item)"
+                        [attr.data-pc-section]="'header'"
+                        (click)="onHeaderClick($event, item, i)"
+                        (keydown)="onHeaderKeyDown($event, item, i)"
+                    >
+                        <div class="p-panelmenu-header-content">
+                            <ng-container *ngIf="!itemTemplate">
+                                <a
+                                    *ngIf="!getItemProp(item, 'routerLink')"
+                                    [attr.href]="getItemProp(item, 'url')"
+                                    [attr.tabindex]="-1"
+                                    [target]="getItemProp(item, 'target')"
+                                    [attr.title]="getItemProp(item, 'title')"
+                                    class="p-panelmenu-header-action"
+                                    [attr.data-pc-section]="'headeraction'"
+                                >
+                                    <ng-container *ngIf="isItemGroup(item)">
+                                        <ng-container *ngIf="!submenuIconTemplate">
+                                            <ChevronDownIcon [styleClass]="'p-submenu-icon'" *ngIf="isItemActive(item)" />
+                                            <ChevronRightIcon [styleClass]="'p-submenu-icon'" *ngIf="!isItemActive(item)" />
+                                        </ng-container>
+                                        <ng-template *ngTemplateOutlet="submenuIconTemplate"></ng-template>
+                                    </ng-container>
+                                    <span class="p-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" [ngStyle]="getItemProp(item, 'iconStyle')"></span>
+                                    <span class="p-menuitem-text" *ngIf="getItemProp(item, 'escape') !== false; else htmlLabel">{{ getItemProp(item, 'label') }}</span>
+                                    <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(item, 'label')"></span></ng-template>
+                                    <span class="p-menuitem-badge" *ngIf="getItemProp(item, 'badge')" [ngClass]="getItemProp(item, 'badgeStyleClass')">{{ getItemProp(item, 'badge') }}</span>
+                                </a>
+                            </ng-container>
+                            <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>
+                            <a
+                                *ngIf="getItemProp(item, 'routerLink')"
+                                [routerLink]="getItemProp(item, 'routerLink')"
+                                [queryParams]="getItemProp(item, 'queryParams')"
+                                [routerLinkActive]="'p-menuitem-link-active'"
+                                [routerLinkActiveOptions]="getItemProp(item, 'routerLinkActiveOptions') || { exact: false }"
+                                [target]="getItemProp(item, 'target')"
+                                class="p-panelmenu-header-action"
+                                [attr.tabindex]="-1"
+                                [fragment]="getItemProp(item, 'fragment')"
+                                [queryParamsHandling]="getItemProp(item, 'queryParamsHandling')"
+                                [preserveFragment]="getItemProp(item, 'preserveFragment')"
+                                [skipLocationChange]="getItemProp(item, 'skipLocationChange')"
+                                [replaceUrl]="getItemProp(item, 'replaceUrl')"
+                                [state]="getItemProp(item, 'state')"
+                                [attr.data-pc-section]="'headeraction'"
+                            >
+                                <ng-container *ngIf="isItemGroup(item)">
+                                    <ng-container *ngIf="!submenuIconTemplate">
+                                        <ChevronDownIcon [styleClass]="'p-submenu-icon'" *ngIf="isItemActive(item)" />
+                                        <ChevronRightIcon [styleClass]="'p-submenu-icon'" *ngIf="!isItemActive(item)" />
+                                    </ng-container>
+                                    <ng-template *ngTemplateOutlet="submenuIconTemplate"></ng-template>
+                                </ng-container>
+                                <span class="p-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" [ngStyle]="getItemProp(item, 'iconStyle')"></span>
+                                <span class="p-menuitem-text" *ngIf="getItemProp(item, 'escape') !== false; else htmlRouteLabel">{{ getItemProp(item, 'label') }}</span>
+                                <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(item, 'label')"></span></ng-template>
+                                <span class="p-menuitem-badge" *ngIf="getItemProp(item, 'badge')" [ngClass]="getItemProp(item, 'badgeStyleClass')">{{ getItemProp(item, 'badge') }}</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        *ngIf="isItemGroup(item)"
+                        class="p-toggleable-content"
+                        [ngClass]="{ 'p-panelmenu-expanded': isItemActive(item) }"
+                        [@rootItem]="getAnimation(item)"
+                        (@rootItem.done)="onToggleDone()"
+                        role="region"
+                        [attr.id]="getContentId(item, i)"
+                        [attr.aria-labelledby]="getHeaderId(item, i)"
+                        [attr.data-pc-section]="'toggleablecontent'"
+                    >
+                        <div class="p-panelmenu-content" [attr.data-pc-section]="'menucontent'">
+                            <p-panelMenuList
+                                [panelId]="getPanelId(i, item)"
+                                [items]="getItemProp(item, 'items')"
+                                [itemTemplate]="itemTemplate"
+                                [transitionOptions]="transitionOptions"
+                                [root]="true"
+                                [activeItem]="activeItem()"
+                                [tabindex]="tabindex"
+                                [parentExpanded]="isItemActive(item)"
+                                (headerFocus)="updateFocusedHeader($event)"
+                            ></p-panelMenuList>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    `,
+      animations: [trigger("rootItem", [state("hidden", style({
+        height: "0"
+      })), state("visible", style({
+        height: "*"
+      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])],
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      },
+      styles: ["@layer primeng{.p-panelmenu .p-panelmenu-header-action{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;position:relative;text-decoration:none}.p-panelmenu .p-panelmenu-header-action:focus{z-index:1}.p-panelmenu .p-submenu-list{margin:0;padding:0;list-style:none}.p-panelmenu .p-menuitem-link{display:flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;outline:none}.p-panelmenu .p-menuitem-text{line-height:1}.p-panelmenu-expanded.p-toggleable-content:not(.ng-animating),.p-panelmenu .p-submenu-expanded:not(.ng-animating){overflow:visible}.p-panelmenu .p-toggleable-content,.p-panelmenu .p-submenu-list{overflow:hidden}}\n"]
+    }]
+  }], () => [{
+    type: ChangeDetectorRef
+  }], {
+    model: [{
+      type: Input
+    }],
+    style: [{
+      type: Input
+    }],
+    styleClass: [{
+      type: Input
+    }],
+    multiple: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    transitionOptions: [{
+      type: Input
+    }],
+    id: [{
+      type: Input
+    }],
+    tabindex: [{
+      type: Input,
+      args: [{
+        transform: numberAttribute
+      }]
+    }],
+    templates: [{
+      type: ContentChildren,
+      args: [PrimeTemplate]
+    }],
+    containerViewChild: [{
+      type: ViewChild,
+      args: ["container"]
+    }]
+  });
+})();
+var PanelMenuModule = class _PanelMenuModule {
+  static \u0275fac = function PanelMenuModule_Factory(t) {
+    return new (t || _PanelMenuModule)();
+  };
+  static \u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({
+    type: _PanelMenuModule
+  });
+  static \u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({
+    imports: [CommonModule, RouterModule, TooltipModule, SharedModule, AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon, RouterModule, TooltipModule, SharedModule]
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PanelMenuModule, [{
+    type: NgModule,
+    args: [{
+      imports: [CommonModule, RouterModule, TooltipModule, SharedModule, AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon],
+      exports: [PanelMenu, RouterModule, TooltipModule, SharedModule],
+      declarations: [PanelMenu, PanelMenuSub, PanelMenuList]
+    }]
+  }], null, null);
+})();
+
+// src/app/internal/shared/components/layout/sidebar/sidebar.component.ts
+function SidebarComponent_For_10_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 8);
+    \u0275\u0275listener("click", function SidebarComponent_For_10_Template_div_click_0_listener() {
+      const \u0275$index_18_r2 = \u0275\u0275restoreView(_r1).$index;
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.onClickSidebarItem(\u0275$index_18_r2));
+    });
+    \u0275\u0275elementStart(1, "div", 9)(2, "div", 10);
+    \u0275\u0275element(3, "i", 11);
+    \u0275\u0275elementStart(4, "p", 12);
+    \u0275\u0275text(5);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(6, "div", 13)(7, "small");
+    \u0275\u0275text(8);
+    \u0275\u0275elementEnd()()()();
+  }
+  if (rf & 2) {
+    const item_r4 = ctx.$implicit;
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275classProp("bg-item-click", item_r4.name === ctx_r2.$clickSidebar())("bg-item-hover", item_r4.name !== ctx_r2.$clickSidebar());
+    \u0275\u0275advance(5);
+    \u0275\u0275textInterpolate(item_r4.name);
+    \u0275\u0275advance();
+    \u0275\u0275styleProp("background-color", "var(--purple-500)")("aspect-ratio", 1);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(item_r4.cnt);
+  }
+}
+var _SidebarComponent = class _SidebarComponent {
+  constructor() {
+    this.internalSignalStore = inject(InternalSignalStore);
+    this.$sidebars = this.internalSignalStore.selectSidebars;
+    this.$clickSidebar = this.internalSignalStore.common.clickSidebar;
+    this.onClickSidebarItem = (idx) => {
+      this.internalSignalStore.clickSidebar({
+        sidebar: this.$sidebars()[idx].name
+      });
+    };
+    this.internalSignalStore.dataLoad({});
+  }
+};
+_SidebarComponent.\u0275fac = function SidebarComponent_Factory(t) {
+  return new (t || _SidebarComponent)();
+};
+_SidebarComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _SidebarComponent, selectors: [["app-sidebar"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 11, vars: 0, consts: [[1, "w-full", "h-screen", "flex"], [1, "w-full", "mx-2", "flex", "flex-column"], [1, "w-full"], [1, "px-3", "mt-1", "flex", "flex-row", "align-items-center", "justify-content-start"], [1, "mr-2", "pi", "pi-objects-column", "text-2xl"], [1, "flex", "align-items-start", "justify-content-start", "flex-column"], [1, "font-semibold", "text-xl"], [1, "w-full", "px-3", "my-2", "border-round-xl", "item", 3, "bg-item-click", "bg-item-hover"], [1, "w-full", "px-3", "my-2", "border-round-xl", "item", 3, "click"], [1, "w-full", "flex", "justify-content-between", "align-items-center"], [1, "w-full", "flex", "justify-content-start", "align-items-center", "flex-row"], [1, "pi", "pi-code", "mr-2", "text-xl"], [1, "font-semibold"], [1, "h-2", "w-2", "border-round", "text-white", "font-semibold", "flex", "justify-content-center", "align-items-center"]], template: function SidebarComponent_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
+    \u0275\u0275element(4, "i", 4);
+    \u0275\u0275elementStart(5, "div", 5)(6, "p", 6);
+    \u0275\u0275text(7, "DashBoard");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(8, "div", 2);
+    \u0275\u0275repeaterCreate(9, SidebarComponent_For_10_Template, 9, 10, "div", 7, \u0275\u0275repeaterTrackByIdentity);
+    \u0275\u0275elementEnd()()()();
+  }
+  if (rf & 2) {
+    \u0275\u0275advance(9);
+    \u0275\u0275repeater(ctx.$sidebars());
+  }
+}, dependencies: [PanelMenuModule], styles: ["\n\n.item[_ngcontent-%COMP%], \n.item[_ngcontent-%COMP%]   *[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.bg-item-hover[_ngcontent-%COMP%]:hover {\n  background-color: var(--surface-50);\n}\n.bg-item-click[_ngcontent-%COMP%] {\n  background-color: var(--surface-ground);\n}\n/*# sourceMappingURL=sidebar.component.css.map */"] });
+var SidebarComponent = _SidebarComponent;
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(SidebarComponent, { className: "SidebarComponent", filePath: "src/app/internal/shared/components/layout/sidebar/sidebar.component.ts", lineNumber: 16 });
+})();
+
+// src/app/internal/shared/components/layout/layout/layout.component.ts
+var _LayoutComponent = class _LayoutComponent {
+};
+_LayoutComponent.\u0275fac = function LayoutComponent_Factory(t) {
+  return new (t || _LayoutComponent)();
+};
+_LayoutComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _LayoutComponent, selectors: [["app-layout"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 5, vars: 4, consts: [[1, "h-screen"], [1, "fixed", "t-0", "left-0"], [1, "overflow-y-auto"]], template: function LayoutComponent_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 0)(1, "div", 1);
+    \u0275\u0275element(2, "app-sidebar");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(3, "main", 2);
+    \u0275\u0275element(4, "router-outlet");
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    \u0275\u0275advance();
+    \u0275\u0275styleProp("width", "15%");
+    \u0275\u0275advance(2);
+    \u0275\u0275styleProp("margin-left", "15%");
+  }
+}, dependencies: [SidebarComponent, RouterOutlet, SplitterModule] });
+var LayoutComponent = _LayoutComponent;
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(LayoutComponent, { className: "LayoutComponent", filePath: "src/app/internal/shared/components/layout/layout/layout.component.ts", lineNumber: 14 });
+})();
+
+// src/app/app.routes.ts
+var routes = [
+  {
+    path: "auth",
+    loadChildren: () => import("./chunk-7VJVOC6J.js").then((M) => M.AUTH_ROUTES)
+  },
+  {
+    path: "internal",
+    loadChildren: () => import("./chunk-UKW2DZOK.js").then((M) => M.INTERNAL_ROUTES),
+    component: LayoutComponent
+  },
+  {
+    path: "**",
+    redirectTo: "auth"
+  }
+];
+
 // src/app/app.config.ts
 var appConfig = {
   providers: [
@@ -8662,22 +8678,6 @@ var appConfig = {
     provideHttpClient()
   ]
 };
-
-// src/app/app.component.ts
-var _AppComponent = class _AppComponent {
-};
-_AppComponent.\u0275fac = function AppComponent_Factory(t) {
-  return new (t || _AppComponent)();
-};
-_AppComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 1, vars: 0, template: function AppComponent_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275element(0, "router-outlet");
-  }
-}, dependencies: [RouterOutlet], encapsulation: 2 });
-var AppComponent = _AppComponent;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AppComponent, { className: "AppComponent", filePath: "src/app/app.component.ts", lineNumber: 10 });
-})();
 
 // src/main.ts
 bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));

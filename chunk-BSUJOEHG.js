@@ -58,11 +58,30 @@ import {
   ɵɵlistener,
   ɵɵnamespaceSVG,
   ɵɵresolveDocument
-} from "./chunk-2YUMHHGY.js";
+} from "./chunk-Y7FJZAHW.js";
 import {
   __spreadProps,
   __spreadValues
 } from "./chunk-WDMUDEB6.js";
+
+// src/app/api/internal/internal.api.ts
+var _InternalAPI = class _InternalAPI {
+  constructor() {
+    this.http = inject(HttpClient);
+    this.postGetSidebars = () => {
+      return this.http.post(`${environment.API.base}/internal/getSidebars`, {});
+    };
+    this.postGetTasks = (request) => {
+      console.log("postgetTaskAPI");
+      return this.http.post(`${environment.API.base}/internal/getTasks`, request);
+    };
+  }
+};
+_InternalAPI.\u0275fac = function InternalAPI_Factory(t) {
+  return new (t || _InternalAPI)();
+};
+_InternalAPI.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({ token: _InternalAPI, factory: _InternalAPI.\u0275fac, providedIn: "root" });
+var InternalAPI = _InternalAPI;
 
 // src/app/internal/shared/store/internal/internal.function.ts
 var loadedSidebarData = (state, sidebar) => {
@@ -97,25 +116,6 @@ var loadedTaskData = (state, task) => {
     })
   });
 };
-
-// src/app/api/internal/internal.api.ts
-var _InternalAPI = class _InternalAPI {
-  constructor() {
-    this.http = inject(HttpClient);
-    this.postGetSidebars = () => {
-      return this.http.post(`${environment.API.base}/internal/getSidebars`, {});
-    };
-    this.postGetTasks = (request) => {
-      console.log("postgetTaskAPI");
-      return this.http.post(`${environment.API.base}/internal/getTasks`, request);
-    };
-  }
-};
-_InternalAPI.\u0275fac = function InternalAPI_Factory(t) {
-  return new (t || _InternalAPI)();
-};
-_InternalAPI.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({ token: _InternalAPI, factory: _InternalAPI.\u0275fac, providedIn: "root" });
-var InternalAPI = _InternalAPI;
 
 // src/app/internal/shared/store/internal/internal.signal-store.ts
 var initialState = {
@@ -1105,4 +1105,4 @@ export {
   TooltipModule,
   InternalSignalStore
 };
-//# sourceMappingURL=chunk-BVIMG4SU.js.map
+//# sourceMappingURL=chunk-BSUJOEHG.js.map

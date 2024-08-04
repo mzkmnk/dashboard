@@ -24,7 +24,7 @@ import {
   ɵɵprojection,
   ɵɵprojectionDef,
   ɵɵproperty
-} from "./chunk-2YUMHHGY.js";
+} from "./chunk-Y7FJZAHW.js";
 
 // node_modules/primeng/fesm2022/primeng-divider.mjs
 var _c0 = ["*"];
@@ -216,8 +216,8 @@ var TimesIcon = class _TimesIcon extends BaseIcon {
 })();
 
 export {
-  TimesIcon,
   Divider,
-  DividerModule
+  DividerModule,
+  TimesIcon
 };
-//# sourceMappingURL=chunk-ECXQ2I3U.js.map
+//# sourceMappingURL=chunk-HMDMGSKL.js.map
