@@ -15,6 +15,7 @@ import { InternalAPI } from '../../../../api/internal/internal.api';
 import {
   InternalSignalStoreModel,
   SidebarModel,
+  Status,
 } from '../../interfaces/internal.interface';
 import { loadedSidebarData, loadedTaskData } from './internal.function';
 
@@ -36,7 +37,6 @@ export const InternalSignalStore = signalStore(
   withComputed(({ data }) => ({
     selectSidebars: computed((): SidebarModel[] => {
       const sidebars: SidebarModel[] = [];
-      console.log('data', data());
 
       for (const key of Object.keys(data())) {
         const tasks = data()[key].tasks;
@@ -67,7 +67,7 @@ export const InternalSignalStore = signalStore(
         switchMap(() => internalAPI.postGetSidebars()),
         tapResponse({
           next: (response) => {
-            response.sidebarLabels.map((sidebar) => {
+            response.sidebars.map((sidebar) => {
               patchState(signalStore, (signalState) =>
                 loadedSidebarData(signalState, sidebar),
               );
@@ -77,7 +77,7 @@ export const InternalSignalStore = signalStore(
         }),
         concatMap(() => signalStore.selectSidebars()),
         concatMap((sidebar) =>
-          internalAPI.postGetTasks({ sidebarLabel: sidebar.name }),
+          internalAPI.postGetTasks({ sidebar: sidebar.name }),
         ),
         tapResponse({
           next: (response) => {
@@ -97,6 +97,11 @@ export const InternalSignalStore = signalStore(
         ),
       ),
     ),
+    /**
+     * 引数に与えられた{status}のタスクを追加する。
+     */
+    addTask: rxMethod<{ status: Status }>(pipe()),
+
     /**
      * サイドバークリック時の変更
      */

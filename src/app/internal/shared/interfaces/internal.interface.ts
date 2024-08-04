@@ -23,7 +23,7 @@ export interface Task {
   startedAt: Date;
   endedAt: Date;
   sidebar: string;
-  status: string;
+  status: Status;
 }
 
 /**

@@ -11,11 +11,11 @@ import { SuccessCode } from '../../shared/interfaces/messages.interface';
 
 export interface PostGetSidebarsResponse {
   code: SuccessCode;
-  sidebarLabels: Sidebar[];
+  sidebars: Sidebar[];
 }
 
 export interface PostGetTasksRequest {
-  sidebarLabel: string;
+  sidebar: string;
 }
 
 export interface PostGetTasksResponse {
