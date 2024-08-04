@@ -2376,7 +2376,7 @@ _SidebarComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type
 }, dependencies: [PanelMenuModule], styles: ["\n\n.item[_ngcontent-%COMP%], \n.item[_ngcontent-%COMP%]   *[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.bg-item-hover[_ngcontent-%COMP%]:hover {\n  background-color: var(--surface-50);\n}\n.bg-item-click[_ngcontent-%COMP%] {\n  background-color: var(--surface-ground);\n}\n/*# sourceMappingURL=sidebar.component.css.map */"] });
 var SidebarComponent = _SidebarComponent;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(SidebarComponent, { className: "SidebarComponent", filePath: "src/app/internal/shared/components/layout/sidebar/sidebar.component.ts", lineNumber: 14 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(SidebarComponent, { className: "SidebarComponent", filePath: "src/app/internal/shared/components/layout/sidebar/sidebar.component.ts", lineNumber: 15 });
 })();
 
 // node_modules/primeng/fesm2022/primeng-splitter.mjs
@@ -3126,7 +3126,7 @@ var routes = [
   },
   {
     path: "internal",
-    loadChildren: () => import("./chunk-CDT7XEPV.js").then((M) => M.INTERNAL_ROUTES),
+    loadChildren: () => import("./chunk-J5LDE5DF.js").then((M) => M.INTERNAL_ROUTES),
     component: LayoutComponent
   },
   {

@@ -6617,6 +6617,26 @@ var ProgressSpinnerModule = class _ProgressSpinnerModule {
   }], null, null);
 })();
 
+// src/app/internal/shared/interfaces/internal.interface.ts
+var Status = ["todo", "progress", "completed"];
+var statusStyle = {
+  todo: {
+    mainColor: "var(--indigo-400)",
+    rightColor: "var(--indigo-100)",
+    leftColor: "var(--indigo-500)"
+  },
+  progress: {
+    mainColor: "var(--teal-400)",
+    rightColor: "var(--teal-100)",
+    leftColor: "var(--teal-500)"
+  },
+  completed: {
+    mainColor: "var(--green-400)",
+    rightColor: "var(--green-100)",
+    leftColor: "var(--green-500)"
+  }
+};
+
 // src/app/internal/main/pages/home/home.component.ts
 var _c010 = (a0) => ({ background: a0, color: "black" });
 var _c17 = () => ({ width: "2.5rem", height: "2.5rem" });
@@ -6789,8 +6809,8 @@ var _HomeComponent = class _HomeComponent {
       task: void 0,
       visible: false
     };
-    this.status = ["todo", "progress", "completed"];
-    this.pItems = [];
+    this.status = Status;
+    this.statusStyle = statusStyle;
     this.onClickAddTask = (status) => {
     };
     this.onClickTask = (task) => {
@@ -6805,34 +6825,6 @@ var _HomeComponent = class _HomeComponent {
       const width = rect.width;
       const newProgress = Math.round(clickX / width * 100);
     };
-    this.statusStyle = {
-      todo: {
-        mainColor: "var(--indigo-400)",
-        rightColor: "var(--indigo-100)",
-        leftColor: "var(--indigo-500)"
-      },
-      progress: {
-        mainColor: "var(--teal-400)",
-        rightColor: "var(--teal-100)",
-        leftColor: "var(--teal-500)"
-      },
-      completed: {
-        mainColor: "var(--green-400)",
-        rightColor: "var(--green-100)",
-        leftColor: "var(--green-500)"
-      }
-    };
-    this.pItems = [
-      {
-        icon: "pi pi-bars",
-        items: [
-          {
-            label: "add Item",
-            icon: "pi pi-add"
-          }
-        ]
-      }
-    ];
   }
 };
 _HomeComponent.\u0275fac = function HomeComponent_Factory(t) {
@@ -6916,4 +6908,4 @@ var HomeComponent = _HomeComponent;
 export {
   HomeComponent
 };
-//# sourceMappingURL=chunk-RJZ6UQ6R.js.map
+//# sourceMappingURL=chunk-ITF7NAOA.js.map
