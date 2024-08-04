@@ -7,11 +7,12 @@ import {
 } from '@ngrx/signals';
 import { withDevtools } from '@angular-architects/ngrx-toolkit';
 import { concatMap, EMPTY, pipe, switchMap, tap } from 'rxjs';
-import { Status } from '../../internal/data/task.data';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { computed, inject } from '@angular/core';
-import { InternalAPI, Task } from '../../api/internal/internal.api';
 import { tapResponse } from '@ngrx/operators';
+import { Status } from '../../../internal/data/task.data';
+import { InternalAPI, Task } from '../../../api/internal/internal.api';
+import { loadedSidebarData, loadedTaskData } from './internal.function';
 
 type ProjectSignal = {
   tasks: {
@@ -73,9 +74,9 @@ export const InternalSignalStore = signalStore(
   withMethods((signalStore, internalAPI = inject(InternalAPI)) => ({
     /**
      * @description
-     * サイドバーの取得を行う。
+     * サイドバー、タスクの取得を行う。
      */
-    sidebarDataLoad: rxMethod<{}>(
+    dataLoad: rxMethod<{}>(
       pipe(
         tap(() =>
           patchState(signalStore, {
@@ -86,29 +87,9 @@ export const InternalSignalStore = signalStore(
         tapResponse({
           next: (response) => {
             response.sidebarLabels.map((sidebar) => {
-              patchState(signalStore, (signalState) => {
-                const clickSidebar =
-                  signalState.common.clickSidebar !== ''
-                    ? signalState.common.clickSidebar
-                    : sidebar.name;
-                return {
-                  ...signalState,
-                  common: {
-                    ...signalState.common,
-                    clickSidebar,
-                  },
-                  data: {
-                    ...signalState.data,
-                    [sidebar.name]: {
-                      tasks: {
-                        todo: [],
-                        progress: [],
-                        completed: [],
-                      },
-                    },
-                  },
-                };
-              });
+              patchState(signalStore, (signalState) =>
+                loadedSidebarData(signalState, sidebar),
+              );
             });
           },
           error: () => EMPTY,
@@ -119,29 +100,11 @@ export const InternalSignalStore = signalStore(
         ),
         tapResponse({
           next: (response) => {
-            response.tasks.map((task) => {
-              //todo リファクタ必須 ちょっと何書いてるかわからん
-              patchState(signalStore, (signalState) => {
-                const tasks =
-                  signalState.data[task.sidebar]['tasks'][
-                    task.status as Status
-                  ];
-                tasks.push(task);
-                return {
-                  ...signalState,
-                  data: {
-                    ...signalState.data,
-                    [task.sidebar]: {
-                      ...signalState.data[task.sidebar],
-                      tasks: {
-                        ...signalState.data[task.sidebar].tasks,
-                        [task.status]: tasks,
-                      },
-                    },
-                  },
-                };
-              });
-            });
+            response.tasks.map((task) =>
+              patchState(signalStore, (signalState) =>
+                loadedTaskData(signalState, task),
+              ),
+            );
           },
           error: () => EMPTY,
         }),

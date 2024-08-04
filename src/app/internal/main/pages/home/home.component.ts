@@ -14,12 +14,12 @@ import { SidebarModule } from 'primeng/sidebar';
 import { TimelineModule } from 'primeng/timeline';
 import { DatePipe } from '@angular/common';
 import { CardModule } from 'primeng/card';
+import { Task } from '../../../../api/internal/internal.api';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import {
   InternalSignalStore,
   ProjectSignalStoreModel,
-} from '../../../../shared/store/internal.signal-store';
-import { Task } from '../../../../api/internal/internal.api';
-import { ProgressSpinnerModule } from 'primeng/progressspinner';
+} from '../../../../shared/store/internal/internal.signal-store';
 
 @Component({
   selector: 'app-home',
