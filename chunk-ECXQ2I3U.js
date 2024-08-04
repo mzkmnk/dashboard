@@ -24,7 +24,7 @@ import {
   ɵɵprojection,
   ɵɵprojectionDef,
   ɵɵproperty
-} from "./chunk-AJQNVX4I.js";
+} from "./chunk-2YUMHHGY.js";
 
 // node_modules/primeng/fesm2022/primeng-divider.mjs
 var _c0 = ["*"];
@@ -220,4 +220,4 @@ export {
   Divider,
   DividerModule
 };
-//# sourceMappingURL=chunk-MJH7HKRB.js.map
+//# sourceMappingURL=chunk-ECXQ2I3U.js.map

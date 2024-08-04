@@ -58,7 +58,7 @@ import {
   ɵɵlistener,
   ɵɵnamespaceSVG,
   ɵɵresolveDocument
-} from "./chunk-AJQNVX4I.js";
+} from "./chunk-2YUMHHGY.js";
 import {
   __spreadProps,
   __spreadValues
@@ -83,7 +83,41 @@ _InternalAPI.\u0275fac = function InternalAPI_Factory(t) {
 _InternalAPI.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({ token: _InternalAPI, factory: _InternalAPI.\u0275fac, providedIn: "root" });
 var InternalAPI = _InternalAPI;
 
-// src/app/shared/store/internal.signal-store.ts
+// src/app/shared/store/internal/internal.function.ts
+var loadedSidebarData = (state, sidebar) => {
+  const clickSidebar = state.common.clickSidebar !== "" ? state.common.clickSidebar : sidebar.name;
+  return __spreadProps(__spreadValues({}, state), {
+    common: __spreadProps(__spreadValues({}, state.common), {
+      clickSidebar
+    }),
+    data: __spreadProps(__spreadValues({}, state.data), {
+      [sidebar.name]: {
+        tasks: {
+          todo: [],
+          progress: [],
+          completed: []
+        }
+      }
+    })
+  });
+};
+var loadedTaskData = (state, task) => {
+  const tasks = [
+    ...state.data[task.sidebar].tasks[task.status],
+    task
+  ];
+  return __spreadProps(__spreadValues({}, state), {
+    data: __spreadProps(__spreadValues({}, state.data), {
+      [task.sidebar]: __spreadProps(__spreadValues({}, state.data[task.sidebar]), {
+        tasks: __spreadProps(__spreadValues({}, state.data[task.sidebar].tasks), {
+          [task.status]: tasks
+        })
+      })
+    })
+  });
+};
+
+// src/app/shared/store/internal/internal.signal-store.ts
 var initialState = {
   common: {
     clickSidebar: "",
@@ -118,50 +152,20 @@ var InternalSignalStore = signalStore(
   withMethods((signalStore2, internalAPI = inject(InternalAPI)) => ({
     /**
      * @description
-     * サイドバーの取得を行う。
+     * サイドバー、タスクの取得を行う。
      */
-    sidebarDataLoad: rxMethod(pipe(tap(() => patchState(signalStore2, {
+    dataLoad: rxMethod(pipe(tap(() => patchState(signalStore2, {
       common: { isLoading: true, clickSidebar: "" }
     })), switchMap(() => internalAPI.postGetSidebars()), tapResponse({
       next: (response) => {
         response.sidebarLabels.map((sidebar) => {
-          patchState(signalStore2, (signalState) => {
-            const clickSidebar = signalState.common.clickSidebar !== "" ? signalState.common.clickSidebar : sidebar.name;
-            return __spreadProps(__spreadValues({}, signalState), {
-              common: __spreadProps(__spreadValues({}, signalState.common), {
-                clickSidebar
-              }),
-              data: __spreadProps(__spreadValues({}, signalState.data), {
-                [sidebar.name]: {
-                  tasks: {
-                    todo: [],
-                    progress: [],
-                    completed: []
-                  }
-                }
-              })
-            });
-          });
+          patchState(signalStore2, (signalState) => loadedSidebarData(signalState, sidebar));
         });
       },
       error: () => EMPTY
     }), concatMap(() => signalStore2.selectSidebars()), concatMap((sidebar) => internalAPI.postGetTasks({ sidebarLabel: sidebar.name })), tapResponse({
       next: (response) => {
-        response.tasks.map((task) => {
-          patchState(signalStore2, (signalState) => {
-            const tasks = signalState.data[task.sidebar]["tasks"][task.status];
-            tasks.push(task);
-            return __spreadProps(__spreadValues({}, signalState), {
-              data: __spreadProps(__spreadValues({}, signalState.data), {
-                [task.sidebar]: __spreadProps(__spreadValues({}, signalState.data[task.sidebar]), {
-                  tasks: __spreadProps(__spreadValues({}, signalState.data[task.sidebar].tasks), {
-                    [task.status]: tasks
-                  })
-                })
-              })
-            });
-          });
-        });
+        response.tasks.map((task) => patchState(signalStore2, (signalState) => loadedTaskData(signalState, task)));
       },
       error: () => EMPTY
     }), tap(() => patchState(signalStore2, (signalState) => __spreadProps(__spreadValues({}, signalState), {
@@ -1101,4 +1105,4 @@ export {
   TooltipModule,
   InternalSignalStore
 };
-//# sourceMappingURL=chunk-SXJXNIHA.js.map
+//# sourceMappingURL=chunk-CA47NEKB.js.map

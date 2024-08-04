@@ -40651,8 +40651,8 @@ export {
   withDevtools,
   payload,
   withRedux,
-  environment,
-  tapResponse
+  tapResponse,
+  environment
 };
 /*! Bundled license information:
 
@@ -40757,4 +40757,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-AJQNVX4I.js.map
+//# sourceMappingURL=chunk-2YUMHHGY.js.map

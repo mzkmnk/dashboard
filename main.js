@@ -4,7 +4,7 @@ import {
   InternalSignalStore,
   Tooltip,
   TooltipModule
-} from "./chunk-SXJXNIHA.js";
+} from "./chunk-CA47NEKB.js";
 import {
   ANIMATION_MODULE_TYPE,
   AUTO_STYLE,
@@ -144,7 +144,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-AJQNVX4I.js";
+} from "./chunk-2YUMHHGY.js";
 import {
   __objRest,
   __spreadProps,
@@ -2352,7 +2352,7 @@ var _SidebarComponent = class _SidebarComponent {
         sidebar: this.$sidebars()[idx].name
       });
     };
-    this.internalSignalStore.sidebarDataLoad({});
+    this.internalSignalStore.dataLoad({});
   }
 };
 _SidebarComponent.\u0275fac = function SidebarComponent_Factory(t) {
@@ -3122,11 +3122,11 @@ var LayoutComponent = _LayoutComponent;
 var routes = [
   {
     path: "auth",
-    loadChildren: () => import("./chunk-EM4WJNN5.js").then((M) => M.AUTH_ROUTES)
+    loadChildren: () => import("./chunk-AI7RR6FZ.js").then((M) => M.AUTH_ROUTES)
   },
   {
     path: "internal",
-    loadChildren: () => import("./chunk-AMKEC4OU.js").then((M) => M.INTERNAL_ROUTES),
+    loadChildren: () => import("./chunk-XSTN5RNN.js").then((M) => M.INTERNAL_ROUTES),
     component: LayoutComponent
   },
   {

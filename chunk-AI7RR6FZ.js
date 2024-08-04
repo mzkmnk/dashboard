@@ -4,7 +4,7 @@ import "./chunk-WDMUDEB6.js";
 var AUTH_ROUTES = [
   {
     path: "auth",
-    loadComponent: () => import("./chunk-5RYLTZSI.js").then((M) => M.AuthComponent)
+    loadComponent: () => import("./chunk-UWHRFQ4S.js").then((M) => M.AuthComponent)
   },
   {
     path: "**",
@@ -14,4 +14,4 @@ var AUTH_ROUTES = [
 export {
   AUTH_ROUTES
 };
-//# sourceMappingURL=chunk-EM4WJNN5.js.map
+//# sourceMappingURL=chunk-AI7RR6FZ.js.map
