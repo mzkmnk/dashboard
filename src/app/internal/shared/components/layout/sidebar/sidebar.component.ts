@@ -1,8 +1,9 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Signal } from '@angular/core';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { Ripple } from 'primeng/ripple';
 import { Button } from 'primeng/button';
 import { InternalSignalStore } from '../../../store/internal/internal.signal-store';
+import { SidebarModel } from '../../../interfaces/internal.interface';
 
 @Component({
   selector: 'app-sidebar',
@@ -14,8 +15,8 @@ import { InternalSignalStore } from '../../../store/internal/internal.signal-sto
 export class SidebarComponent {
   private readonly internalSignalStore = inject(InternalSignalStore);
 
-  $sidebars = this.internalSignalStore.selectSidebars;
-  $clickSidebar = this.internalSignalStore.common.clickSidebar;
+  $sidebars: Signal<SidebarModel[]> = this.internalSignalStore.selectSidebars;
+  $clickSidebar: Signal<string> = this.internalSignalStore.common.clickSidebar;
 
   constructor() {
     this.internalSignalStore.dataLoad({});

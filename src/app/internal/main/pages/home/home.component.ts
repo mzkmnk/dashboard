@@ -2,7 +2,6 @@ import { Component, inject, Signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
-import { MenuItem } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { TagModule } from 'primeng/tag';
@@ -18,6 +17,7 @@ import { InternalSignalStore } from '../../../shared/store/internal/internal.sig
 import {
   ProjectSignalStoreModel,
   Status,
+  statusStyle,
   StatusStyle,
   Task,
 } from '../../../shared/interfaces/internal.interface';
@@ -51,47 +51,17 @@ export class HomeComponent {
   $data: Signal<ProjectSignalStoreModel> = this.internalSignalStore.data;
   $isLoading: Signal<boolean> = this.internalSignalStore.common.isLoading;
 
+  /**
+   * sidebarで表示させたいtaskとクリックされたかどうかのvisible
+   */
   sidebarTask: { task: Task | undefined; visible: boolean } = {
     task: undefined,
     visible: false,
   };
 
-  status: Status[] = ['todo', 'progress', 'completed'];
+  status: Status[] = Status;
 
-  pItems: MenuItem[] = [];
-
-  statusStyle: StatusStyle;
-
-  constructor() {
-    this.statusStyle = {
-      todo: {
-        mainColor: 'var(--indigo-400)',
-        rightColor: 'var(--indigo-100)',
-        leftColor: 'var(--indigo-500)',
-      },
-      progress: {
-        mainColor: 'var(--teal-400)',
-        rightColor: 'var(--teal-100)',
-        leftColor: 'var(--teal-500)',
-      },
-      completed: {
-        mainColor: 'var(--green-400)',
-        rightColor: 'var(--green-100)',
-        leftColor: 'var(--green-500)',
-      },
-    };
-    this.pItems = [
-      {
-        icon: 'pi pi-bars',
-        items: [
-          {
-            label: 'add Item',
-            icon: 'pi pi-add',
-          },
-        ],
-      },
-    ];
-  }
+  statusStyle: StatusStyle = statusStyle;
 
   onClickAddTask = (status: Status): void => {
     // this.internalSignalStore.taskAdd({

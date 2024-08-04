@@ -76,6 +76,11 @@ export interface SidebarModel {
 export type Status = 'todo' | 'progress' | 'completed';
 
 /**
+ * Statusの定数
+ */
+export const Status: Status[] = ['todo', 'progress', 'completed'];
+
+/**
  * Statusのカラーコード
  */
 export type StatusStyle = {
@@ -84,4 +89,25 @@ export type StatusStyle = {
     rightColor: string;
     leftColor: string;
   };
+};
+
+/**
+ * home画面で使われるStatusのカラーコードの定数
+ */
+export const statusStyle: StatusStyle = {
+  todo: {
+    mainColor: 'var(--indigo-400)',
+    rightColor: 'var(--indigo-100)',
+    leftColor: 'var(--indigo-500)',
+  },
+  progress: {
+    mainColor: 'var(--teal-400)',
+    rightColor: 'var(--teal-100)',
+    leftColor: 'var(--teal-500)',
+  },
+  completed: {
+    mainColor: 'var(--green-400)',
+    rightColor: 'var(--green-100)',
+    leftColor: 'var(--green-500)',
+  },
 };
