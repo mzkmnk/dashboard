@@ -4,7 +4,7 @@ import {
   InternalSignalStore,
   Tooltip,
   TooltipModule
-} from "./chunk-CA47NEKB.js";
+} from "./chunk-BVIMG4SU.js";
 import {
   Divider,
   DividerModule,
@@ -6911,9 +6911,9 @@ _HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _
 ], styles: ["\n\n.dashboard[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 1rem;\n}\n.custom-divider[_ngcontent-%COMP%] {\n  border: 0.1rem solid var(--orange-200);\n  border-radius: 0.5rem;\n  margin-bottom: 1rem;\n}\n[_nghost-%COMP%]     .custom-p-sidebar .p-sidebar {\n  position: fixed;\n  top: 0;\n  right: 0;\n  height: calc(100vh - 2.5rem);\n  margin: 1.5rem;\n  overflow-y: auto;\n}\n[_nghost-%COMP%]     .custom-p-menubar.p-element.custom-p-menubar {\n  background: white;\n}\n[_nghost-%COMP%]     .custom-p-timeline .p-timeline-event-opposite {\n  display: none;\n}\n/*# sourceMappingURL=home.component.css.map */"] });
 var HomeComponent = _HomeComponent;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(HomeComponent, { className: "HomeComponent", filePath: "src/app/internal/main/pages/home/home.component.ts", lineNumber: 46 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(HomeComponent, { className: "HomeComponent", filePath: "src/app/internal/main/pages/home/home.component.ts", lineNumber: 47 });
 })();
 export {
   HomeComponent
 };
-//# sourceMappingURL=chunk-OGKQUUWU.js.map
+//# sourceMappingURL=chunk-RJZ6UQ6R.js.map

@@ -4,7 +4,7 @@ import "./chunk-WDMUDEB6.js";
 var INTERNAL_ROUTES = [
   {
     path: "home",
-    loadComponent: () => import("./chunk-OGKQUUWU.js").then((M) => M.HomeComponent)
+    loadComponent: () => import("./chunk-RJZ6UQ6R.js").then((M) => M.HomeComponent)
   },
   {
     path: "**",
@@ -14,4 +14,4 @@ var INTERNAL_ROUTES = [
 export {
   INTERNAL_ROUTES
 };
-//# sourceMappingURL=chunk-XSTN5RNN.js.map
+//# sourceMappingURL=chunk-CDT7XEPV.js.map
