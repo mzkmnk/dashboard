@@ -1,20 +1,21 @@
-import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../../../env/environment';
+import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { SuccessCode } from '../../shared/interfaces/messages.interface';
+
+import { environment } from '../../../env/environment';
 import {
   Sidebar,
   Task,
 } from '../../internal/shared/interfaces/internal.interface';
+import { SuccessCode } from '../../shared/interfaces/messages.interface';
 
 export interface PostGetSidebarsResponse {
   code: SuccessCode;
-  sidebarLabels: Sidebar[];
+  sidebars: Sidebar[];
 }
 
 export interface PostGetTasksRequest {
-  sidebarLabel: string;
+  sidebar: string;
 }
 
 export interface PostGetTasksResponse {

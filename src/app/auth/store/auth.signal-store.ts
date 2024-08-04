@@ -1,11 +1,12 @@
-import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
-import { withDevtools } from '@angular-architects/ngrx-toolkit';
 import { inject } from '@angular/core';
-import { AuthAPI } from '../../api/auth/auth.api';
-import { pipe, switchMap, tap } from 'rxjs';
+import { withDevtools } from '@angular-architects/ngrx-toolkit';
 import { tapResponse } from '@ngrx/operators';
-import { RouterSignalStore } from '../../shared/store/router.signal-store';
+import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
+import { pipe, switchMap, tap } from 'rxjs';
+
+import { AuthAPI } from '../../api/auth/auth.api';
+import { RouterSignalStore } from '../../shared/store/router.signal-store';
 
 export interface SignInRequest {
   username: string;

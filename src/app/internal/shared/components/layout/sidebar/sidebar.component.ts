@@ -1,9 +1,10 @@
 import { Component, inject, Signal } from '@angular/core';
+import { Button } from 'primeng/button';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { Ripple } from 'primeng/ripple';
-import { Button } from 'primeng/button';
-import { InternalSignalStore } from '../../../store/internal/internal.signal-store';
+
 import { SidebarModel } from '../../../interfaces/internal.interface';
+import { InternalSignalStore } from '../../../store/internal/internal.signal-store';
 
 @Component({
   selector: 'app-sidebar',

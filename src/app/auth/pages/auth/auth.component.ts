@@ -1,10 +1,4 @@
 import { Component, inject, Signal } from '@angular/core';
-import { ImageModule } from 'primeng/image';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { InputTextModule } from 'primeng/inputtext';
-import { PasswordModule } from 'primeng/password';
-import { FloatLabelModule } from 'primeng/floatlabel';
 import {
   FormControl,
   FormGroup,
@@ -14,6 +8,13 @@ import {
 } from '@angular/forms';
 import { Button } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { ImageModule } from 'primeng/image';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { InputTextModule } from 'primeng/inputtext';
+import { PasswordModule } from 'primeng/password';
+
 import { AuthSignalStore } from '../../store/auth.signal-store';
 
 @Component({

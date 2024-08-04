@@ -98,7 +98,7 @@
                       }"
                       (click)="onClickUpdateProgressBar($event, item, i)"
                     >
-                      <ng-template pTemplate="content" let-value> </ng-template>
+                      <ng-template pTemplate="content"> </ng-template>
                     </p-progressBar>
                   </div>
                 }
@@ -155,6 +155,21 @@
   position="right"
   styleClass="w-30rem border-round-3xl"
 >
+  <ng-template pTemplate="header">
+    <p-tag
+      styleClass="font-semibold text-base text-white w-10rem h-2rem"
+      [style.letter-spacing]="'0.1rem'"
+      [style]="{
+        background:
+          'linear-gradient(to right,' +
+          statusStyle[sidebarTask.task?.status ?? 'todo'].leftColor +
+          ',' +
+          statusStyle[sidebarTask.task?.status ?? 'todo'].leftColor,
+        color: 'black',
+      }"
+      [value]="sidebarTask.task?.status"
+    ></p-tag>
+  </ng-template>
   <div class="flex align-items-center justify-content-between w-full">
     <h1>{{ sidebarTask.task?.title }}</h1>
     <p-avatarGroup class="mr-3">
