@@ -135,7 +135,6 @@ var InternalSignalStore = signalStore(
   withComputed(({ data }) => ({
     selectSidebars: computed(() => {
       const sidebars = [];
-      console.log("data", data());
       for (const key of Object.keys(data())) {
         const tasks = data()[key].tasks;
         sidebars.push({
@@ -158,12 +157,12 @@ var InternalSignalStore = signalStore(
       common: { isLoading: true, clickSidebar: "" }
     })), switchMap(() => internalAPI.postGetSidebars()), tapResponse({
       next: (response) => {
-        response.sidebarLabels.map((sidebar) => {
+        response.sidebars.map((sidebar) => {
           patchState(signalStore2, (signalState) => loadedSidebarData(signalState, sidebar));
         });
       },
       error: () => EMPTY
-    }), concatMap(() => signalStore2.selectSidebars()), concatMap((sidebar) => internalAPI.postGetTasks({ sidebarLabel: sidebar.name })), tapResponse({
+    }), concatMap(() => signalStore2.selectSidebars()), concatMap((sidebar) => internalAPI.postGetTasks({ sidebar: sidebar.name })), tapResponse({
       next: (response) => {
         response.tasks.map((task) => patchState(signalStore2, (signalState) => loadedTaskData(signalState, task)));
       },
@@ -171,6 +170,10 @@ var InternalSignalStore = signalStore(
     }), tap(() => patchState(signalStore2, (signalState) => __spreadProps(__spreadValues({}, signalState), {
       common: __spreadProps(__spreadValues({}, signalState.common), { isLoading: false })
     }))))),
+    /**
+     * 引数に与えられた{status}のタスクを追加する。
+     */
+    addTask: rxMethod(pipe()),
     /**
      * サイドバークリック時の変更
      */
@@ -1105,4 +1108,4 @@ export {
   TooltipModule,
   InternalSignalStore
 };
-//# sourceMappingURL=chunk-BSUJOEHG.js.map
+//# sourceMappingURL=chunk-HZX44K5D.js.map

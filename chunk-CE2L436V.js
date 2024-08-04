@@ -4,7 +4,7 @@ import {
   InternalSignalStore,
   Tooltip,
   TooltipModule
-} from "./chunk-BSUJOEHG.js";
+} from "./chunk-HZX44K5D.js";
 import {
   Divider,
   DividerModule,
@@ -6654,13 +6654,13 @@ function HomeComponent_Conditional_13_For_2_For_11_Conditional_6_ng_template_7_T
 function HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 27)(1, "div", 33)(2, "p", 34);
+    \u0275\u0275elementStart(0, "div", 28)(1, "div", 34)(2, "p", 35);
     \u0275\u0275text(3, "Progress");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "p", 34);
+    \u0275\u0275elementStart(4, "p", 35);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(6, "p-progressBar", 35);
+    \u0275\u0275elementStart(6, "p-progressBar", 36);
     \u0275\u0275listener("click", function HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template_p_progressBar_click_6_listener($event) {
       \u0275\u0275restoreView(_r6);
       const \u0275$index_51_r7 = \u0275\u0275nextContext().$index;
@@ -6668,7 +6668,7 @@ function HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template(rf, ct
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.onClickUpdateProgressBar($event, item_r2, \u0275$index_51_r7));
     });
-    \u0275\u0275template(7, HomeComponent_Conditional_13_For_2_For_11_Conditional_6_ng_template_7_Template, 0, 0, "ng-template", 36);
+    \u0275\u0275template(7, HomeComponent_Conditional_13_For_2_For_11_Conditional_6_ng_template_7_Template, 0, 0, "ng-template", 37);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -6684,7 +6684,7 @@ function HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template(rf, ct
 }
 function HomeComponent_Conditional_13_For_2_For_11_For_14_Conditional_0_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "p-tag", 38);
+    \u0275\u0275element(0, "p-tag", 39);
   }
   if (rf & 2) {
     const tag_r8 = \u0275\u0275nextContext().$implicit;
@@ -6695,7 +6695,7 @@ function HomeComponent_Conditional_13_For_2_For_11_For_14_Conditional_0_Template
 }
 function HomeComponent_Conditional_13_For_2_For_11_For_14_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275template(0, HomeComponent_Conditional_13_For_2_For_11_For_14_Conditional_0_Template, 1, 5, "p-tag", 37);
+    \u0275\u0275template(0, HomeComponent_Conditional_13_For_2_For_11_For_14_Conditional_0_Template, 1, 5, "p-tag", 38);
   }
   if (rf & 2) {
     const tag_r8 = ctx.$implicit;
@@ -6706,25 +6706,25 @@ function HomeComponent_Conditional_13_For_2_For_11_For_14_Template(rf, ctx) {
 function HomeComponent_Conditional_13_For_2_For_11_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 24);
+    \u0275\u0275elementStart(0, "div", 25);
     \u0275\u0275listener("click", function HomeComponent_Conditional_13_For_2_For_11_Template_div_click_0_listener() {
       const task_r5 = \u0275\u0275restoreView(_r4).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(3);
       return \u0275\u0275resetView(ctx_r2.onClickTask(task_r5));
     });
-    \u0275\u0275element(1, "p-tag", 25);
+    \u0275\u0275element(1, "p-tag", 26);
     \u0275\u0275elementStart(2, "h3");
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "p", 26);
+    \u0275\u0275elementStart(4, "p", 27);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd();
-    \u0275\u0275template(6, HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template, 8, 6, "div", 27);
+    \u0275\u0275template(6, HomeComponent_Conditional_13_For_2_For_11_Conditional_6_Template, 8, 6, "div", 28);
     \u0275\u0275element(7, "p-divider");
-    \u0275\u0275elementStart(8, "div", 28)(9, "p-avatarGroup", 29);
-    \u0275\u0275element(10, "p-avatar", 30)(11, "p-avatar", 31);
+    \u0275\u0275elementStart(8, "div", 29)(9, "p-avatarGroup", 30);
+    \u0275\u0275element(10, "p-avatar", 31)(11, "p-avatar", 32);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "div", 32);
+    \u0275\u0275elementStart(12, "div", 33);
     \u0275\u0275repeaterCreate(13, HomeComponent_Conditional_13_For_2_For_11_For_14_Template, 1, 1, null, null, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()()();
   }
@@ -6752,22 +6752,22 @@ function HomeComponent_Conditional_13_For_2_For_11_Template(rf, ctx) {
 function HomeComponent_Conditional_13_For_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div")(1, "div", 17)(2, "div", 18)(3, "h3", 3);
+    \u0275\u0275elementStart(0, "div")(1, "div", 18)(2, "div", 19)(3, "h3", 3);
     \u0275\u0275text(4);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "div", 19);
+    \u0275\u0275elementStart(5, "div", 20);
     \u0275\u0275text(6);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(7, "i", 20);
+    \u0275\u0275elementStart(7, "i", 21);
     \u0275\u0275listener("click", function HomeComponent_Conditional_13_For_2_Template_i_click_7_listener() {
       const item_r2 = \u0275\u0275restoreView(_r1).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.onClickAddTask(item_r2));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(8, "div", 21);
-    \u0275\u0275elementStart(9, "div", 22);
-    \u0275\u0275repeaterCreate(10, HomeComponent_Conditional_13_For_2_For_11_Template, 15, 14, "div", 23, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275element(8, "div", 22);
+    \u0275\u0275elementStart(9, "div", 23);
+    \u0275\u0275repeaterCreate(10, HomeComponent_Conditional_13_For_2_For_11_Template, 15, 14, "div", 24, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -6789,7 +6789,7 @@ function HomeComponent_Conditional_13_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 11);
     \u0275\u0275repeaterCreate(1, HomeComponent_Conditional_13_For_2_Template, 12, 6, "div", null, \u0275\u0275repeaterTrackByIndex);
-    \u0275\u0275elementStart(3, "div")(4, "div", 17)(5, "div", 18)(6, "h3", 3);
+    \u0275\u0275elementStart(3, "div")(4, "div", 18)(5, "div", 19)(6, "h3", 3);
     \u0275\u0275text(7, "SCHEDULE");
     \u0275\u0275elementEnd()()()()();
   }
@@ -6797,6 +6797,18 @@ function HomeComponent_Conditional_13_Template(rf, ctx) {
     const ctx_r2 = \u0275\u0275nextContext();
     \u0275\u0275advance();
     \u0275\u0275repeater(ctx_r2.status);
+  }
+}
+function HomeComponent_ng_template_15_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "p-tag", 40);
+  }
+  if (rf & 2) {
+    let tmp_1_0;
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275styleMap(\u0275\u0275pureFunction1(5, _c010, "linear-gradient(to right," + ctx_r2.statusStyle[(tmp_1_0 = ctx_r2.sidebarTask.task == null ? null : ctx_r2.sidebarTask.task.status) !== null && tmp_1_0 !== void 0 ? tmp_1_0 : "todo"].leftColor + "," + ctx_r2.statusStyle[(tmp_1_0 = ctx_r2.sidebarTask.task == null ? null : ctx_r2.sidebarTask.task.status) !== null && tmp_1_0 !== void 0 ? tmp_1_0 : "todo"].leftColor));
+    \u0275\u0275styleProp("letter-spacing", "0.1rem");
+    \u0275\u0275property("value", ctx_r2.sidebarTask.task == null ? null : ctx_r2.sidebarTask.task.status);
   }
 }
 var _HomeComponent = class _HomeComponent {
@@ -6830,7 +6842,7 @@ var _HomeComponent = class _HomeComponent {
 _HomeComponent.\u0275fac = function HomeComponent_Factory(t) {
   return new (t || _HomeComponent)();
 };
-_HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _HomeComponent, selectors: [["app-home"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 30, vars: 6, consts: [[1, "flex", "flex-column", "main"], [1, "flex", "flex-row", "align-items-center", "justify-content-between", "ml-3"], [1, "flex", "flex-row", "align-items-center", "mr-3"], [1, "mr-3"], ["image", "assets/img/icon1.png", "size", "large", "shape", "circle"], ["image", "assets/img/icon2.jpg", "size", "large", "shape", "circle"], ["label", "M", "shape", "circle", "size", "large"], ["label", "N", "shape", "circle", "size", "large"], ["label", "K", "shape", "circle", "size", "large"], ["label", "invite", "icon", "pi pi-plus", "severity", "contrast", 3, "rounded"], [2, "display", "grid", "place-items", "center", "height", "calc(100vh - 2.5rem)"], [1, "dashboard", "h-full"], ["transitionOptions", "350ms cubic-bezier(0, 0, 0.2, 1)", "position", "right", "styleClass", "w-30rem border-round-3xl", 1, "custom-p-sidebar", 3, "visibleChange", "visible"], [1, "flex", "align-items-center", "justify-content-between", "w-full"], [1, "w-full", "flex", "justify-content-center", "align-items-start", "flex-column"], [1, "w-full", "flex", "justify-content-between", "align-items-center"], [1, "pi", "pi-plus", "text-xl", "opacity-80", "cursor-pointer"], [1, "mx-2", "flex", "flex-row", "align-items-center", "justify-content-between"], [1, "flex", "flex-row", "align-items-center"], [1, "border-round-2xl", "border-1", "px-3", "font-semibold", "opacity-60"], [1, "pi", "pi-plus", "text-xl", "opacity-80", "cursor-pointer", 3, "click"], [1, "custom-divider"], [1, "border-round-xl", "overflow-y-scroll"], [1, "border-300", "bg-white", "border-round-2xl", "p-2", "m-2"], [1, "border-300", "bg-white", "border-round-2xl", "p-2", "m-2", 3, "click"], ["styleClass", "font-semibold text-white", 3, "value"], [1, "opacity-60"], [1, "mb-2"], [1, "grid"], [1, "col-4", "m-0"], ["image", "assets/img/icon1.png", "shape", "circle"], ["image", "assets/img/icon2.jpg", "shape", "circle"], [1, "col-8", "flex", "align-items-center", "justify-content-end", "gap-2", "m-0"], [1, "flex", "flex-row", "justify-content-between", "align-items-center"], [1, "font-semibold", "text-color-secondary"], [3, "click", "value", "color"], ["pTemplate", "content"], [3, "value", "style"], [3, "value"]], template: function HomeComponent_Template(rf, ctx) {
+_HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _HomeComponent, selectors: [["app-home"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 31, vars: 6, consts: [[1, "flex", "flex-column", "main"], [1, "flex", "flex-row", "align-items-center", "justify-content-between", "ml-3"], [1, "flex", "flex-row", "align-items-center", "mr-3"], [1, "mr-3"], ["image", "assets/img/icon1.png", "size", "large", "shape", "circle"], ["image", "assets/img/icon2.jpg", "size", "large", "shape", "circle"], ["label", "M", "shape", "circle", "size", "large"], ["label", "N", "shape", "circle", "size", "large"], ["label", "K", "shape", "circle", "size", "large"], ["label", "invite", "icon", "pi pi-plus", "severity", "contrast", 3, "rounded"], [2, "display", "grid", "place-items", "center", "height", "calc(100vh - 2.5rem)"], [1, "dashboard", "h-full"], ["transitionOptions", "350ms cubic-bezier(0, 0, 0.2, 1)", "position", "right", "styleClass", "w-30rem border-round-3xl", 1, "custom-p-sidebar", 3, "visibleChange", "visible"], ["pTemplate", "header"], [1, "flex", "align-items-center", "justify-content-between", "w-full"], [1, "w-full", "flex", "justify-content-center", "align-items-start", "flex-column"], [1, "w-full", "flex", "justify-content-between", "align-items-center"], [1, "pi", "pi-plus", "text-xl", "opacity-80", "cursor-pointer"], [1, "mx-2", "flex", "flex-row", "align-items-center", "justify-content-between"], [1, "flex", "flex-row", "align-items-center"], [1, "border-round-2xl", "border-1", "px-3", "font-semibold", "opacity-60"], [1, "pi", "pi-plus", "text-xl", "opacity-80", "cursor-pointer", 3, "click"], [1, "custom-divider"], [1, "border-round-xl", "overflow-y-scroll"], [1, "border-300", "bg-white", "border-round-2xl", "p-2", "m-2"], [1, "border-300", "bg-white", "border-round-2xl", "p-2", "m-2", 3, "click"], ["styleClass", "font-semibold text-white", 3, "value"], [1, "opacity-60"], [1, "mb-2"], [1, "grid"], [1, "col-4", "m-0"], ["image", "assets/img/icon1.png", "shape", "circle"], ["image", "assets/img/icon2.jpg", "shape", "circle"], [1, "col-8", "flex", "align-items-center", "justify-content-end", "gap-2", "m-0"], [1, "flex", "flex-row", "justify-content-between", "align-items-center"], [1, "font-semibold", "text-color-secondary"], [3, "click", "value", "color"], ["pTemplate", "content"], [3, "value", "style"], [3, "value"], ["styleClass", "font-semibold text-base text-white w-10rem h-2rem", 3, "value"]], template: function HomeComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "h1");
     \u0275\u0275text(3);
@@ -6847,20 +6859,21 @@ _HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _
       \u0275\u0275twoWayBindingSet(ctx.sidebarTask.visible, $event) || (ctx.sidebarTask.visible = $event);
       return $event;
     });
-    \u0275\u0275elementStart(15, "div", 13)(16, "h1");
-    \u0275\u0275text(17);
+    \u0275\u0275template(15, HomeComponent_ng_template_15_Template, 1, 7, "ng-template", 13);
+    \u0275\u0275elementStart(16, "div", 14)(17, "h1");
+    \u0275\u0275text(18);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(18, "p-avatarGroup", 3);
-    \u0275\u0275element(19, "p-avatar", 4)(20, "p-avatar", 5)(21, "p-avatar", 6);
+    \u0275\u0275elementStart(19, "p-avatarGroup", 3);
+    \u0275\u0275element(20, "p-avatar", 4)(21, "p-avatar", 5)(22, "p-avatar", 6);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(22, "h4");
-    \u0275\u0275text(23);
+    \u0275\u0275elementStart(23, "h4");
+    \u0275\u0275text(24);
     \u0275\u0275elementEnd();
-    \u0275\u0275element(24, "p-divider");
-    \u0275\u0275elementStart(25, "div", 14)(26, "div", 15)(27, "h2");
-    \u0275\u0275text(28, "Timeline");
+    \u0275\u0275element(25, "p-divider");
+    \u0275\u0275elementStart(26, "div", 15)(27, "div", 16)(28, "h2");
+    \u0275\u0275text(29, "Timeline");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(29, "i", 16);
+    \u0275\u0275element(30, "i", 17);
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -6872,7 +6885,7 @@ _HomeComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _
     \u0275\u0275conditional(ctx.$isLoading() ? 12 : 13);
     \u0275\u0275advance(2);
     \u0275\u0275twoWayProperty("visible", ctx.sidebarTask.visible);
-    \u0275\u0275advance(3);
+    \u0275\u0275advance(4);
     \u0275\u0275textInterpolate(ctx.sidebarTask.task == null ? null : ctx.sidebarTask.task.title);
     \u0275\u0275advance(6);
     \u0275\u0275textInterpolate(ctx.sidebarTask.task == null ? null : ctx.sidebarTask.task.description);
@@ -6908,4 +6921,4 @@ var HomeComponent = _HomeComponent;
 export {
   HomeComponent
 };
-//# sourceMappingURL=chunk-VXSI2GIS.js.map
+//# sourceMappingURL=chunk-CE2L436V.js.map
