@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from '../sidebar/sidebar.component';
 import { RouterOutlet } from '@angular/router';
 import { SplitterModule } from 'primeng/splitter';
+
+import { SidebarComponent } from '../sidebar/sidebar.component';
 
 @Component({
   selector: 'app-layout',

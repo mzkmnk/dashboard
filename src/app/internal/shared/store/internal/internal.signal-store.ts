@@ -1,3 +1,6 @@
+import { computed, inject } from '@angular/core';
+import { withDevtools } from '@angular-architects/ngrx-toolkit';
+import { tapResponse } from '@ngrx/operators';
 import {
   patchState,
   signalStore,
@@ -5,17 +8,15 @@ import {
   withMethods,
   withState,
 } from '@ngrx/signals';
-import { withDevtools } from '@angular-architects/ngrx-toolkit';
-import { concatMap, EMPTY, pipe, switchMap, tap } from 'rxjs';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
-import { computed, inject } from '@angular/core';
-import { tapResponse } from '@ngrx/operators';
-import { loadedSidebarData, loadedTaskData } from './internal.function';
+import { concatMap, EMPTY, pipe, switchMap, tap } from 'rxjs';
+
 import { InternalAPI } from '../../../../api/internal/internal.api';
 import {
   InternalSignalStoreModel,
   SidebarModel,
 } from '../../interfaces/internal.interface';
+import { loadedSidebarData, loadedTaskData } from './internal.function';
 
 export const initialState: InternalSignalStoreModel = {
   common: {
@@ -56,7 +57,7 @@ export const InternalSignalStore = signalStore(
      * @description
      * サイドバー、タスクの取得を行う。
      */
-    dataLoad: rxMethod<{}>(
+    dataLoad: rxMethod(
       pipe(
         tap(() =>
           patchState(signalStore, {

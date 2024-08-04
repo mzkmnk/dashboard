@@ -1,5 +1,7 @@
-import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
 import { environment } from '../../../env/environment';
 import {
   SignInRequest,
@@ -7,7 +9,6 @@ import {
   SignUpRequest,
   SignUpResponse,
 } from '../../auth/store/auth.signal-store';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',

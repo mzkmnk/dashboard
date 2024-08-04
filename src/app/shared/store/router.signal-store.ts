@@ -1,11 +1,11 @@
-import { signalStore, withState } from '@ngrx/signals';
+import { inject } from '@angular/core';
+import { Router } from '@angular/router';
 import {
   payload,
   withDevtools,
   withRedux,
 } from '@angular-architects/ngrx-toolkit';
-import { inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { signalStore, withState } from '@ngrx/signals';
 import { of, switchMap } from 'rxjs';
 
 export type routePath = 'auth/auth' | 'internal/home';
