@@ -4,7 +4,7 @@
 }
 
 .bg-item-hover:hover {
-  background-color: var(--surface-hover);
+  background-color: var(--surface-50);
 }
 
 .bg-item-click {

@@ -1,0 +1,51 @@
+<div
+  class="w-screen h-screen flex flex-column align-items-center justify-content-center"
+>
+  <h1 class="text-7xl">HmmmH</h1>
+  <div class="w-full flex flex-row align-items-center justify-content-center">
+    <form
+      class="flex flex-column align-items-center justify-content-around h-20rem w-4"
+      [formGroup]="form"
+    >
+      <p-floatLabel class="w-full">
+        <input pInputText class="w-full" formControlName="email" />
+        <label [for]="'email'">Email</label>
+      </p-floatLabel>
+      <p-floatLabel class="w-full">
+        <p-password
+          [toggleMask]="true"
+          label="password"
+          styleClass="w-full"
+          inputStyleClass="w-full"
+          class="w-12"
+          formControlName="password"
+        ></p-password>
+        <label [for]="'password'">password</label>
+      </p-floatLabel>
+      <div class="flex flex-column w-full align-items-center">
+        <p-button
+          class="w-full"
+          [style]="{ width: '100%' }"
+          label="sign In"
+          (onClick)="onClickSignIn()"
+          type="submit"
+          [disabled]="form.invalid || $signInIsLoading() || $signUpIsLoading()"
+          [loading]="$signInIsLoading()"
+        ></p-button>
+        <p-divider align="center" class="w-full">
+          <b>or</b>
+        </p-divider>
+        <p-button
+          class="w-full"
+          [style]="{ width: '100%' }"
+          label="sign Up"
+          severity="info"
+          (onClick)="onClickSignUp()"
+          type="submit"
+          [disabled]="form.invalid || $signInIsLoading() || $signUpIsLoading()"
+          [loading]="$signUpIsLoading()"
+        ></p-button>
+      </div>
+    </form>
+  </div>
+</div>

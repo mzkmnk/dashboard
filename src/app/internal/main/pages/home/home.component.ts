@@ -1,21 +1,26 @@
 import { Component, inject, Signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { sidebarSignalStore } from '../../../shared/store/sidebar/sidebar.signal-store';
-import { Group, StatusStyle } from '../../../data/task.data';
-import {
-  MainSignalStore,
-  ProjectSignalStoreModel,
-} from '../../store/main.signal-store';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
-import { MenuItem } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { TagModule } from 'primeng/tag';
 import { ProgressBarModule } from 'primeng/progressbar';
-import { SidebarLabelType } from '../../../data/sidebar.data';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { SidebarModule } from 'primeng/sidebar';
+import { TimelineModule } from 'primeng/timeline';
+import { DatePipe } from '@angular/common';
+import { CardModule } from 'primeng/card';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { InternalSignalStore } from '../../../shared/store/internal/internal.signal-store';
+import {
+  ProjectSignalStoreModel,
+  Status,
+  statusStyle,
+  StatusStyle,
+  Task,
+} from '../../../shared/interfaces/internal.interface';
 
 @Component({
   selector: 'app-home',
@@ -30,72 +35,62 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     ProgressBarModule,
     AvatarModule,
     AvatarGroupModule,
+    SidebarModule,
+    TimelineModule,
+    DatePipe,
+    CardModule,
+    ProgressSpinnerModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  providers: [MainSignalStore],
 })
 export class HomeComponent {
-  private readonly sidebarSignalStore = inject(sidebarSignalStore);
-  private readonly mainSignalStore = inject(MainSignalStore);
+  private readonly internalSignalStore = inject(InternalSignalStore);
 
-  $sidebarItem: Signal<SidebarLabelType> =
-    this.sidebarSignalStore.project.label;
-  $tasks: Signal<ProjectSignalStoreModel> = this.mainSignalStore.data;
+  $sidebar: Signal<string> = this.internalSignalStore.common.clickSidebar;
+  $data: Signal<ProjectSignalStoreModel> = this.internalSignalStore.data;
+  $isLoading: Signal<boolean> = this.internalSignalStore.common.isLoading;
 
-  groups: Group[] = ['TODO', 'PROGRESS', 'COMPLETED'];
+  /**
+   * sidebarで表示させたいtaskとクリックされたかどうかのvisible
+   */
+  sidebarTask: { task: Task | undefined; visible: boolean } = {
+    task: undefined,
+    visible: false,
+  };
 
-  pItems: MenuItem[] = [];
+  status: Status[] = Status;
 
-  statusStyle: StatusStyle;
+  statusStyle: StatusStyle = statusStyle;
 
-  constructor() {
-    this.mainSignalStore.taskDataLoad();
-    this.statusStyle = {
-      TODO: {
-        mainColor: 'var(--indigo-200)',
-        rightColor: 'var(--indigo-100)',
-        leftColor: 'var(--indigo-300)',
-      },
-      PROGRESS: {
-        mainColor: 'var(--teal-200)',
-        rightColor: 'var(--teal-100)',
-        leftColor: 'var(--teal-300)',
-      },
-      COMPLETED: {
-        mainColor: 'var(--green-200)',
-        rightColor: 'var(--green-100)',
-        leftColor: 'var(--green-300)',
-      },
-    };
-    this.pItems = [
-      {
-        icon: 'pi pi-bars',
-        items: [
-          {
-            label: 'add Item',
-            icon: 'pi pi-add',
-          },
-        ],
-      },
-    ];
-  }
+  onClickAddTask = (status: Status): void => {
+    // this.internalSignalStore.taskAdd({
+    //   sidebarLabel: this.$sidebarItem(),
+    //   status,
+    // });
+  };
+
+  onClickTask = (task: Task): void => {
+    this.sidebarTask.visible = !this.sidebarTask.visible;
+    this.sidebarTask.task = task;
+  };
 
   onClickUpdateProgressBar = (
     event: any,
-    group: Group,
+    status: Status,
     index: number,
   ): void => {
+    event.stopPropagation();
     const htmlProgressBar = event.currentTarget;
     const rect = htmlProgressBar.getBoundingClientRect();
     const clickX: number = event.clientX - rect.left;
     const width = rect.width;
     const newProgress: number = Math.round((clickX / width) * 100);
-    this.mainSignalStore.taskDataUpdate({
-      sidebarLabel: this.$sidebarItem(),
-      group: group,
-      idx: index,
-      progress: newProgress.toString(),
-    });
+    // this.internalSignalStore.taskDataUpdate({
+    //   sidebarLabel: this.$sidebarItem(),
+    //   status,
+    //   idx: index,
+    //   progress: newProgress.toString(),
+    // });
   };
 }

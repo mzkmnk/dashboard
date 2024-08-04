@@ -1,9 +1,9 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Signal } from '@angular/core';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { Ripple } from 'primeng/ripple';
 import { Button } from 'primeng/button';
-import { sidebarData, SidebarDataModel } from '../../../../data/sidebar.data';
-import { sidebarSignalStore } from '../../../store/sidebar/sidebar.signal-store';
+import { InternalSignalStore } from '../../../store/internal/internal.signal-store';
+import { SidebarModel } from '../../../interfaces/internal.interface';
 
 @Component({
   selector: 'app-sidebar',
@@ -13,12 +13,13 @@ import { sidebarSignalStore } from '../../../store/sidebar/sidebar.signal-store'
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  private readonly sidebarSignalStore = inject(sidebarSignalStore);
+  private readonly internalSignalStore = inject(InternalSignalStore);
 
-  sidebarData: SidebarDataModel[] = sidebarData;
+  $sidebars: Signal<SidebarModel[]> = this.internalSignalStore.selectSidebars;
+  $clickSidebar: Signal<string> = this.internalSignalStore.common.clickSidebar;
 
   constructor() {
-    this.sidebarSignalStore.onClickSidebar({ label: 'travelLog' });
+    this.internalSignalStore.dataLoad({});
   }
 
   /**
@@ -29,13 +30,8 @@ export class SidebarComponent {
    * サイドバーがクリックされた時の処理を行う関数
    */
   onClickSidebarItem = (idx: number): void => {
-    this.sidebarData.map((_, index: number) => {
-      this.sidebarData[index].clicked = index == idx;
-      if (idx === index) {
-        this.sidebarSignalStore.onClickSidebar({
-          label: this.sidebarData[index].label,
-        });
-      }
+    this.internalSignalStore.clickSidebar({
+      sidebar: this.$sidebars()[idx].name,
     });
   };
 }

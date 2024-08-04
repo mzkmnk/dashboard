@@ -1,6 +1,8 @@
-<div class="flex h-screen overflow-hidden">
-  <app-sidebar class="w-2"></app-sidebar>
-  <main class="ml-4 flex-grow-1 overflow-y-auto">
+<div class="h-screen">
+  <div class="fixed t-0 left-0" [style.width]="'15%'">
+    <app-sidebar></app-sidebar>
+  </div>
+  <main class="overflow-y-auto" [style.margin-left]="'15%'">
     <router-outlet></router-outlet>
   </main>
 </div>
