@@ -1,6 +1,9 @@
-import { InternalSignalStoreModel } from './internal.signal-store';
-import { Sidebar, Task } from '../../../api/internal/internal.api';
-import { Status } from '../../../internal/data/task.data';
+import {
+  InternalSignalStoreModel,
+  Sidebar,
+  Status,
+  Task,
+} from '../../interfaces/internal.interface';
 
 /**
  * @description

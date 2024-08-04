@@ -3,25 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../env/environment';
 import { Observable } from 'rxjs';
 import { SuccessCode } from '../../shared/interfaces/messages.interface';
-export interface Sidebar {
-  id: number;
-  name: string;
-  createdAt: Date;
-  updatedAt: Date;
-}
-
-export interface Task {
-  id: number;
-  title: string;
-  description: string | null;
-  progress: string;
-  createdAt: Date;
-  updatedAt: Date;
-  startedAt: Date;
-  endedAt: Date;
-  sidebar: string;
-  status: string;
-}
+import {
+  Sidebar,
+  Task,
+} from '../../internal/shared/interfaces/internal.interface';
 
 export interface PostGetSidebarsResponse {
   code: SuccessCode;

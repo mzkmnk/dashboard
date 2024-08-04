@@ -1,6 +1,5 @@
 import { Component, inject, Signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { Status, StatusStyle } from '../../../data/task.data';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
 import { MenuItem } from 'primeng/api';
@@ -14,12 +13,14 @@ import { SidebarModule } from 'primeng/sidebar';
 import { TimelineModule } from 'primeng/timeline';
 import { DatePipe } from '@angular/common';
 import { CardModule } from 'primeng/card';
-import { Task } from '../../../../api/internal/internal.api';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { InternalSignalStore } from '../../../shared/store/internal/internal.signal-store';
 import {
-  InternalSignalStore,
   ProjectSignalStoreModel,
-} from '../../../../shared/store/internal/internal.signal-store';
+  Status,
+  StatusStyle,
+  Task,
+} from '../../../shared/interfaces/internal.interface';
 
 @Component({
   selector: 'app-home',

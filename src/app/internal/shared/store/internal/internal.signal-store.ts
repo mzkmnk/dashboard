@@ -10,27 +10,12 @@ import { concatMap, EMPTY, pipe, switchMap, tap } from 'rxjs';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { computed, inject } from '@angular/core';
 import { tapResponse } from '@ngrx/operators';
-import { Status } from '../../../internal/data/task.data';
-import { InternalAPI, Task } from '../../../api/internal/internal.api';
 import { loadedSidebarData, loadedTaskData } from './internal.function';
-
-type ProjectSignal = {
-  tasks: {
-    [key in Status]: Task[];
-  };
-};
-
-export type ProjectSignalStoreModel = {
-  [key in string]: ProjectSignal;
-};
-
-export interface InternalSignalStoreModel {
-  common: {
-    isLoading: boolean;
-    clickSidebar: string;
-  };
-  data: ProjectSignalStoreModel;
-}
+import { InternalAPI } from '../../../../api/internal/internal.api';
+import {
+  InternalSignalStoreModel,
+  SidebarModel,
+} from '../../interfaces/internal.interface';
 
 export const initialState: InternalSignalStoreModel = {
   common: {
@@ -39,11 +24,6 @@ export const initialState: InternalSignalStoreModel = {
   },
   data: {},
 };
-
-export interface SidebarModel {
-  name: string;
-  cnt: number;
-}
 
 export const InternalSignalStore = signalStore(
   { providedIn: 'root' },
